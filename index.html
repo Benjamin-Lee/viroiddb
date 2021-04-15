@@ -1,0 +1,146 @@
+<head>
+  <title>ViroidDB</title>
+  <link rel="stylesheet" href="dist/tailwind.css" />
+</head>
+
+<body>
+  <div class="prose prose lg:prose-lg m-10 md:mx-auto md:my-20">
+    <h1>ViroidDB</h1>
+    <p>
+      Viroids and their (potential) relatives are among the most unique of all
+      biological entities. However, I couldn't find a good, up-to-date database
+      containing all of them in one place so I made my own.
+    </p>
+
+    <p>
+      This database has sequences representing known viroid and viroid-like RNA
+      sequences. Each sequence is unique, though variants of the same RNA
+      species are included. Currently, sequences are <i>not</i> guaranteed to be
+      rotationally unique, meaning that <code>AAAATTTT</code> is treated as
+      distinct from <code>TTAAAATT</code>.
+    </p>
+    <h2>How to get the data</h2>
+    <p>
+      You can download the most recent version of the entire database as a FASTA
+      file <a>here</a>.
+    </p>
+    <p>
+      Alternatively, download the database easily using your command-line tool
+      of choice:
+    </p>
+    <pre>$ curl viroids.org/db/latest/all.fasta > viroiddb.fasta</pre>
+
+    <p>
+      If you're interested in a
+      <abbr title="noting, of course, that a set is a subset of itself">
+        subset
+      </abbr>
+      of the data, here are all of available subsets:
+    </p>
+    <table>
+      <thead>
+        <td>Subset</td>
+        <td>Download link</td>
+        <td>Sequence count</td>
+        <td>Total bases</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>All</td>
+          <td>all</td>
+
+          <td>9,891</td>
+          <td>4,001,024</td>
+        </tr>
+        <tr>
+          <td>Viroids</td>
+          <td><a href="" class="font-mono"></a>/db/latest/viroids</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-indent: 1em">Avsunviroidae</td>
+          <td>avsunviroidae</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-indent: 1em">Pospiviroidae</td>
+          <td>pospiviroidae</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-indent: 1em">Unclassified</td>
+          <td>unclassified</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Deltavirus</td>
+          <td>deltavirus</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Retrozymes</td>
+          <td>retrozymes</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Satellite RNAs</td>
+          <td>satellites</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Archived versions of data are available for each release. Releases do not
+      currently happen at a set interval due to the slow pace of viroid
+      discovery, though I do hope to change that in the future. Previous
+      releases can be accessed through URLs of the form
+      <code>https://viroids.org/db/YYYY-MM-DD/subset</code>. Available releases:
+    </p>
+    <ul>
+      <li>2021-04-15</li>
+    </ul>
+
+    <h2>How I curate the database</h2>
+    <p>
+      All data is publicly available from the NCBI. I have included what I
+      believe to be a class of potentially related RNA agents that merit study
+      as a group. The key inclusion criteria are:
+    </p>
+    <ul>
+      <li>Circularity at some point in the replication cycle</li>
+      <li>Extensive RNA folding</li>
+      <li>The presence of ribozymes or a central conserved region</li>
+    </ul>
+    <p>To collect the sequences for the database I followed this protocol:</p>
+    <ol>
+      <li>
+        For viroids and deltaviruses, I used the NCBI Virus portal to download
+        complete sequences within the taxonomy IDs 185751, 185752, 265963 and
+        39759 for Pospiviroidae, Avsunviroidae, unclassified viroids, and
+        Deltavirus respectively.
+      </li>
+      <li>
+        For retrozymes, which are not taxonomically classified, I downloaded all
+        sequences within
+      </li>
+    </ol>
+    <h2>How to contact me</h2>
+    <p>
+      Feel free to contact me via sending email or filing an issue on GitHub.
+    </p>
+    <hr />
+    <p>
+      Brought to you by
+      <a href="https://benjamindlee.com" target="_blank">Benjamin Lee</a> at
+      NCBI/NLM/NIH & University of Oxford.
+    </p>
+  </div>
+</body>

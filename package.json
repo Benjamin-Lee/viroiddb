@@ -1,0 +1,24 @@
+{
+  "name": "viroiddb",
+  "scripts": {
+    "dev": "NODE_ENV=development postcss styles.css -o ./dist/tailwind.css -w",
+    "build": "NODE_ENV=production postcss styles.css -o ./dist/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benjamin-Lee/viroiddb.git"
+  },
+  "author": "Benjamin Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Benjamin-Lee/viroiddb/issues"
+  },
+  "homepage": "https://github.com/Benjamin-Lee/viroiddb#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1"
+  }
+}
