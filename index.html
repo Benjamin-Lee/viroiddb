@@ -7,9 +7,9 @@
   <div class="prose prose lg:prose-lg m-10 md:mx-auto md:my-20">
     <h1>ViroidDB</h1>
     <p>
-      Viroids and their (potential) relatives are among the most unique of all
-      biological entities. However, I couldn't find a good, up-to-date database
-      containing all of them in one place so I made my own.
+      Viroids and their (potential) relatives are among the most unique and
+      exciting of all biological entities. However, I couldn't find a good,
+      up-to-date database containing all of them in one place so I made my own.
     </p>
 
     <p>
@@ -28,7 +28,7 @@
       Alternatively, download the database easily using your command-line tool
       of choice:
     </p>
-    <pre>$ curl viroids.org/db/latest/all.fasta > viroiddb.fasta</pre>
+    <pre>$ curl viroids.org/db/all.fasta > viroiddb.fasta</pre>
 
     <p>
       If you're interested in a
@@ -47,50 +47,50 @@
       <tbody>
         <tr>
           <td>All</td>
-          <td>all</td>
+          <td><a href="">/db/all.fasta</a></td>
 
           <td>9,891</td>
           <td>4,001,024</td>
         </tr>
         <tr>
           <td>Viroids</td>
-          <td><a href="" class="font-mono"></a>/db/latest/viroids</td>
+          <td><a href="">/db/viroids.fasta</a></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td style="text-indent: 1em">Avsunviroidae</td>
-          <td>avsunviroidae</td>
+          <td style="text-indent: 1em"><i>Avsunviroidae</i></td>
+          <td><a href="">/db/avsunviroidae.fasta</a></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td style="text-indent: 1em">Pospiviroidae</td>
-          <td>pospiviroidae</td>
+          <td style="text-indent: 1em"><i>Pospiviroidae</i></td>
+          <td><a href="">/db/pospiviroidae.fasta</a></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td style="text-indent: 1em">Unclassified</td>
-          <td>unclassified</td>
+          <td><a href="">/db/unclassified.fasta</a></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>Deltavirus</td>
-          <td>deltavirus</td>
+          <td><i>Deltavirus</i></td>
+          <td><a href="">/db/deltavirus.fasta</a></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td>Retrozymes</td>
-          <td>retrozymes</td>
+          <td><a href="">/db/retrozymes.fasta</a></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td>Satellite RNAs</td>
-          <td>satellites</td>
+          <td><a href="">/db/satellites.fasta</a></td>
           <td></td>
           <td></td>
         </tr>
@@ -102,7 +102,8 @@
       currently happen at a set interval due to the slow pace of viroid
       discovery, though I do hope to change that in the future. Previous
       releases can be accessed through URLs of the form
-      <code>https://viroids.org/db/YYYY-MM-DD/subset</code>. Available releases:
+      <code>https://viroids.org/db/YYYY-MM-DD/subset.fasta</code>. Available
+      releases:
     </p>
     <ul>
       <li>2021-04-15</li>
@@ -124,17 +125,40 @@
       <li>
         For viroids and deltaviruses, I used the NCBI Virus portal to download
         complete sequences within the taxonomy IDs 185751, 185752, 265963 and
-        39759 for Pospiviroidae, Avsunviroidae, unclassified viroids, and
-        Deltavirus respectively.
+        39759 for the <i>Pospiviroidae</i>, <i>Avsunviroidae</i>, unclassified
+        viroids, and <i>Deltavirus</i> taxa respectively.
       </li>
       <li>
         For retrozymes, which are not taxonomically classified, I downloaded all
-        sequences within
+        sequences within the
+        <a href="https://www.ncbi.nlm.nih.gov/nucleotide/">NCBI Nucleotide</a>
+        database matching the search term "ribozyme".
+      </li>
+      <li>
+        Similarly, for satellite RNAs, I downloaded all sequences within the
+        <a href="https://www.ncbi.nlm.nih.gov/nucleotide/">NCBI Nucleotide</a>
+        database matching each of the small circular satellites in
+        <a
+          href="https://www.elsevier.com/books/viroids-and-satellites/hadidi/978-0-12-801498-1"
+          ><i>Viroids and Satellites</i> (2017)</a
+        >.
+      </li>
+      <li>
+        Deduplication and formatting is performed by
+        <a href="https://bioinf.shenwei.me/seqkit/">SeqKit</a>.
       </li>
     </ol>
-    <h2>How to contact me</h2>
     <p>
-      Feel free to contact me via sending email or filing an issue on GitHub.
+      All the processing (and website updating) is currently done manually.
+      Until NCBI Virus has an API, I will repeat this process occasionally and
+      update this site. Should new viroid-like RNAs classes be discovered, I
+      will add them as a new subset. If you feel an update is required, please
+      <a href="#contact">contact me</a> or perform the update yourself and
+      submit it as a pull request to the repository.
+    </p>
+    <h2 id="contact">How to contact me</h2>
+    <p>
+      Feel free to contact me via sending an email or filing an issue on GitHub.
     </p>
     <hr />
     <p>
