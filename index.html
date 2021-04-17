@@ -1,10 +1,6 @@
 <head>
   <title>ViroidDB</title>
   <link rel="stylesheet" href="dist/tailwind.css" />
-  <script
-    type="module"
-    src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
-  ></script>
 </head>
 
 <body>
@@ -26,7 +22,7 @@
     <h2>How to get the data</h2>
     <p>
       You can download the most recent version of the entire database as a FASTA
-      file <a>here</a>.
+      file <a href="/db/all.fasta">here</a>.
     </p>
     <p>
       Alternatively, download the database easily using your command-line tool
@@ -51,49 +47,75 @@
       <tbody>
         <tr>
           <td>All</td>
-          <td><a href="">/db/all.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/pospiviroidae.fasta">/db/all.fasta</a>
+          </td>
           <td>9,891</td>
           <td>4,001,024</td>
         </tr>
         <tr>
           <td>Viroids</td>
-          <td><a href="">/db/viroids.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/avsunviroidae.fasta">
+              /db/viroids.fasta
+            </a>
+          </td>
           <td>9,354</td>
           <td>3,184,17</td>
         </tr>
         <tr>
           <td style="text-indent: 1em"><i>Avsunviroidae</i></td>
-          <td><a href="">/db/avsunviroidae.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/unclassified.fasta">
+              /db/avsunviroidae.fasta
+            </a>
+          </td>
           <td>5,284</td>
           <td>1,789,33</td>
         </tr>
         <tr>
           <td style="text-indent: 1em"><i>Pospiviroidae</i></td>
-          <td><a href="">/db/pospiviroidae.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/deltavirus.fasta">
+              /db/pospiviroidae.fasta
+            </a>
+          </td>
           <td>3,980</td>
           <td>1,359,906</td>
         </tr>
         <tr>
           <td style="text-indent: 1em">Unclassified</td>
-          <td><a href="">/db/unclassified.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/retrozymes.fasta">
+              /db/unclassified.fasta
+            </a>
+          </td>
           <td>90</td>
           <td>34,929</td>
         </tr>
         <tr>
           <td><i>Deltavirus</i></td>
-          <td><a href="">/db/deltavirus.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/satellites.fasta">
+              /db/deltavirus.fasta
+            </a>
+          </td>
           <td>453</td>
           <td>759,477</td>
         </tr>
         <tr>
           <td>Retrozymes</td>
-          <td><a href="">/db/retrozymes.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/viroids.fasta">/db/retrozymes.fasta</a>
+          </td>
           <td>74</td>
           <td>53,928</td>
         </tr>
         <tr>
           <td>Satellite RNAs</td>
-          <td><a href="">/db/satellites.fasta</a></td>
+          <td>
+            <a target="_blank" href="/db/all.fasta">/db/satellites.fasta</a>
+          </td>
           <td>10</td>
           <td>3,445</td>
         </tr>
@@ -154,15 +176,29 @@
     </ol>
     <p>
       All the downloading (and website updating) is currently done manually.
-      Until NCBI Virus has an API, I will repeat this process occasionally and
-      update this site. Should new viroid-like RNAs classes be discovered, I
-      will add them as a new subset. If you feel an update is required, please
+      Until
+      <a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/">NCBI Virus</a>
+      has an API, I will repeat this process occasionally and update this site.
+      Should new viroid-like RNAs classes be discovered, I will add them as a
+      new subset. If you feel an update is required, please
       <a href="#contact">contact me</a> or perform the update yourself and
-      submit it as a pull request to the repository.
+      submit it as a
+      <a target="_blank" href="https://github.com/benjamin-lee/viroiddb">
+        pull request to the repository</a
+      >.
     </p>
     <h2 id="contact">How to contact me</h2>
     <p>
-      Feel free to contact me via sending an email or filing an issue on GitHub.
+      Feel free to contact me via
+      <a href="mailto:benjamindlee@me.com?subject=ViroidDB">sending an email</a>
+      or
+      <a
+        target="_blank"
+        href="https://github.com/Benjamin-Lee/viroiddb/issues/new"
+        target="_blank"
+        >filing an issue</a
+      >
+      on GitHub.
     </p>
     <hr />
     <p>
@@ -170,6 +206,6 @@
       <a href="https://benjamindlee.com" target="_blank">Benjamin Lee</a> at
       NCBI/NLM/NIH & University of Oxford.
     </p>
-    <zero-md src="readme.md"></zero-md>
+    <zero-md src="readme.md"> </zero-md>
   </div>
 </body>
