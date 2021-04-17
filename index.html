@@ -48,51 +48,50 @@
         <tr>
           <td>All</td>
           <td><a href="">/db/all.fasta</a></td>
-
           <td>9,891</td>
           <td>4,001,024</td>
         </tr>
         <tr>
           <td>Viroids</td>
           <td><a href="">/db/viroids.fasta</a></td>
-          <td></td>
-          <td></td>
+          <td>9,354</td>
+          <td>3,184,17</td>
         </tr>
         <tr>
           <td style="text-indent: 1em"><i>Avsunviroidae</i></td>
           <td><a href="">/db/avsunviroidae.fasta</a></td>
-          <td></td>
-          <td></td>
+          <td>5,284</td>
+          <td>1,789,33</td>
         </tr>
         <tr>
           <td style="text-indent: 1em"><i>Pospiviroidae</i></td>
           <td><a href="">/db/pospiviroidae.fasta</a></td>
-          <td></td>
-          <td></td>
+          <td>3,980</td>
+          <td>1,359,906</td>
         </tr>
         <tr>
           <td style="text-indent: 1em">Unclassified</td>
           <td><a href="">/db/unclassified.fasta</a></td>
-          <td></td>
-          <td></td>
+          <td>90</td>
+          <td>34,929</td>
         </tr>
         <tr>
           <td><i>Deltavirus</i></td>
           <td><a href="">/db/deltavirus.fasta</a></td>
-          <td></td>
-          <td></td>
+          <td>453</td>
+          <td>759,477</td>
         </tr>
         <tr>
           <td>Retrozymes</td>
           <td><a href="">/db/retrozymes.fasta</a></td>
-          <td></td>
-          <td></td>
+          <td>74</td>
+          <td>53,928</td>
         </tr>
         <tr>
           <td>Satellite RNAs</td>
           <td><a href="">/db/satellites.fasta</a></td>
-          <td></td>
-          <td></td>
+          <td>10</td>
+          <td>3,445</td>
         </tr>
       </tbody>
     </table>
@@ -106,7 +105,7 @@
       releases:
     </p>
     <ul>
-      <li>2021-04-15</li>
+      <li>2021-04-17</li>
     </ul>
 
     <h2>How I curate the database</h2>
@@ -145,11 +144,12 @@
       </li>
       <li>
         Deduplication and formatting is performed by
-        <a href="https://bioinf.shenwei.me/seqkit/">SeqKit</a>.
+        <a href="https://bioinf.shenwei.me/seqkit/">SeqKit</a>. Comment lines
+        are standardized as <code>>accession genbank_title</code>.
       </li>
     </ol>
     <p>
-      All the processing (and website updating) is currently done manually.
+      All the downloading (and website updating) is currently done manually.
       Until NCBI Virus has an API, I will repeat this process occasionally and
       update this site. Should new viroid-like RNAs classes be discovered, I
       will add them as a new subset. If you feel an update is required, please
