@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ViroidDB</title>
-  <link rel="stylesheet" href="dist/tailwind.css" />
-
-  <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" /> -->
-</head>
-
-<body>
+<template>
   <div
     class="
       px-4
@@ -178,8 +168,9 @@
           <li>
             For viroids and deltaviruses, I used the NCBI Virus portal to
             download complete sequences within the taxonomy IDs 185751, 185752,
-            265963 and 39759 for the <i>Pospiviroidae</i>, <i>Avsunviroidae</i>,
-            unclassified viroids, and <i>Deltavirus</i> taxa respectively.
+            265963 and 39759, for the <i>Pospiviroidae</i>,
+            <i>Avsunviroidae</i>, unclassified viroids, and
+            <i>Deltavirus</i> taxa respectively.
           </li>
           <li>
             For retrozymes, which are not taxonomically classified, I downloaded
@@ -231,18 +222,13 @@
           <a
             target="_blank"
             href="https://github.com/Benjamin-Lee/viroiddb/issues/new"
-            target="_blank"
             >filing an issue</a
           >
           on GitHub.
         </p>
         <hr />
-        <p>
-          Brought to you by
-          <a href="https://benjamindlee.com" target="_blank">Benjamin Lee</a> at
-          NCBI/NLM/NIH & University of Oxford.
-        </p>
+        <p></p>
       </div>
     </article>
   </div>
-</body>
+</template>
