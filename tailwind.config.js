@@ -1,16 +1,14 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./**/*.html"],
-  darkMode: false, // or 'media' or 'class'
+  plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
       typography: {
         DEFAULT: {
           css: {
-            "code::before": {
+            'code::before': {
               content: '""',
             },
-            "code::after": {
+            'code::after': {
               content: '""',
             },
           },
@@ -18,8 +16,4 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [require("@tailwindcss/typography")],
 }
