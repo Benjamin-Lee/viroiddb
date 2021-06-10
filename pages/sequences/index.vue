@@ -128,55 +128,88 @@
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
-                <tr
-                  v-for="(sequence, seqIdx) in sequences"
-                  :key="sequence.accession"
-                  :class="seqIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'"
-                >
-                  <td
-                    class="
-                      px-6
-                      py-4
-                      whitespace-nowrap
-                      text-sm
-                      font-medium
-                      text-gray-900
-                    "
+                <template v-for="(sequence, accession, seqIdx) in metadata">
+                  <template
+                    v-if="seqIdx <= maxDisplay && 'displayTitle' in sequence"
                   >
-                    {{ sequence.name }}
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    <a
-                      :href="`https://www.ncbi.nlm.nih.gov/nuccore/${sequence.accession}`"
-                      target="_blank"
-                      >{{ sequence.accession }}</a
+                    <tr
+                      :key="accession"
+                      :class="seqIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'"
                     >
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {{ sequence.len }} bp
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {{ sequence.gc * 100 }}%
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {{ sequence.type }}
-                  </td>
-                  <td
-                    class="
-                      px-6
-                      py-4
-                      whitespace-nowrap
-                      text-right text-sm
-                      font-medium
-                    "
-                  >
-                    <NuxtLink
-                      :to="'/sequences/' + sequence.accession"
-                      class="text-indigo-600 hover:text-indigo-900"
-                      >View</NuxtLink
-                    >
-                  </td>
-                </tr>
+                      <td
+                        class="
+                          px-6
+                          py-4
+                          whitespace-nowrap
+                          text-sm
+                          font-medium
+                          text-gray-900
+                        "
+                      >
+                        {{ sequence.displayTitle }}
+                      </td>
+                      <td
+                        class="
+                          px-6
+                          py-4
+                          whitespace-nowrap
+                          text-sm text-gray-500
+                        "
+                      >
+                        <a
+                          :href="`https://www.ncbi.nlm.nih.gov/nuccore/${sequence.accession}`"
+                          target="_blank"
+                          >{{ sequence.accession }}</a
+                        >
+                      </td>
+                      <td
+                        class="
+                          px-6
+                          py-4
+                          whitespace-nowrap
+                          text-sm text-gray-500
+                        "
+                      >
+                        {{ sequence.length }} bp
+                      </td>
+                      <td
+                        class="
+                          px-6
+                          py-4
+                          whitespace-nowrap
+                          text-sm text-gray-500
+                        "
+                      >
+                        {{ Number(sequence.gc * 100).toFixed(1) }}%
+                      </td>
+                      <td
+                        class="
+                          px-6
+                          py-4
+                          whitespace-nowrap
+                          text-sm text-gray-500
+                        "
+                      >
+                        {{ sequence.family }}
+                      </td>
+                      <td
+                        class="
+                          px-6
+                          py-4
+                          whitespace-nowrap
+                          text-right text-sm
+                          font-medium
+                        "
+                      >
+                        <NuxtLink
+                          :to="'/sequences/' + sequence.accession"
+                          class="text-indigo-600 hover:text-indigo-900"
+                          >View</NuxtLink
+                        >
+                      </td>
+                    </tr>
+                  </template>
+                </template>
               </tbody>
             </table>
           </div>
@@ -188,31 +221,11 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+import { mapState } from 'vuex'
 export default Vue.extend({
   data() {
     return {
-      sequences: [
-        {
-          accession: 'NC32352.1',
-          name: 'Chicory yellow mottle virus satellite RNA',
-          len: 124,
-          gc: 0.45,
-          type: 'satRNA',
-        },
-        {
-          accession: 'NC34352.1',
-          name: 'Apple hammerhead viroid-like circular RNA',
-          len: 3252,
-          gc: 0.31,
-          type: 'Avsunviroidae',
-        },
-        {
-          accession: 'NC32342.1',
-          name: 'Persimmon viroid',
-          len: 162,
-          gc: 0.52,
-        },
-      ],
+      maxDisplay: 100,
       groups: [
         { name: 'Viroids', bgColor: 'bg-red-600', initials: 'Vd', members: 21 },
         {
@@ -235,6 +248,35 @@ export default Vue.extend({
         },
       ],
     }
+  },
+  computed: {
+    ...mapState(['metadata']),
+  },
+  mounted() {
+    this.scroll()
+  },
+  // eslint-disable-next-line vue/order-in-components
+  // when leaving the page, don't track scroll location
+  beforeRouteLeave(_to, _from, next): void {
+    window.onscroll = () => {}
+    next()
+  },
+  methods: {
+    scroll() {
+      window.onscroll = () => {
+        if (
+          Math.max(
+            window.pageYOffset,
+            document.documentElement.scrollTop,
+            document.body.scrollTop
+          ) +
+            window.innerHeight ===
+          document.documentElement.offsetHeight
+        ) {
+          this.maxDisplay += 100
+        }
+      }
+    },
   },
 })
 </script>
