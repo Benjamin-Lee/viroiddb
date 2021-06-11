@@ -92,17 +92,25 @@
                     :title="field.name"
                   >
                     <div v-if="field.key === 'gc'">
-                      {{ Number(data[field.key] * 100).toFixed(1) }}%
+                      {{
+                        Number(sequenceMetadata[field.key] * 100).toFixed(1)
+                      }}%
                     </div>
-                    <div v-else-if="field.key === 'len'">
-                      {{ data[field.key] }} bp
+                    <div v-else-if="field.key === 'length'">
+                      {{ sequenceMetadata[field.key] }} bp
                     </div>
                     <div
                       v-else-if="['complete', 'ambiguous'].includes(field.key)"
                     >
-                      {{ data[field.key] ? 'Yes' : 'No' }}
+                      {{ sequenceMetadata[field.key] ? 'Yes' : 'No' }}
                     </div>
-                    <div v-else>{{ data[field.key] }}</div>
+                    <div v-else>
+                      {{
+                        sequenceMetadata[field.key]
+                          ? sequenceMetadata[field.key]
+                          : 'Unavailable'
+                      }}
+                    </div>
                   </DataRow>
                 </dl>
               </div>
@@ -110,26 +118,130 @@
           </Card>
         </main>
         <div class="col-span-4">
-          <Card title="Links"
+          <Card title="Links" subtitle="External resources for this sequence"
             ><template #unpaddedBody>
-              div.divide-y.divide-gray-200.px-4.py-5
+              <ul class="divide-y divide-gray-200">
+                <li
+                  v-for="link in links"
+                  :key="link.name"
+                  class="
+                    py-4
+                    sm:py-5
+                    sm:px-6
+                    text-sm text-indigo-600
+                    hover:underline
+                  "
+                >
+                  <a :href="link.url" target="_blank">
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
             </template></Card
           >
         </div>
 
         <div class="col-span-4">
-          <Card title="Taxonomy"
+          <Card title="Taxonomy" subtitle="According to NCBI Taxonomy"
             ><template #unpaddedBody>
-              <DataRow title="Type">Viroid</DataRow>
-              <DataRow title="Family"><i>Avsunviroidae</i></DataRow>
-              <DataRow title="Genus"><i>Elamoviroid</i></DataRow>
+              <DataRow title="Type" class="capitalize">{{
+                sequenceMetadata.type
+              }}</DataRow>
+              <DataRow
+                title="Family"
+                v-if="sequenceMetadata.type !== 'retrozyme'"
+                ><i>{{
+                  sequenceMetadata.family
+                    ? sequenceMetadata.family
+                    : 'Incertae sedis'
+                }}</i></DataRow
+              >
+              <DataRow
+                title="Genus"
+                v-if="sequenceMetadata.type !== 'retrozyme'"
+                ><i>{{
+                  sequenceMetadata.genus
+                    ? sequenceMetadata.genus
+                    : 'Incertae sedis'
+                }}</i></DataRow
+              >
             </template></Card
           >
+        </div>
+
+        <div class="col-span-8">
+          <Card
+            title="Ribozymes"
+            subtitle="Infernal search results for known ribozymes"
+          >
+            <p class="text-sm text-gray-900">
+              Our search did not reveal any ribozmyes in the sequence. If you
+              believe this is in error, please
+              <NuxtLink to="/contact" class="text-indigo-600 hover:underline"
+                >contact us</NuxtLink
+              >.
+            </p></Card
+          >
+        </div>
+        <div class="col-span-4">
+          <Card title="Collection information"
+            ><template #unpaddedBody>
+              <DataRow title="Submitters">
+                {{
+                  sequenceMetadata.submitters
+                    ? sequenceMetadata.submitters
+                    : 'Unavailable'
+                }}
+              </DataRow>
+              <DataRow title="Host">
+                <i>{{
+                  sequenceMetadata.host ? sequenceMetadata.host : 'Unavailable'
+                }}</i>
+              </DataRow>
+              <DataRow title="Isolation Source" class="capitalize">
+                {{
+                  sequenceMetadata.isolationSource
+                    ? sequenceMetadata.isolationSource
+                    : 'Unavailable'
+                }}
+              </DataRow>
+              <DataRow title="Location">
+                {{
+                  sequenceMetadata.geoLocation
+                    ? sequenceMetadata.geoLocation
+                    : 'Unavailable'
+                }}
+              </DataRow>
+              <DataRow title="Collection Date">
+                {{
+                  sequenceMetadata.collectionDate
+                    ? sequenceMetadata.collectionDate
+                    : 'Unavailable'
+                }}
+              </DataRow>
+            </template>
+          </Card>
+        </div>
+        <div class="col-span-6">
+          <Card title="Secondary structure (+)">
+            <iframe
+              class="w-full h-96"
+              src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
+            ></iframe>
+          </Card>
+        </div>
+        <div class="col-span-6">
+          <Card title="Secondary structure (-)">
+            <iframe
+              class="w-full h-96"
+              src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
+            ></iframe>
+          </Card>
         </div>
         <Card
           title="Nucleotide sequence"
           subtitle="FASTA-formatted sequence data."
-          class="col-span-8"
+          class="col-span-12"
         >
           <template #unpaddedBody>
             <div class="divide-y divide-gray-200">
@@ -154,43 +266,17 @@
               ></DescriptionToggle>
 
               <pre class="text-sm overflow-x-auto px-4 py-5 sm:p-6">
->{{ data.accession }} {{ data.name
-                }}{{ data.complete ? ', complete genome' : '' }} [ViroidDB]
+>{{ sequenceMetadata.accession }} {{
+                  'genBankTitle' in sequenceMetadata
+                    ? sequenceMetadata.genBankTitle
+                    : sequenceMetadata.displayTitle
+                }} [ViroidDB]
 {{ displaySequence.match(new RegExp('.{1,' + 80 + '}', 'g')).join('\n') }}
 </pre
               >
             </div>
           </template>
         </Card>
-        <div class="col-span-4">
-          <Card
-            title="Ribozymes"
-            subtitle="Infernal search results for known ribozymes"
-            ><p class="text-sm text-gray-900">
-              Our search did not reveal any ribozmyes in the sequence. If you
-              believe this is in error, please
-              <NuxtLink to="/contact" class="text-indigo-600 hover:underline"
-                >contact us</NuxtLink
-              >.
-            </p></Card
-          >
-        </div>
-        <div class="col-span-6">
-          <Card title="Secondary structure (+)">
-            <iframe
-              class="w-full h-96"
-              src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
-            ></iframe>
-          </Card>
-        </div>
-        <div class="col-span-6">
-          <Card title="Secondary structure (-)">
-            <iframe
-              class="w-full h-96"
-              src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
-            ></iframe>
-          </Card>
-        </div>
         <aside class="col-span-4">
           <div class="sticky top-6 space-y-4">
             <!-- Your content -->
@@ -204,36 +290,35 @@
 <script lang="ts">
 import Vue from 'vue'
 import { parseStringPromise } from 'xml2js'
+
 export default Vue.extend({
   data() {
     return {
       sequenceInfoFields: [
         { name: 'Accession', key: 'accession' },
-        { name: 'Length', key: 'len' },
+        { name: 'Length', key: 'length' },
         { name: 'GC Content', key: 'gc' },
-        { name: 'Ambiguous Nucleotides', key: 'ambiguous' },
-        { name: 'Complete Genome', key: 'complete' },
+        { name: 'Release Date', key: 'releaseDate' },
+        { name: 'Database', key: 'sequenceType' },
       ],
       sequenceDisplayOptions: { rc: false, rotate: false, rna: false },
       uid: '',
-      data: {
-        accession: 'NC_003540.1',
-        name: 'Chrysanthemum chlorotic mottle viroid',
-        complete: true,
-        len: 399,
-        gc: 0.5538847117794486,
-        ambiguous: false,
-        plus_paired: 0.68671679197995,
-        plus_mfe: -170.2,
-      },
       sequence:
         'GTCATAAGTTTCGTCGCATTTCAGCGACTCATCAGTGGGCTTAGCCCAGACTTATGAGAGAGTAAAGACCTCTCAGCCCCTCCACCTTGGGGTGCCCTATTCGGAGCACTGCAGTTCCCGATAGAAAGGCTAAGCACCTCGCAATGAGGTAAGGTGGGACTTTTCCTTCTGGAACCAAGCGGTTGGTTCCGAGGGGGGTGTGATCCAGGTACCGCCGTAGAAACTGGATTACGACGTCTACCCGGGATTCAAACCCGTCCCCTCCAGAAGTGATTCTGGATGAAGAGTCTGTGCTAAGCACACTGACGAGTCTCTGAGATGAGACGAAACTCTTCTT',
     }
   },
+  async fetch() {
+    this.uid = await fetch(
+      `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=${this.$route.params.name}`
+    )
+      .then((res) => res.text())
+      .then((body) => parseStringPromise(body))
+      .then((result) => result.eSearchResult.IdList[0].Id[0])
+  },
 
   computed: {
     displaySequence() {
-      let seq = this['sequence'].toUpperCase()
+      let seq = this.sequence.toUpperCase()
 
       if (this.sequenceDisplayOptions.rc) {
         seq = seq.replaceAll('U', 'T') // force DNA for now
@@ -266,14 +351,25 @@ export default Vue.extend({
 
       return seq
     },
-  },
-  async fetch() {
-    this.uid = await fetch(
-      `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=${this.$route.params.name}`
-    )
-      .then((res) => res.text())
-      .then((body) => parseStringPromise(body))
-      .then((result) => result.eSearchResult.IdList[0].Id[0])
+    sequenceMetadata() {
+      return this.$store.state.metadata[this.$route.params.name]
+    },
+    links() {
+      return [
+        {
+          name: 'NCBI Nucleotide',
+          url: `https://www.ncbi.nlm.nih.gov/nuccore/${this.sequenceMetadata.accession}`,
+        },
+        {
+          name: 'Taxonomy',
+          url: `https://www.ncbi.nlm.nih.gov/taxonomy?LinkName=nuccore_taxonomy&from_uid=${this.uid}`,
+        },
+        {
+          name: 'PubMed',
+          url: `https://www.ncbi.nlm.nih.gov/pubmed?LinkName=nuccore_pubmed&from_uid=${this.uid}`,
+        },
+      ]
+    },
   },
 })
 </script>
