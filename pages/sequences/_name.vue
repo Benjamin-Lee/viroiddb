@@ -37,7 +37,7 @@
             focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
           "
         >
-          Edit
+          Copy FASTA
         </button>
         <button
           type="button"
@@ -59,7 +59,7 @@
             focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
           "
         >
-          Publish
+          Download FASTA
         </button>
       </div>
     </div>
@@ -158,8 +158,8 @@
                 sequenceMetadata.type
               }}</DataRow>
               <DataRow
-                title="Family"
                 v-if="sequenceMetadata.type !== 'retrozyme'"
+                title="Family"
                 ><i>{{
                   sequenceMetadata.family
                     ? sequenceMetadata.family
@@ -167,8 +167,8 @@
                 }}</i></DataRow
               >
               <DataRow
-                title="Genus"
                 v-if="sequenceMetadata.type !== 'retrozyme'"
+                title="Genus"
                 ><i>{{
                   sequenceMetadata.genus
                     ? sequenceMetadata.genus
@@ -176,8 +176,8 @@
                 }}</i></DataRow
               >
               <DataRow
-                title="Species"
                 v-if="sequenceMetadata.type !== 'retrozyme'"
+                title="Species"
               >
                 <i>
                   {{
