@@ -157,6 +157,18 @@
                     : 'Incertae sedis'
                 }}</i></DataRow
               >
+              <DataRow
+                title="Species"
+                v-if="sequenceMetadata.type !== 'retrozyme'"
+              >
+                <i>
+                  {{
+                    sequenceMetadata.species
+                      ? sequenceMetadata.species
+                      : 'Unavailable'
+                  }}
+                </i>
+              </DataRow>
             </template></Card
           >
         </div>
