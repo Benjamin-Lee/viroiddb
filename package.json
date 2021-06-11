@@ -29,7 +29,7 @@
     "camelcase": "^5.3.1",
     "commander": "^7.2.0",
     "csvtojson": "^2.0.10",
-    "eslint": "^7.22.0",
+    "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
