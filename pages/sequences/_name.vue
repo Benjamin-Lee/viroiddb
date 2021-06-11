@@ -109,30 +109,48 @@
             </template>
           </Card>
         </main>
-        <div class="col-span-4">
-          <Card title="Links" subtitle="External resources for this sequence"
-            ><template #unpaddedBody>
-              <ul class="divide-y divide-gray-200">
-                <li
-                  v-for="link in links"
-                  :key="link.name"
-                  class="
-                    py-4
-                    sm:py-5
-                    sm:px-6
-                    text-sm text-indigo-600
-                    hover:underline
-                  "
-                >
-                  <a :href="link.url" target="_blank">
-                    {{ link.name }}
-                  </a>
-                </li>
-              </ul>
-            </template></Card
-          >
-        </div>
 
+        <div class="col-span-4">
+          <Card
+            title="Collection information"
+            subtitle="Provided by the depositors"
+            ><template #unpaddedBody>
+              <DataRow title="Submitters">
+                {{
+                  sequenceMetadata.submitters
+                    ? sequenceMetadata.submitters
+                    : 'Unavailable'
+                }}
+              </DataRow>
+              <DataRow title="Host">
+                <i>{{
+                  sequenceMetadata.host ? sequenceMetadata.host : 'Unavailable'
+                }}</i>
+              </DataRow>
+              <DataRow title="Source" class="capitalize">
+                {{
+                  sequenceMetadata.isolationSource
+                    ? sequenceMetadata.isolationSource
+                    : 'Unavailable'
+                }}
+              </DataRow>
+              <DataRow title="Location">
+                {{
+                  sequenceMetadata.geoLocation
+                    ? sequenceMetadata.geoLocation
+                    : 'Unavailable'
+                }}
+              </DataRow>
+              <DataRow title="Collection Date">
+                {{
+                  sequenceMetadata.collectionDate
+                    ? sequenceMetadata.collectionDate
+                    : 'Unavailable'
+                }}
+              </DataRow>
+            </template>
+          </Card>
+        </div>
         <div class="col-span-4">
           <Card title="Taxonomy" subtitle="According to NCBI Taxonomy"
             ><template #unpaddedBody>
@@ -195,58 +213,52 @@
           </Card>
         </div>
         <div class="col-span-4">
-          <Card title="Collection information"
+          <Card title="Links" subtitle="External resources for this sequence"
             ><template #unpaddedBody>
-              <DataRow title="Submitters">
-                {{
-                  sequenceMetadata.submitters
-                    ? sequenceMetadata.submitters
-                    : 'Unavailable'
-                }}
-              </DataRow>
-              <DataRow title="Host">
-                <i>{{
-                  sequenceMetadata.host ? sequenceMetadata.host : 'Unavailable'
-                }}</i>
-              </DataRow>
-              <DataRow title="Isolation Source" class="capitalize">
-                {{
-                  sequenceMetadata.isolationSource
-                    ? sequenceMetadata.isolationSource
-                    : 'Unavailable'
-                }}
-              </DataRow>
-              <DataRow title="Location">
-                {{
-                  sequenceMetadata.geoLocation
-                    ? sequenceMetadata.geoLocation
-                    : 'Unavailable'
-                }}
-              </DataRow>
-              <DataRow title="Collection Date">
-                {{
-                  sequenceMetadata.collectionDate
-                    ? sequenceMetadata.collectionDate
-                    : 'Unavailable'
-                }}
-              </DataRow>
+              <ul class="divide-y divide-gray-200">
+                <li
+                  v-for="link in links"
+                  :key="link.name"
+                  class="
+                    py-4
+                    sm:py-5
+                    sm:px-6
+                    text-sm text-indigo-600
+                    hover:underline
+                  "
+                >
+                  <a :href="link.url" target="_blank">
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
+            </template></Card
+          >
+        </div>
+        <div class="col-span-6">
+          <Card title="Secondary structure (+)">
+            <template #unpaddedBody>
+              <DataRow title="MFE (25 ºC)">-1231</DataRow>
+              <DataRow title="Bases paired">63.2%</DataRow>
+
+              <iframe
+                class="w-full h-96 p-3"
+                src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
+              ></iframe>
             </template>
           </Card>
         </div>
         <div class="col-span-6">
-          <Card title="Secondary structure (+)">
-            <iframe
-              class="w-full h-96"
-              src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
-            ></iframe>
-          </Card>
-        </div>
-        <div class="col-span-6">
           <Card title="Secondary structure (-)">
-            <iframe
-              class="w-full h-96"
-              src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
-            ></iframe>
+            <template #unpaddedBody>
+              <DataRow title="MFE (25 ºC)">-1231</DataRow>
+              <DataRow title="Bases paired">63.2%</DataRow>
+
+              <iframe
+                class="w-full h-96 p-3"
+                src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
+              ></iframe>
+            </template>
           </Card>
         </div>
         <Card
