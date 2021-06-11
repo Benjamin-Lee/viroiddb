@@ -179,13 +179,20 @@
             subtitle="Infernal search results for known ribozymes"
           >
             <p class="text-sm text-gray-900">
-              Our search did not reveal any ribozmyes in the sequence. If you
-              believe this is in error, please
-              <NuxtLink to="/contact" class="text-indigo-600 hover:underline"
-                >contact us</NuxtLink
+              Our search did not reveal any ribozmyes in the sequence. Note that
+              members of the family <i>Pospiviroidae</i>
+              {{
+                sequenceMetadata.genus === 'pospiviroidae'
+                  ? '(such as this sequence)'
+                  : '(unlike this sequence)'
+              }}
+              are not known to contain ribozymes. If you believe this sequence
+              does in fact contain a ribozyme, please
+              <NuxtLink to="/contact" class="text-indigo-600 hover:underline">
+                contact us</NuxtLink
               >.
-            </p></Card
-          >
+            </p>
+          </Card>
         </div>
         <div class="col-span-4">
           <Card title="Collection information"
