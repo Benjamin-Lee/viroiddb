@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "core-js": "^3.9.1",
+    "fuse.js": "^6.4.6",
     "nuxt": "^2.15.3",
     "xml2js": "^0.4.23"
   },

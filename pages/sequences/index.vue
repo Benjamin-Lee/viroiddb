@@ -37,7 +37,62 @@
         </ul>
       </div>
     </div>
-
+    <div class="max-w-lg w-full lg:max-w-xs">
+      <label for="search" class="sr-only">Search</label>
+      <div class="relative">
+        <div
+          class="
+            absolute
+            inset-y-0
+            left-0
+            pl-3
+            flex
+            items-center
+            pointer-events-none
+          "
+        >
+          <!-- Heroicon name: solid/search -->
+          <svg
+            class="h-5 w-5 text-gray-400"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <input
+          id="search"
+          name="search"
+          class="
+            block
+            w-full
+            pl-10
+            pr-3
+            py-2
+            border border-gray-300
+            rounded-md
+            leading-5
+            bg-white
+            placeholder-gray-500
+            focus:outline-none
+            focus:placeholder-gray-400
+            focus:ring-1 focus:ring-indigo-500
+            focus:border-indigo-500
+            sm:text-sm
+          "
+          placeholder="Search"
+          type="search"
+          v-model.lazy="query"
+          @input="maxDisplay = 100"
+        />
+      </div>
+    </div>
     <div class="flex flex-col">
       <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -128,12 +183,12 @@
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
-                <template v-for="(sequence, accession, seqIdx) in metadata">
+                <template v-for="(sequence, seqIdx) in displayMetadata">
                   <template
                     v-if="seqIdx <= maxDisplay && 'displayTitle' in sequence"
                   >
                     <tr
-                      :key="accession"
+                      :key="sequence.accession"
                       :class="seqIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'"
                     >
                       <td
@@ -216,12 +271,13 @@
         </div>
       </div>
     </div>
-    <p>{{ this.$route.query.group }}</p>
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue'
 import { mapState } from 'vuex'
+import Fuse from 'fuse.js'
+
 export default Vue.extend({
   data() {
     return {
@@ -247,16 +303,40 @@ export default Vue.extend({
           members: 21,
         },
       ],
+      query: '',
     }
   },
   computed: {
     ...mapState(['metadata']),
+    fuse() {
+      return new Fuse(Object.values(this.metadata), {
+        includeScore: true,
+        useExtendedSearch: true,
+
+        keys: [
+          'displayTitle',
+          'geoLocation',
+          'host',
+          'genus',
+          'family',
+          'submitters',
+          'accession',
+        ],
+      })
+    },
+    displayMetadata() {
+      if (this.query.length > 0) {
+        const searchResults = this.fuse.search(this.query)
+        return searchResults.map((x) => x.item)
+      }
+      return Object.values(this.metadata)
+    },
   },
   mounted() {
     this.scroll()
   },
-  // eslint-disable-next-line vue/order-in-components
   // when leaving the page, don't track scroll location
+  // eslint-disable-next-line vue/order-in-components
   beforeRouteLeave(_to, _from, next): void {
     window.onscroll = () => {}
     next()
