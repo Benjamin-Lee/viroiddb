@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import fs from 'fs'
+import path from 'path'
 import csv from 'csvtojson'
 import camelCase from 'camelcase'
 import bioparsers from 'bio-parsers'
@@ -25,14 +26,10 @@ await Promise.all(
           )
         )
 
-        let x = Object.fromEntries(jsonObj.map((el) => [el.accession, el]))
-        metadata = { ...x, ...metadata }
-        /**
-         * [
-         * 	{a:"1", b:"2", c:"3"},
-         * 	{a:"4", b:"5". c:"6"}
-         * ]
-         */
+        metadata = {
+          ...Object.fromEntries(jsonObj.map((el) => [el.accession, el])),
+          ...metadata,
+        }
       })
   })
 )
@@ -45,13 +42,13 @@ for (const group of [
   'satellites',
   'unclassified',
 ]) {
-  const now = new Date()
-  let parsed = bioparsers
+  const dirName =
+    process.argv[1] !== undefined
+      ? process.argv[2]
+      : new Date().toISOString().slice(0, 10)
+  bioparsers
     .fastaToJson(
-      fs.readFileSync(
-        `db/${now.toISOString().slice(0, 10)}/${group}.fasta`,
-        'utf8'
-      ),
+      fs.readFileSync(path.join(dirName, group + '.fasta'), 'utf8'),
       {}
     )
     .map((x) => x.parsedSequence)
@@ -65,15 +62,17 @@ for (const group of [
             .replaceAll(', complete genome', '')
             .replaceAll(', complete sequence', ''),
           gc: (x.sequence.match(/[GgCc]/g) || []).length / x.sequence.length,
+          accession: x.name.split(' ')[0],
+          length: x.sequence.length,
         },
       }
     })
-  parsed.forEach((el) =>
-    Object.entries(el).forEach(
-      ([k, v]) => (metadata[k] = { ...metadata[k], ...v })
+    .forEach((el) =>
+      Object.entries(el).forEach(
+        ([k, v]) => (metadata[k] = { ...metadata[k], ...v })
+      )
     )
-  )
-  console.log('Done with', group)
+  console.warn('Done with', group)
 }
 
 // Object.entries(computedMetadata).forEach(
@@ -81,4 +80,15 @@ for (const group of [
 //   // console.log(metadata[k], v)
 // )
 
-console.log(metadata)
+Object.entries(metadata).forEach(([k, v]) => {
+  metadata[k].type = v?.species?.includes('viroid')
+    ? 'viroid'
+    : v?.genus?.includes('virus')
+    ? 'virus'
+    : v?.species?.toLowerCase().includes('satellite')
+    ? 'satellite RNA'
+    : 'retrozyme'
+  metadata[k].releaseDate = v.releaseDate?.slice(0, 10)
+})
+
+console.log(JSON.stringify(metadata, null, 2))
