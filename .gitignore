@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Since we're treating netlify as a read-only db
+content/*.json

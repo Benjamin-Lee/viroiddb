@@ -245,27 +245,30 @@
           >
         </div>
         <div class="col-span-6">
-          <Card title="Secondary structure (+)">
+          <Card v-if="dbn.length > 0" title="Secondary structure (+)">
             <template #unpaddedBody>
               <DataRow title="MFE (25 ºC)">-1231</DataRow>
               <DataRow title="Bases paired">63.2%</DataRow>
 
               <iframe
                 class="w-full h-96 p-3"
-                src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
+                :src="`http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=${sequence.replaceAll(
+                  'U',
+                  'T'
+                )}&structure=${dbn}`"
               ></iframe>
             </template>
           </Card>
         </div>
         <div class="col-span-6">
-          <Card title="Secondary structure (-)">
+          <Card v-if="dbn.length > 0" title="Secondary structure (-)">
             <template #unpaddedBody>
               <DataRow title="MFE (25 ºC)">-1231</DataRow>
               <DataRow title="Bases paired">63.2%</DataRow>
 
               <iframe
                 class="w-full h-96 p-3"
-                src="http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=AACGUUAGUU&structure=(((....)))"
+                :src="`http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=${revCompSequence}&structure=${dbnRevComp}`"
               ></iframe>
             </template>
           </Card>
@@ -297,7 +300,10 @@
                 class="px-4 py-5 sm:p-6"
               ></DescriptionToggle>
 
-              <pre class="text-sm overflow-x-auto px-4 py-5 sm:p-6">
+              <pre
+                class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
+                v-if="sequence.length > 0"
+              >
 >{{ sequenceMetadata.accession }} {{
                   'genBankTitle' in sequenceMetadata
                     ? sequenceMetadata.genBankTitle
@@ -337,8 +343,9 @@ export default Vue.extend({
       ],
       sequenceDisplayOptions: { rc: false, rotate: false, rna: false },
       uid: '',
-      sequence:
-        'GTCATAAGTTTCGTCGCATTTCAGCGACTCATCAGTGGGCTTAGCCCAGACTTATGAGAGAGTAAAGACCTCTCAGCCCCTCCACCTTGGGGTGCCCTATTCGGAGCACTGCAGTTCCCGATAGAAAGGCTAAGCACCTCGCAATGAGGTAAGGTGGGACTTTTCCTTCTGGAACCAAGCGGTTGGTTCCGAGGGGGGTGTGATCCAGGTACCGCCGTAGAAACTGGATTACGACGTCTACCCGGGATTCAAACCCGTCCCCTCCAGAAGTGATTCTGGATGAAGAGTCTGTGCTAAGCACACTGACGAGTCTCTGAGATGAGACGAAACTCTTCTT',
+      sequence: '',
+      dbn: '',
+      dbnRevComp: '',
     }
   },
   async fetch() {
@@ -348,34 +355,47 @@ export default Vue.extend({
       .then((res) => res.text())
       .then((body) => parseStringPromise(body))
       .then((result) => result.eSearchResult.IdList[0].Id[0])
+
+    // get the data for the sequence
+    let x = await this.$content(this.$route.params.name).fetch()
+    this.sequence = x.sequence
+    this.dbn = x.dbn
+    this.dbnRevComp = x.dbnRevComp
   },
 
   computed: {
-    displaySequence() {
+    revCompSequence() {
       let seq = this.sequence.toUpperCase()
-
-      if (this.sequenceDisplayOptions.rc) {
-        seq = seq.replaceAll('U', 'T') // force DNA for now
-        let rc = {
-          G: 'C',
-          A: 'T',
-          T: 'A',
-          C: 'G',
-          Y: 'R', // ambiguous
-          R: 'Y',
-          K: 'M',
-          M: 'K',
-          B: 'V',
-          V: 'B',
-          D: 'H',
-          H: 'D',
-        }
-        seq = seq
-          .split('')
-          .map((x) => rc[x])
-          .reverse()
-          .join('')
+      if (this.sequence === '') {
+        return this.sequence
       }
+      seq = seq.replaceAll('U', 'T') // force DNA for now
+      let rc = {
+        G: 'C',
+        A: 'T',
+        T: 'A',
+        C: 'G',
+        Y: 'R', // ambiguous
+        R: 'Y',
+        K: 'M',
+        M: 'K',
+        B: 'V',
+        V: 'B',
+        D: 'H',
+        H: 'D',
+      }
+      seq = seq
+        .split('')
+        .map((x) => rc[x])
+        .reverse()
+        .join('')
+      return seq
+    },
+
+    displaySequence() {
+      let seq = this.sequenceDisplayOptions.rc
+        ? this.revCompSequence
+        : this.sequence.toUpperCase()
 
       if (!this.sequenceDisplayOptions.rna) {
         seq = seq.replaceAll('U', 'T')
