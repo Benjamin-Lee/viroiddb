@@ -10,8 +10,7 @@
             font-bold
             leading-7
             text-gray-900
-            sm:text-3xl
-            sm:truncate
+            sm:text-3xl sm:truncate
           "
         >
           {{ sequenceMetadata.displayTitle }}
@@ -34,7 +33,9 @@
             bg-white
             hover:bg-gray-50
             focus:outline-none
-            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+            focus:ring-2
+            focus:ring-offset-2
+            focus:ring-indigo-500
           "
         >
           Copy FASTA
@@ -56,7 +57,9 @@
             bg-indigo-600
             hover:bg-indigo-700
             focus:outline-none
-            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+            focus:ring-2
+            focus:ring-offset-2
+            focus:ring-indigo-500
           "
         >
           Download FASTA
@@ -95,6 +98,13 @@
                       v-else-if="['complete', 'ambiguous'].includes(field.key)"
                     >
                       {{ sequenceMetadata[field.key] ? 'Yes' : 'No' }}
+                    </div>
+                    <div v-else-if="field.key === 'identicalSeqs'">
+                      {{
+                        sequenceMetadata[field.key].length > 0
+                          ? sequenceMetadata[field.key].join(', ')
+                          : 'None found'
+                      }}
                     </div>
                     <div v-else>
                       {{
@@ -221,8 +231,7 @@
                   :key="link.name"
                   class="
                     py-4
-                    sm:py-5
-                    sm:px-6
+                    sm:py-5 sm:px-6
                     text-sm text-indigo-600
                     hover:underline
                   "
@@ -322,7 +331,9 @@ export default Vue.extend({
         { name: 'Length', key: 'length' },
         { name: 'GC Content', key: 'gc' },
         { name: 'Release Date', key: 'releaseDate' },
+
         { name: 'Database', key: 'sequenceType' },
+        { name: 'Rotationally Identical', key: 'identicalSeqs' },
       ],
       sequenceDisplayOptions: { rc: false, rotate: false, rna: false },
       uid: '',

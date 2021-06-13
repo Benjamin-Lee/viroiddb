@@ -46,6 +46,8 @@ for (const group of [
     process.argv[1] !== undefined
       ? process.argv[2]
       : new Date().toISOString().slice(0, 10)
+
+  // derive metadata from the sequence itself
   bioparsers
     .fastaToJson(
       fs.readFileSync(path.join(dirName, group + '.fasta'), 'utf8'),
@@ -72,6 +74,20 @@ for (const group of [
         ([k, v]) => (metadata[k] = { ...metadata[k], ...v })
       )
     )
+
+  // add the identical group information
+  Object.entries(
+    JSON.parse(
+      fs.readFileSync(path.join(dirName, group + '.groups.json'), 'utf8')
+    )
+  ).forEach(([k, v]) => {
+    metadata[k.split(' ')[0]].identicalSeqs = v.map((x) => x.split(' ')[0])
+  })
+  // if no identical seqs, put an empty array
+  Object.entries(metadata).forEach(
+    ([k, v]) => (metadata[k] = { identicalSeqs: [], ...v })
+  )
+
   console.warn('Done with', group)
 }
 
