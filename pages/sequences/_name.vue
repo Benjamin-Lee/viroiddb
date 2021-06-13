@@ -133,7 +133,7 @@
                 }}
               </DataRow>
               <DataRow title="Host">
-                <i>{{
+                <i :class="sequenceMetadata.host ? 'italic' : 'not-italic'">{{
                   sequenceMetadata.host ? sequenceMetadata.host : 'Unavailable'
                 }}</i>
               </DataRow>
