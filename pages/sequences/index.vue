@@ -20,8 +20,7 @@
             mt-3
             grid grid-cols-1
             gap-5
-            sm:gap-6
-            sm:grid-cols-2
+            sm:gap-6 sm:grid-cols-2
             lg:grid-cols-4
           "
         >
@@ -82,7 +81,8 @@
             placeholder-gray-500
             focus:outline-none
             focus:placeholder-gray-400
-            focus:ring-1 focus:ring-indigo-500
+            focus:ring-1
+            focus:ring-indigo-500
             focus:border-indigo-500
             sm:text-sm
           "
@@ -308,7 +308,7 @@ export default Vue.extend({
   },
   computed: {
     ...mapState(['metadata']),
-    fuse() {
+    fuse(): Fuse<{ [key: string]: { [key: string]: string } }> {
       return new Fuse(Object.values(this.metadata), {
         includeScore: true,
         useExtendedSearch: true,
@@ -324,15 +324,17 @@ export default Vue.extend({
         ],
       })
     },
-    displayMetadata() {
+    displayMetadata(): { [key: string]: string }[] {
       if (this.query.length > 0) {
-        const searchResults = this.fuse.search(this.query)
+        const searchResults = this.fuse.search(this.query) as Array<{
+          item: {}
+        }>
         return searchResults.map((x) => x.item)
       }
       return Object.values(this.metadata)
     },
   },
-  mounted() {
+  mounted(): void {
     this.scroll()
   },
   // when leaving the page, don't track scroll location
@@ -342,7 +344,7 @@ export default Vue.extend({
     next()
   },
   methods: {
-    scroll() {
+    scroll(): void {
       window.onscroll = () => {
         if (
           Math.max(

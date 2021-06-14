@@ -301,8 +301,8 @@
               ></DescriptionToggle>
 
               <pre
-                class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
                 v-if="sequence.length > 0"
+                class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
               >
 >{{ sequenceMetadata.accession }} {{
                   'genBankTitle' in sequenceMetadata
@@ -327,6 +327,7 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+import { IContentDocument } from '@nuxt/content/types/content'
 import { parseStringPromise } from 'xml2js'
 
 export default Vue.extend({
@@ -357,20 +358,22 @@ export default Vue.extend({
       .then((result) => result.eSearchResult.IdList[0].Id[0])
 
     // get the data for the sequence
-    let x = await this.$content(this.$route.params.name).fetch()
+    const x = (await this.$content(
+      this.$route.params.name
+    ).fetch()) as IContentDocument
     this.sequence = x.sequence
     this.dbn = x.dbn
     this.dbnRevComp = x.dbnRevComp
   },
 
   computed: {
-    revCompSequence() {
+    revCompSequence(): string {
       let seq = this.sequence.toUpperCase()
       if (this.sequence === '') {
         return this.sequence
       }
       seq = seq.replaceAll('U', 'T') // force DNA for now
-      let rc = {
+      const rc: { [key: string]: string } = {
         G: 'C',
         A: 'T',
         T: 'A',
@@ -386,13 +389,13 @@ export default Vue.extend({
       }
       seq = seq
         .split('')
-        .map((x) => rc[x])
+        .map((x: string) => rc[x])
         .reverse()
         .join('')
       return seq
     },
 
-    displaySequence() {
+    displaySequence(): string {
       let seq = this.sequenceDisplayOptions.rc
         ? this.revCompSequence
         : this.sequence.toUpperCase()
@@ -405,10 +408,13 @@ export default Vue.extend({
 
       return seq
     },
-    sequenceMetadata() {
+    sequenceMetadata(): { [key: string]: string } {
       return this.$store.state.metadata[this.$route.params.name]
     },
-    links() {
+    links(): {
+      name: string
+      url: string
+    }[] {
       return [
         {
           name: 'NCBI Nucleotide',
