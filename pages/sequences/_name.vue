@@ -61,6 +61,7 @@
             focus:ring-offset-2
             focus:ring-indigo-500
           "
+          @click="download"
         >
           Download FASTA
         </button>
@@ -303,14 +304,7 @@
               <pre
                 v-if="sequence.length > 0"
                 class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
-              >
->{{ sequenceMetadata.accession }} {{
-                  'genBankTitle' in sequenceMetadata
-                    ? sequenceMetadata.genBankTitle
-                    : sequenceMetadata.displayTitle
-                }} [ViroidDB]
-{{ displaySequence.match(new RegExp('.{1,' + 80 + '}', 'g')).join('\n') }}
-</pre
+                >{{ fasta }}</pre
               >
             </div>
           </template>
@@ -329,6 +323,7 @@
 import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
 import { parseStringPromise } from 'xml2js'
+import { saveAs } from 'file-saver'
 
 export default Vue.extend({
   data() {
@@ -367,6 +362,16 @@ export default Vue.extend({
   },
 
   computed: {
+    fasta(): string {
+      return `>${this.sequenceMetadata.accession} ${
+        'genBankTitle' in this.sequenceMetadata
+          ? this.sequenceMetadata.genBankTitle
+          : this.sequenceMetadata.displayTitle
+      } [ViroidDB]\n${(
+        this.displaySequence.match(new RegExp('.{1,' + 80 + '}', 'g')) ?? []
+      ) // had to do the null coalesce for typescript
+        .join('\n')}`
+    },
     revCompSequence(): string {
       let seq = this.sequence.toUpperCase()
       if (this.sequence === '') {
@@ -429,6 +434,15 @@ export default Vue.extend({
           url: `https://www.ncbi.nlm.nih.gov/pubmed?LinkName=nuccore_pubmed&from_uid=${this.uid}`,
         },
       ]
+    },
+  },
+  methods: {
+    download(): void {
+      saveAs(
+        new File([this.fasta], `${this.sequenceMetadata.accession}.fasta`, {
+          type: 'text/plain;charset=utf-8',
+        })
+      )
     },
   },
 })
