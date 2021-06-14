@@ -1,0 +1,234 @@
+<template>
+  <div
+    class="
+      px-4
+      py-10
+      max-w-3xl
+      mx-auto
+      sm:px-6
+      sm:py-12
+      lg:max-w-4xl
+      lg:py-16
+      lg:px-8
+      xl:max-w-6xl
+    "
+  >
+    <article>
+      <div class="prose prose-sm sm:prose lg:prose-lg mx-auto">
+        <div
+          class="bg-yellow-100 border-l-8 border-yellow-400 rounded-md mb-10"
+        >
+          <p class="p-4">
+            <b>Update 2021-05-24:</b> A bunch of new features are incoming! Stay
+            tuned for rotational pre-alignment, clustered sequences, and
+            predicted structures.
+          </p>
+        </div>
+        <h1>ViroidDB</h1>
+        <p>
+          Viroids and their (potential) relatives are among the most unique and
+          exciting of all biological entities. However, I couldn't find a good,
+          up-to-date database containing all of them in one place so I made my
+          own.
+        </p>
+
+        <p>
+          This database has sequences representing known viroid and viroid-like
+          RNA sequences. Each sequence is unique, though variants of the same
+          RNA species are included. Currently, sequences are
+          <i>not</i> guaranteed to be rotationally unique, meaning that
+          <code>AAAATTTT</code> is treated as distinct from
+          <code>TTAAAATT</code>.
+        </p>
+        <h2>How to get the data</h2>
+        <p>
+          You can download the most recent version of the entire database as a
+          FASTA file <a href="/db/all.fasta">here</a>.
+        </p>
+        <p>
+          Alternatively, download the database easily using your command-line
+          tool of choice:
+        </p>
+        <pre>$ curl viroids.org/db/all.fasta > viroiddb.fasta</pre>
+
+        <p>
+          If you're interested in a
+          <abbr title="noting, of course, that a set is a subset of itself">
+            subset
+          </abbr>
+          of the data, here are all of available subsets:
+        </p>
+        <table>
+          <thead>
+            <td>Subset</td>
+            <td>Download link</td>
+            <td>Sequence count</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>All</td>
+              <td>
+                <a target="_blank" href="/db/all.fasta">/db/all.fasta</a>
+              </td>
+              <td>9,891</td>
+            </tr>
+            <tr>
+              <td>Viroids</td>
+              <td>
+                <a target="_blank" href="/db/viroids.fasta">
+                  /db/viroids.fasta
+                </a>
+              </td>
+              <td>9,354</td>
+            </tr>
+            <tr>
+              <td style="text-indent: 1em"><i>Avsunviroidae</i></td>
+              <td>
+                <a target="_blank" href="/db/avsunviroidae.fasta">
+                  /db/avsunviroidae.fasta
+                </a>
+              </td>
+              <td>5,284</td>
+            </tr>
+            <tr>
+              <td style="text-indent: 1em"><i>Pospiviroidae</i></td>
+              <td>
+                <a target="_blank" href="/db/pospiviroidae.fasta">
+                  /db/pospiviroidae.fasta
+                </a>
+              </td>
+              <td>3,980</td>
+            </tr>
+            <tr>
+              <td style="text-indent: 1em">Unclassified</td>
+              <td>
+                <a target="_blank" href="/db/unclassified.fasta">
+                  /db/unclassified.fasta
+                </a>
+              </td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td><i>Deltavirus</i></td>
+              <td>
+                <a target="_blank" href="/db/deltavirus.fasta">
+                  /db/deltavirus.fasta
+                </a>
+              </td>
+              <td>453</td>
+            </tr>
+            <tr>
+              <td>Retrozymes</td>
+              <td>
+                <a target="_blank" href="/db/retrozymes.fasta"
+                  >/db/retrozymes.fasta</a
+                >
+              </td>
+              <td>74</td>
+            </tr>
+            <tr>
+              <td>Satellite RNAs</td>
+              <td>
+                <a target="_blank" href="/db/satellites.fasta"
+                  >/db/satellites.fasta</a
+                >
+              </td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Archived versions of data are available for each release. Releases do
+          not currently happen at a set interval due to the slow pace of viroid
+          discovery, though I do hope to change that in the future. Previous
+          releases can be accessed through URLs of the form
+          <code>https://viroids.org/db/YYYY-MM-DD/subset.fasta</code>. Available
+          releases:
+        </p>
+        <ul>
+          <li>2021-04-17</li>
+        </ul>
+
+        <h2>How I curate the database</h2>
+        <p>
+          All data is publicly available from the NCBI. I have included what I
+          believe to be a class of potentially related RNA agents that merit
+          study as a group. The key inclusion criteria are:
+        </p>
+        <ul>
+          <li>Circularity at some point in the replication cycle</li>
+          <li>Extensive RNA folding</li>
+          <li>The presence of ribozymes or a central conserved region</li>
+        </ul>
+        <p>
+          To collect the sequences for the database I followed this protocol:
+        </p>
+        <ol>
+          <li>
+            For viroids and deltaviruses, I used the NCBI Virus portal to
+            download complete sequences within the taxonomy IDs 185751, 185752,
+            265963 and 39759, for the <i>Pospiviroidae</i>,
+            <i>Avsunviroidae</i>, unclassified viroids, and
+            <i>Deltavirus</i> taxa respectively.
+          </li>
+          <li>
+            For retrozymes, which are not taxonomically classified, I downloaded
+            all sequences within the
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/"
+              >NCBI Nucleotide</a
+            >
+            database matching the search term "ribozyme".
+          </li>
+          <li>
+            Similarly, for satellite RNAs, I downloaded all sequences within the
+            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/"
+              >NCBI Nucleotide</a
+            >
+            database matching each of the small circular satellites in
+            <a
+              href="https://www.elsevier.com/books/viroids-and-satellites/hadidi/978-0-12-801498-1"
+              ><i>Viroids and Satellites</i> (2017)</a
+            >.
+          </li>
+          <li>
+            Deduplication and formatting is performed by
+            <a href="https://bioinf.shenwei.me/seqkit/">SeqKit</a>. Comment
+            lines are standardized as <code>>accession genbank_title</code>.
+          </li>
+        </ol>
+        <p>
+          All the downloading (and website updating) is currently done manually.
+          Until
+          <a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/"
+            >NCBI Virus</a
+          >
+          has an API, I will repeat this process occasionally and update this
+          site. Should new viroid-like RNAs classes be discovered, I will add
+          them as a new subset. If you feel an update is required, please
+          <a href="#contact">contact me</a> or perform the update yourself and
+          submit it as a
+          <a target="_blank" href="https://github.com/benjamin-lee/viroiddb">
+            pull request to the repository</a
+          >.
+        </p>
+        <h2 id="contact">How to contact me</h2>
+        <p>
+          Feel free to contact me via
+          <a href="mailto:benjamindlee@me.com?subject=ViroidDB"
+            >sending an email</a
+          >
+          or
+          <a
+            target="_blank"
+            href="https://github.com/Benjamin-Lee/viroiddb/issues/new"
+            >filing an issue</a
+          >
+          on GitHub.
+        </p>
+        <hr />
+        <p></p>
+      </div>
+    </article>
+  </div>
+</template>

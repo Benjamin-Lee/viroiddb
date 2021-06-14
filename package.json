@@ -1,24 +1,43 @@
 {
   "name": "viroiddb",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development postcss styles.css -o ./dist/tailwind.css -w",
-    "build": "NODE_ENV=production postcss styles.css -o ./dist/tailwind.css"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate:nojson": "nuxt generate",
+    "generate": "node scripts/generate-content.mjs && npm run generate:nojson",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Benjamin-Lee/viroiddb.git"
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@types/xml2js": "^0.4.8",
+    "core-js": "^3.9.1",
+    "fuse.js": "^6.4.6",
+    "nuxt": "^2.15.3",
+    "xml2js": "^0.4.23"
   },
-  "author": "Benjamin Lee",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Benjamin-Lee/viroiddb/issues"
-  },
-  "homepage": "https://github.com/Benjamin-Lee/viroiddb#readme",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.4.0",
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.10",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.1.1"
+    "@nuxt/types": "^2.15.3",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "babel-eslint": "^10.1.0",
+    "bio-parsers": "^8.3.9",
+    "camelcase": "^5.3.1",
+    "commander": "^7.2.0",
+    "csvtojson": "^2.0.10",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.7.0",
+    "node-fetch": "^2.6.1",
+    "postcss": "^8.2.8",
+    "prettier": "^2.2.1"
   }
 }
