@@ -1,2 +1,5 @@
 dist/
 node_modules/
+.Rproj.user
+viroiddb.Rproj
+Neri/
