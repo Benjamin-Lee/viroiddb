@@ -91,3 +91,4 @@ sw.*
 
 # Since we're treating netlify as a read-only db
 content/*.json
+static/*.seq.json
