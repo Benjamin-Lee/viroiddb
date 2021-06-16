@@ -20,8 +20,8 @@
               </div>
               <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                 <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                <a
-                  href="#"
+                <NuxtLink
+                  to="/sequences"
                   class="
                     border-indigo-500
                     text-gray-900
@@ -36,15 +36,14 @@
                   aria-current="page"
                 >
                   Sequences
-                </a>
+                </NuxtLink>
 
-                <a
-                  href="#"
+                <NuxtLink
+                  to="clusters"
                   class="
                     border-transparent
                     text-gray-500
-                    hover:border-gray-300
-                    hover:text-gray-700
+                    hover:border-gray-300 hover:text-gray-700
                     inline-flex
                     items-center
                     px-1
@@ -55,15 +54,14 @@
                   "
                 >
                   Clusters
-                </a>
+                </NuxtLink>
 
                 <a
                   href="#"
                   class="
                     border-transparent
                     text-gray-500
-                    hover:border-gray-300
-                    hover:text-gray-700
+                    hover:border-gray-300 hover:text-gray-700
                     inline-flex
                     items-center
                     px-1
@@ -81,8 +79,7 @@
                   class="
                     border-transparent
                     text-gray-500
-                    hover:border-gray-300
-                    hover:text-gray-700
+                    hover:border-gray-300 hover:text-gray-700
                     inline-flex
                     items-center
                     px-1
@@ -109,10 +106,11 @@
                   p-2
                   rounded-md
                   text-gray-400
-                  hover:text-gray-500
-                  hover:bg-gray-100
+                  hover:text-gray-500 hover:bg-gray-100
                   focus:outline-none
-                  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  focus:ring-2
+                  focus:ring-offset-2
+                  focus:ring-indigo-500
                 "
                 aria-controls="mobile-menu"
                 aria-expanded="false"
@@ -191,9 +189,7 @@
               class="
                 border-transparent
                 text-gray-600
-                hover:bg-gray-50
-                hover:border-gray-300
-                hover:text-gray-800
+                hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800
                 block
                 pl-3
                 pr-4
@@ -211,9 +207,7 @@
               class="
                 border-transparent
                 text-gray-600
-                hover:bg-gray-50
-                hover:border-gray-300
-                hover:text-gray-800
+                hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800
                 block
                 pl-3
                 pr-4
@@ -231,9 +225,7 @@
               class="
                 border-transparent
                 text-gray-600
-                hover:bg-gray-50
-                hover:border-gray-300
-                hover:text-gray-800
+                hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800
                 block
                 pl-3
                 pr-4
@@ -271,7 +263,9 @@
                   text-gray-400
                   hover:text-gray-500
                   focus:outline-none
-                  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  focus:ring-2
+                  focus:ring-offset-2
+                  focus:ring-indigo-500
                 "
               >
                 <span class="sr-only">View notifications</span>
@@ -303,8 +297,7 @@
                   text-base
                   font-medium
                   text-gray-500
-                  hover:text-gray-800
-                  hover:bg-gray-100
+                  hover:text-gray-800 hover:bg-gray-100
                 "
               >
                 Your Profile
@@ -319,8 +312,7 @@
                   text-base
                   font-medium
                   text-gray-500
-                  hover:text-gray-800
-                  hover:bg-gray-100
+                  hover:text-gray-800 hover:bg-gray-100
                 "
               >
                 Settings
@@ -335,8 +327,7 @@
                   text-base
                   font-medium
                   text-gray-500
-                  hover:text-gray-800
-                  hover:bg-gray-100
+                  hover:text-gray-800 hover:bg-gray-100
                 "
               >
                 Sign out
