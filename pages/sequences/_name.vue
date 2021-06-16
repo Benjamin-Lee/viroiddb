@@ -354,10 +354,7 @@ export default Vue.extend({
 
     // get the data for the sequence
     const x: { sequence: string; dbn: string; dbnRevComp: string } =
-      await this.$http.$get(
-        (!this.$nuxt.context.isDev ? 'https://viroids.org/' : '/') +
-          `seqs/${this.$route.params.name}.json`
-      )
+      await this.$http.$get(`/seqs/${this.$route.params.name}.json`)
 
     this.sequence = x.sequence
     this.dbn = x.dbn
