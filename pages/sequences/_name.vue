@@ -441,6 +441,7 @@ export default Vue.extend({
         [this.sequence, this.dbn, '#fornac_plus'],
         [this.revCompSequence, this.dbnRevComp, '#fornac_minus'],
       ]) {
+        // @ts-ignore
         const container = new fornac.FornaContainer(el, {
           applyForce: false,
         })
@@ -451,8 +452,6 @@ export default Vue.extend({
         container.addRNA(options.structure, options)
         container.setSize()
       }
-
-      // console.log(container)
     },
   },
 })
