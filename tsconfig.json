@@ -28,7 +28,8 @@
       "@nuxt/content",
       "@types/node",
       "@types/xml2js",
-      "@types/file-saver"
+      "@types/file-saver",
+      "@nuxt/http"
      ]
   },
   "exclude": [

@@ -353,10 +353,11 @@ export default Vue.extend({
       .then((result) => result.eSearchResult.IdList[0].Id[0])
 
     // get the data for the sequence
-    const x = await this.$http.$get(
-      (!this.$nuxt.context.isDev ? 'https://viroids.org/' : '/') +
-        `seqs/${this.$route.params.name}.json`
-    )
+    const x: { sequence: string; dbn: string; dbnRevComp: string } =
+      await this.$http.$get(
+        (!this.$nuxt.context.isDev ? 'https://viroids.org/' : '/') +
+          `seqs/${this.$route.params.name}.json`
+      )
 
     this.sequence = x.sequence
     this.dbn = x.dbn
