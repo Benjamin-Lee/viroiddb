@@ -49,5 +49,5 @@ for (const group of [
 }
 
 Object.entries(dbn).forEach(([k, v]) =>
-  fs.writeFileSync('content/' + k + '.json', JSON.stringify(v, null, 2))
+  fs.writeFileSync('static/seqs/' + k + '.json', JSON.stringify(v, null, 2))
 )

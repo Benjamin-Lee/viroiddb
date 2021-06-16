@@ -321,7 +321,7 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import { IContentDocument } from '@nuxt/content/types/content'
+// import { IContentDocument } from '@nuxt/content/types/content'
 import { parseStringPromise } from 'xml2js'
 import { saveAs } from 'file-saver'
 
@@ -353,9 +353,9 @@ export default Vue.extend({
       .then((result) => result.eSearchResult.IdList[0].Id[0])
 
     // get the data for the sequence
-    const x = (await this.$content(
-      this.$route.params.name
-    ).fetch()) as IContentDocument
+    const x: { sequence: string; dbn: string; dbnRevComp: string } =
+      await this.$http.$get(`/seqs/${this.$route.params.name}.json`)
+
     this.sequence = x.sequence
     this.dbn = x.dbn
     this.dbnRevComp = x.dbnRevComp
