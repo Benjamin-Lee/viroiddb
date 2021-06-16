@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <script src="https://unpkg.com/fornac@1.1.8/dist/scripts/fornac.js"></script> -->
     <!-- <TheHeader>{{ data.name }}</TheHeader> -->
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="md:flex md:items-center md:justify-between">
@@ -246,31 +247,20 @@
           >
         </div>
         <div class="col-span-6">
-          <Card v-if="dbn.length > 0" title="Secondary structure (+)">
+          <Card title="Secondary structure (+)">
             <template #unpaddedBody>
               <DataRow title="MFE (25 ºC)">-1231</DataRow>
               <DataRow title="Bases paired">63.2%</DataRow>
-
-              <iframe
-                class="w-full h-96 p-3"
-                :src="`http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=${sequence.replaceAll(
-                  'U',
-                  'T'
-                )}&structure=${dbn}`"
-              ></iframe>
+              <div id="fornac_plus" class="h-96"></div>
             </template>
           </Card>
         </div>
         <div class="col-span-6">
-          <Card v-if="dbn.length > 0" title="Secondary structure (-)">
+          <Card title="Secondary structure (-)">
             <template #unpaddedBody>
               <DataRow title="MFE (25 ºC)">-1231</DataRow>
               <DataRow title="Bases paired">63.2%</DataRow>
-
-              <iframe
-                class="w-full h-96 p-3"
-                :src="`http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=${revCompSequence}&structure=${dbnRevComp}`"
-              ></iframe>
+              <div id="fornac_minus" class="h-96"></div>
             </template>
           </Card>
         </div>
@@ -359,6 +349,7 @@ export default Vue.extend({
     this.sequence = x.sequence
     this.dbn = x.dbn
     this.dbnRevComp = x.dbnRevComp
+    this.showforna()
   },
 
   computed: {
@@ -436,6 +427,7 @@ export default Vue.extend({
       ]
     },
   },
+
   methods: {
     download(): void {
       saveAs(
@@ -443,6 +435,24 @@ export default Vue.extend({
           type: 'text/plain;charset=utf-8',
         })
       )
+    },
+    showforna() {
+      for (const [seq, pol, el] of [
+        [this.sequence, this.dbn, '#fornac_plus'],
+        [this.revCompSequence, this.dbnRevComp, '#fornac_minus'],
+      ]) {
+        const container = new fornac.FornaContainer(el, {
+          applyForce: false,
+        })
+        const options = {
+          structure: pol,
+          sequence: seq,
+        }
+        container.addRNA(options.structure, options)
+        container.setSize()
+      }
+
+      // console.log(container)
     },
   },
 })
