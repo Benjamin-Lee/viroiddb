@@ -1,3 +1,8 @@
+# Neri's misc stuff that barely deserve to exist locally:
+/dist/
+/.Rproj.user
+/viroiddb.Rproj
+/Neri/
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
