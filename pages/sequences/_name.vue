@@ -18,7 +18,7 @@
         </h2>
       </div>
       <div class="mt-4 flex md:mt-0 md:ml-4">
-        <button
+        <!-- <button
           type="button"
           class="
             inline-flex
@@ -40,7 +40,7 @@
           "
         >
           Copy FASTA
-        </button>
+        </button> -->
         <button
           type="button"
           class="
@@ -277,13 +277,13 @@
                 subtitle="Display the reverse complement of the sequence."
                 class="px-4 py-5 sm:p-6"
               ></DescriptionToggle>
-              <DescriptionToggle
+              <!-- <DescriptionToggle
                 v-model="sequenceDisplayOptions.rotated"
                 title="Rotated"
                 subtitle="Whether to display the sequence rotated to the same origin as other members of the group."
                 class="px-4 py-5 sm:p-6"
                 :checked="false"
-              ></DescriptionToggle>
+              ></DescriptionToggle> -->
               <DescriptionToggle
                 v-model="sequenceDisplayOptions.rna"
                 title="RNA"
