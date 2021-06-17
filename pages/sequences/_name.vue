@@ -315,6 +315,39 @@ import Vue from 'vue'
 import { parseStringPromise } from 'xml2js'
 import { saveAs } from 'file-saver'
 
+interface sequenceMetadata {
+  identicalSeqs: string[]
+  accession: string
+  submitters: string
+  releaseDate: string
+  species: string
+  genus: string
+  family: string
+  length: number
+  sequenceType: string
+  geoLocation: string
+  host: string
+  isolationSource: string
+  collectionDate: string
+  genBankTitle: string
+  displayTitle: string
+  gc: number
+  sequence: string
+  structure: {
+    plus: {
+      dbn: string
+      mfe: number
+      basesPaired: number
+    }
+    minus: {
+      dbn: string
+      mfe: number
+      basesPaired: number
+    }
+  }
+  type: string
+}
+
 export default Vue.extend({
   data() {
     return {
@@ -329,9 +362,38 @@ export default Vue.extend({
       ],
       sequenceDisplayOptions: { rc: false, rotate: false, rna: false },
       uid: '',
-      sequence: '',
-      dbn: '',
-      dbnRevComp: '',
+      sequenceMetadata: {
+        identicalSeqs: [],
+        accession: 'Loading...',
+        submitters: 'Loading...',
+        releaseDate: 'Loading...',
+        species: 'Loading...',
+        genus: 'Loading...',
+        family: 'Loading...',
+        length: 0,
+        sequenceType: 'Loading...',
+        geoLocation: 'Loading...',
+        host: 'Loading...',
+        isolationSource: 'Loading...',
+        collectionDate: 'Loading...',
+        genBankTitle: 'Loading...',
+        displayTitle: 'Loading...',
+        gc: 0,
+        sequence: 'Loading...',
+        structure: {
+          plus: {
+            dbn: 'Loading...',
+            mfe: 0,
+            basesPaired: 0,
+          },
+          minus: {
+            dbn: 'Loading...',
+            mfe: 0,
+            basesPaired: 0,
+          },
+        },
+        type: 'Loading...',
+      },
     }
   },
   async fetch() {
@@ -343,16 +405,20 @@ export default Vue.extend({
       .then((result) => result.eSearchResult.IdList[0].Id[0])
 
     // get the data for the sequence
-    const x: { sequence: string; dbn: string; dbnRevComp: string } =
-      await this.$http.$get(`/seqs/${this.$route.params.name}.json`)
+    this.sequenceMetadata = await this.$http.$get(
+      `/seqs/${this.$route.params.name}.json`
+    )
 
-    this.sequence = x.sequence
-    this.dbn = x.dbn
-    this.dbnRevComp = x.dbnRevComp
+    // this.sequence = x.sequence
+    // this.dbn = x.dbn
+    // this.dbnRevComp = x.dbnRevComp
     this.showforna()
   },
 
   computed: {
+    sequence(): string {
+      return this.sequenceMetadata.sequence
+    },
     fasta(): string {
       return `>${this.sequenceMetadata.accession} ${
         'genBankTitle' in this.sequenceMetadata
@@ -404,9 +470,7 @@ export default Vue.extend({
 
       return seq
     },
-    sequenceMetadata(): { [key: string]: string } {
-      return this.$store.state.metadata[this.$route.params.name]
-    },
+
     links(): {
       name: string
       url: string
@@ -438,8 +502,16 @@ export default Vue.extend({
     },
     showforna() {
       for (const [seq, pol, el] of [
-        [this.sequence, this.dbn, '#fornac_plus'],
-        [this.revCompSequence, this.dbnRevComp, '#fornac_minus'],
+        [
+          this.sequence,
+          this.sequenceMetadata.structure.plus.dbn,
+          '#fornac_plus',
+        ],
+        [
+          this.revCompSequence,
+          this.sequenceMetadata.structure.minus.dbn,
+          '#fornac_minus',
+        ],
       ]) {
         // @ts-ignore
         const container = new fornac.FornaContainer(el, {

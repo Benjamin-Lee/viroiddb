@@ -161,7 +161,7 @@
                       tracking-wider
                     "
                   >
-                    GC Content
+                    Type
                   </th>
                   <th
                     scope="col"
@@ -175,7 +175,7 @@
                       tracking-wider
                     "
                   >
-                    Type
+                    Family
                   </th>
                   <th scope="col" class="relative px-6 py-3">
                     <span class="sr-only">View</span>
@@ -233,9 +233,10 @@
                           py-4
                           whitespace-nowrap
                           text-sm text-gray-500
+                          capitalize
                         "
                       >
-                        {{ Number(sequence.gc * 100).toFixed(1) }}%
+                        {{ sequence.type }}
                       </td>
                       <td
                         class="
@@ -243,6 +244,7 @@
                           py-4
                           whitespace-nowrap
                           text-sm text-gray-500
+                          italic
                         "
                       >
                         {{ sequence.family }}
@@ -313,15 +315,7 @@ export default Vue.extend({
         includeScore: true,
         useExtendedSearch: true,
 
-        keys: [
-          'displayTitle',
-          'geoLocation',
-          'host',
-          'genus',
-          'family',
-          'submitters',
-          'accession',
-        ],
+        keys: ['displayTitle', 'accession'],
       })
     },
     displayMetadata(): { [key: string]: string }[] {

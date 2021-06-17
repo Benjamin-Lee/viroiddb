@@ -43,7 +43,7 @@ for (const group of [
   'unclassified',
 ]) {
   const dirName =
-    process.argv[1] !== undefined
+    process.argv[2] !== undefined
       ? process.argv[2]
       : new Date().toISOString().slice(0, 10)
 
@@ -66,6 +66,7 @@ for (const group of [
           gc: (x.sequence.match(/[GgCc]/g) || []).length / x.sequence.length,
           accession: x.name.split(' ')[0],
           length: x.sequence.length,
+          sequence: x.sequence,
         },
       }
     })
@@ -88,14 +89,56 @@ for (const group of [
     ([k, v]) => (metadata[k] = { identicalSeqs: [], ...v })
   )
 
+  // Add the secondary structure information
+  const lines = fs
+    .readFileSync(path.join(dirName, `${group}.dbn`))
+    .toString()
+    .split('\n')
+  const structure = {
+    ...lines.reduce((result, value, index, array) => {
+      if (index % 3 === 0) {
+        if (value === '') {
+          return result
+        }
+        const [dbn, mfe] = array[index + 2].split(' ')
+        result[value.split(' ')[0].slice(1)] = {
+          plus: {
+            // remove > and seq name
+            dbn,
+            mfe: Number(mfe.slice(1, -1)),
+            basesPaired: 1 - (dbn.match(/\./g) || []).length / dbn.length,
+          },
+        }
+      }
+      return result
+    }, {}),
+  }
+  fs.readFileSync(path.join(dirName, `${group}.rc.dbn`))
+    .toString()
+    .split('\n')
+    .forEach((value, index, array) => {
+      if (index % 3 === 0) {
+        if (value === '') {
+          return
+        }
+        const [dbn, mfe] = array[index + 2].split(' ')
+        structure[value.split(' ')[0].slice(1)].minus = {
+          dbn, // remove MFE
+          mfe: Number(mfe.slice(1, -1)),
+          basesPaired: 1 - (dbn.match(/\./g) || []).length / dbn.length,
+        }
+      }
+    })
+  Object.entries(structure).forEach(([accession, value]) => {
+    metadata[accession] = {
+      ...metadata[accession],
+      ...{ structure: value },
+    }
+  })
   console.warn('Done with', group)
 }
 
-// Object.entries(computedMetadata).forEach(
-//   ([k, v]) => console.log(k, { ...metadata[k] })
-//   // console.log(metadata[k], v)
-// )
-
+// infer the type of each sequence
 Object.entries(metadata).forEach(([k, v]) => {
   metadata[k].type = v?.species?.includes('viroid')
     ? 'viroid'
@@ -107,4 +150,28 @@ Object.entries(metadata).forEach(([k, v]) => {
   metadata[k].releaseDate = v.releaseDate?.slice(0, 10)
 })
 
-console.log(JSON.stringify(metadata, null, 2))
+Object.entries(metadata).forEach(([k, v]) =>
+  fs.writeFileSync('static/seqs/' + k + '.json', JSON.stringify(v, null, 2))
+)
+
+fs.writeFileSync(
+  'static/meta.slim.json',
+  JSON.stringify(
+    Object.fromEntries(
+      Object.entries(metadata)
+        .filter(([_, v]) => 'displayTitle' in v)
+        .map(([k, v]) => [
+          k,
+          {
+            displayTitle: v.displayTitle,
+            accession: v.accession,
+            length: v.length,
+            type: v.type,
+            family: v.family,
+          },
+        ])
+    ),
+    null,
+    2
+  )
+)
