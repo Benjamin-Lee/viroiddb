@@ -103,7 +103,7 @@
                     </div>
                     <div v-else-if="field.key === 'identicalSeqs'">
                       {{
-                        sequenceMetadata[field.key].length > 0
+                        sequenceMetadata.identicalSeqs === []
                           ? sequenceMetadata[field.key].join(', ')
                           : 'None found'
                       }}
@@ -249,8 +249,16 @@
         <div class="col-span-6">
           <Card title="Secondary structure (+)">
             <template #unpaddedBody>
-              <DataRow title="MFE (25 ºC)">-1231</DataRow>
-              <DataRow title="Bases paired">63.2%</DataRow>
+              <DataRow title="MFE (25 ºC)">{{
+                sequenceMetadata.structure.plus.mfe
+              }}</DataRow>
+              <DataRow title="Bases paired"
+                >{{
+                  Number(
+                    sequenceMetadata.structure.plus.basesPaired * 100
+                  ).toFixed(1)
+                }}%</DataRow
+              >
               <div id="fornac_plus" class="h-96"></div>
             </template>
           </Card>
@@ -258,8 +266,16 @@
         <div class="col-span-6">
           <Card title="Secondary structure (-)">
             <template #unpaddedBody>
-              <DataRow title="MFE (25 ºC)">-1231</DataRow>
-              <DataRow title="Bases paired">63.2%</DataRow>
+              <DataRow title="MFE (25 ºC)">{{
+                sequenceMetadata.structure.minus.mfe
+              }}</DataRow>
+              <DataRow title="Bases paired"
+                >{{
+                  Number(
+                    sequenceMetadata.structure.minus.basesPaired * 100
+                  ).toFixed(1)
+                }}%</DataRow
+              >
               <div id="fornac_minus" class="h-96"></div>
             </template>
           </Card>
@@ -329,7 +345,7 @@ interface sequenceMetadata {
   host: string
   isolationSource: string
   collectionDate: string
-  genBankTitle: string
+  genBankTitle?: string
   displayTitle: string
   gc: number
   sequence: string
@@ -393,7 +409,7 @@ export default Vue.extend({
           },
         },
         type: 'Loading...',
-      },
+      } as sequenceMetadata,
     }
   },
   async fetch() {
