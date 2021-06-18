@@ -189,7 +189,9 @@
                   >
                     <tr
                       :key="sequence.accession"
+                      class="hover:cursor-pointer hover:bg-gray-100"
                       :class="seqIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'"
+                      @click="$router.push(`/sequences/${sequence.accession}`)"
                     >
                       <td
                         class="
