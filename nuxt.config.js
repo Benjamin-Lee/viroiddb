@@ -1,3 +1,10 @@
+// import data from './static/meta.slim.json'
+// let dynamicRoutes = () => {
+//   return new Promise((resolve) => {
+//     resolve(Object.keys(data).map((el) => `sequences/${el}`))
+//   })
+// }
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -15,6 +22,13 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: 'https://unpkg.com/fornac@1.1.8/dist/scripts/fornac.js',
+        defer: true,
+        async: true,
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -43,5 +57,6 @@ export default {
   // make Netlify work
   generate: {
     fallback: true,
+    // routes: dynamicRoutes,
   },
 }

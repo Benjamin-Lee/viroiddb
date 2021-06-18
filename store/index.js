@@ -1,4 +1,4 @@
-import data from '../static/meta.tmp.json'
+import data from '../static/meta.slim.json'
 
 export const state = () => ({
   metadata: data,

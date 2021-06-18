@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <script src="https://unpkg.com/fornac@1.1.8/dist/scripts/fornac.js"></script> -->
     <!-- <TheHeader>{{ data.name }}</TheHeader> -->
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="md:flex md:items-center md:justify-between">
@@ -17,7 +18,7 @@
         </h2>
       </div>
       <div class="mt-4 flex md:mt-0 md:ml-4">
-        <button
+        <!-- <button
           type="button"
           class="
             inline-flex
@@ -39,7 +40,7 @@
           "
         >
           Copy FASTA
-        </button>
+        </button> -->
         <button
           type="button"
           class="
@@ -102,7 +103,7 @@
                     </div>
                     <div v-else-if="field.key === 'identicalSeqs'">
                       {{
-                        sequenceMetadata[field.key].length > 0
+                        sequenceMetadata.identicalSeqs === []
                           ? sequenceMetadata[field.key].join(', ')
                           : 'None found'
                       }}
@@ -202,28 +203,96 @@
           >
         </div>
 
-        <div class="col-span-8">
+        <div class="col-span-12">
           <Card
             title="Ribozymes"
             subtitle="Infernal search results for known ribozymes"
           >
-            <p class="text-sm text-gray-900">
-              Our search did not reveal any ribozmyes in the sequence. Note that
-              members of the family <i>Pospiviroidae</i>
-              {{
-                sequenceMetadata.genus === 'pospiviroidae'
-                  ? '(such as this sequence)'
-                  : '(unlike this sequence)'
-              }}
-              are not known to contain ribozymes. If you believe this sequence
-              does in fact contain a ribozyme, please
-              <NuxtLink to="/contact" class="text-indigo-600 hover:underline">
-                contact us</NuxtLink
-              >.
-            </p>
+            <pre class="text-sm text-gray-900 overflow-scroll h-96"
+              >{{ sequenceMetadata.ribozymes }}
+            </pre>
+            <template
+              v-if="sequenceMetadata.family === 'Pospiviroidae'"
+              #footer
+            >
+              <p class="text-sm text-gray-500">
+                Members of <i>Pospiviroidae</i> are not expected to contain
+                ribozymes.
+              </p></template
+            >
           </Card>
         </div>
-        <div class="col-span-4">
+
+        <div class="col-span-6">
+          <Card title="Secondary structure (+)">
+            <template #unpaddedBody>
+              <DataRow title="MFE (25 ºC)">{{
+                sequenceMetadata.structure.plus.mfe
+              }}</DataRow>
+              <DataRow title="Bases paired"
+                >{{
+                  Number(
+                    sequenceMetadata.structure.plus.basesPaired * 100
+                  ).toFixed(1)
+                }}%</DataRow
+              >
+              <div id="fornac_plus" class="h-96"></div>
+            </template>
+          </Card>
+        </div>
+        <div class="col-span-6">
+          <Card title="Secondary structure (-)">
+            <template #unpaddedBody>
+              <DataRow title="MFE (25 ºC)">{{
+                sequenceMetadata.structure.minus.mfe
+              }}</DataRow>
+              <DataRow title="Bases paired"
+                >{{
+                  Number(
+                    sequenceMetadata.structure.minus.basesPaired * 100
+                  ).toFixed(1)
+                }}%</DataRow
+              >
+              <div id="fornac_minus" class="h-96"></div>
+            </template>
+          </Card>
+        </div>
+        <Card
+          title="Nucleotide sequence"
+          subtitle="FASTA-formatted sequence data."
+          class="col-span-9"
+        >
+          <template #unpaddedBody>
+            <div class="divide-y divide-gray-200">
+              <DescriptionToggle
+                v-model="sequenceDisplayOptions.rc"
+                title="Reverse complement"
+                subtitle="Display the reverse complement of the sequence."
+                class="px-4 py-5 sm:p-6"
+              ></DescriptionToggle>
+              <!-- <DescriptionToggle
+                v-model="sequenceDisplayOptions.rotated"
+                title="Rotated"
+                subtitle="Whether to display the sequence rotated to the same origin as other members of the group."
+                class="px-4 py-5 sm:p-6"
+                :checked="false"
+              ></DescriptionToggle> -->
+              <DescriptionToggle
+                v-model="sequenceDisplayOptions.rna"
+                title="RNA"
+                subtitle="Display RNA bases instead of DNA (i.e. U instead of T)"
+                class="px-4 py-5 sm:p-6"
+              ></DescriptionToggle>
+
+              <pre
+                v-if="sequence.length > 0"
+                class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
+                >{{ fasta }}</pre
+              >
+            </div>
+          </template>
+        </Card>
+        <div class="col-span-3">
           <Card title="Links" subtitle="External resources for this sequence"
             ><template #unpaddedBody>
               <ul class="divide-y divide-gray-200">
@@ -245,70 +314,6 @@
             </template></Card
           >
         </div>
-        <div class="col-span-6">
-          <Card v-if="dbn.length > 0" title="Secondary structure (+)">
-            <template #unpaddedBody>
-              <DataRow title="MFE (25 ºC)">-1231</DataRow>
-              <DataRow title="Bases paired">63.2%</DataRow>
-
-              <iframe
-                class="w-full h-96 p-3"
-                :src="`http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=${sequence.replaceAll(
-                  'U',
-                  'T'
-                )}&structure=${dbn}`"
-              ></iframe>
-            </template>
-          </Card>
-        </div>
-        <div class="col-span-6">
-          <Card v-if="dbn.length > 0" title="Secondary structure (-)">
-            <template #unpaddedBody>
-              <DataRow title="MFE (25 ºC)">-1231</DataRow>
-              <DataRow title="Bases paired">63.2%</DataRow>
-
-              <iframe
-                class="w-full h-96 p-3"
-                :src="`http://nibiru.tbi.univie.ac.at/forna/forna.html?id=url/name&sequence=${revCompSequence}&structure=${dbnRevComp}`"
-              ></iframe>
-            </template>
-          </Card>
-        </div>
-        <Card
-          title="Nucleotide sequence"
-          subtitle="FASTA-formatted sequence data."
-          class="col-span-12"
-        >
-          <template #unpaddedBody>
-            <div class="divide-y divide-gray-200">
-              <DescriptionToggle
-                v-model="sequenceDisplayOptions.rc"
-                title="Reverse complement"
-                subtitle="Display the reverse complement of the sequence."
-                class="px-4 py-5 sm:p-6"
-              ></DescriptionToggle>
-              <DescriptionToggle
-                v-model="sequenceDisplayOptions.rotated"
-                title="Rotated"
-                subtitle="Whether to display the sequence rotated to the same origin as other members of the group."
-                class="px-4 py-5 sm:p-6"
-                :checked="false"
-              ></DescriptionToggle>
-              <DescriptionToggle
-                v-model="sequenceDisplayOptions.rna"
-                title="RNA"
-                subtitle="Display RNA bases instead of DNA (i.e. U instead of T)"
-                class="px-4 py-5 sm:p-6"
-              ></DescriptionToggle>
-
-              <pre
-                v-if="sequence.length > 0"
-                class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
-                >{{ fasta }}</pre
-              >
-            </div>
-          </template>
-        </Card>
         <aside class="col-span-4">
           <div class="sticky top-6 space-y-4">
             <!-- Your content -->
@@ -325,6 +330,40 @@ import Vue from 'vue'
 import { parseStringPromise } from 'xml2js'
 import { saveAs } from 'file-saver'
 
+interface sequenceMetadata {
+  identicalSeqs: string[]
+  accession: string
+  submitters: string
+  releaseDate: string
+  species: string
+  genus: string
+  family: string
+  length: number
+  sequenceType: string
+  geoLocation: string
+  host: string
+  isolationSource: string
+  collectionDate: string
+  genBankTitle?: string
+  displayTitle: string
+  gc: number
+  sequence: string
+  structure: {
+    plus: {
+      dbn: string
+      mfe: number
+      basesPaired: number
+    }
+    minus: {
+      dbn: string
+      mfe: number
+      basesPaired: number
+    }
+  }
+  type: string
+  ribozymes: string
+}
+
 export default Vue.extend({
   data() {
     return {
@@ -339,9 +378,39 @@ export default Vue.extend({
       ],
       sequenceDisplayOptions: { rc: false, rotate: false, rna: false },
       uid: '',
-      sequence: '',
-      dbn: '',
-      dbnRevComp: '',
+      sequenceMetadata: {
+        identicalSeqs: [],
+        accession: 'Loading...',
+        submitters: 'Loading...',
+        releaseDate: 'Loading...',
+        species: 'Loading...',
+        genus: 'Loading...',
+        family: 'Loading...',
+        length: 0,
+        sequenceType: 'Loading...',
+        geoLocation: 'Loading...',
+        host: 'Loading...',
+        isolationSource: 'Loading...',
+        collectionDate: 'Loading...',
+        genBankTitle: 'Loading...',
+        displayTitle: 'Loading...',
+        gc: 0,
+        sequence: 'Loading...',
+        structure: {
+          plus: {
+            dbn: 'Loading...',
+            mfe: 0,
+            basesPaired: 0,
+          },
+          minus: {
+            dbn: 'Loading...',
+            mfe: 0,
+            basesPaired: 0,
+          },
+        },
+        type: 'Loading...',
+        ribozymes: 'Loading...',
+      } as sequenceMetadata,
     }
   },
   async fetch() {
@@ -353,15 +422,20 @@ export default Vue.extend({
       .then((result) => result.eSearchResult.IdList[0].Id[0])
 
     // get the data for the sequence
-    const x: { sequence: string; dbn: string; dbnRevComp: string } =
-      await this.$http.$get(`/seqs/${this.$route.params.name}.json`)
+    this.sequenceMetadata = await this.$http.$get(
+      `/seqs/${this.$route.params.name}.json`
+    )
 
-    this.sequence = x.sequence
-    this.dbn = x.dbn
-    this.dbnRevComp = x.dbnRevComp
+    // this.sequence = x.sequence
+    // this.dbn = x.dbn
+    // this.dbnRevComp = x.dbnRevComp
+    this.showforna()
   },
 
   computed: {
+    sequence(): string {
+      return this.sequenceMetadata.sequence
+    },
     fasta(): string {
       return `>${this.sequenceMetadata.accession} ${
         'genBankTitle' in this.sequenceMetadata
@@ -413,9 +487,7 @@ export default Vue.extend({
 
       return seq
     },
-    sequenceMetadata(): { [key: string]: string } {
-      return this.$store.state.metadata[this.$route.params.name]
-    },
+
     links(): {
       name: string
       url: string
@@ -436,6 +508,7 @@ export default Vue.extend({
       ]
     },
   },
+
   methods: {
     download(): void {
       saveAs(
@@ -443,6 +516,31 @@ export default Vue.extend({
           type: 'text/plain;charset=utf-8',
         })
       )
+    },
+    showforna() {
+      for (const [seq, pol, el] of [
+        [
+          this.sequence,
+          this.sequenceMetadata.structure.plus.dbn,
+          '#fornac_plus',
+        ],
+        [
+          this.revCompSequence,
+          this.sequenceMetadata.structure.minus.dbn,
+          '#fornac_minus',
+        ],
+      ]) {
+        // @ts-ignore
+        const container = new fornac.FornaContainer(el, {
+          applyForce: false,
+        })
+        const options = {
+          structure: pol,
+          sequence: seq,
+        }
+        container.addRNA(options.structure, options)
+        container.setSize()
+      }
     },
   },
 })
