@@ -21,10 +21,13 @@
               <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                 <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
                 <NuxtLink
-                  to="/sequences"
+                  v-for="link in links"
+                  :key="link.name"
+                  :to="link.to"
                   class="
-                    border-indigo-500
-                    text-gray-900
+                    border-transparent
+                    text-gray-500
+                    hover:border-gray-300 hover:text-gray-700
                     inline-flex
                     items-center
                     px-1
@@ -35,62 +38,8 @@
                   "
                   aria-current="page"
                 >
-                  Sequences
+                  {{ link.name }}
                 </NuxtLink>
-
-                <NuxtLink
-                  to="clusters"
-                  class="
-                    border-transparent
-                    text-gray-500
-                    hover:border-gray-300 hover:text-gray-700
-                    inline-flex
-                    items-center
-                    px-1
-                    pt-1
-                    border-b-2
-                    text-sm
-                    font-medium
-                  "
-                >
-                  Clusters
-                </NuxtLink>
-
-                <a
-                  href="#"
-                  class="
-                    border-transparent
-                    text-gray-500
-                    hover:border-gray-300 hover:text-gray-700
-                    inline-flex
-                    items-center
-                    px-1
-                    pt-1
-                    border-b-2
-                    text-sm
-                    font-medium
-                  "
-                >
-                  Projects
-                </a>
-
-                <a
-                  href="#"
-                  class="
-                    border-transparent
-                    text-gray-500
-                    hover:border-gray-300 hover:text-gray-700
-                    inline-flex
-                    items-center
-                    px-1
-                    pt-1
-                    border-b-2
-                    text-sm
-                    font-medium
-                  "
-                >
-                  Calendar
-                </a>
               </div>
             </div>
 
@@ -112,6 +61,7 @@
                   focus:ring-offset-2
                   focus:ring-indigo-500
                 "
+                @click="showMenu = !showMenu"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -122,6 +72,7 @@
               Menu open: "hidden", Menu closed: "block"
             -->
                 <svg
+                  :class="{ hidden: showMenu, block: !showMenu }"
                   class="block h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -142,7 +93,8 @@
               Menu open: "block", Menu closed: "hidden"
             -->
                 <svg
-                  class="hidden h-6 w-6"
+                  :class="{ hidden: !showMenu, block: showMenu }"
+                  class="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -162,15 +114,17 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
+        <div class="sm:hidden" id="mobile-menu" v-if="showMenu">
           <div class="pt-2 pb-3 space-y-1">
             <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" -->
-            <a
-              href="#"
+            <NuxtLink
+              v-for="link in links"
+              :key="link.name"
+              :to="link.to"
               class="
-                bg-indigo-50
-                border-indigo-500
-                text-indigo-700
+                border-transparent
+                text-gray-600
+                hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800
                 block
                 pl-3
                 pr-4
@@ -181,158 +135,8 @@
               "
               aria-current="page"
             >
-              Dashboard
-            </a>
-
-            <a
-              href="#"
-              class="
-                border-transparent
-                text-gray-600
-                hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800
-                block
-                pl-3
-                pr-4
-                py-2
-                border-l-4
-                text-base
-                font-medium
-              "
-            >
-              Team
-            </a>
-
-            <a
-              href="#"
-              class="
-                border-transparent
-                text-gray-600
-                hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800
-                block
-                pl-3
-                pr-4
-                py-2
-                border-l-4
-                text-base
-                font-medium
-              "
-            >
-              Projects
-            </a>
-
-            <a
-              href="#"
-              class="
-                border-transparent
-                text-gray-600
-                hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800
-                block
-                pl-3
-                pr-4
-                py-2
-                border-l-4
-                text-base
-                font-medium
-              "
-            >
-              Calendar
-            </a>
-          </div>
-          <div class="pt-4 pb-3 border-t border-gray-200">
-            <div class="flex items-center px-4">
-              <div class="flex-shrink-0">
-                <img
-                  class="h-10 w-10 rounded-full"
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=gK3pCdrjLz&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  alt=""
-                />
-              </div>
-              <div class="ml-3">
-                <div class="text-base font-medium text-gray-800">Tom Cook</div>
-                <div class="text-sm font-medium text-gray-500">
-                  tom@example.com
-                </div>
-              </div>
-              <button
-                class="
-                  ml-auto
-                  bg-white
-                  flex-shrink-0
-                  p-1
-                  rounded-full
-                  text-gray-400
-                  hover:text-gray-500
-                  focus:outline-none
-                  focus:ring-2
-                  focus:ring-offset-2
-                  focus:ring-indigo-500
-                "
-              >
-                <span class="sr-only">View notifications</span>
-                <!-- Heroicon name: outline/bell -->
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-3 space-y-1">
-              <a
-                href="#"
-                class="
-                  block
-                  px-4
-                  py-2
-                  text-base
-                  font-medium
-                  text-gray-500
-                  hover:text-gray-800 hover:bg-gray-100
-                "
-              >
-                Your Profile
-              </a>
-
-              <a
-                href="#"
-                class="
-                  block
-                  px-4
-                  py-2
-                  text-base
-                  font-medium
-                  text-gray-500
-                  hover:text-gray-800 hover:bg-gray-100
-                "
-              >
-                Settings
-              </a>
-
-              <a
-                href="#"
-                class="
-                  block
-                  px-4
-                  py-2
-                  text-base
-                  font-medium
-                  text-gray-500
-                  hover:text-gray-800 hover:bg-gray-100
-                "
-              >
-                Sign out
-              </a>
-            </div>
+              {{ link.name }}
+            </NuxtLink>
           </div>
         </div>
       </nav>
@@ -347,3 +151,26 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      links: [
+        { name: 'About', to: '/about' },
+        { name: 'Sequences', to: '/sequences' },
+        { name: 'Clusters', to: '/clusters' },
+        { name: 'Download', to: '/download' },
+        { name: 'Submit', to: '/submit' },
+        { name: 'Help', to: '/help' },
+      ],
+      showMenu: false,
+    }
+  },
+})
+</script>
+<style lang="postcss">
+.nuxt-link-active {
+  @apply bg-indigo-50 border-indigo-500 text-indigo-700 sm:bg-white sm:border-indigo-500 sm:hover:border-indigo-500 sm:text-gray-900 sm:hover:text-gray-900;
+}
+</style>

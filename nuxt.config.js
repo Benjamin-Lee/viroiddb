@@ -26,7 +26,6 @@ export default {
       {
         src: 'https://unpkg.com/fornac@1.1.8/dist/scripts/fornac.js',
         defer: true,
-        async: true,
       },
     ],
   },
