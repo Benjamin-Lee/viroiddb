@@ -150,28 +150,30 @@ Object.entries(metadata).forEach(([k, v]) => {
   metadata[k].releaseDate = v.releaseDate?.slice(0, 10)
 })
 
+// console.log(metadata)
+
 Object.entries(metadata).forEach(([k, v]) =>
   fs.writeFileSync('static/seqs/' + k + '.json', JSON.stringify(v, null, 2))
 )
 
+const slimEntries = Object.entries(metadata)
+  .filter(([_, v]) => 'displayTitle' in v)
+  .map(([k, v]) => [
+    k,
+    {
+      displayTitle: v.displayTitle,
+      accession: v.accession,
+      length: v.length,
+      type: v.type,
+      family: v.family,
+    },
+  ])
+
 fs.writeFileSync(
   'static/meta.slim.json',
-  JSON.stringify(
-    Object.fromEntries(
-      Object.entries(metadata)
-        .filter(([_, v]) => 'displayTitle' in v)
-        .map(([k, v]) => [
-          k,
-          {
-            displayTitle: v.displayTitle,
-            accession: v.accession,
-            length: v.length,
-            type: v.type,
-            family: v.family,
-          },
-        ])
-    ),
-    null,
-    2
-  )
+  JSON.stringify(Object.fromEntries(slimEntries))
+)
+fs.writeFileSync(
+  'static/meta.slim.prev.json',
+  JSON.stringify(Object.fromEntries(slimEntries.slice(0, 300)))
 )
