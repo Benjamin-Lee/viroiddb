@@ -203,49 +203,26 @@
           >
         </div>
 
-        <div class="col-span-8">
+        <div class="col-span-12">
           <Card
             title="Ribozymes"
             subtitle="Infernal search results for known ribozymes"
           >
-            <p class="text-sm text-gray-900">
-              Our search did not reveal any ribozmyes in the sequence. Note that
-              members of the family <i>Pospiviroidae</i>
-              {{
-                sequenceMetadata.genus === 'pospiviroidae'
-                  ? '(such as this sequence)'
-                  : '(unlike this sequence)'
-              }}
-              are not known to contain ribozymes. If you believe this sequence
-              does in fact contain a ribozyme, please
-              <NuxtLink to="/contact" class="text-indigo-600 hover:underline">
-                contact us</NuxtLink
-              >.
-            </p>
+            <pre class="text-sm text-gray-900 overflow-scroll h-96"
+              >{{ sequenceMetadata.ribozymes }}
+            </pre>
+            <template
+              v-if="sequenceMetadata.family === 'Pospiviroidae'"
+              #footer
+            >
+              <p class="text-sm text-gray-500">
+                Members of <i>Pospiviroidae</i> are not expected to contain
+                ribozymes.
+              </p></template
+            >
           </Card>
         </div>
-        <div class="col-span-4">
-          <Card title="Links" subtitle="External resources for this sequence"
-            ><template #unpaddedBody>
-              <ul class="divide-y divide-gray-200">
-                <li
-                  v-for="link in links"
-                  :key="link.name"
-                  class="
-                    py-4
-                    sm:py-5 sm:px-6
-                    text-sm text-indigo-600
-                    hover:underline
-                  "
-                >
-                  <a :href="link.url" target="_blank">
-                    {{ link.name }}
-                  </a>
-                </li>
-              </ul>
-            </template></Card
-          >
-        </div>
+
         <div class="col-span-6">
           <Card title="Secondary structure (+)">
             <template #unpaddedBody>
@@ -283,7 +260,7 @@
         <Card
           title="Nucleotide sequence"
           subtitle="FASTA-formatted sequence data."
-          class="col-span-12"
+          class="col-span-9"
         >
           <template #unpaddedBody>
             <div class="divide-y divide-gray-200">
@@ -315,6 +292,28 @@
             </div>
           </template>
         </Card>
+        <div class="col-span-3">
+          <Card title="Links" subtitle="External resources for this sequence"
+            ><template #unpaddedBody>
+              <ul class="divide-y divide-gray-200">
+                <li
+                  v-for="link in links"
+                  :key="link.name"
+                  class="
+                    py-4
+                    sm:py-5 sm:px-6
+                    text-sm text-indigo-600
+                    hover:underline
+                  "
+                >
+                  <a :href="link.url" target="_blank">
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
+            </template></Card
+          >
+        </div>
         <aside class="col-span-4">
           <div class="sticky top-6 space-y-4">
             <!-- Your content -->
@@ -362,6 +361,7 @@ interface sequenceMetadata {
     }
   }
   type: string
+  ribozymes: string
 }
 
 export default Vue.extend({
@@ -409,6 +409,7 @@ export default Vue.extend({
           },
         },
         type: 'Loading...',
+        ribozymes: 'Loading...',
       } as sequenceMetadata,
     }
   },

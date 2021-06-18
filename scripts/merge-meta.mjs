@@ -7,6 +7,11 @@ import bioparsers from 'bio-parsers'
 
 let metadata = {}
 
+const dirName =
+  process.argv[2] !== undefined
+    ? process.argv[2]
+    : new Date().toISOString().slice(0, 10)
+
 await Promise.all(
   [
     'avsunviroidae',
@@ -42,11 +47,6 @@ for (const group of [
   'satellites',
   'unclassified',
 ]) {
-  const dirName =
-    process.argv[2] !== undefined
-      ? process.argv[2]
-      : new Date().toISOString().slice(0, 10)
-
   // derive metadata from the sequence itself
   bioparsers
     .fastaToJson(
@@ -148,6 +148,31 @@ Object.entries(metadata).forEach(([k, v]) => {
     ? 'satellite RNA'
     : 'retrozyme'
   metadata[k].releaseDate = v.releaseDate?.slice(0, 10)
+})
+
+// write the Infernal output into the metadata
+const infernalOut = fs
+  .readFileSync(path.join(dirName, 'ribozymes.txt'))
+  .toString()
+  .split('\n')
+const ribozymes = {}
+let currentAcc = ''
+for (const line of infernalOut) {
+  if (line.startsWith('Query:')) {
+    currentAcc = line.split(/[ ,]+/)[1]
+    continue
+  }
+  if (line === '') {
+    continue
+  }
+  if (line.startsWith('#')) {
+    continue
+  }
+  ribozymes[currentAcc] =
+    currentAcc in ribozymes ? ribozymes[currentAcc] + '\n' + line : line
+}
+Object.entries(ribozymes).forEach(([k, v]) => {
+  metadata[k] = { ...metadata[k], ribozymes: ribozymes[k] }
 })
 
 // console.log(metadata)
