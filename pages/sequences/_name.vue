@@ -329,40 +329,7 @@ import Vue from 'vue'
 // import { IContentDocument } from '@nuxt/content/types/content'
 import { parseStringPromise } from 'xml2js'
 import { saveAs } from 'file-saver'
-
-interface sequenceMetadata {
-  identicalSeqs: string[]
-  accession: string
-  submitters: string
-  releaseDate: string
-  species: string
-  genus: string
-  family: string
-  length: number
-  sequenceType: string
-  geoLocation: string
-  host: string
-  isolationSource: string
-  collectionDate: string
-  genBankTitle?: string
-  displayTitle: string
-  gc: number
-  sequence: string
-  structure: {
-    plus: {
-      dbn: string
-      mfe: number
-      basesPaired: number
-    }
-    minus: {
-      dbn: string
-      mfe: number
-      basesPaired: number
-    }
-  }
-  type: string
-  ribozymes: string
-}
+import { sequenceMetadata } from 'types/sequenceMetadata'
 
 export default Vue.extend({
   data() {
@@ -414,22 +381,18 @@ export default Vue.extend({
     }
   },
   async fetch() {
+    const snapshot = await this.$fire.firestore
+      .collection('sequences')
+      .doc(this.$route.params.name)
+      .get()
+    this.sequenceMetadata = snapshot.data() as sequenceMetadata
+    this.showforna()
     this.uid = await fetch(
       `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=${this.$route.params.name}`
     )
       .then((res) => res.text())
       .then((body) => parseStringPromise(body))
       .then((result) => result.eSearchResult.IdList[0].Id[0])
-
-    // get the data for the sequence
-    this.sequenceMetadata = await this.$http.$get(
-      `/seqs/${this.$route.params.name}.json`
-    )
-
-    // this.sequence = x.sequence
-    // this.dbn = x.dbn
-    // this.dbnRevComp = x.dbnRevComp
-    this.showforna()
   },
 
   computed: {
