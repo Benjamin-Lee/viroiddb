@@ -73,7 +73,7 @@
       <div
         class="max-w-3xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-12 lg:gap-8"
       >
-        <main class="lg:col-span-9 xl:col-span-4">
+        <main class="col-span-4">
           <!-- Your content -->
           <!-- This example requires Tailwind CSS v2.0+ -->
           <Card
