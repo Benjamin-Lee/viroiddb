@@ -1,6 +1,6 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="bg-gray-100">
+  <div class="bg-gray-50">
     <div class="flex flex-col h-screen justify-between">
       <div>
         <nav class="bg-white border-b border-gray-200">
@@ -142,7 +142,7 @@
           </div>
         </nav>
 
-        <div class="py-10 bg-gray-100">
+        <div class="py-10 bg-gray-50">
           <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
               <Nuxt keep-alive />
@@ -151,7 +151,7 @@
         </div>
       </div>
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <footer class="bg-gray-100">
+      <footer class="bg-gray-50">
         <div
           class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8"
         >
