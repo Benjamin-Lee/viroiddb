@@ -17,7 +17,7 @@ HeaderBreakerCb <- function(input_df,sep=".",clb="id",nclb=hedclbs){
   # output=as.character(args[4])
 }
 # 
-# input_clu="/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/clusterin/Clusteringfiles/all.clu_cluster.tsv"
+input_clu="/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/clusterin/Clusteringfiles/all.clu_cluster.tsv"
 # input_fas='/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/db/all.fasta'
 # min_cluster_size=1
 # THREADS=10

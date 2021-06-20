@@ -48,7 +48,25 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/http'],
+  modules: [
+    '@nuxt/content',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyD28urAR7MGh-dfmNsM9LVbnxY1m20WM1M',
+          authDomain: 'viroiddb.firebaseapp.com',
+          projectId: 'viroiddb',
+          storageBucket: 'viroiddb.appspot.com',
+          messagingSenderId: '863813157544',
+          appId: '1:863813157544:web:0c5a95bed9fd4d4475789d',
+        },
+        services: {
+          firestore: true,
+        },
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -57,5 +75,13 @@ export default {
   generate: {
     fallback: true,
     // routes: dynamicRoutes,
+  },
+
+  content: {
+    markdown: {
+      prism: {
+        theme: false,
+      },
+    },
   },
 }

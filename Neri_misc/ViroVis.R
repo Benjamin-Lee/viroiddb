@@ -12,7 +12,7 @@ library(Biostrings)
 library(phangorn)
 library(castor)
 library(ggtree)
-
+library(DECIPHER)
 current_path=("/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/")
 setwd(current_path)
 
@@ -250,6 +250,23 @@ simplalimissing=filter(SimpleAli,!(Fnym %in%simplalimissing) )
 simplalimissing=filter(simplalimissing,!(Fnym %in%NotSimpleAli$Fnym) )
 
 stopCluster(myCluster)
+
+
+
+
+###### sql / json #####
+ftest=fromJSON(  "static/meta.tmp.json")
+cls90=fread(sep ='\t',header = T,file = "/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/clusterin/Cls.ID0.85.Cov0.75/Cluster_membership.tsv")
+cls90$Lmems=apply(cls90,MARGIN = 1, FUN = function(x) as.char(str_split_fixed(string = x["Mems"],pattern=", ",n = Inf )))
+cls90=`dropcols<-`(cls90,"Mems")
+cls90Json=toJSON(cls90)
+write_json(cls90Json,"cls90.JSON")
+
+
+cls90
+
+
+
 
 
 
