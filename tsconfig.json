@@ -28,7 +28,7 @@
       "@types/node",
       "@types/xml2js",
       "@types/file-saver",
-      "@nuxt/http",
+      "@nuxt/content",
       "@nuxtjs/firebase"
      ]
   },

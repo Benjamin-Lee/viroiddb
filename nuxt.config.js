@@ -49,7 +49,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/http',
+    '@nuxt/content',
     [
       '@nuxtjs/firebase',
       {
@@ -75,5 +75,13 @@ export default {
   generate: {
     fallback: true,
     // routes: dynamicRoutes,
+  },
+
+  content: {
+    markdown: {
+      prism: {
+        theme: false,
+      },
+    },
   },
 }
