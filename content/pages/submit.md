@@ -1,6 +1,6 @@
 ---
 title: Submit Data
-description: Learn how to use @nuxt/content.
+description: Genome submission page.
 ---
 
 Do you think that we missed data in the database?
