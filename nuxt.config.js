@@ -8,7 +8,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -61,6 +60,7 @@ export default {
           messagingSenderId: '863813157544',
           appId: '1:863813157544:web:0c5a95bed9fd4d4475789d',
         },
+        // terminateDatabasesAfterGenerate: true,
         services: {
           firestore: true,
         },
@@ -74,7 +74,7 @@ export default {
   // make Netlify work
   generate: {
     fallback: true,
-    // routes: dynamicRoutes,
+    // routes: ['/submit'],
   },
 
   content: {
