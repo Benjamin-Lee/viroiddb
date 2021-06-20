@@ -202,73 +202,6 @@
             </template></Card
           >
         </div>
-
-        <div class="col-span-12">
-          <Card
-            title="Ribozymes"
-            subtitle="Infernal search results for known ribozymes"
-          >
-            <pre class="text-sm text-gray-900 overflow-scroll h-96"
-              >{{ sequenceMetadata.ribozymes }}
-            </pre>
-            <template
-              v-if="sequenceMetadata.family === 'Pospiviroidae'"
-              #footer
-            >
-              <p class="text-sm text-gray-500">
-                Members of <i>Pospiviroidae</i> are not expected to contain
-                ribozymes.
-              </p></template
-            >
-          </Card>
-        </div>
-
-        <div class="col-span-6">
-          <Card title="Secondary structure (+)">
-            <template #unpaddedBody>
-              <DataRow title="MFE (25 ºC)">{{
-                sequenceMetadata.structure.plus.mfe
-              }}</DataRow>
-              <DataRow title="Bases paired"
-                >{{
-                  Number(
-                    sequenceMetadata.structure.plus.basesPaired * 100
-                  ).toFixed(1)
-                }}%</DataRow
-              >
-              <div
-                id="fornac_plus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
-            </template>
-          </Card>
-        </div>
-        <div class="col-span-6">
-          <Card title="Secondary structure (-)">
-            <template #unpaddedBody>
-              <DataRow title="MFE (25 ºC)">{{
-                sequenceMetadata.structure.minus.mfe
-              }}</DataRow>
-              <DataRow title="Bases paired"
-                >{{
-                  Number(
-                    sequenceMetadata.structure.minus.basesPaired * 100
-                  ).toFixed(1)
-                }}%</DataRow
-              >
-              <div
-                id="fornac_minus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
-            </template>
-          </Card>
-        </div>
         <Card
           title="Nucleotide sequence"
           subtitle="FASTA-formatted sequence data."
@@ -325,6 +258,71 @@
               </ul>
             </template></Card
           >
+        </div>
+        <div class="col-span-6">
+          <Card title="Secondary structure (+)">
+            <template #unpaddedBody>
+              <DataRow title="MFE (25 ºC)">{{
+                sequenceMetadata.structure.plus.mfe
+              }}</DataRow>
+              <DataRow title="Bases paired"
+                >{{
+                  Number(
+                    sequenceMetadata.structure.plus.basesPaired * 100
+                  ).toFixed(1)
+                }}%</DataRow
+              >
+              <div
+                id="fornac_plus"
+                class="h-96"
+                :class="{
+                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
+                }"
+              ></div>
+            </template>
+          </Card>
+        </div>
+        <div class="col-span-6">
+          <Card title="Secondary structure (-)">
+            <template #unpaddedBody>
+              <DataRow title="MFE (25 ºC)">{{
+                sequenceMetadata.structure.minus.mfe
+              }}</DataRow>
+              <DataRow title="Bases paired"
+                >{{
+                  Number(
+                    sequenceMetadata.structure.minus.basesPaired * 100
+                  ).toFixed(1)
+                }}%</DataRow
+              >
+              <div
+                id="fornac_minus"
+                class="h-96"
+                :class="{
+                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
+                }"
+              ></div>
+            </template>
+          </Card>
+        </div>
+        <div class="col-span-12">
+          <Card
+            title="Ribozymes"
+            subtitle="Infernal search results for known ribozymes"
+          >
+            <pre class="text-sm text-gray-900 overflow-scroll h-96"
+              >{{ sequenceMetadata.ribozymes }}
+            </pre>
+            <template
+              v-if="sequenceMetadata.family === 'Pospiviroidae'"
+              #footer
+            >
+              <p class="text-sm text-gray-500">
+                Members of <i>Pospiviroidae</i> are not expected to contain
+                ribozymes.
+              </p></template
+            >
+          </Card>
         </div>
         <aside class="col-span-4">
           <div class="sticky top-6 space-y-4">
