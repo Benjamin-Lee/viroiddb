@@ -8,10 +8,10 @@
             <div class="flex justify-between h-16">
               <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
-                  <a
-                    href="#"
+                  <NuxtLink
+                    to="/"
                     class="font-bold text-xl tracking-wide text-gray-900"
-                    >ViroidDB</a
+                    >ViroidDB</NuxtLink
                   >
                   <!-- <img
                     class="block lg:hidden h-8 w-auto"
