@@ -8,7 +8,12 @@
             <div class="flex justify-between h-16">
               <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
-                  <img
+                  <a
+                    href="#"
+                    class="font-bold text-xl tracking-wide text-gray-900"
+                    >ViroidDB</a
+                  >
+                  <!-- <img
                     class="block lg:hidden h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow"
@@ -17,7 +22,7 @@
                     class="hidden lg:block h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
                     alt="Workflow"
-                  />
+                  /> -->
                 </div>
                 <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                   <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
@@ -153,10 +158,10 @@
       <!-- This example requires Tailwind CSS v2.0+ -->
       <footer class="bg-gray-50">
         <div
-          class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8"
+          class="max-w-7xl mx-auto pb-12 px-4 overflow-hidden sm:px-6 lg:px-8"
         >
-          <p class="mt-8 text-center text-base text-gray-400">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+          <p class="text-center text-base text-gray-400">
+            &copy; {{ new Date().getFullYear() }}. All rights reserved.
           </p>
         </div>
       </footer>
