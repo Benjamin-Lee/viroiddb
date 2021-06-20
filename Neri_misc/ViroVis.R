@@ -43,7 +43,7 @@ AllvsAll=CalcPcoverage(AllvsAll)
 AllvsAll=AllvsAll[(pCoverage>0.9)]
 # summary(AllvsAll$pCoverage)
 # test1=AlignSeqs(RNAStringSet(AllSeqs) ,useStructures = T,processors=10)
-writeXStringSet(x = test1,filepath = "All.afa",width=20000)
+# writeXStringSet(x = test1,filepath = "All.afa",width=20000)
 
 ##### Testing  #### 
 AllvsAll=merge(Rename1Col(AllvsAll,"query_name","SeqID_trim"),SubVirDT[,c( "SeqID_trim","Length", "avsunviroidae", "deltavirus","pospiviroidae", "retrozymes","satellites","unclassified","viroids")],by="SeqID_trim",all.x=T,all.y=F)
@@ -114,156 +114,28 @@ ViroidLikes=merge(ViroidLikes,MTstat4Ben,by="IMG Genome ID",all.x=T,all.y=F)
 # }
 pospis=readDNAStringSet(filepath = "db/pospiviroidae.fasta") #filter(TabFastaList,Group=="pospiviroidae")$XString[[1]]
 Seqs2DB(seqs = "db/pospiviroidae.fasta",dbFile = "Neri/DecDB",processors = 10,type = "FASTA",identifier = names(pospis))
-FindSynteny(dbFile ="Neri/DecDB",processors = 10,useFrames = FALSE )
-FindSynteny
-# Below - pasted Map2Cons.R from RVMT
-ConsDir="ali.210416c/"
-AliDir="ali.210416a/"
-
-rdrp_faa=readAAStringSet("Degapped_merged.210416.faa")
-names(rdrp_faa)=trimws(names(rdrp_faa))
-rdrp_faa=rdrp_faa[intersect(names(rdrp_faa),IDFT$RdRp_ID)]
-ConsA_faa=readAAStringSet("Cons_merged.210416.faa")
-names(ConsA_faa)=trimws(names(ConsA_faa))
+# FindSynteny(dbFile ="Neri/DecDB",processors = 10,useFrames = FALSE )
 
 
-ConsC_faa=readAAStringSet("Degapped_merged.con.210416.faa")
-names(ConsC_faa)=trimws(names(ConsC_faa))
-
-ConsDF=XString2DF(faa = ConsC_faa,input_was ="ConsID",trimwhite = F,seqcolname = "ConsC_seq",addlength = T )
-ConsDF2=XString2DF(faa = ConsA_faa,input_was ="ConsID",trimwhite = F,seqcolname = "ConsA_seq",addlength = T )
-ConsDF3=merge(ConsDF2,ConsDF,by="ConsID",all.x=T,all.y=T)
-ConsDF3$vsv=ConsDF3$ConsA_seq==ConsDF3$ConsC_seq
-colnames(ConsDF3)=c("ConsID","Length.A", "ConsA_seq", "Length.C",  "ConsC_seq", "vsv")
-WriteWolfTbl(filter(ConsDF3,vsv ==F),"NConsDFT.tsv")
-redepremuted=setdiff(ConsC_faa,ConsA_faa)
-
-# Simple cases - cons are the same
-aliaf=data.frame(Fnym=list.files("./ali.210416a/",pattern = "*.afa"))
-aliaf$Cnym=gsub(pattern = ".afa",replacement = "",x = aliaf$Fnym,fixed = T)
-SimpleAli=filter(aliaf,!(Cnym %in% names(redepremuted)))
-ConsC=readAAStringSet(p0(ConsDir,"c210416.con.1.afa"))
-
-write_lines(simplalimissing,"Missing_Cons.lst")
-# Heregoes <- foreach(aliafa = SimpleAli$Fnym,.combine = c) %dopar% {
-for (aliafa in SimpleAli$Fnym){
-  print(aliafa)
-  
-  AliA=readAAStringSet(p0(AliDir,aliafa))
-  sect=intersect(names(AliA),names(ConsC))
-  if(length(sect)==0){next}
-  AC=c(AliA[sect],ConsC[sect])
-  names(AC)=c("A","C")
-  
-  txtC <- toString(AC["C"]) #
-  AZC <- unlist(gregexpr("[A-Z]",txtC ))
-  txtA <- toString(AC["A"]) #
-  AZA <- unlist(gregexpr("[A-Z]",txtA ))
-  
-  LnkTbl=data.frame("Acoor"=AZA,"Ccoor"=AZC)
-  
-  NewA=rep(AAStringSet(gsub(x=toString(rep("-",nchar(AC["C"]))),pattern=", ",replacement = "")),length(AliA))
-  names(NewA)=names(AliA)
-  
-  for (ix in 1:nrow(LnkTbl)){
-    # print(ix)
-    
-    Rplc=narrow(x = AliA,start =LnkTbl$Acoor[ix],width = 1 )
-    Rplc=toString(Rplc)
-    Rplc1= str_split_fixed(string = Rplc,pattern=", ",n = Inf )[1,]
-    NewLoc=LnkTbl$Ccoor[ix]
-    subseq(NewA, start=(rep(NewLoc,length(AliA))), width=1) <-   Rplc1
-  }
-  writeXStringSet(NewA,p0("ali.2042416d/",aliafa),width=20001)
-  gc()
-}
-
-
-NotSimpleAli=filter(aliaf,Cnym %in% names(redepremuted))
-NotSimpleAli=filter(NotSimpleAli,Cnym %in% ConsDF3$ConsID[which(ConsDF3$vsv ==F)])
-iy=0
-
-
-for (aliafa in NotSimpleAli$Fnym){
-  # print(aliafa)
-  
-  AliA=readAAStringSet(p0(AliDir,aliafa))
-  sect=intersect(names(AliA),names(ConsC))
-  if(length(sect)==0){next}
-  AC=c(AliA[sect],ConsC[sect])
-  names(AC)=c("A","C")
-  ACd=RemoveGaps(AC)
-  pwn=pairwiseAlignment(scoreOnly = F,pattern =(ACd["A"]) ,subject =(ACd["C"]),type="global")
-  # if(ACd["A"]==ACd["C"]){
-  #   ConsDF3$vsv[which(ConsDF3$ConsID ==names(AliA[1]))] =T
-  #   print(names(AliA[1]))
-  #   next
-  # }
-  # }
-  
-  
-  txtC <- toString(AC["C"]) #
-  AZC <- unlist(gregexpr("[A-Z]",txtC ))
-  txtA <- toString(AC["A"]) #
-  AZA <- unlist(gregexpr("[A-Z]",txtA ))
-  
-  LnkTbl=data.frame("Acoor"=AZA,"Ccoor"=AZC)
-  NewA=rep(AAStringSet(gsub(x=toString(rep("-",nchar(AC["C"]))),pattern=", ",replacement = "")),length(AliA))
-  names(NewA)=names(AliA)
-  bra=c(pwn@subject@indel@unlistData@start:(pwn@subject@indel@unlistData@width+pwn@subject@indel@unlistData@start)) # Non gap location of the chars from the original cons that corrospond to the coor of motif C., which will later be moved.
-  brc=c(pwn@pattern@indel@unlistData@start:(pwn@pattern@indel@unlistData@width+pwn@pattern@indel@unlistData@start)) # Non gap location of where motif C. was inserted into. 
-  
-  for (ix in 1:nrow(LnkTbl)){
-    print(ix)
-    # if(ix %in% )
-    Rplc=narrow(x = AliA,start =LnkTbl$Acoor[ix],width = 1 )
-    Rplc=toString(Rplc)
-    Rplc1= str_split_fixed(string = Rplc,pattern=", ",n = Inf )[1,]
-    NewLoc=LnkTbl$Ccoor[ix]
-    subseq(NewA, start=(rep(NewLoc,length(AliA))), width=1) <-   Rplc1
-  }
-  NewADF=XString2DF(NewA,input_was = "ali.210416a",seqcolname = "regapped")
-  
-  NewCoordsa=LnkTbl$Ccoor[bra]
-  NewCoordsc=LnkTbl$Ccoor[brc]
-  
-  mot0=narrow(NewA,start=1,end =min(NewCoordsa)-1)
-  motab=narrow(NewA,start=max(NewCoordsa),end =min(NewCoordsc)-1)
-  motc=narrow(NewA,start=min(NewCoordsa),end = max(NewCoordsa)-1)
-  motd=narrow(NewA,start=min(NewCoordsc),end = unique(NewA@ranges@width))
-  newNewA=xscat(mot0,motab,motc,motd)
-  names(newNewA)=names(NewA)
-  RemoveGaps(newNewA)
-  if(  toString(RemoveGaps(newNewA[1]))==toString(ACd["C"])){
-    print(iy)
-    iy=iy+1
-  }
-  # pwn2=pairwiseAlignment(RemoveGaps(newNewA[1]),ACd["C"])
-  # pwn2@pattern@mismatch
-  # BrowseSeqs(c(RemoveGaps(newNewA[1]),ACd["C"]),htmlFile = "test.html")
-  writeXStringSet(newNewA,p0("ali.2042416d/",aliafa),width=20001)
-  gc()
-}
-
-simplalimissing=list.files(path = "ali.2042416d/",pattern = ".afa")
-simplalimissing=filter(SimpleAli,!(Fnym %in%simplalimissing) )
-simplalimissing=filter(simplalimissing,!(Fnym %in%NotSimpleAli$Fnym) )
-
-stopCluster(myCluster)
-
-
-
-
-###### sql / json #####
+###### sql / json ###### 
 ftest=fromJSON(  "static/meta.tmp.json")
-cls90=fread(sep ='\t',header = T,file = "/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/clusterin/Cls.ID0.85.Cov0.75/Cluster_membership.tsv")
+cls90=fread(sep ='\t',header = T,file = "/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/clusterin/Cls.ID0.9.Cov0.75/Cluster_membership.tsv")
 cls90$Lmems=apply(cls90,MARGIN = 1, FUN = function(x) as.char(str_split_fixed(string = x["Mems"],pattern=", ",n = Inf )))
 cls90=`dropcols<-`(cls90,"Mems")
 cls90Json=toJSON(cls90)
 write_json(cls90Json,"cls90.JSON")
 
+cls=cls90
 
-cls90
+# write cls reps
+length(unlist(cls$Lmems)) # 9891
+reps_only=AllSeqs[filter(SubVirDT,SeqID_trim %in% cls$rep)$seqID]
+# writeXStringSet(reps_only,"Neri/clusterin/")
+cls_AllvsAll=filter(AllvsAll,SeqID_trim %in% cls$rep)
+cls_AllvsAll=filter(cls_AllvsAll,subject_name %in% cls$rep)
+cls_AllvsAll=cls_AllvsAll[(pident>75&evalue<0.000000001&(ali_len>100)&score>160)]
+
+WriteWolfTbl(Rtbl = cls_AllvsAll[,c("SeqID_trim","subject_name","score","Type","evalue")],filepath = "Neri/cls_AllvsAll.tsv")
 
 
 

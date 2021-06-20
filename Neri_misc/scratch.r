@@ -85,7 +85,7 @@ rD <- rsDriver(browser = "firefox",port =as.integer(4444))
 remDr <- rD[["client"]]
 
 
-dbn=ReadDBN("db/avsunviroidae.dbn",return_type = "BS",includes_MFE = T)
+dbn=ReadDBN("db/2021-06-06/satellites.dbn",return_type = "BS",includes_MFE = T)
 tmpvar=c()
 for (i in 1:length(dbn)) {
   tmppp=PopForna(dbn[i],pop=F,returl=T)
@@ -94,10 +94,10 @@ for (i in 1:length(dbn)) {
 remDr$navigate(tmppp)
 Sys.sleep(time = 1)
 # zoom_firefox(remDr, 150)
-remDr$screenshot(file = p0("./Neri/Pics/",seqnametrim,".png"),display = )
-tiger <- image_read( p0("./Neri/Pics/",seqnametrim,".png" ))
+remDr$screenshot(file = p0("./Neri/sat/",seqnametrim,".png"),display = )
+tiger <- image_read( p0("./Neri/sat/",seqnametrim,".png" ))
 tiger=image_crop(tiger,repage = T,"2220x1426+70+75+200")
-image_write(image = tiger,path =p0("./Neri/Pics/",seqnametrim,".1.png" ),format = "png",quality = 100,depth = 16,flatten = T)
+image_write(image = tiger,path =p0("./Neri/sat/",seqnametrim,".1.png" ),format = "png",quality = 100,depth = 16,flatten = T)
 
 }
   
