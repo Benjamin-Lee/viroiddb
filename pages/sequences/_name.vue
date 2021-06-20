@@ -64,7 +64,7 @@
           "
           @click="download"
         >
-          Download FASTA
+          Download FASTA{{ sequenceDisplayOptions.dbn ? ' with DBN' : '' }}
         </button>
       </div>
     </div>
@@ -279,16 +279,16 @@
               <DescriptionToggle
                 v-model="sequenceDisplayOptions.rc"
                 title="Reverse complement"
-                subtitle="Display the reverse complement of the sequence."
+                subtitle="Display the reverse complement of the sequence"
                 class="px-4 py-5 sm:p-6"
               ></DescriptionToggle>
-              <!-- <DescriptionToggle
-                v-model="sequenceDisplayOptions.rotated"
-                title="Rotated"
-                subtitle="Whether to display the sequence rotated to the same origin as other members of the group."
+              <DescriptionToggle
+                v-model="sequenceDisplayOptions.dbn"
+                title="Secondary structure"
+                subtitle="Include the secondary structure of the sequence in dot-bracket notation"
                 class="px-4 py-5 sm:p-6"
                 :checked="false"
-              ></DescriptionToggle> -->
+              ></DescriptionToggle>
               <DescriptionToggle
                 v-model="sequenceDisplayOptions.rna"
                 title="RNA"
@@ -355,7 +355,7 @@ export default Vue.extend({
         { name: 'Database', key: 'sequenceType' },
         { name: 'Rotationally Identical', key: 'identicalSeqs' },
       ],
-      sequenceDisplayOptions: { rc: false, rotate: false, rna: false },
+      sequenceDisplayOptions: { rc: false, dbn: false, rna: false },
       uid: '',
       sequenceMetadata: {
         identicalSeqs: [],
@@ -412,6 +412,13 @@ export default Vue.extend({
       return this.sequenceMetadata.sequence
     },
     fasta(): string {
+      let dbn = ''
+      if (this.sequenceDisplayOptions.dbn) {
+        dbn = !this.sequenceDisplayOptions.rc
+          ? this.sequenceMetadata.structure.plus.dbn
+          : this.sequenceMetadata.structure.minus.dbn
+        dbn = (dbn.match(new RegExp('.{1,' + 80 + '}', 'g')) ?? []).join('\n')
+      }
       return `>${this.sequenceMetadata.accession} ${
         'genBankTitle' in this.sequenceMetadata
           ? this.sequenceMetadata.genBankTitle
@@ -419,7 +426,7 @@ export default Vue.extend({
       } [ViroidDB]\n${(
         this.displaySequence.match(new RegExp('.{1,' + 80 + '}', 'g')) ?? []
       ) // had to do the null coalesce for typescript
-        .join('\n')}`
+        .join('\n')}\n${dbn}`
     },
     revCompSequence(): string {
       let seq = this.sequence.toUpperCase()
