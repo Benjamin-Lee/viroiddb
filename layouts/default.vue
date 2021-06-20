@@ -10,7 +10,7 @@
                 <div class="flex-shrink-0 flex items-center">
                   <NuxtLink
                     to="/"
-                    class="font-bold text-xl tracking-wide text-gray-900"
+                    class="font-bold text-xl tracking-wide text-gray-900 logo"
                     >ViroidDB</NuxtLink
                   >
                   <!-- <img
@@ -184,10 +184,15 @@ export default Vue.extend({
       showMenu: false,
     }
   },
+  watch: {
+    $route() {
+      this.showMenu = false
+    },
+  },
 })
 </script>
 <style lang="postcss">
-.nuxt-link-active {
+.nuxt-link-active:not(.logo) {
   @apply bg-indigo-50 border-indigo-500 text-indigo-700 sm:bg-white sm:border-indigo-500 sm:hover:border-indigo-500 sm:text-gray-900 sm:hover:text-gray-900;
 }
 </style>
