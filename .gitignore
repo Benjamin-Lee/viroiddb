@@ -71,7 +71,12 @@ sw.*
 content/*.json
 static/seqs/*.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 .Rhistory
+=======
+
+service_key.json
+>>>>>>> 6b5968ada55b92cc62118663ca51134c82689bae
 =======
 
 service_key.json
