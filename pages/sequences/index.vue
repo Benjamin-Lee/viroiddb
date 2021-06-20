@@ -315,12 +315,12 @@ export default Vue.extend({
     return {
       maxDisplay: 50,
       groups: [
-        { name: 'Viroids', bgColor: 'bg-red-600', initials: 'Vd', members: 21 },
+        { name: 'Viroids', bgColor: 'bg-red-600', initials: 'Vd', members: 9264 },
         {
           name: 'Satellite RNAs',
           bgColor: 'bg-blue-600',
           initials: 'satRNA',
-          members: 21,
+          members: 10,
         },
         {
           name: 'Ribozyviruses',
@@ -332,7 +332,7 @@ export default Vue.extend({
           name: 'Retrozymes',
           bgColor: 'bg-yellow-600',
           initials: 'Rtz',
-          members: 21,
+          members: 74,
         },
       ],
       query: '',
