@@ -236,7 +236,13 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div id="fornac_plus" class="h-96"></div>
+              <div
+                id="fornac_plus"
+                class="h-96"
+                :class="{
+                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
+                }"
+              ></div>
             </template>
           </Card>
         </div>
@@ -253,7 +259,13 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div id="fornac_minus" class="h-96"></div>
+              <div
+                id="fornac_minus"
+                class="h-96"
+                :class="{
+                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
+                }"
+              ></div>
             </template>
           </Card>
         </div>
@@ -386,7 +398,7 @@ export default Vue.extend({
       .doc(this.$route.params.name)
       .get()
     this.sequenceMetadata = snapshot.data() as sequenceMetadata
-    this.showforna()
+    // this.showforna()
     this.uid = await fetch(
       `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=${this.$route.params.name}`
     )
