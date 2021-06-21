@@ -8,6 +8,26 @@ Members of this unique group of agents are characterized by their small genome s
 
 To better support computational and experimental research on these agents, we have manually compiled a database of nearly ten thousand viroid-like RNA sequences from the NCBI's nucleotide database and made them available for download at viroids.org. In addition to curating the respective INSDC accessions and sequences, we have performed considerable post-processing so that ViroidDB entries are consistently formatted, enabling their direct use in common downstream analyses (e.g. circular sequences are consistently rotated and all sequence sets are deduplicated and estimated to represent complete genomes). For use cases where the complete range of variation is undesirable, we have performed clustering to identify a representative sequence for each cluster when no reference sequence is available. The database is version controlled and accessible by web via a simple graphical user interface or by command-line interface for programmatic data retrieval. Furthermore, the database is permanently archived in the Zenodo repository, ensuring future accessibility.
 
-Etc etc.
+# How we curate the database
+To collect the sequences for the database we followed this protocol:
 
+For viroids and deltaviruses, we used the NCBI Virus portal to download complete sequences within the taxonomy IDs:  
+| Subset         | #Sequences | NCBI TaxID                                                                   |
+|----------------|------------|------------------------------------------------------------------------------|
+| All            | 9891       | ----                                                                         |
+| Viroids        | 9354       |                                                                              |
+| Avsunviroidae  | 5284       | [185752](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185752) |
+| Pospiviroidae  | 3980       | [185751](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185751) |
+| Unclassified   | 90         | [265963](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=265963) |
+| Deltavirus     | 453        | [39759](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=39759)   |   
+
+For retrozymes, which are currently not taxonomically classified as monophyletic group, we downloaded all sequences within the NCBI Nucleotide database matching the search term ["ribozyme"](https://www.ncbi.nlm.nih.gov/nuccore/?term=retrozymes).  
+Similarly, for satellite RNAs, all sequences within the NCBI Nucleotide database matching each of the small circular satellites in Viroids and Satellites (2017).  
+
+Deduplication and formatting is performed by SeqKit. Comment lines are standardized as >accession genbank_title.    
+
+Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at leas) a yearly basis. If you feel an update is required, please contact us or perform the update yourself and submit it as a pull request to the repository.
+How to contact me
+
+Feel free to contact us via sending an email or filing an issue on GitHub. 
 To view the sequence data, [click here](/sequences).
