@@ -46,7 +46,7 @@
         >
         <div class="mt-1">
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             class="
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div>
-        <label for="accession" class="block text-sm font-medium text-gray-700"
+        <label for="comments" class="block text-sm font-medium text-gray-700"
           >Comments</label
         >
         <div class="mt-1">
