@@ -138,6 +138,7 @@ export default Vue.extend({
   computed: {
     displayMetadata() {
       return this.sequenceMetadata.filter(
+        // @ts-ignore
         (k) => typeof k.displayTitle !== 'undefined'
       )
     },

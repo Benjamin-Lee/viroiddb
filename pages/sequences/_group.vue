@@ -8,9 +8,10 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+import { sequenceMetadata } from '@/types/sequenceMetadata'
 export default Vue.extend({
   data() {
-    return { metadata: [] }
+    return { metadata: [] as sequenceMetadata[] }
   },
   async fetch() {
     const snapshot = await this.$fire.firestore
