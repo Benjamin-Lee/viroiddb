@@ -22,7 +22,7 @@
         <label for="name" class="block text-sm font-medium text-gray-700"
           >Name</label
         >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="submit" />
         <div class="mt-1">
           <input
             type="text"
