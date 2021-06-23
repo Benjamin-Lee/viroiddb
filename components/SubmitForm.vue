@@ -25,9 +25,9 @@
         <input type="hidden" name="form-name" value="submit" />
         <div class="mt-1">
           <input
+            id="name"
             type="text"
             name="name"
-            id="name"
             class="
               shadow-sm
               focus:ring-indigo-500 focus:border-indigo-500
@@ -47,9 +47,9 @@
         >
         <div class="mt-1">
           <input
+            id="email"
             type="email"
             name="email"
-            id="email"
             class="
               shadow-sm
               focus:ring-indigo-500 focus:border-indigo-500
@@ -69,9 +69,9 @@
         >
         <div class="mt-1">
           <input
+            id="accession"
             type="text"
             name="accession"
-            id="accession"
             class="
               shadow-sm
               focus:ring-indigo-500 focus:border-indigo-500
@@ -91,8 +91,8 @@
         >
         <div class="mt-1">
           <textarea
-            name="comments"
             id="comments"
+            name="comments"
             class="
               shadow-sm
               focus:ring-indigo-500 focus:border-indigo-500
