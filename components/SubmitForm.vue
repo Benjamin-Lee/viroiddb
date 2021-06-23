@@ -63,7 +63,7 @@
       </div>
       <div>
         <label for="accession" class="block text-sm font-medium text-gray-700"
-          >Accession</label
+          >Accession(s)</label
         >
         <div class="mt-1">
           <input
@@ -79,7 +79,7 @@
               border-gray-300
               rounded-md
             "
-            placeholder="AB279771.1"
+            placeholder="AB279771.1, AF298178.1"
           />
         </div>
       </div>
