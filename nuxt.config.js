@@ -74,6 +74,9 @@ export default {
   // make Netlify work
   generate: {
     fallback: true,
+    minify: {
+      removeRedundantAttributes: false,
+    },
     // routes: ['/submit'],
   },
 
