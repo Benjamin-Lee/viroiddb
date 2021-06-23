@@ -19,15 +19,13 @@ For viroids and deltaviruses, we used the NCBI Virus portal to download complete
 | Avsunviroidae  | 5284       | [185752](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185752) |
 | Pospiviroidae  | 3980       | [185751](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185751) |
 | Unclassified   | 90         | [265963](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=265963) |
-| Deltavirus     | 453        | [39759](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=39759)   |   
+| Deltavirus     | 453        | [39759](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=39759)   |
+| Satellite RNAs | 35         | [141863](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=141863)   |   
 
-For retrozymes, which are currently not taxonomically classified as monophyletic group, we downloaded all sequences within the NCBI Nucleotide database matching the search term ["ribozyme"](https://www.ncbi.nlm.nih.gov/nuccore/?term=retrozymes).  
-Similarly, for satellite RNAs, all sequences within the NCBI Nucleotide database matching each of the small circular satellites in Viroids and Satellites (2017).  
+
+For retrozymes, which are currently not taxonomically classified as monophyletic group, we downloaded all sequences within the NCBI Nucleotide database matching the search term ["retrozymes"](https://www.ncbi.nlm.nih.gov/nuccore/?term=retrozymes).  
 
 Deduplication and formatting is performed by SeqKit. Comment lines are standardized as >accession genbank_title.    
 
-Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at leas) a yearly basis. If you feel an update is required, please contact us or perform the update yourself and submit it as a pull request to the repository.
-How to contact me
+Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you feel an update is required, please contact us or perform the update yourself and submit it as a pull request to the repository.
 
-Feel free to contact us via sending an email or filing an issue on GitHub. 
-To view the sequence data, [click here](/sequences).
