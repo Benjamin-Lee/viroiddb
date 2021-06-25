@@ -25,7 +25,7 @@
       "
     >
       <div class="flex-1 px-4 py-2 text-sm truncate">
-        <p>{{ name }}</p>
+        <NuxtLink :to="path">{{ name }}</NuxtLink>
         <p class="text-gray-500">
           {{ Number(members).toLocaleString() }} Members
         </p>
