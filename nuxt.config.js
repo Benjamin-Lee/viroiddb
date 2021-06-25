@@ -69,14 +69,27 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    html: {
+      minify: {
+        // have to copy-paste since it is not merged
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: false,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+      },
+    },
+  },
 
   // make Netlify work
   generate: {
     fallback: true,
-    minify: {
-      removeRedundantAttributes: false,
-    },
+
     // routes: ['/submit'],
   },
 
