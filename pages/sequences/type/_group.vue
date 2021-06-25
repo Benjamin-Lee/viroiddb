@@ -2,7 +2,7 @@
   <div>
     <TheHeader
       ><span class="capitalize">{{
-        $route.params.group +
+        $route.params.group.replaceAll('-', ' ') +
         ($route.params.group.slice(-1) === 's' ? 'es' : 's')
       }}</span></TheHeader
     >
@@ -38,7 +38,7 @@ export default Vue.extend({
   async fetch() {
     const snapshot = await this.$fire.firestore
       .collection('sequences')
-      .where('type', '==', this.$route.params.group.replaceAll('_', ' '))
+      .where('type', '==', this.$route.params.group.replaceAll('-', ' '))
       .orderBy('accession')
       .limit(this.maxDisplay)
       .get()
