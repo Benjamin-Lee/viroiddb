@@ -1,8 +1,12 @@
 <template>
-  <li class="col-span-1 flex shadow-sm rounded-md">
+  <NuxtLink
+    :to="path"
+    tag="li"
+    class="col-span-1 flex shadow-sm rounded-md group hover:cursor-pointer"
+  >
     <div
       :class="[
-        bgColor,
+        'bg-' + color,
         'flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md',
       ]"
     >
@@ -17,46 +21,27 @@
         bg-white
         rounded-r-md
         truncate
+        group-hover:bg-gray-50
       "
     >
       <div class="flex-1 px-4 py-2 text-sm truncate">
-        <a :href="href" class="text-gray-900 font-medium hover:text-gray-600">{{
-          name
-        }}</a>
-        <p class="text-gray-500">{{ members }} Members</p>
-      </div>
-      <div class="flex-shrink-0 pr-2">
-        <button
-          class="
-            w-8
-            h-8
-            bg-white
-            inline-flex
-            items-center
-            justify-center
-            text-gray-400
-            rounded-full
-            bg-transparent
-            hover:text-gray-500
-            focus:outline-none
-            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
-          "
-        >
-          <span class="sr-only">Open options</span>
-        </button>
+        <p>{{ name }}</p>
+        <p class="text-gray-500">
+          {{ Number(members).toLocaleString() }} Members
+        </p>
       </div>
     </div>
-  </li>
+  </NuxtLink>
 </template>
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
   props: {
     name: String,
+    path: String,
     members: Number,
-    href: String,
     initials: String,
-    bgColor: String,
+    color: String,
   },
 })
 </script>

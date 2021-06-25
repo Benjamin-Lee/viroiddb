@@ -8,7 +8,7 @@ Members of this unique group of agents are characterized by their small genome s
 
 To better support computational and experimental research on these agents, we have manually compiled a database of nearly ten thousand viroid-like RNA sequences from the NCBI's nucleotide database and made them available for download at viroids.org. In addition to curating the respective INSDC accessions and sequences, we have performed considerable post-processing so that ViroidDB entries are consistently formatted, enabling their direct use in common downstream analyses (e.g. circular sequences are consistently rotated and all sequence sets are deduplicated and estimated to represent complete genomes). For use cases where the complete range of variation is undesirable, we have performed clustering to identify a representative sequence for each cluster when no reference sequence is available. The database is version controlled and accessible by web via a simple graphical user interface or by command-line interface for programmatic data retrieval. Furthermore, the database is permanently archived in the Zenodo repository, ensuring future accessibility.
 
-# How we curate the database
+## How we curate the database
 To collect the sequences for the database we followed this protocol:
 
 For viroids and deltaviruses, we used the NCBI Virus portal to download complete sequences within the taxonomy IDs:  

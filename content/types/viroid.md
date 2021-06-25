@@ -1,0 +1,1 @@
+The smallest known pathogens, viroids are comprised entirely of noncoding RNA. Instead, they replicate by parasitizing host enzymes and, in some cases, using ribozymes formed by the genome itself.

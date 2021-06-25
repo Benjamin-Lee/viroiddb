@@ -1,8 +1,12 @@
 <template>
   <div>
     <TheHeader
-      ><span class="capitalize">{{ $route.params.group }}</span></TheHeader
+      ><span class="capitalize">{{
+        $route.params.group +
+        ($route.params.group.slice(-1) === 's' ? 'es' : 's')
+      }}</span></TheHeader
     >
+    <nuxt-content :document="page" class="prose mt-5 mb-8" />
     <LinkTable :sequence-metadata="metadata"></LinkTable>
   </div>
 </template>
@@ -21,6 +25,12 @@ export default Vue.extend({
       .limit(50)
       .get()
     this.metadata = snapshot.docs.map((doc) => doc.data()) as sequenceMetadata[]
+  },
+  async asyncData({ $content, params }) {
+    const page = await $content('types/' + params.group).fetch()
+    return {
+      page,
+    }
   },
 })
 </script>
