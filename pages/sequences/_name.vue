@@ -259,6 +259,25 @@
             </template></Card
           >
         </div>
+        <div class="col-span-12">
+          <Card
+            title="Ribozymes"
+            subtitle="Infernal search results for known ribozymes"
+          >
+            <pre class="text-sm text-gray-900 overflow-scroll h-96"
+              >{{ sequenceMetadata.ribozymes }}
+            </pre>
+            <template
+              v-if="sequenceMetadata.family === 'Pospiviroidae'"
+              #footer
+            >
+              <p class="text-sm text-gray-500">
+                Members of <i>Pospiviroidae</i> are not expected to contain
+                ribozymes.
+              </p></template
+            >
+          </Card>
+        </div>
         <div class="col-span-6">
           <Card title="Secondary structure (+)">
             <template #unpaddedBody>
@@ -303,25 +322,6 @@
                 }"
               ></div>
             </template>
-          </Card>
-        </div>
-        <div class="col-span-12">
-          <Card
-            title="Ribozymes"
-            subtitle="Infernal search results for known ribozymes"
-          >
-            <pre class="text-sm text-gray-900 overflow-scroll h-96"
-              >{{ sequenceMetadata.ribozymes }}
-            </pre>
-            <template
-              v-if="sequenceMetadata.family === 'Pospiviroidae'"
-              #footer
-            >
-              <p class="text-sm text-gray-500">
-                Members of <i>Pospiviroidae</i> are not expected to contain
-                ribozymes.
-              </p></template
-            >
           </Card>
         </div>
         <aside class="col-span-4">
