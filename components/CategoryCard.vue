@@ -6,7 +6,7 @@
   >
     <div
       :class="[
-        'bg-' + color,
+        color,
         'flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md',
       ]"
     >
