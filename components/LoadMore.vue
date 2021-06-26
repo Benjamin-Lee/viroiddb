@@ -1,7 +1,5 @@
 <template>
   <button
-    @click="$emit('click')"
-    type="button"
     class="
       inline-flex
       items-center
@@ -16,6 +14,8 @@
       hover:bg-indigo-200
       focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
     "
+    type="button"
+    @click="$emit('click')"
   >
     Load more
   </button>
