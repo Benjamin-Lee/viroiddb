@@ -3,7 +3,7 @@
     <ais-search-box class="mb-1">
       <div slot-scope="{ currentRefinement, isSearchStalled, refine }">
         <input
-          class="w-full border-r-0 border-l-0 border-t-0 border-b-4 border-indigo-600 bg-gray-50 text-2xl pl-0"
+          class="w-full border-r-0 border-l-0 border-t-0 border-b-4 border-indigo-600 bg-gray-50 text-2xl pl-0 focus:border-indigo-600"
           type="search"
           placeholder="Search..."
           :value="currentRefinement"
