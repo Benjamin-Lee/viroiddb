@@ -13,15 +13,17 @@
 
     <ais-hits>
       <template slot="item" slot-scope="{ item }">
-        <p>
-          <ais-highlight attribute="accession" :hit="item" />
-        </p>
-        <p>
-          <ais-highlight attribute="displayTitle" :hit="item" />
-        </p>
-        <p>
-          <ais-highlight attribute="geoLocation" :hit="item" />
-        </p>
+          <nuxt-link :to="`/sequences/${item.accession}`">
+            <p class="text-gray-900 mx-1 hover:text-indigo-600">
+              <ais-highlight attribute="displayTitle" :hit="item" />
+            </p>
+            <p class="text-gray-500 mx-1">
+              <ais-highlight attribute="accession" :hit="item" />
+            </p>
+                    <!-- <p>
+            <ais-highlight attribute="geoLocation" :hit="item" />
+                    </p> -->
+          </nuxt-link>
       </template>
     </ais-hits>
     <ais-pagination />
