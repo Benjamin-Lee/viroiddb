@@ -30,19 +30,19 @@
 
     <div class="lg:flex lg:justify-between mb-4">
       <div class="my-4">
-        <p class="text-indigo-600">Species</p>
+        <p class="text-indigo-600 text-xl">Species</p>
         <ais-refinement-list attribute="species" />
       </div>
       <div class="my-4">
-        <p class="text-indigo-600">Genus</p>
+        <p class="text-indigo-600 text-xl">Genus</p>
         <ais-refinement-list attribute="genus" />
       </div>
       <div class="my-4">
-        <p class="text-indigo-600">Family</p>
+        <p class="text-indigo-600 text-xl">Family</p>
         <ais-refinement-list attribute="family" />
       </div>
       <div class="my-4">
-        <p class="text-indigo-600">Type</p>
+        <p class="text-indigo-600 text-xl">Type</p>
         <ais-refinement-list attribute="type" />
       </div>
     </div>
