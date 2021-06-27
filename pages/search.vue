@@ -1,8 +1,23 @@
 <template>
   <ais-instant-search :search-client="searchClient" index-name="viroiddb">
-    <ais-search-box/>
-    <ais-stats class="text-indigo-600" />
-    <div class="lg:flex lg:justify-between">
+    <ais-search-box />
+    <ais-stats>
+      <p
+        slot-scope="{
+          hitsPerPage,
+          nbPages,
+          nbHits,
+          page,
+          processingTimeMS,
+          query,
+        }"
+        class="text-indigo-600"
+      >
+        {{ nbHits }} <span class="text-gray-900">results</span> 
+      </p>
+    </ais-stats>
+
+    <div class="lg:flex lg:justify-between mb-4">
       <div class="my-4">
         <p class="text-indigo-600">Species</p>
         <ais-refinement-list attribute="species" />
@@ -21,7 +36,7 @@
       </div>
     </div>
     <ais-hits>
-      <template slot="item" slot-scope="{ item }">
+      <template slot="item" slot-scope="{ item }" class="rounded-md">
         <nuxt-link :to="`/sequences/${item.accession}`">
           <p class="text-gray-900 mx-1 hover:text-indigo-600">
             <ais-highlight attribute="displayTitle" :hit="item" />
@@ -29,13 +44,13 @@
           <p class="text-gray-500 mx-1">
             <ais-highlight attribute="accession" :hit="item" />
           </p>
-          <!-- <p>
+          <p class="text-gray-500 mx-1">
             <ais-highlight attribute="geoLocation" :hit="item" />
-                    </p> -->
+          </p>
         </nuxt-link>
       </template>
     </ais-hits>
-    <ais-pagination />
+    <ais-pagination class="mt-4 justify-self-center" />
   </ais-instant-search>
 </template>
 <script>
