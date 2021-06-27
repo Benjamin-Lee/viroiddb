@@ -1,5 +1,5 @@
 <template>
-  <ais-instant-search :search-client="searchClient" index-name="viroiddb">
+  <ais-instant-search :search-client="searchClient" index-name="viroiddb" class="flex flex-col">
     <ais-search-box class="mb-1">
       <div slot-scope="{ currentRefinement, isSearchStalled, refine }">
         <input
@@ -61,7 +61,7 @@
         </nuxt-link>
       </template>
     </ais-hits>
-    <ais-pagination class="mt-4 justify-self-center" />
+    <ais-pagination class="mt-4 p-2 self-center" />
   </ais-instant-search>
 </template>
 <script>
