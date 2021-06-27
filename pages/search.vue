@@ -1,29 +1,38 @@
 <template>
   <ais-instant-search :search-client="searchClient" index-name="viroiddb">
-    <ais-search-box />
-    <ais-stats />
-    <p>Species</p>
-    <ais-refinement-list attribute="species" />
-    <p>Genus</p>
-    <ais-refinement-list attribute="genus" />
-    <p>Family</p>
-    <ais-refinement-list attribute="family" />
-    <p>Type</p>
-    <ais-refinement-list attribute="type" />
-
+    <ais-search-box/>
+    <ais-stats class="text-indigo-600" />
+    <div class="lg:flex lg:justify-between">
+      <div class="my-4">
+        <p class="text-indigo-600">Species</p>
+        <ais-refinement-list attribute="species" />
+      </div>
+      <div class="my-4">
+        <p class="text-indigo-600">Genus</p>
+        <ais-refinement-list attribute="genus" />
+      </div>
+      <div class="my-4">
+        <p class="text-indigo-600">Family</p>
+        <ais-refinement-list attribute="family" />
+      </div>
+      <div class="my-4">
+        <p class="text-indigo-600">Type</p>
+        <ais-refinement-list attribute="type" />
+      </div>
+    </div>
     <ais-hits>
       <template slot="item" slot-scope="{ item }">
-          <nuxt-link :to="`/sequences/${item.accession}`">
-            <p class="text-gray-900 mx-1 hover:text-indigo-600">
-              <ais-highlight attribute="displayTitle" :hit="item" />
-            </p>
-            <p class="text-gray-500 mx-1">
-              <ais-highlight attribute="accession" :hit="item" />
-            </p>
-                    <!-- <p>
+        <nuxt-link :to="`/sequences/${item.accession}`">
+          <p class="text-gray-900 mx-1 hover:text-indigo-600">
+            <ais-highlight attribute="displayTitle" :hit="item" />
+          </p>
+          <p class="text-gray-500 mx-1">
+            <ais-highlight attribute="accession" :hit="item" />
+          </p>
+          <!-- <p>
             <ais-highlight attribute="geoLocation" :hit="item" />
                     </p> -->
-          </nuxt-link>
+        </nuxt-link>
       </template>
     </ais-hits>
     <ais-pagination />
