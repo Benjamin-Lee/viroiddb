@@ -49,7 +49,7 @@
     <ais-hits>
       <template slot="item" slot-scope="{ item }" class="rounded-md">
         <nuxt-link :to="`/sequences/${item.accession}`">
-          <p class="text-gray-900 mx-1 hover:text-indigo-600">
+          <p class="text-gray-900 mx-1 hover:text-indigo-600 text-lg">
             <ais-highlight attribute="displayTitle" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1">
