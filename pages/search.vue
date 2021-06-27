@@ -1,6 +1,18 @@
 <template>
   <ais-instant-search :search-client="searchClient" index-name="viroiddb">
-    <ais-search-box />
+    <ais-search-box class="mb-1">
+      <div slot-scope="{ currentRefinement, isSearchStalled, refine }">
+        <input
+          class="w-full border-r-0 border-l-0 border-t-0 border-b-4 border-indigo-600 bg-gray-50 text-2xl pl-0"
+          type="search"
+          placeholder="Search..."
+          :value="currentRefinement"
+          @input="refine($event.currentTarget.value)"
+        />
+        <span :hidden="!isSearchStalled">Loading...</span>
+      </div>
+    </ais-search-box>
+
     <ais-stats>
       <p
         slot-scope="{
@@ -13,7 +25,7 @@
         }"
         class="text-indigo-600"
       >
-        {{ nbHits }} <span class="text-gray-900">results</span> 
+        {{ nbHits }} <span class="text-gray-900">results</span>
       </p>
     </ais-stats>
 
