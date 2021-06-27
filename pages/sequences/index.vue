@@ -36,7 +36,7 @@
         </ul>
       </div>
     </div>
-    <LinkTable :sequence-metadata="displayMetadata"></LinkTable>
+    <SeqTable :metadata="displayMetadata"></SeqTable>
     <div v-if="!$fetchState.pending" class="flex justify-center mt-6">
       <LoadMore
         @click="

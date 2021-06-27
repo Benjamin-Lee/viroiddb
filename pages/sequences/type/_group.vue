@@ -7,7 +7,7 @@
       }}</span></TheHeader
     >
     <nuxt-content :document="page" class="prose mt-5 mb-8" />
-    <LinkTable :sequence-metadata="metadata"></LinkTable>
+    <SeqTable :metadata="metadata"></SeqTable>
     <div
       v-if="!$fetchState.pending && metadata.length === maxDisplay"
       class="flex justify-center mt-6"

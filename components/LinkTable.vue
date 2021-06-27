@@ -7,6 +7,8 @@
             <thead class="bg-white">
               <tr>
                 <th
+                  v-for="column in columns"
+                  :key="column.name"
                   scope="col"
                   class="
                     px-6
@@ -18,63 +20,7 @@
                     tracking-wider
                   "
                 >
-                  Name
-                </th>
-                <th
-                  scope="col"
-                  class="
-                    px-6
-                    py-3
-                    text-left text-xs
-                    font-medium
-                    text-gray-500
-                    uppercase
-                    tracking-wider
-                  "
-                >
-                  Accession
-                </th>
-                <th
-                  scope="col"
-                  class="
-                    px-6
-                    py-3
-                    text-left text-xs
-                    font-medium
-                    text-gray-500
-                    uppercase
-                    tracking-wider
-                  "
-                >
-                  Length
-                </th>
-                <th
-                  scope="col"
-                  class="
-                    px-6
-                    py-3
-                    text-left text-xs
-                    font-medium
-                    text-gray-500
-                    uppercase
-                    tracking-wider
-                  "
-                >
-                  Type
-                </th>
-                <th
-                  scope="col"
-                  class="
-                    px-6
-                    py-3
-                    text-left text-xs
-                    font-medium
-                    text-gray-500
-                    uppercase
-                    tracking-wider
-                  "
-                >
-                  Family
+                  {{ column.name }}
                 </th>
                 <th scope="col" class="relative px-6 py-3">
                   <span class="sr-only">View</span>
@@ -82,56 +28,22 @@
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-              <template v-for="(sequence, seqIdx) in displayMetadata">
+              <template v-for="(row, rowIdx) in metadata">
                 <tr
-                  :key="sequence.accession"
+                  :key="rowIdx"
                   class="hover:cursor-pointer hover:bg-gray-50"
-                  :class="seqIdx % 2 === 0 ? 'bg-white' : 'bg-white'"
-                  @click="$router.push(`/sequences/${sequence.accession}`)"
+                  @click="$router.push(row.to)"
                 >
                   <td
-                    class="
-                      px-6
-                      py-4
-                      whitespace-nowrap
-                      text-sm
-                      font-medium
-                      text-gray-900
-                    "
+                    v-for="(column, columnIdx) in columns"
+                    :key="column.key"
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium"
+                    :class="[
+                      columnIdx === 0 ? 'text-gray-900' : 'text-gray-500',
+                      column.class,
+                    ]"
                   >
-                    {{ sequence.displayTitle }}{{ seqIdx }}
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    <a
-                      :href="`https://www.ncbi.nlm.nih.gov/nuccore/${sequence.accession}`"
-                      target="_blank"
-                      >{{ sequence.accession }}</a
-                    >
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {{ sequence.length }} bp
-                  </td>
-                  <td
-                    class="
-                      px-6
-                      py-4
-                      whitespace-nowrap
-                      text-sm text-gray-500
-                      capitalize
-                    "
-                  >
-                    {{ sequence.type }}
-                  </td>
-                  <td
-                    class="
-                      px-6
-                      py-4
-                      whitespace-nowrap
-                      text-sm text-gray-500
-                      italic
-                    "
-                  >
-                    {{ sequence.family }}
+                    {{ row[column.key] }}
                   </td>
                   <td
                     class="
@@ -143,10 +55,11 @@
                     "
                   >
                     <NuxtLink
-                      :to="'/sequences/' + sequence.accession"
+                      :to="row.to"
                       class="text-indigo-600 hover:text-indigo-900"
-                      >View</NuxtLink
                     >
+                      View
+                    </NuxtLink>
                   </td>
                 </tr>
               </template>
@@ -161,15 +74,9 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    sequenceMetadata: { type: Array, required: false, default: () => [] },
-  },
-  computed: {
-    displayMetadata() {
-      return this.sequenceMetadata.filter(
-        // @ts-ignore
-        (k) => typeof k.displayTitle !== 'undefined'
-      )
-    },
+    // sequenceMetadata: { type: Array, required: false, default: () => [] },
+    columns: { type: Array, required: true },
+    metadata: { type: Array, required: true, default: () => [] },
   },
 })
 </script>
