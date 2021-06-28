@@ -1,9 +1,22 @@
 <template>
-  <ais-instant-search :search-client="searchClient" index-name="viroiddb" class="flex flex-col">
+  <ais-instant-search
+    :search-client="searchClient"
+    index-name="viroiddb"
+    class="flex flex-col"
+  >
     <ais-search-box class="mb-1">
       <div slot-scope="{ currentRefinement, isSearchStalled, refine }">
         <input
-          class="w-full py-2 border-r-0 border-l-0 border-t-0 border-b-4 border-indigo-600 bg-gray-50 text-4xl pl-0 focus:border-indigo-600"
+          class="
+            w-full
+            py-2
+            border-b-4 border-indigo-600
+            bg-gray-50
+            text-4xl
+            pl-0
+            rounded-none
+            focus:outline-none
+          "
           placeholder="Search..."
           :value="currentRefinement"
           @input="refine($event.currentTarget.value)"
@@ -13,12 +26,7 @@
     </ais-search-box>
 
     <ais-stats>
-      <p
-        slot-scope="{
-          nbHits,
-        }"
-        class="text-indigo-600"
-      >
+      <p slot-scope="{ nbHits }" class="text-indigo-600">
         {{ nbHits }} <span class="text-gray-900">results</span>
       </p>
     </ais-stats>
@@ -30,34 +38,38 @@
       </div>
       <div class="my-4">
         <p class="text-indigo-600 text-xl">Family</p>
-        <ais-refinement-list attribute="family" class="italic"/>
+        <ais-refinement-list attribute="family" class="italic" />
       </div>
-       <div class="my-4">
+      <div class="my-4">
         <p class="text-indigo-600 text-xl">Genus</p>
-        <ais-refinement-list attribute="genus" class="italic"/>
+        <ais-refinement-list attribute="genus" class="italic" />
       </div>
       <div class="my-4">
         <p class="text-indigo-600 text-xl">Species</p>
-        <ais-refinement-list attribute="species" class="italic"/>
+        <ais-refinement-list attribute="species" class="italic" />
       </div>
     </div>
-    <ais-hits>
-      <template slot="item" slot-scope="{ item }" class="rounded-md">
+    <ais-infinite-hits>
+      <template slot="item" slot-scope="{ item }">
         <nuxt-link :to="`/sequences/${item.accession}`">
           <p class="text-gray-900 mx-1 hover:text-indigo-600 text-lg">
             <ais-highlight attribute="displayTitle" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1">
-            <span class="not-italic">type:</span> <ais-highlight attribute="type" :hit="item" />
+            <span class="not-italic">type:</span>
+            <ais-highlight attribute="type" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1 italic">
-            <span class="not-italic">family:</span> <ais-highlight attribute="family" :hit="item" />
+            <span class="not-italic">family:</span>
+            <ais-highlight attribute="family" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1 italic">
-            <span class="not-italic">genus:</span> <ais-highlight attribute="genus" :hit="item" />
+            <span class="not-italic">genus:</span>
+            <ais-highlight attribute="genus" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1 italic">
-            <span class="not-italic">species:</span> <ais-highlight attribute="species" :hit="item" />
+            <span class="not-italic">species:</span>
+            <ais-highlight attribute="species" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1">
             <ais-highlight attribute="accession" :hit="item" />
@@ -70,15 +82,14 @@
           </p>
         </nuxt-link>
       </template>
-    </ais-hits>
-    <ais-pagination class="mt-4 p-2 self-center" />
+    </ais-infinite-hits>
   </ais-instant-search>
 </template>
 <script>
 import {
   AisInstantSearch,
   AisRefinementList,
-  AisHits,
+  AisInfiniteHits,
   AisHighlight,
   AisSearchBox,
   AisStats,
@@ -96,11 +107,10 @@ export default {
   components: {
     AisInstantSearch,
     AisRefinementList,
-    AisHits,
+    AisInfiniteHits,
     AisHighlight,
     AisSearchBox,
     AisStats,
-    AisPagination
   },
   data() {
     return {
@@ -122,9 +132,9 @@ export default {
 
 <style lang="postcss">
 .ais-RefinementList-count {
-  @apply not-italic
+  @apply not-italic;
 }
 .ais-RefinementList-labelText {
-  @apply pr-1
+  @apply pr-1;
 }
 </style>
