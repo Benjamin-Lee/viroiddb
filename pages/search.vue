@@ -43,7 +43,7 @@
       </div>
       <div class="my-4">
         <p class="text-indigo-600 text-xl">Species</p>
-        <ais-refinement-list attribute="species" class="italic"/>
+        <ais-refinement-list attribute="species" class="italic"`/>
       </div>
     </div>
     <ais-hits>
@@ -113,5 +113,8 @@ export default {
 <style lang="postcss">
 .ais-RefinementList-count {
   @apply not-italic
+}
+.ais-RefinementList-labelText {
+  @apply pr-1
 }
 </style>
