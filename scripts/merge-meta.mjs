@@ -12,6 +12,8 @@ const dirName =
     ? process.argv[2]
     : new Date().toISOString().slice(0, 10)
 
+const releaseVersion = dirName.match(/\d\d\d\d-\d\d-\d\d/)[0]
+
 await Promise.all(
   [
     'avsunviroidae',
@@ -172,7 +174,7 @@ for (const line of infernalOut) {
     currentAcc in ribozymes ? ribozymes[currentAcc] + '\n' + line : line
 }
 Object.entries(ribozymes).forEach(([k, v]) => {
-  metadata[k] = { ...metadata[k], ribozymes: ribozymes[k] }
+  metadata[k] = { ...metadata[k], ribozymes: v }
 })
 
 // console.log(metadata)
@@ -210,3 +212,43 @@ fs.writeFileSync(
       .filter((x) => typeof x.displayTitle !== 'undefined')
   )
 )
+const clusters = {}
+
+// set up the metadata for the clusters and rotation but note that it doesn't have the actual sequence data yet
+await Promise.all(
+  ['Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90'].map((clustering) => {
+    return csv({ delimiter: '\t' })
+      .fromFile(clustering + '/Cluster_membership' + '.tsv')
+      .then((jsonobj) =>
+        jsonobj.forEach((x) => {
+          const clusterId =
+            releaseVersion +
+            '.ID' +
+            clustering.split('.').slice(-1) +
+            '.' +
+            x.Cls_ID.split('.').slice(-1)
+          // assign the cluster IDs as properties to the metadata
+          x.Mems.split(', ').forEach(
+            (member) =>
+              (metadata[member] = {
+                ...metadata[member],
+                [clustering]: clusterId,
+              })
+          )
+          // populate clusters object
+          clusters[clusterId] = {
+            count: x.Mems.split(', ').length,
+            representative: x.rep,
+          }
+        })
+      )
+  })
+)
+// ;[('Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90')].forEach((clustering) =>
+//   bioparsers.fastaToJson(
+//     fs.readFileSync(path.join(clustering, group + '.fasta'), 'utf8'),
+//     {}
+//   )
+// )
+
+console.log(clusters)
