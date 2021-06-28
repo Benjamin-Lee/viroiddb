@@ -48,16 +48,16 @@
             <ais-highlight attribute="displayTitle" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1">
-            <span class="not-italic text-indigo-600">type:</span> <ais-highlight attribute="type" :hit="item" />
+            <span class="not-italic">type:</span> <ais-highlight attribute="type" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1 italic">
-            <span class="not-italic text-indigo-600">family:</span> <ais-highlight attribute="family" :hit="item" />
+            <span class="not-italic">family:</span> <ais-highlight attribute="family" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1 italic">
-            <span class="not-italic text-indigo-600">genus:</span> <ais-highlight attribute="genus" :hit="item" />
+            <span class="not-italic">genus:</span> <ais-highlight attribute="genus" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1 italic">
-            <span class="not-italic text-indigo-600">species:</span> <ais-highlight attribute="species" :hit="item" />
+            <span class="not-italic">species:</span> <ais-highlight attribute="species" :hit="item" />
           </p>
           <p class="text-gray-500 mx-1">
             <ais-highlight attribute="accession" :hit="item" />
