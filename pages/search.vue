@@ -15,12 +15,7 @@
     <ais-stats>
       <p
         slot-scope="{
-          hitsPerPage,
-          nbPages,
           nbHits,
-          page,
-          processingTimeMS,
-          query,
         }"
         class="text-indigo-600"
       >
@@ -43,7 +38,7 @@
       </div>
       <div class="my-4">
         <p class="text-indigo-600 text-xl">Species</p>
-        <ais-refinement-list attribute="species" class="italic"`/>
+        <ais-refinement-list attribute="species" class="italic"/>
       </div>
     </div>
     <ais-hits>
