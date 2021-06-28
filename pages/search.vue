@@ -27,8 +27,9 @@
     </ais-search-box>
 
     <ais-stats>
-      <p slot-scope="{ nbHits }" class="text-indigo-600">
-        {{ nbHits }} <span class="text-gray-900">results</span>
+      <p slot-scope="{ nbHits, processingTimeMS }" class="text-indigo-600">
+        {{ nbHits }}
+        <span class="text-gray-900">results ({{ processingTimeMS }} ms)</span>
       </p>
     </ais-stats>
 
