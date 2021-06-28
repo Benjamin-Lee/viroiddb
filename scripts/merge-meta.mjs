@@ -177,4 +177,36 @@ Object.entries(ribozymes).forEach(([k, v]) => {
 
 // console.log(metadata)
 
-fs.writeFileSync('static/meta.tmp.json', JSON.stringify(metadata, null, 2))
+// fs.writeFileSync('static/meta.tmp.json', JSON.stringify(metadata, null, 2))
+fs.writeFileSync(
+  'static/meta.algolia.json',
+  JSON.stringify(
+    Object.values(metadata)
+      .map(
+        ({
+          accession,
+          displayTitle,
+          isolationSource,
+          geoLocation,
+          host,
+          species,
+          genus,
+          family,
+          type,
+          submitters,
+        }) => ({
+          accession,
+          displayTitle,
+          isolationSource,
+          geoLocation,
+          host,
+          species,
+          genus,
+          family,
+          type,
+          submitters,
+        })
+      )
+      .filter((x) => typeof x.displayTitle !== 'undefined')
+  )
+)

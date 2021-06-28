@@ -191,6 +191,7 @@ export default Vue.extend({
         { name: 'Download', to: '/download' },
         { name: 'Submit', to: '/submit' },
         { name: 'Help', to: '/help' },
+        { name: 'Search', to: '/search'}
       ],
       showMenu: false,
     }
