@@ -100,8 +100,6 @@ import {
   AisHighlight,
   AisSearchBox,
   AisStats,
-  AisPagination,
-  createServerRootMixin,
 } from 'vue-instantsearch'
 import algoliasearch from 'algoliasearch/lite'
 
