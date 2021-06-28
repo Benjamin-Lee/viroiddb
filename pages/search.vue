@@ -122,16 +122,6 @@ export default {
       searchClient,
     }
   },
-  head() {
-    return {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/satellite-min.css',
-        },
-      ],
-    }
-  },
 }
 </script>
 
