@@ -11,14 +11,15 @@
             font-bold
             leading-7
             text-gray-900
-            sm:text-3xl sm:truncate
+            sm:text-3xl
+            sm:truncate
           "
         >
           {{ sequenceMetadata.displayTitle }}
         </h2>
       </div>
       <div class="mt-4 flex md:mt-0 md:ml-4">
-        <!-- <button
+        <button
           type="button"
           class="
             inline-flex
@@ -30,17 +31,20 @@
             shadow-sm
             text-sm
             font-medium
+            w-auto
             text-gray-700
             bg-white
             hover:bg-gray-50
             focus:outline-none
-            focus:ring-2
-            focus:ring-offset-2
-            focus:ring-indigo-500
           "
+          :class="{'bg-green-500': copied, 'hover:bg-green-500': copied}"
+          @click="copyFasta"
         >
-          Copy FASTA
-        </button> -->
+          <div v-if="!copied">Copy FASTA</div>
+          <div v-else class="text-white">
+            Copied!
+          </div>
+        </button>
         <button
           type="button"
           class="
@@ -58,9 +62,7 @@
             bg-indigo-600
             hover:bg-indigo-700
             focus:outline-none
-            focus:ring-2
-            focus:ring-offset-2
-            focus:ring-indigo-500
+            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
           "
           @click="download"
         >
@@ -246,7 +248,8 @@
                   :key="link.name"
                   class="
                     py-4
-                    sm:py-5 sm:px-6
+                    sm:py-5
+                    sm:px-6
                     text-sm text-indigo-600
                     hover:underline
                   "
@@ -344,6 +347,7 @@ import { sequenceMetadata } from 'types/sequenceMetadata'
 export default Vue.extend({
   data() {
     return {
+      copied: false,
       sequenceInfoFields: [
         { name: 'Accession', key: 'accession' },
         { name: 'Length', key: 'length' },
@@ -496,6 +500,13 @@ export default Vue.extend({
           type: 'text/plain;charset=utf-8',
         })
       )
+    },
+    async copyFasta() {
+      navigator.clipboard.writeText(this.fasta)
+      this.copied = true
+      setTimeout(() => {
+        this.copied = false
+      }, 1000)
     },
     showforna() {
       for (const [seq, pol, el] of [
