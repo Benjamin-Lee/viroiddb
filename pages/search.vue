@@ -17,6 +17,7 @@
             rounded-none
             focus:outline-none
           "
+          autofocus
           placeholder="Search..."
           :value="currentRefinement"
           @input="refine($event.currentTarget.value)"
