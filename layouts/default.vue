@@ -3,7 +3,7 @@
   <div class="bg-gray-50">
     <div class="relative bg-indigo-600">
       <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div class="pr-16 sm:text-center sm:px-16">
+        <div class="sm:text-center sm:px-16">
           <p class="font-medium text-white">
             &#128679; This site is currently under active contruction and may
             contain bugs or inaccurate data &#128679;
