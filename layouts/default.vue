@@ -161,7 +161,7 @@
         <div class="py-10 bg-gray-50">
           <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              <Nuxt />
+              <Nuxt keep-alive />
             </div>
           </main>
         </div>
@@ -188,10 +188,10 @@ export default Vue.extend({
         { name: 'About', to: '/about' },
         { name: 'Sequences', to: '/sequences' },
         { name: 'Clusters', to: '/clusters' },
+        { name: 'Search', to: '/search' },
         { name: 'Download', to: '/download' },
         { name: 'Submit', to: '/submit' },
         { name: 'Help', to: '/help' },
-        { name: 'Search', to: '/search'}
       ],
       showMenu: false,
     }
