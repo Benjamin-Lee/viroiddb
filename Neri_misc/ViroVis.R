@@ -62,7 +62,7 @@ MCL_1.2=ReadMcl(mclfile = "Neri/tmpblastall/VDB_allByAll_blast_Infl_1.2.mcl",col
 test2=DistanceMatrix(test1,type = "matrix",processors = 10)
 # SubViroPhylo=UNJ(x = test2)
 # fastme.bal(X, nni = TRUE, spr = TRUE, tbr = FALSE)
-SubViroPhylo=read.tree("All.afa")
+SubViroPhylo=read.tree("Neri/All.afa.bionj")
 
 SubViroPhylo$node.label <- paste0("node_", seq(1:Nnode(SubViroPhylo,internal.only = T)))
 
@@ -79,12 +79,12 @@ for (i in colsn){
   NodeTbl$ast[which(NodeTbl[,i]==T)]=i
 }
 NodeTbl$DistrFromRoot=get_all_distances_to_root(SubViroPhylo)[NodeTbl$Node]
-vizt=ggtree(tr =SubViroPhylo)
+vizt=ggtree(tr =SubViroPhylo,layout = "radial")
 
 p2 <- vizt  %<+%(Rename1Col(NodeTbl,colnm = "Node_label",newcolnm = "node.label"))
-
-p2+geom_tree( aes(color=ast),continuous=F, size=1)
-
+pdf("testttinggg.pdf")
+p2+geom_tree( aes(color=ast),continuous=F, size=1,layout = "radial")
+dev.off()
   theme(legend.position = c(.1, .8)) 
 + scale_fill_viridis_c()
 

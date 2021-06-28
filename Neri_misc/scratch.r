@@ -47,25 +47,6 @@ RNAPlot(dat)
 RNAPlot(dat,nt=TRUE,add=TRUE,dp=0.75)
 
 
-
-
-
-
-library('webshot')
-webshot::install_phantomjs()
-
-dbn=ReadDBN("db/avsunviroidae.dbn",return_type = "BS",includes_MFE = T)
-tmpvar=c()
-for (i in 1:length(dbn[])) {
-  tmppp=PopForna(dbn[i],pop=F,returl=T)
-  tmpvar=append(tmpvar,tmppp)
-  # webshot(url=tmppp, p0(names(dbn[i]),".png"),delay = 2,vwidth=1920,vheight = 1080)
-}
-webshot("https://google.com")#,"test.png")
-
-tiger <- image_read("test.png", width = 350)
-image_crop(tiger, "100x150+50")
-
 # Body  --------------------------------------------------------------------
 source("/media/HDD1/uri/RNA_Vir_MTs/RVMT/Misc/basicf.r")
 library(data.table)
@@ -81,34 +62,52 @@ library(seleniumPipes)
 library(RSelenium) 
 library(magick) 
 
-rD <- rsDriver(browser = "firefox",port =as.integer(4444))
+
+rD <- rsDriver(browser = "firefox",port =as.integer(4445))
 remDr <- rD[["client"]]
 
 
-dbn=ReadDBN("db/2021-06-06/satellites.dbn",return_type = "BS",includes_MFE = T)
+dbn=ReadDBN("db/2021-06-06/avsunviroidae.rc.dbn",return_type = "BS",includes_MFE = T)
 tmpvar=c()
 for (i in 1:length(dbn)) {
   tmppp=PopForna(dbn[i],pop=F,returl=T)
   tmpvar=append(tmpvar,tmppp)
   seqnametrim=str_split_fixed(string = names(dbn[i]),pattern = " ",n=Inf)[1]
-remDr$navigate(tmppp)
-Sys.sleep(time = 1)
-# zoom_firefox(remDr, 150)
-remDr$screenshot(file = p0("./Neri/sat/",seqnametrim,".png"),display = )
-tiger <- image_read( p0("./Neri/sat/",seqnametrim,".png" ))
-tiger=image_crop(tiger,repage = T,"2220x1426+70+75+200")
-image_write(image = tiger,path =p0("./Neri/sat/",seqnametrim,".1.png" ),format = "png",quality = 100,depth = 16,flatten = T)
+  remDr$navigate(tmppp)
+  Sys.sleep(time = 1.)
+  webElem <- remDr$findElement(using = "xpath",value = '//*[@id="plotting-area"]')
+  tmpsvg= unlist(webElem$getElementAttribute("outerHTML"))
+  writeLines(text = tmpsvg,con = p0("./Neri/test/",seqnametrim,".rc.svg"))
+}
 
+##### Bash #####
+'
+for i in ./*".svg"; do
+ini_name=$(basename $i ".svg")
+rsvg-convert -f pdf -o ../test5/t.pdf $i --no-keep-image-data
+pdf-crop-margins -v -s -u ../test5/t.pdf  -o ../test4/"$ini_name".pdf
+done
+'
+tempredo=c("MG662374.1", "MG662373.1", "MG662372.1", "MF093720.1", "MF093719.1", "MG770884.1", "MK791516.1", "MK791515.1","NC_011362.1")
+
+
+for (ix in tempredo) {
+  i=grep(pattern = ix,x = names(dbn),fixed = T)
+  tmppp=PopForna(dbn[i],pop=F,returl=T)
+  tmpvar=append(tmpvar,tmppp)
+  seqnametrim=str_split_fixed(string = names(dbn[i]),pattern = " ",n=Inf)[1]
+  remDr$navigate(tmppp)
+  Sys.sleep(time = 01.3)
+  webElem <- remDr$findElement(using = "xpath",value = '//*[@id="plotting-area"]')
+  tmpsvg= unlist(webElem$getElementAttribute("outerHTML"))
+  writeLines(text = tmpsvg,con = p0("./Neri/test/",seqnametrim,".svg"))
 }
-  
-zoom_firefox <- function(client, percent)
-{
-  store_page <- client$getCurrentUrl()[[1]]
-  client$navigate("about:preferences")
-  webElem <- client$findElement("css", "#defaultZoom")
-  webElem$clickElement()
-  webElem$sendKeysToElement(list(as.character(percent)))
-  webElem$sendKeysToElement(list(key = "return"))
-  client$navigate(store_page)
-}
+
+
+
+
+
+
+
+
 
