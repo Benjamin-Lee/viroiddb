@@ -60,28 +60,28 @@ export default Vue.extend({
       groups: [
         {
           name: 'Viroids',
-          path: 'sequences/type/viroid',
+          path: '/sequences/type/viroid',
           color: 'bg-red-600',
           initials: 'Vd',
           members: 9264,
         },
         {
           name: 'Satellite RNAs',
-          path: 'sequences/type/satellite-RNA',
+          path: '/sequences/type/satellite-RNA',
           color: 'bg-blue-600',
           initials: 'satRNA',
           members: 10,
         },
         {
           name: 'Viruses',
-          path: 'sequences/type/virus',
+          path: '/sequences/type/virus',
           color: 'bg-green-600',
           initials: 'Rzv',
           members: 21,
         },
         {
           name: 'Retrozymes',
-          path: 'sequences/type/retrozyme',
+          path: '/sequences/type/retrozyme',
           color: 'bg-yellow-600',
           initials: 'Rtz',
           members: 74,
