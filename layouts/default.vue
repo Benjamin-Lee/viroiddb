@@ -1,17 +1,6 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div class="bg-gray-50">
-    <div class="relative bg-indigo-600">
-      <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div class="sm:text-center sm:px-16">
-          <p class="font-medium text-white">
-            &#128679; This site is currently under active contruction and may
-            contain bugs or inaccurate data &#128679;
-          </p>
-        </div>
-      </div>
-    </div>
-
     <div class="flex flex-col h-screen justify-between">
       <div>
         <nav class="bg-white border-b border-gray-200">
