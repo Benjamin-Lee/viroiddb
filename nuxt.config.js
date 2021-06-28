@@ -11,7 +11,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'viroiddb',
+    title: 'ViroidDB',
     htmlAttrs: {
       lang: 'en',
     },
@@ -20,13 +20,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        src: 'https://unpkg.com/fornac@1.1.8/dist/scripts/fornac.js',
-        defer: true,
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/satellite-min.css',
       },
     ],
+    script: [],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -70,6 +71,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['vue-instantsearch', 'instantsearch.js/es'],
+
     html: {
       minify: {
         // have to copy-paste since it is not merged

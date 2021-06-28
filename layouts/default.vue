@@ -1,17 +1,6 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div class="bg-gray-50">
-    <div class="relative bg-indigo-600">
-      <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div class="pr-16 sm:text-center sm:px-16">
-          <p class="font-medium text-white">
-            &#128679; This site is currently under active contruction and may
-            contain bugs or inaccurate data &#128679;
-          </p>
-        </div>
-      </div>
-    </div>
-
     <div class="flex flex-col h-screen justify-between">
       <div>
         <nav class="bg-white border-b border-gray-200">
@@ -161,7 +150,7 @@
         <div class="py-10 bg-gray-50">
           <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              <Nuxt />
+              <Nuxt keep-alive />
             </div>
           </main>
         </div>
@@ -188,6 +177,7 @@ export default Vue.extend({
         { name: 'About', to: '/about' },
         { name: 'Sequences', to: '/sequences' },
         { name: 'Clusters', to: '/clusters' },
+        { name: 'Search', to: '/search' },
         { name: 'Download', to: '/download' },
         { name: 'Submit', to: '/submit' },
         { name: 'Help', to: '/help' },
