@@ -35,15 +35,15 @@
       </div>
       <div class="my-4">
         <p class="text-indigo-600 text-xl">Family</p>
-        <ais-refinement-list attribute="family" />
+        <ais-refinement-list attribute="family" class="italic"/>
       </div>
        <div class="my-4">
         <p class="text-indigo-600 text-xl">Genus</p>
-        <ais-refinement-list attribute="genus" />
+        <ais-refinement-list attribute="genus" class="italic"/>
       </div>
       <div class="my-4">
         <p class="text-indigo-600 text-xl">Species</p>
-        <ais-refinement-list attribute="species" />
+        <ais-refinement-list attribute="species" class="italic"/>
       </div>
     </div>
     <ais-hits>
@@ -109,3 +109,9 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.ais-RefinementList-count {
+  @apply not-italic
+}
+</style>
