@@ -22,9 +22,6 @@
                 >
                   {{ column.name }}
                 </th>
-                <th scope="col" class="relative px-6 py-3">
-                  <span class="sr-only">View</span>
-                </th>
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
@@ -43,22 +40,8 @@
                       column.class,
                     ]"
                   >
-                    {{ row[column.key] }}
-                  </td>
-                  <td
-                    class="
-                      px-6
-                      py-4
-                      whitespace-nowrap
-                      text-right text-sm
-                      font-medium
-                    "
-                  >
-                    <NuxtLink
-                      :to="row.to"
-                      class="text-indigo-600 hover:text-indigo-900"
-                    >
-                      View
+                    <NuxtLink :to="row.to">
+                      {{ row[column.key] }}
                     </NuxtLink>
                   </td>
                 </tr>
