@@ -7,13 +7,11 @@ description: About us, about Viroids, and some in between.
 #  FAQs
 
   
-  
 <details>
-  <summary>What are Viroids? </summary>
+  <summary>What are Viroids/circRNAs? </summary>
   
-  
+A unique group of semi mobile genetic agents, characterized by small genome sizes (less than 2000 nt), highly structured, often circular, genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism. 
 This database is curated to cover the entirety of viroid-like RNA agents: Viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (*i.e.*, hepatitis delta virus and its relatives), and retrozymes.   
-Members of this unique group of agents are characterized by their small genome sizes (less than 2000 nt), highly structured, often circular, genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism. 
 </details>  
 
     
@@ -31,11 +29,11 @@ To better support computational and experimental research on these agents, we ha
 <details>
   <summary>Why are Viroids important? </summary>
   
-  Pathogenic members infect both plants and animals, and reports of resulting diseases have been documented since the 1930s. Presently, the only effective means of disease control is the prevention of spread, and crop infection may cause up to a 40% reduction of yield. However, despite the ever-increasing diversity and host range of these agents, no database currently exists. The most recent such database, [the subviral RNA database](doi.org/10.1186/1471-2180-6-24), was published 15 years ago and is no longer accessible.  
-If that doesn't convince you, **you** a question: Do you like long, curly french fries in MacDonalds?   
+  Pathogenic members infect both plants and animals, and reports of resulting diseases have been documented since the 1930s. Presently, the only effective means of disease control is the prevention of spread, and crop infection may cause up to a 40% reduction of yield.   
+If that doesn't convince you, let us ask **you** a question: Do you like long, curly french fries in MacDonalds?   
 
 ![image](https://user-images.githubusercontent.com/41674327/123809317-2ccd2e80-d8fa-11eb-9ae4-47765b1bef29.png)  
-  Well, even if adible, you on of the earliest known viroids can shatter the american dream of a nice, salty, deep fried french fry:  
+  Well, even if adible, one of the earliest known viroids can shatter the american dream of a nice, salty, deep fried french fry:  
  ![image](https://www.daera-ni.gov.uk/sites/default/files/styles/inline-expandable/public/images/daera/PSTVd%20photo.1.jpg?itok=dmmWZovB)  
  Healthy potato tuber (left), and spindle shaped tubers (right) that have been affected by PSTVd. © Dr. J. W. Roenhorst NPPO-NL 
   
@@ -85,14 +83,20 @@ Please see [Download](./Download) for more information about how to fetch and ac
 <details>
   <summary>I found a new viroid I would like to be on ViroidDB, what should I do?</summary>
   
-Do you think that we missed data in the database? If so, please let us know by filling out the form in [submit](./submit) and we will be happy to create another release and update the site.
+Do you think that we missed data in the database? If so, please let us know by filling out the form below and we will be happy to create another release and update the site.
 Please remember that all sequences and submission must follow these general inclusion criteria:  
 
 1. The sequence must be uniq
 1. The data must be publicly available in an INSDC database
 1. Sequences must be complete
-1. Sequences must be unambiguous
-However, exceptions could be considered, such as representatives of novel families, but would be evaluated on per case basis
+1. Sequences must be unambiguous.  
+  
+However, exceptions could be considered, such as representatives of novel families, but would be evaluated on per case basis.  
+
+<SubmitForm/>
+
+
+
 </details>  
 
 
@@ -111,7 +115,7 @@ Feel free to contact us via sending an [email](email:help@Viroids.org) or filing
   <summary>How often will ViroidDB be updated? </summary>
   
   
-Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you feel an update is required, please contact us or perform the update yourself by submitting it as a pull request in the GitHub the repository.
+Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you feel an update is required, please contact us or perform the update yourself by submitting it as a pull request in the GitHub repository.
 </details>  
 
 
