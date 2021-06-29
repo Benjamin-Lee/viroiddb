@@ -179,8 +179,6 @@ export default Vue.extend({
         { name: 'Clusters', to: '/clusters' },
         { name: 'Search', to: '/search' },
         { name: 'Download', to: '/download' },
-        { name: 'Submit', to: '/submit' },
-        { name: 'Help', to: '/help' },
       ],
       showMenu: false,
     }
