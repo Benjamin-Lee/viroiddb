@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- <script src="https://unpkg.com/fornac@1.1.8/dist/scripts/fornac.js"></script> -->
-    <!-- <TheHeader>{{ data.name }}</TheHeader> -->
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="md:flex md:items-center md:justify-between">
       <div class="flex-1 min-w-0">
         <h2
@@ -400,7 +397,6 @@ export default Vue.extend({
       .doc(this.$route.params.name)
       .get()
     this.sequenceMetadata = snapshot.data() as sequenceMetadata
-    // this.showforna()
     this.uid = await fetch(
       `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=${this.$route.params.name}`
     )
@@ -506,31 +502,6 @@ export default Vue.extend({
       this.copied = true
       await new Promise((resolve) => setTimeout(resolve, 1000))
       this.copied = false
-    },
-    showforna() {
-      for (const [seq, pol, el] of [
-        [
-          this.sequence,
-          this.sequenceMetadata.structure.plus.dbn,
-          '#fornac_plus',
-        ],
-        [
-          this.revCompSequence,
-          this.sequenceMetadata.structure.minus.dbn,
-          '#fornac_minus',
-        ],
-      ]) {
-        // @ts-ignore
-        const container = new fornac.FornaContainer(el, {
-          applyForce: false,
-        })
-        const options = {
-          structure: pol,
-          sequence: seq,
-        }
-        container.addRNA(options.structure, options)
-        container.setSize()
-      }
     },
   },
 })
