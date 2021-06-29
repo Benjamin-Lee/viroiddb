@@ -239,16 +239,20 @@ await Promise.all(
           clusters[clusterId] = {
             count: x.Mems.split(', ').length,
             representative: x.rep,
+            members: x.Mems,
           }
         })
       )
   })
 )
-// ;[('Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90')].forEach((clustering) =>
-//   bioparsers.fastaToJson(
-//     fs.readFileSync(path.join(clustering, group + '.fasta'), 'utf8'),
-//     {}
-//   )
+
+// ;;[('Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90')].forEach((clustering) =>
+//   bioparsers
+//     .fastaToJson(
+//       fs.readFileSync(path.join(clustering, group + '.fasta'), 'utf8'),
+//       {}
+//     )
+//     .map((x) => x.parsedSequence).map(x => clusters[])
 // )
 
 console.log(clusters)
