@@ -297,13 +297,12 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div
-                id="fornac_plus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
+
+              <iframe
+                class="h-[1000px] w-full"
+                :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.pdf#toolbar=0`"
+              >
+              </iframe>
             </template>
           </Card>
         </div>
@@ -320,13 +319,11 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div
-                id="fornac_minus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
+              <iframe
+                class="h-[1000px] w-full"
+                :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.rc.pdf#toolbar=0`"
+              >
+              </iframe>
             </template>
           </Card>
         </div>
