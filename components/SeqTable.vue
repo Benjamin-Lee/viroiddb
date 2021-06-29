@@ -13,9 +13,10 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+import { sequenceMetadata } from '~/types/sequenceMetadata'
 export default Vue.extend({
   props: {
-    metadata: { type: Array, required: true },
+    metadata: { type: Object as () => sequenceMetadata[], required: true },
     columns: { type: Array, required: true },
   },
   computed: {
@@ -25,7 +26,10 @@ export default Vue.extend({
           // @ts-ignore
           (k) => typeof k.displayTitle !== 'undefined'
         )
-        .map((x) => ({ ...x, to: '/sequences/' + x.accession }))
+        .map((x) => ({
+          ...x,
+          to: '/sequences/' + x.accession,
+        }))
     },
   },
 })
