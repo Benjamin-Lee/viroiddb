@@ -1,1 +1,7 @@
-lmao they're [tiny](https://google.com)
+Retrozymes are a unique class of non-LTR retroelements. These entities consist of a single, non-coding, genomic segment, carrying a catalytic RNA motifs, mainly self cleaving hammerhead ribozymes (HHR). Some studies suggest Retrozymes are mobilized through circular (circRNA) intermediates. Retrozymes are often found in plants and animals cells, tough their exact distribution is likely to cover diverse, higlhy divergent eukaryotic lineages.
+Their genomes size ranges between NN and NNN.  
+While these entities share common structral similarties with other circular RNA entities (such as Virioids and Vioird-likes), it remains unclear wheter Retrozymes (along with Delta viruses) share a common ancestor with other circRNAs.  
+ #### Sources:  
+ -   Hammann C. **Hammerhead ribozymes going viral**. Genome Biol. 2016;17(1):136. Published 2016 Jun 23. [doi:10.1186/s13059-016-1007-z](https://dx.doi.org/10.1186%2Fs13059-016-1007-z)
+ -   Cervera A, de la Peña M. **Small circRNAs with self-cleaving ribozymes are highly expressed in diverse metazoan transcriptomes**. Nucleic Acids Res. 2020;48(9):5054-5064. [doi:10.1093/nar/gkaa187](https://doi.org/10.1093/nar/gkaa187)
+ - de la Peña M, Cervera A. **Circular RNAs with hammerhead ribozymes encoded in eukaryotic genomes: The enemy at home**. RNA Biol. 2017;14(8):985-991. [doi:10.1080/15476286.2017.1321730](https://doi.org/10.1080/15476286.2017.1321730)
