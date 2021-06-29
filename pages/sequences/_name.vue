@@ -11,8 +11,7 @@
             font-bold
             leading-7
             text-gray-900
-            sm:text-3xl
-            sm:truncate
+            sm:text-3xl sm:truncate
           "
         >
           {{ sequenceMetadata.displayTitle }}
@@ -253,8 +252,7 @@
                   :key="link.name"
                   class="
                     py-4
-                    sm:py-5
-                    sm:px-6
+                    sm:py-5 sm:px-6
                     text-sm text-indigo-600
                     hover:underline
                   "
@@ -270,20 +268,20 @@
         <div class="col-span-12">
           <Card
             title="Ribozymes"
-            subtitle="Infernal search results for known ribozymes"
+            subtitle="Infernal search results for known self-cleaving ribozymes"
           >
-            <pre class="text-sm text-gray-900 overflow-scroll h-96"
+            <pre
+              v-if="!sequenceMetadata.ribozymes.includes('No hits detected')"
+              class="text-sm text-gray-900 overflow-scroll h-96"
               >{{ sequenceMetadata.ribozymes }}
             </pre>
-            <template
-              v-if="sequenceMetadata.family === 'Pospiviroidae'"
-              #footer
-            >
-              <p class="text-sm text-gray-500">
-                Members of <i>Pospiviroidae</i> are not expected to contain
-                ribozymes.
-              </p></template
-            >
+            <p v-else class="text-sm">
+              No self-cleaving ribozymes were detected.
+              {{
+                sequenceMetadata.family === 'Pospiviroidae' &&
+                'Pospiviroids are not expected to contain such ribozymes.'
+              }}
+            </p>
           </Card>
         </div>
         <div class="col-span-6">
@@ -507,11 +505,10 @@ export default Vue.extend({
       )
     },
     async copyFasta() {
-      navigator.clipboard.writeText(this.fasta)
+      await navigator.clipboard.writeText(this.fasta)
       this.copied = true
-      setTimeout(() => {
-        this.copied = false
-      }, 1000)
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+      this.copied = false
     },
     showforna() {
       for (const [seq, pol, el] of [
