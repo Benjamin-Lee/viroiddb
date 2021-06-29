@@ -37,13 +37,11 @@
             hover:bg-gray-50
             focus:outline-none
           "
-          :class="{'bg-green-500': copied, 'hover:bg-green-500': copied}"
+          :class="{ 'bg-green-500': copied, 'hover:bg-green-500': copied }"
           @click="copyFasta"
         >
           <div v-if="!copied">Copy FASTA</div>
-          <div v-else class="text-white">
-            Copied!
-          </div>
+          <div v-else class="text-white">Copied!</div>
         </button>
         <button
           type="button"
@@ -233,8 +231,16 @@
 
               <pre
                 v-if="sequence.length > 0"
-                class="text-sm overflow-x-auto px-4 py-5 sm:p-6 flex flex-row-reverse justify-between"
-                >
+                class="
+                  text-sm
+                  overflow-x-auto
+                  px-4
+                  py-5
+                  sm:p-6
+                  flex flex-row-reverse
+                  justify-between
+                "
+              >
                 
                 <div class="flex flex-col justify-start">
                   <button
@@ -258,9 +264,12 @@
                             :class="{'border-indigo-600': copied, 'border-3': copied}"
                             @click="copyFasta"
                           >
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
+                            <svg v-if="!copied" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+</svg>
+<svg v-if="copied" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+</svg>
                           </button>
                   
                           <button
@@ -289,8 +298,7 @@
 </svg>
                           </button>
                 </div>
-                <div>{{ fasta }}</div></pre
-              >
+                <div>{{ fasta }}</div></pre>
             </div>
           </template>
         </Card>
@@ -359,7 +367,7 @@
             </template>
           </Card>
         </div>
-        <div class="col-span-6">
+        <div v-if="this.sequenceDisplayOptions.rc" class="col-span-6">
           <Card title="Secondary structure (-)">
             <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{

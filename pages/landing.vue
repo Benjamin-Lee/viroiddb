@@ -1,128 +1,96 @@
 <template>
-  <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-    <div class="px-4 py-5 sm:px-6">
-      <h3 class="text-lg leading-6 font-medium text-gray-900">
-        Applicant Information
-      </h3>
-      <p class="mt-1 max-w-2xl text-sm text-gray-500">
-        Personal details and application.
-      </p>
-    </div>
-    <div class="border-t border-gray-200">
-      <dl>
-        <div
-          class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
-        >
-          <dt class="text-sm font-medium text-gray-500">Full name</dt>
-          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-            Margot Foster
-          </dd>
+<div>
+  <div class="relative">
+      <div class="w-full mx-auto sm:px-6 lg:px-8">
+        <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+          <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply"></div>
+          </div>
+          <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+            <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl flex justify-center">
+              <span class="block text-white">Viroid</span>
+              <span class="block text-indigo-200">DB</span>
+            </h1>
+            <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+            </p>
+            <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                <nuxt-link to="/" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
+                  Get started
+                </nuxt-link>
+              
+            </div>
+          </div>
         </div>
-        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-          <dt class="text-sm font-medium text-gray-500">Application for</dt>
-          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-            Backend Developer
-          </dd>
+      </div>
+
+
+
+
+<div class="my-10 bg-gray-50">
+    <div class="relative">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+            <div class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+              <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                Entries
+              </dt>
+              <dd class="order-1 text-5xl font-extrabold text-indigo-600">
+                9,486
+              </dd>
+            </div>
+            <div class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+              <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                Stat
+              </dt>
+              <dd class="order-1 text-5xl font-extrabold text-indigo-600">
+                Stat
+              </dd>
+            </div>
+            <div class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+              <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                Stat
+              </dt>
+              <dd class="order-1 text-5xl font-extrabold text-indigo-600">
+                Stat
+              </dd>
+            </div>
+          </dl>
         </div>
-        <div
-          class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
-        >
-          <dt class="text-sm font-medium text-gray-500">Email address</dt>
-          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-            margotfoster@example.com
-          </dd>
-        </div>
-        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-          <dt class="text-sm font-medium text-gray-500">Salary expectation</dt>
-          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-            $120,000
-          </dd>
-        </div>
-        <div
-          class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
-        >
-          <dt class="text-sm font-medium text-gray-500">About</dt>
-          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-            Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim
-            incididunt cillum culpa consequat. Excepteur qui ipsum aliquip
-            consequat sint. Sit id mollit nulla mollit nostrud in ea officia
-            proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit
-            deserunt qui eu.
-          </dd>
-        </div>
-        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-          <dt class="text-sm font-medium text-gray-500">Attachments</dt>
-          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-            <ul
-              class="border border-gray-200 rounded-md divide-y divide-gray-200"
-            >
-              <li
-                class="pl-3 pr-4 py-3 flex items-center justify-between text-sm"
-              >
-                <div class="w-0 flex-1 flex items-center">
-                  <!-- Heroicon name: solid/paper-clip -->
-                  <svg
-                    class="flex-shrink-0 h-5 w-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span class="ml-2 flex-1 w-0 truncate">
-                    resume_back_end_developer.pdf
-                  </span>
-                </div>
-                <div class="ml-4 flex-shrink-0">
-                  <a
-                    href="#"
-                    class="font-medium text-indigo-600 hover:text-indigo-500"
-                  >
-                    Download
-                  </a>
-                </div>
-              </li>
-              <li
-                class="pl-3 pr-4 py-3 flex items-center justify-between text-sm"
-              >
-                <div class="w-0 flex-1 flex items-center">
-                  <!-- Heroicon name: solid/paper-clip -->
-                  <svg
-                    class="flex-shrink-0 h-5 w-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span class="ml-2 flex-1 w-0 truncate">
-                    coverletter_back_end_developer.pdf
-                  </span>
-                </div>
-                <div class="ml-4 flex-shrink-0">
-                  <a
-                    href="#"
-                    class="font-medium text-indigo-600 hover:text-indigo-500"
-                  >
-                    Download
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </dd>
-        </div>
-      </dl>
+      </div>
     </div>
   </div>
+</div>
+
+
+
+
+      <div>
+      <div class="w-full mx-auto pt-16 px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
+          Brought To You By
+        </p>
+          <div class="grid grid-cols-2 mt-10">
+              <div class="col-span-1">
+                <img class="w-auto" src="/tel_aviv_logo.png" alt="Tuple">
+              </div>
+              <div class="col-span-1">
+                <img class="w-auto" src="/NCBI-logo.png" alt="Tuple">
+              </div>
+          </div>
+       
+      </div>
+    </div>
+    </div>
 </template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
