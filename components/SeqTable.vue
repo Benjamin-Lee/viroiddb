@@ -16,8 +16,7 @@ import Vue from 'vue'
 import { sequenceMetadata } from '~/types/sequenceMetadata'
 export default Vue.extend({
   props: {
-    metadata: { type: Object as () => sequenceMetadata[], required: true },
-    columns: { type: Array, required: true },
+    metadata: { type: Array as () => sequenceMetadata[], required: true },
   },
   computed: {
     displayMetadata() {
