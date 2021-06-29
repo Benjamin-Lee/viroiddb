@@ -82,7 +82,7 @@
             title="Sequence information"
             subtitle="Basic information about the sequence."
           >
-            <template #unpaddedBody>
+            <template sm:#unpaddedBody>
               <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
                 <dl class="sm:divide-y sm:divide-gray-200">
                   <DataRow
@@ -128,7 +128,7 @@
           <Card
             title="Collection information"
             subtitle="Provided by the depositors"
-            ><template #unpaddedBody>
+            ><template sm:#unpaddedBody>
               <DataRow title="Submitters">
                 {{
                   sequenceMetadata.submitters
@@ -167,7 +167,7 @@
         </div>
         <div class="col-span-4">
           <Card title="Taxonomy" subtitle="According to NCBI Taxonomy"
-            ><template #unpaddedBody>
+            ><template sm:#unpaddedBody>
               <DataRow title="Type" class="capitalize">{{
                 sequenceMetadata.type
               }}</DataRow>
@@ -209,7 +209,7 @@
           subtitle="FASTA-formatted sequence data."
           class="col-span-9"
         >
-          <template #unpaddedBody>
+          <template sm:#unpaddedBody>
             <div class="divide-y divide-gray-200">
               <DescriptionToggle
                 v-model="sequenceDisplayOptions.rc"
@@ -241,7 +241,7 @@
         </Card>
         <div class="col-span-3">
           <Card title="Links" subtitle="External resources for this sequence"
-            ><template #unpaddedBody>
+            ><template sm:#unpaddedBody>
               <ul class="divide-y divide-gray-200">
                 <li
                   v-for="link in links"
@@ -283,7 +283,7 @@
         </div>
         <div class="col-span-6">
           <Card title="Secondary structure (+)">
-            <template #unpaddedBody>
+            <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{
                 sequenceMetadata.structure.plus.mfe
               }}</DataRow>
@@ -306,7 +306,7 @@
         </div>
         <div class="col-span-6">
           <Card title="Secondary structure (-)">
-            <template #unpaddedBody>
+            <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{
                 sequenceMetadata.structure.minus.mfe
               }}</DataRow>
