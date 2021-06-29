@@ -150,7 +150,7 @@
         <div class="py-10 bg-gray-50">
           <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              <Nuxt keep-alive />
+              <Nuxt />
             </div>
           </main>
         </div>
