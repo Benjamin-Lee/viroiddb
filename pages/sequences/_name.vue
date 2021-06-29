@@ -233,8 +233,63 @@
 
               <pre
                 v-if="sequence.length > 0"
-                class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
-                >{{ fasta }}</pre
+                class="text-sm overflow-x-auto px-4 py-5 sm:p-6 flex flex-row-reverse justify-between"
+                >
+                
+                <div class="flex flex-col justify-start">
+                  <button
+                            type="button"
+                            class="
+                              inline-flex
+                              items-center
+                              px-2
+                              py-2
+                              border border-gray-300
+                              rounded-md
+                              shadow-sm
+                              text-sm
+                              font-medium
+                              w-auto
+                              text-gray-700
+                              bg-white
+                              hover:bg-gray-50
+                              focus:outline-none
+                            "
+                            :class="{'border-indigo-600': copied, 'border-3': copied}"
+                            @click="copyFasta"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                          </button>
+                  
+                          <button
+                            type="button"
+                            class="
+                              inline-flex
+                              items-center
+                              px-2
+                              py-2
+                              mt-2
+                              border border-gray-300
+                              rounded-md
+                              shadow-sm
+                              text-sm
+                              font-medium
+                              w-auto
+                              text-gray-700
+                              bg-white
+                              hover:bg-gray-50
+                              focus:outline-none
+                            "
+                            @click="download"
+                          >
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+</svg>
+                          </button>
+                </div>
+                <div>{{ fasta }}</div></pre
               >
             </div>
           </template>
