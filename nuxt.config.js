@@ -64,6 +64,7 @@ export default {
         // terminateDatabasesAfterGenerate: true,
         services: {
           firestore: true,
+          storage: true,
         },
       },
     ],
