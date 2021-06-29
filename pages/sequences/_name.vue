@@ -36,14 +36,17 @@
             bg-white
             hover:bg-gray-50
             focus:outline-none
+            focus:ring-2
+            focus:ring-offset-2
+            focus:ring-indigo-500
           "
-          :class="{'bg-green-500': copied, 'hover:bg-green-500': copied}"
+          :class="{ 'bg-green-500 hover:bg-green-500': copied }"
           @click="copyFasta"
         >
-          <div v-if="!copied">Copy FASTA</div>
-          <div v-else class="text-white">
-            Copied!
+          <div v-if="!copied">
+            Copy FASTA{{ sequenceDisplayOptions.dbn ? ' with DBN' : '' }}
           </div>
+          <div v-else class="text-white">Copied!</div>
         </button>
         <button
           type="button"
@@ -62,7 +65,9 @@
             bg-indigo-600
             hover:bg-indigo-700
             focus:outline-none
-            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+            focus:ring-2
+            focus:ring-offset-2
+            focus:ring-indigo-500
           "
           @click="download"
         >
