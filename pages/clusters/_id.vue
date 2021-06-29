@@ -15,7 +15,10 @@
           </Card>
         </div>
         <div>
-          <Card title="Blocks" subtitle="What sequence regions are where">
+          <Card
+            title="Blocks"
+            subtitle="Which aligned sequence regions are where"
+          >
             <ClientOnly>
               <StorageImage
                 class="w-full"
