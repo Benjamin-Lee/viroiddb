@@ -11,8 +11,7 @@
             font-bold
             leading-7
             text-gray-900
-            sm:text-3xl
-            sm:truncate
+            sm:text-3xl sm:truncate
           "
         >
           {{ sequenceMetadata.displayTitle }}
@@ -37,13 +36,11 @@
             hover:bg-gray-50
             focus:outline-none
           "
-          :class="{'bg-green-500': copied, 'hover:bg-green-500': copied}"
+          :class="{ 'bg-green-500': copied, 'hover:bg-green-500': copied }"
           @click="copyFasta"
         >
           <div v-if="!copied">Copy FASTA</div>
-          <div v-else class="text-white">
-            Copied!
-          </div>
+          <div v-else class="text-white">Copied!</div>
         </button>
         <button
           type="button"
@@ -62,7 +59,9 @@
             bg-indigo-600
             hover:bg-indigo-700
             focus:outline-none
-            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+            focus:ring-2
+            focus:ring-offset-2
+            focus:ring-indigo-500
           "
           @click="download"
         >
@@ -248,8 +247,7 @@
                   :key="link.name"
                   class="
                     py-4
-                    sm:py-5
-                    sm:px-6
+                    sm:py-5 sm:px-6
                     text-sm text-indigo-600
                     hover:underline
                   "
@@ -294,13 +292,12 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div
-                id="fornac_plus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
+
+              <iframe
+                class="h-[1000px] w-full"
+                :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.pdf#toolbar=0`"
+              >
+              </iframe>
             </template>
           </Card>
         </div>
@@ -317,13 +314,11 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div
-                id="fornac_minus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
+              <iframe
+                class="h-[1000px] w-full"
+                :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.rc.pdf#toolbar=0`"
+              >
+              </iframe>
             </template>
           </Card>
         </div>
