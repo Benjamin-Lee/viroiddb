@@ -42,7 +42,7 @@ If that doesn't convince you, let us ask **you** a question: Do you like long, c
 
 
 <details>
-  <summary>How do we curate the database?</summary>
+  <summary>How have we curated the database?</summary>
   
 
 We collected the sequences for the database using the following protocol:
@@ -83,15 +83,15 @@ Please see [Download](./Download) for more information about how to fetch and ac
 <details>
   <summary>I found a new viroid I would like to be on ViroidDB, what should I do?</summary>
   
-Do you think that we missed data in the database? If so, please let us know by filling out the form below and we will be happy to create another release and update the site.
+Do you believe we missed something when curating the database? If so, please let us know by filling out the form below and we will be happy to create another release and update the site.
 Please remember that all sequences and submission must follow these general inclusion criteria:  
 
 1. The sequence must be uniq
 1. The data must be publicly available in an INSDC database
-1. Sequences must be complete
-1. Sequences must be unambiguous.  
+1. Sequence must be complete
+1. Sequence must be unambiguous.  
   
-However, exceptions could be considered, such as representatives of novel families, but would be evaluated on per case basis.  
+Exceptions to these criteria, such as representatives of novel families, may be considered and evaluated on case-by-case basis.  
 
 <SubmitForm/>
 
