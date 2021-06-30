@@ -292,13 +292,21 @@
         </p>
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="col-span-1 flex justify-center">
-            <img class="h-16" src="/ncbi2.png" alt="NCBI" />
+            <img class="h-16 sm:h-20" src="/ncbi3.png" alt="NCBI" />
           </div>
           <div class="col-span-1 flex justify-center">
-            <img class="h-16" src="/oxford5.png" alt="Oxford University" />
+            <img
+              class="h-16 sm:h-20"
+              src="/oxford5.png"
+              alt="Oxford University"
+            />
           </div>
           <div class="col-span-1 flex justify-center">
-            <img class="h-16" src="/TAU2.png" alt="Tel Aviv University" />
+            <img
+              class="h-16 sm:h-20"
+              src="/TAU2.png"
+              alt="Tel Aviv University"
+            />
           </div>
         </div>
       </div>
