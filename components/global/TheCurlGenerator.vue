@@ -393,6 +393,12 @@ export default {
       return url
     },
   },
+  mounted () {
+    document.addEventListener('click', this.close)
+  },
+  beforeDestroy () {
+    document.removeEventListener('click',this.close)
+  },
   methods: {
     copyCurl() {
       navigator.clipboard.writeText(this.url)
@@ -401,6 +407,13 @@ export default {
         this.copied = false
       }, 1000)
     },
+    
+      close (e) {
+      if (!this.$el.contains(e.target)) {
+        this.showFormatMenu = false
+      this.showSubsetMenu = false
+      }
+    }
   },
 }
 </script>
