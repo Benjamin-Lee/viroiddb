@@ -23,7 +23,7 @@
                   <NuxtLink
                     to="/"
                     class="
-                      ml-5
+                      ml-4
                       font-bold
                       text-xl
                       tracking-wide
