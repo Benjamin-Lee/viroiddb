@@ -12,7 +12,7 @@
               <span class="block text-indigo-200">DB</span>
             </h1>
             <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+              This database contains all known viroid and viroid-like RNA sequences.
             </p>
             <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                 <nuxt-link to="/" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
