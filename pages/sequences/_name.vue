@@ -390,7 +390,7 @@
                 >
               </dl>
               <iframe
-                class="h-[1000px] w-full"
+                class="h-[1000px] w-full px-2"
                 :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.rc.pdf#toolbar=0`"
               >
               </iframe>
