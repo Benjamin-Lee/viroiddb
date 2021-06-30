@@ -8,9 +8,16 @@ This includes:
  1. The raw nucleic sequences, along with their related metadata, 'as is', without any modification to their original counterparts of the different public databases such as NCBI's [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) or [GenBank](https://www.ncbi.nlm.nih.gov/genbank/).
  2. The derived information, including the analyses, outputs, visualizations, etc, which we performed after initial sourcing the entries detailed in 1. This include, among else, sequence clustering ([mmseqs](https://github.com/soedinglab/mmseqs2)), secondary structure prediction ([RNAFold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)), rotational alignments ([CSA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-230)), and catalytic potential of sub sequences via [infernal](http://eddylab.org/infernal/) based searches using the [Rfam](https://rfam.org/) database.
 
+
 # How to get the data
 For ease of use, we provide These data are  used in this site is available for download in several forms.     
-  
+
+## Curl
+<the-curl-generator>
+    <template #the-curl-generator></template>
+</the-curl-generator>
+
+## Downloadable Links
 | Subset| #Sequences | FASTA| JSON| DBN| SQL| RDS| Pickle                                                                    |
 |-----------------------|------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------|
 | All            | 9891       | [/db/all](https://viroids.org/db/all.fasta)                       | [/db/all](https://viroids.org/db/all.json)                       | [/db/all](https://viroids.org/db/all.DBN)                       | [/db/all](https://viroids.org/db/all.SQL)                       | [/db/all](https://viroids.org/db/all.RDS)                       | [/db/all](https://viroids.org/db/all.pickle)                       |
