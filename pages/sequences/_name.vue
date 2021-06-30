@@ -84,7 +84,6 @@
             subtitle="Basic information about the sequence."
           >
             <template sm:#unpaddedBody>
-              <div class="px-4 py-5 sm:p-0">
                 <dl class="sm:divide-y sm:divide-gray-200">
                   <DataRow
                     v-for="field in sequenceInfoFields"
@@ -120,7 +119,6 @@
                     </div>
                   </DataRow>
                 </dl>
-              </div>
             </template>
           </Card>
         </main>
@@ -220,20 +218,20 @@
                 v-model="sequenceDisplayOptions.rc"
                 title="Reverse complement"
                 subtitle="Display the reverse complement of the sequence"
-                class="px-4 py-5 sm:p-6"
+                class="py-5 sm:p-6"
               ></DescriptionToggle>
               <DescriptionToggle
                 v-model="sequenceDisplayOptions.dbn"
                 title="Secondary structure"
                 subtitle="Include the secondary structure of the sequence in dot-bracket notation"
-                class="px-4 py-5 sm:p-6"
+                class="py-5 sm:p-6"
                 :checked="false"
               ></DescriptionToggle>
               <DescriptionToggle
                 v-model="sequenceDisplayOptions.rna"
                 title="RNA"
                 subtitle="Display RNA bases instead of DNA (i.e. U instead of T)"
-                class="px-4 py-5 sm:p-6"
+                class="py-5 sm:p-6"
               ></DescriptionToggle>
 
               <pre
@@ -241,7 +239,6 @@
                 class="
                   text-sm
                   overflow-x-auto
-                  px-4
                   py-5
                   sm:p-6
                   flex flex-row-reverse
