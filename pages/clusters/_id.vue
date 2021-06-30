@@ -37,6 +37,15 @@ export default Vue.extend({
   data() {
     return { metadata: [{}] }
   },
+  async fetch() {
+    this.metadata = (
+      await this.$fire.firestore
+        .collection('sequences')
+        .where('Cls.ID0.' + this.identity, '==', this.$route.params.id)
+
+        .get()
+    ).docs.map((doc) => doc.data())
+  },
   computed: {
     clusterNumber(): string {
       return this.$route.params.id.split('.').pop() ?? ''
@@ -44,15 +53,6 @@ export default Vue.extend({
     identity(): string {
       return this.$route.params.id.split('.').slice(-2, -1)[0].slice(2)
     },
-  },
-  async fetch() {
-    this.metadata = (
-      await this.$fire.firestore
-        .collection('sequences')
-        .where('Cls.ID0.' + this.identity, '==', this.$route.params.id)
-    )
-      .get()
-      .docs.map((doc) => doc.data())
   },
 })
 </script>

@@ -26,6 +26,7 @@
       >
       <select
         id="identity"
+        v-model.number="identity"
         name="identity"
         class="
           my-1
@@ -39,7 +40,6 @@
           sm:text-sm
           rounded-md
         "
-        v-model.number="identity"
       >
         <option value="90">90%</option>
         <option value="85">85%</option>
@@ -75,6 +75,7 @@ export default Vue.extend({
     return { clusters: { 70: [], 85: [], 90: [] }, identity: 90 }
   },
   async fetch() {
+    // @ts-ignore
     this.clusters[this.identity] = (
       await this.$fire.firestore
         .collection('clusters')
@@ -82,13 +83,16 @@ export default Vue.extend({
         .get()
     ).docs
       .map((x) => x.data())
-      .map((x) => ({ ...x, to: '/clusters/' + x.id }))
+      .map(
+        (x) => ({ ...x, to: '/clusters/' + x.id } as { to: string; id: string })
+      )
       .sort((a, b) =>
         Number(a.id.split('.').pop()) < Number(b.id.split('.').pop()) ? -1 : 1
       )
   },
   watch: {
     async identity(val) {
+      // @ts-ignore since it doesn't know identity is a valid key for clusters
       if (this.clusters[val].length === 0) {
         await this.$fetch()
       }
