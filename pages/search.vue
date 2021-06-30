@@ -203,4 +203,7 @@ export default {
 .ais-InfiniteHits-item:last-child {
   @apply rounded-b-md !important;
 }
+.ais-RefinementList-count {
+  @apply bg-indigo-50 border-indigo-300 text-indigo-800;
+}
 </style>
