@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <div class="prose mt-5">
+    <div class="prose max-w-[72ch] mt-5">
       <p>
         Viroids, satellite RNAs, retrozymes, and deltaviruses are unique in
         their structure, replication mechanism, and evolutionary history. Their

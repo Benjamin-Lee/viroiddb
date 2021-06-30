@@ -1,8 +1,8 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <div class="prose mt-5">
-      <NuxtContent :document="page" class="prose"> </NuxtContent>
+    <div class="prose max-w-[72ch] mt-5">
+      <NuxtContent :document="page"> </NuxtContent>
     </div>
     <!--
   This example requires Tailwind CSS v2.0+ 

@@ -6,7 +6,7 @@
         ($route.params.group.slice(-1) === 's' ? 'es' : 's')
       }}</span></TheHeader
     >
-    <nuxt-content :document="page" class="prose mt-5 mb-8" />
+    <nuxt-content :document="page" class="prose max-w-[72ch] mt-5 mb-8" />
     <SeqTable :metadata="metadata"></SeqTable>
     <div
       v-if="!$fetchState.pending && metadata.length === maxDisplay"
