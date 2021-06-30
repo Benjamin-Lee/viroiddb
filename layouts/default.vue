@@ -1,6 +1,25 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div class="bg-gray-50">
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-indigo-600">
+      <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+        <div class="pr-16 sm:text-center sm:px-16">
+          <p class="font-medium text-white">
+            ViroidDB is currently in open beta.
+            <span class="block sm:ml-2 sm:inline-block">
+              <a
+                href="mailto:benjamin.lee@chch.ox.ac.uk?subject=ViroidDB%20Bugs"
+                class="text-white font-bold underline"
+              >
+                Report bugs <span aria-hidden="true">&rarr;</span></a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="flex flex-col h-screen justify-between">
       <div>
         <nav class="bg-white border-b border-gray-200">
@@ -8,21 +27,30 @@
             <div class="flex justify-between h-16">
               <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
+                  <NuxtLink to="/" class="logo">
+                    <img
+                      class="block lg:hidden h-8 w-auto"
+                      src="/viroiddb.png"
+                      alt="ViroidDB"
+                    />
+                    <img
+                      class="hidden lg:block h-8 w-auto"
+                      src="/viroiddb.png"
+                      alt="ViroidDB"
+                    />
+                  </NuxtLink>
                   <NuxtLink
                     to="/"
-                    class="font-bold text-xl tracking-wide text-gray-900 logo"
+                    class="
+                      ml-4
+                      font-bold
+                      text-xl
+                      tracking-wide
+                      text-gray-900
+                      logo
+                    "
                     >ViroidDB</NuxtLink
                   >
-                  <!-- <img
-                    class="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
-                  <img
-                    class="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                    alt="Workflow"
-                  /> -->
                 </div>
                 <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                   <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->

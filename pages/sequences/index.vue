@@ -1,12 +1,12 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <div class="prose mt-5">
+    <div class="prose max-w-[72ch] mt-5">
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-        explicabo at consectetur, molestiae quaerat expedita impedit eos in
-        libero hic! Vel excepturi fuga amet, placeat repudiandae deserunt
-        aliquam natus eum!
+        Viroids, satellite RNAs, retrozymes, and deltaviruses are unique in
+        their structure, replication mechanism, and evolutionary history. Their
+        genomes are small (&lt;2000 bases) and highly structured. To view and
+        learn more about sequences of one specific type, click below.
       </p>
     </div>
     <div class="mt-5 mb-8">

@@ -2,7 +2,7 @@
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div>
     <div class="text-3xl font-bold mb-6">{{ doc.title }}</div>
-    <nuxt-content :document="doc" class="prose"></nuxt-content>
+    <nuxt-content :document="doc" class="prose max-w-[72ch]"></nuxt-content>
   </div>
 </template>
 
@@ -12,6 +12,6 @@ export default {
     const doc = await $content(params.slug || 'pages/download_').fetch()
 
     return { doc }
-  }
+  },
 }
 </script>

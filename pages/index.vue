@@ -292,13 +292,25 @@
         </p>
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="col-span-1 flex justify-center">
-            <img class="h-12" src="/ncbi.png" alt="NCBI" />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/"><img class="h-16 sm:h-20" src="/ncbi3-small.png" alt="NCBI" /></a>
           </div>
           <div class="col-span-1 flex justify-center">
-            <img class="h-12" src="/oxford4.png" alt="Oxford University" />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.ox.ac.uk/">
+              <img
+                class="h-16 sm:h-20"
+                src="/oxford5.png"
+                alt="Oxford University"
+              />
+            </a>
           </div>
           <div class="col-span-1 flex justify-center">
-            <img class="h-12" src="/tel_aviv_logo.png" alt="Tel Aviv University" />
+            <a target="_blank" rel="noopener noreferrer" href="https://en-lifesci.tau.ac.il/">
+              <img
+                class="h-16 sm:h-20"
+                src="/TAU2.png"
+                alt="Tel Aviv University"
+              />
+            </a>
           </div>
         </div>
       </div>
