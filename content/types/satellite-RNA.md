@@ -1,4 +1,9 @@
-Satellite-RNAs (satRNAs) are a  
+Satellite-RNAs (satRNAs) is a broad term consisting of two major classes of viral satellites: satellite viruses and satellite nucleic acids. While
+satellite viruses depend on their helper virus for replication, they encode their own capsid proteins. Unlike satellite viruses, satellite nucleic acids are encapsidated with their helper virus.  Within the category of small satRNAs (less than 500 nt), both linear and circular RNA species
+are known to be encapsidated. Notably, both linear and circular satRNAs can replicate via the rolling circle mechanism. Furthermore, both types of small satRNA are known to have ribozymes capable of self-cleavage in at least one polarity. Fascinatingly, the rolling circle-replicating linear satRNA of tobacco ringspot virus contains different self-cleaving ribozymes in each polarity: one a hammerhead (as in viroids) in the (+) strand and the other a hairpin in the (−) strand.   
+Circular satRNAs, which are restricted to the members of the Sobemovirus family, bear such similarity to viroids that they have been termed "virusoids". These satRNAs have (+) hammerhead ribozymes but, with the exception of the Lucerne transient streak virus satRNA, lack (−) ribozymes. This has given rise to the hypothesis that these satRNAs replicate by both symmetric and asymmetric rolling circles akin to the replication mechanisms of the pospiviroids and avsunviroids, respectively.
+
+
  #### Sources:  
  -   Roossinck MJ, Sleat D, Palukaitis P. **Satellite RNAs of plant viruses: structures and biological effects**, Microbiol Rev. 1992;56(2):265-279. [doi:10.1128/mr.56.2.265-279.1992](https://doi.org/10.1128/mr.56.2.265-279.1992)
  -   Palukaitis, P. **Satellite RNAs and satellite viruses**, Molecular Plant-Microbe Interactions 29.3 (2016): 181-186. [doi.org/10.1094/MPMI-10-15-0232-FI](https://doi.org/10.1094/MPMI-10-15-0232-FI)
