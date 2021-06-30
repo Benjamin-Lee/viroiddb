@@ -2,7 +2,7 @@
   <div>
     <div class="flex mt-6">
       <div class="sm:flex sm:items-center">
-        <div class="font-bold text-xl sm:mr-2">Subset</div>
+        <div class="font-medium sm:mr-2">Subset</div>
         <div class="relative inline-block text-left">
           <div>
             <button
@@ -85,7 +85,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-0"
-                @click="subset = 'all'"
+                @click="
+                  subset = 'all'
+                  showSubsetMenu = false
+                "
               >
                 All
               </button>
@@ -94,7 +97,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-1"
-                @click="subset = 'viroids'"
+                @click="
+                  subset = 'viroids'
+                  showSubsetMenu = false
+                "
               >
                 Viroids
               </button>
@@ -103,7 +109,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="subset = 'satellites'"
+                @click="
+                  subset = 'satellites'
+                  showSubsetMenu = false
+                "
               >
                 Satellite RNAs
               </button>
@@ -112,7 +121,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="subset = 'avsunviroidae'"
+                @click="
+                  subset = 'avsunviroidae'
+                  showSubsetMenu = false
+                "
               >
                 <span class="italic">Avsunviroidae</span>
               </button>
@@ -121,7 +133,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="subset = 'pospiviroidae'"
+                @click="
+                  subset = 'pospiviroidae'
+                  showSubsetMenu = false
+                "
               >
                 <span class="italic">Pospiviroidae</span>
               </button>
@@ -130,7 +145,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="subset = 'deltavirus'"
+                @click="
+                  subset = 'deltavirus'
+                  showSubsetMenu = false
+                "
               >
                 <span class="italic">Deltavirus</span>
               </button>
@@ -139,7 +157,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="subset = 'retrozymes'"
+                @click="
+                  subset = 'retrozymes'
+                  showSubsetMenu = false
+                "
               >
                 <span class="italic">Retrozymes</span>
               </button>
@@ -148,7 +169,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="subset = 'unclassified'"
+                @click="
+                  subset = 'unclassified'
+                  showSubsetMenu = false
+                "
               >
                 Unclassified
               </button>
@@ -157,7 +181,7 @@
         </div>
       </div>
       <div class="ml-4 sm:flex sm:items-center">
-        <div class="font-bold text-xl sm:mr-2">Format</div>
+        <div class="font-medium sm:mr-2">Format</div>
         <div class="relative inline-block text-left">
           <div>
             <button
@@ -187,7 +211,7 @@
               aria-haspopup="true"
               @click="showFormatMenu = !showFormatMenu"
             >
-              {{ type }}
+              {{ type.toUpperCase() }}
               <!-- Heroicon name: solid/chevron-down -->
               <svg
                 class="-mr-1 ml-2 h-5 w-5"
@@ -240,7 +264,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="type = 'FASTA'"
+                @click="
+                  type = 'fasta'
+                  showFormatMenu = false
+                "
               >
                 FASTA
               </button>
@@ -249,7 +276,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="type = 'JSON'"
+                @click="
+                  type = 'json'
+                  showFormatMenu = false
+                "
               >
                 JSON
               </button>
@@ -258,7 +288,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="type = 'DBN'"
+                @click="
+                  type = 'dbn'
+                  showFormatMenu = false
+                "
               >
                 DBN
               </button>
@@ -267,7 +300,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="type = 'SQL'"
+                @click="
+                  type = 'sql'
+                  showFormatMenu = false
+                "
               >
                 SQL
               </button>
@@ -276,7 +312,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="type = 'RDS'"
+                @click="
+                  type = 'rds'
+                  showFormatMenu = false
+                "
               >
                 RDS
               </button>
@@ -285,7 +324,10 @@
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
-                @click="type = 'pickle'"
+                @click="
+                  type = 'pickle'
+                  showFormatMenu = false
+                "
               >
                 PICKLE
               </button>
@@ -305,7 +347,7 @@
         flex
         justify-between
       "
-    ><div>$ {{ url }}</div> <button
+    ><div><span class="select-none">$ </span>{{ url }}</div> <button
             type="button"
             class="
               inline-flex
@@ -347,7 +389,7 @@ export default {
   },
   computed: {
     url() {
-      let url = `curl viroids.org/db/${this.subset}.${this.type} > <output-file>`
+      let url = `curl viroids.org/db/${this.subset}.${this.type} > ${this.subset}.${this.type}`
       return url
     },
   },
@@ -361,8 +403,6 @@ export default {
     },
   },
 }
-
 </script>
 
-<style>
-</style>
+<style></style>
