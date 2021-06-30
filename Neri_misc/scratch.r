@@ -70,7 +70,7 @@ remDr <- rD[["client"]]
 dbn=ReadDBN("db/2021-06-06/avsunviroidae.rc.dbn",return_type = "BS",includes_MFE = T)
 tmpvar=c()
 for (i in 1:length(dbn)) {
-  tmppp=PopForna(dbn[i],pop=F,returl=T)
+  tmppp =PopForna(dbn[i],pop=F,returl=T)
   tmpvar=append(tmpvar,tmppp)
   seqnametrim=str_split_fixed(string = names(dbn[i]),pattern = " ",n=Inf)[1]
   remDr$navigate(tmppp)
