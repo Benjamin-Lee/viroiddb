@@ -292,7 +292,7 @@
         </p>
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="col-span-1 flex justify-center">
-            <img class="h-16 sm:h-20" src="/ncbi3.png" alt="NCBI" />
+            <img class="h-16 sm:h-20" src="/ncbi3-small.png" alt="NCBI" />
           </div>
           <div class="col-span-1 flex justify-center">
             <img
