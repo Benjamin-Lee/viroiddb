@@ -67,12 +67,12 @@ We note that due to the de-duplication steps we perform, exact replications (ide
 
 
 <details>
-  <summary>Do you modify the original INSDC indexed sequences?</summary>
+  <summary>Have we modified the original INSDC indexed sequences?</summary>
   
 
 Short answer  -  no. Long answer - Yes, but when we do, we clearly note it. For example, rotated sequences,  reverse complement, and RNA  ( T --> U)  versions of reference sequences are suffixed (in the fasta header) by the addition of [ViroidDB] at the end of the defline.  
-Please see [Download](./Download) for more information about how to fetch and acquire any of the data from ViroidDB.
-> **Note:** The **majority ** of the information in the database is derived from subsequent analyses we performed using the original sequences.
+Please see [Download](./Download) for more information about how to fetch and acquire this data from ViroidDB.
+> **Note:** The **majority ** of the information in the database is derived from analyses we performed using the original sequences.
 
 
 </details>  
