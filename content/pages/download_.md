@@ -3,7 +3,7 @@ title: 'Download'
 description: Data availability and access.
 ---
 
-All the data displayed on this site is attainable both via the individual sequence pages, and through simple `curl` commands.  
+All the data displayed on this site is attainable both via the individual sequence pages, and through simple `curl` commands.
 This includes:
 
 1.  The raw nucleic sequences, along with their related metadata, 'as is', without any modification to their original counterparts of the different public databases such as NCBI's [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) or [GenBank](https://www.ncbi.nlm.nih.gov/genbank/).
@@ -15,7 +15,7 @@ For ease of use, we provide These data are used in this site is available for do
 
 ### Command Line
 
-If you prefer to download the sequence data programmatically, you can easily do so using a command-line tool such as `curl`. 
+If you prefer to download the sequence data programmatically, you can easily do so using a command-line tool such as `curl`.
 
 <the-curl-generator>
     <template #the-curl-generator></template>
