@@ -390,6 +390,42 @@
             </template>
           </Card>
         </div>
+        <div class="col-span-4">
+          <Card title="Legend">
+            <template sm:#unpaddedBody>
+              <DataRow title="green">
+                <div class="text-green-400">
+                  Stems (canonical helices)
+                </div>
+                <!-- #90ee90 -->
+              </DataRow>
+              <DataRow title="red">
+                <div class="text-red-600">
+                  Multiloops (junctions)
+                </div>
+                <!-- #ff9896 -->
+              </DataRow>
+              <DataRow title="yellow">
+                <div class="text-yellow-200">
+                  Interior loops
+                </div>
+                <!-- #dbdb8d -->
+              </DataRow>
+              <DataRow title="blue">
+                <div class="text-blue-300">
+                  Hairpin loops
+                </div>
+                <!-- #add8e6 -->
+              </DataRow>
+              <DataRow title="green">
+                <div class="text-yellow-500">
+                  5' and 3' unpaired region
+                </div>
+                <!-- #ffa07a -->
+              </DataRow>
+            </template>
+          </Card>
+        </div>
         <aside class="col-span-4">
           <div class="sticky top-6 space-y-4">
             <!-- Your content -->
