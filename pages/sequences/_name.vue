@@ -73,7 +73,7 @@
       <div
         class="max-w-3xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-12 lg:gap-8"
       >
-        <main class="col-span-4">
+        <main class="col-span-4 pad">
           <!-- Your content -->
           <!-- This example requires Tailwind CSS v2.0+ -->
           <Card
@@ -122,7 +122,7 @@
           </Card>
         </main>
 
-        <div class="col-span-4">
+        <div class="col-span-4 pad">
           <Card
             title="Collection information"
             subtitle="Provided by the depositors"
@@ -163,7 +163,7 @@
             </template>
           </Card>
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 pad">
           <Card title="Taxonomy" subtitle="According to NCBI Taxonomy"
             ><template sm:#unpaddedBody>
               <DataRow title="Type" class="capitalize">{{
@@ -205,7 +205,7 @@
         <Card
           title="Nucleotide sequence"
           subtitle="FASTA-formatted sequence data."
-          class="col-span-9"
+          class="col-span-9 pad"
         >
           <template sm:#unpaddedBody>
             <div class="divide-y divide-gray-200">
@@ -302,7 +302,7 @@
             </div>
           </template>
         </Card>
-        <div class="col-span-3">
+        <div class="col-span-3 pad">
           <Card title="Links" subtitle="External resources for this sequence"
             ><template sm:#unpaddedBody>
               <ul class="divide-y divide-gray-200">
@@ -325,7 +325,7 @@
             </template></Card
           >
         </div>
-        <div class="col-span-12">
+        <div class="col-span-12 pad">
           <Card
             title="Ribozymes"
             subtitle="Infernal search results for known ribozymes"
@@ -344,7 +344,7 @@
             >
           </Card>
         </div>
-        <div class="col-span-6">
+        <div class="col-span-6 pad">
           <Card title="Secondary structure (+)">
             <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{
@@ -367,7 +367,7 @@
             </template>
           </Card>
         </div>
-        <div class="col-span-6">
+        <div class="col-span-6 pad">
           <Card title="Secondary structure (-)">
             <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{
@@ -390,7 +390,7 @@
             </template>
           </Card>
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 pad">
           <Card title="Legend">
             <template sm:#unpaddedBody>
               <DataRow title="green">
@@ -426,7 +426,7 @@
             </template>
           </Card>
         </div>
-        <aside class="col-span-4">
+        <aside class="col-span-4 pad">
           <div class="sticky top-6 space-y-4">
             <!-- Your content -->
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -635,3 +635,9 @@ export default Vue.extend({
   },
 })
 </script>
+<style lang="postcss">
+.pad {
+  @apply lg:my-auto;
+  @apply my-4;
+}
+</style>
