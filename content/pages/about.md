@@ -105,7 +105,7 @@ Exceptions to these criteria, such as representatives of novel families, may be 
 <details>
   <summary>How can I contact you? </summary>
   
-Feel free to contact us via sending an [email](email:help@Viroids.org) or filing an issue on GitHub.
+Feel free to contact us via [email](email:help@Viroids.org) or by filing a GitHub issue.
 
 </details>  
 
@@ -115,7 +115,7 @@ Feel free to contact us via sending an [email](email:help@Viroids.org) or filing
   <summary>How often will ViroidDB be updated? </summary>
   
   
-Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you feel an update is required, please contact us or perform the update yourself by submitting it as a pull request in the GitHub repository.
+Should new viroid-like RNAs classes be discovered, we hope to add them on (at least) a yearly basis. If you believe an update is required, please contact us or perform the update yourself by creating a pull request with the update in the ViroidDB GitHub repository.
 </details>  
 
 
