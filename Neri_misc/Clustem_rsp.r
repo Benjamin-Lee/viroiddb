@@ -17,7 +17,7 @@ HeaderBreakerCb <- function(input_df,sep=".",clb="id",nclb=hedclbs){
   # output=as.character(args[4])
 }
 # 
-input_clu="/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/clusterin/Clusteringfiles/all.clu_cluster.tsv"
+# input_clu="/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/clusterin/Clusteringfiles/all.clu_cluster.tsv"
 # input_fas='/media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/db/all.fasta'
 # min_cluster_size=1
 # THREADS=10
@@ -44,13 +44,13 @@ cxc= cx %>% group_by(rep)
 cxc=cxc %>% summarise(
   lmem= list(unlist(list(mem))),
   Mems=toString(unlist(mem)))
-cxc$Nmem=lengths(cxc$lmem)
+cxc$Nseq=lengths(cxc$lmem)
 cxc$Cls_ID=paste0(Cls_Prefix,1:nrow(cxc))
 setwd(output)
 print("Started ")
 print(getwd())
 
-write.table(cxc[,c("Cls_ID","rep","Mems")],paste0("./Cluster_membership.tsv"),quote=F, row.names = F, col.names = T ,sep = "\t")
+write.table(cxc[,c("Cls_ID","rep","Mems","Nseq")],paste0("./Cluster_membership.tsv"),quote=F, row.names = F, col.names = T ,sep = "\t")
 
 dmsfunc <-function(aa,ab){
   writeXStringSet(aa,paste0(ab,".fasta"),width=20001)

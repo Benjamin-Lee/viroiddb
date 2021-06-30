@@ -13,11 +13,11 @@ done
 for i in ./*".svg"; do
 ini_name=$(basename $i ".svg")
 
-FILE=../test3/"$ini_name".pdf
+FILE=../test4/"$ini_name".pdf
 if [ -f "$FILE" ]; then
 else 
-rsvg-convert -f pdf -o ../test2/t.pdf $i --no-keep-image-data
-pdf-crop-margins -v -s -u ../test2/t.pdf  -o ../test3/"$ini_name".pdf
+rsvg-convert -f pdf -o ../test5/t.pdf $i --no-keep-image-data
+pdf-crop-margins -v -s -u ../test5/t.pdf  -o ../test4/"$ini_name".pdf
 fi
 done
 
