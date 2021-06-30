@@ -10,8 +10,8 @@ description: About us, about Viroids, and some in between.
 <details>
   <summary>What are Viroids/circRNAs? </summary>
   
-A unique group of semi mobile genetic agents, characterized by small genome sizes (less than 2000 nt), highly structured, often circular, genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism. 
-This database is curated to cover the entirety of viroid-like RNA agents: Viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (*i.e.*, hepatitis delta virus and its relatives), and retrozymes.   
+Viroids/circRNAs are unique groups of semi-mobile genetic agents. They are highly structured, often circular, use self-cleaving ribozymes or co-opted host enzymes, replicate via the rolling circle mechanism, and are characterized by small genome sizes.
+This database has been curated to cover the entirety of viroid-like RNA agents: Viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (*i.e.*, hepatitis delta virus and its relatives), and retrozymes.   
 </details>  
 
     
