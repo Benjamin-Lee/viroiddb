@@ -39,10 +39,11 @@
           sm:text-sm
           rounded-md
         "
+        v-model.number="identity"
       >
-        <option selected>90%</option>
-        <option>85%</option>
-        <option>70%</option>
+        <option value="90">90%</option>
+        <option value="85">85%</option>
+        <option value="70">70%</option>
       </select>
       <p class="text-sm text-gray-500">
         Viroid species demarcation historically used 90% as a cutoff.
@@ -52,24 +53,11 @@
     <LinkTable
       class="mt-5"
       :columns="[
-        { name: 'Cluster ID', key: 'clusterid' },
-        { name: 'Reference Sequence', key: 'reference' },
-        { name: 'Members', key: 'members' },
+        { name: 'Cluster ID', key: 'id' },
+        { name: 'Reference Sequence', key: 'representativeDisplayTitle' },
+        { name: 'Members', key: 'count' },
       ]"
-      :metadata="[
-        {
-          clusterid: 1,
-          reference: 'NC_BLAH.1',
-          members: 123,
-          to: '/clusters/1',
-        },
-        {
-          clusterid: 2,
-          reference: 'NC_FOO.1',
-          members: 456,
-          to: '/clusters/2',
-        },
-      ]"
+      :metadata="clusters[identity]"
     ></LinkTable>
   </div>
 </template>
@@ -82,6 +70,29 @@ export default Vue.extend({
     return {
       page,
     }
+  },
+  data() {
+    return { clusters: { 70: [], 85: [], 90: [] }, identity: 90 }
+  },
+  async fetch() {
+    this.clusters[this.identity] = (
+      await this.$fire.firestore
+        .collection('clusters')
+        .where('identity', '==', this.identity)
+        .get()
+    ).docs
+      .map((x) => x.data())
+      .map((x) => ({ ...x, to: '/clusters/' + x.id }))
+      .sort((a, b) =>
+        Number(a.id.split('.').pop()) < Number(b.id.split('.').pop()) ? -1 : 1
+      )
+  },
+  watch: {
+    async identity(val) {
+      if (this.clusters[val].length === 0) {
+        await this.$fetch()
+      }
+    },
   },
 })
 </script>

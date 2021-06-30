@@ -177,9 +177,72 @@ Object.entries(ribozymes).forEach(([k, v]) => {
   metadata[k] = { ...metadata[k], ribozymes: v }
 })
 
-// console.log(metadata)
+// Clustering
 
-// fs.writeFileSync('static/meta.tmp.json', JSON.stringify(metadata, null, 2))
+const clusters = {}
+
+// set up the metadata for the clusters and rotation but note that it doesn't have the actual sequence data yet
+await Promise.all(
+  ['Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90'].map((clustering) => {
+    return csv({ delimiter: '\t' })
+      .fromFile(clustering + '/Cluster_membership' + '.tsv')
+      .then((jsonobj) =>
+        jsonobj.forEach((x) => {
+          const identity = Number(clustering.split('.').slice(-1))
+          const clusterId =
+            releaseVersion +
+            '.ID' +
+            identity +
+            '.' +
+            x.Cls_ID.split('.').slice(-1)
+          // assign the cluster IDs as properties to the metadata for fast queries
+          x.Mems.split(', ').forEach(
+            (member) =>
+              (metadata[member] = {
+                ...metadata[member],
+                [clustering]: clusterId,
+              })
+          )
+          // populate clusters object that we'll use to create the clusters collection
+          clusters[clusterId] = {
+            count: x.Mems.split(', ').length,
+            representative: x.rep,
+            representativeDisplayTitle: metadata[x.rep].displayTitle,
+            members: x.Mems,
+            identity,
+            id: clusterId,
+          }
+        })
+      )
+  })
+)
+
+// add in the MSA, if available
+Object.keys(clusters).forEach((cluster) => {
+  try {
+    const identity = cluster.split('.')[1].slice(2)
+    clusters[cluster].msa = fs.readFileSync(
+      path.join(
+        'Cls.ID0.' + identity,
+        'Rotated',
+        'CSA_Aligned',
+        'Cls.' + String(cluster.split('.').pop()) + '-Aligned.fasta'
+      ),
+      'utf8'
+    )
+  } catch (error) {
+    // if the file doesn't exist cause there is no MSA
+    if (error.code === 'ENOENT') {
+      console.log('Unable to find', error.path)
+      return
+    }
+    throw error
+  }
+})
+
+// console.log(metadata)
+fs.writeFileSync('static/clusters.tmp.json', JSON.stringify(clusters, null, 2))
+fs.writeFileSync('static/meta.tmp.json', JSON.stringify(metadata, null, 2))
 fs.writeFileSync(
   'static/meta.algolia.json',
   JSON.stringify(
@@ -212,47 +275,3 @@ fs.writeFileSync(
       .filter((x) => typeof x.displayTitle !== 'undefined')
   )
 )
-const clusters = {}
-
-// set up the metadata for the clusters and rotation but note that it doesn't have the actual sequence data yet
-await Promise.all(
-  ['Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90'].map((clustering) => {
-    return csv({ delimiter: '\t' })
-      .fromFile(clustering + '/Cluster_membership' + '.tsv')
-      .then((jsonobj) =>
-        jsonobj.forEach((x) => {
-          const clusterId =
-            releaseVersion +
-            '.ID' +
-            clustering.split('.').slice(-1) +
-            '.' +
-            x.Cls_ID.split('.').slice(-1)
-          // assign the cluster IDs as properties to the metadata
-          x.Mems.split(', ').forEach(
-            (member) =>
-              (metadata[member] = {
-                ...metadata[member],
-                [clustering]: clusterId,
-              })
-          )
-          // populate clusters object
-          clusters[clusterId] = {
-            count: x.Mems.split(', ').length,
-            representative: x.rep,
-            members: x.Mems,
-          }
-        })
-      )
-  })
-)
-
-// ;;[('Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90')].forEach((clustering) =>
-//   bioparsers
-//     .fastaToJson(
-//       fs.readFileSync(path.join(clustering, group + '.fasta'), 'utf8'),
-//       {}
-//     )
-//     .map((x) => x.parsedSequence).map(x => clusters[])
-// )
-
-console.log(clusters)

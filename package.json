@@ -36,7 +36,7 @@
     "babel-eslint": "^10.1.0",
     "bio-parsers": "^8.3.9",
     "camelcase": "^6.2.0",
-    "commander": "^7.2.0",
+    "commander": "^8.0.0",
     "csvtojson": "^2.0.10",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
@@ -46,6 +46,7 @@
     "firebase-admin": "^9.10.0",
     "node-fetch": "^2.6.1",
     "postcss": "^8.3.5",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "sleep": "^6.3.0"
   }
 }
