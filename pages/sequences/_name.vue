@@ -367,7 +367,7 @@
             </template>
           </Card>
         </div>
-        <div v-if="this.sequenceDisplayOptions.rc" class="col-span-6">
+        <div class="col-span-6">
           <Card title="Secondary structure (-)">
             <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{
