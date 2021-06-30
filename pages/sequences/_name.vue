@@ -84,7 +84,7 @@
             subtitle="Basic information about the sequence."
           >
             <template sm:#unpaddedBody>
-              <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
+              <div class="px-4 py-5 sm:p-0">
                 <dl class="sm:divide-y sm:divide-gray-200">
                   <DataRow
                     v-for="field in sequenceInfoFields"
@@ -130,78 +130,82 @@
             title="Collection information"
             subtitle="Provided by the depositors"
             ><template sm:#unpaddedBody>
-              <DataRow title="Submitters">
-                {{
-                  sequenceMetadata.submitters
-                    ? sequenceMetadata.submitters
-                    : 'Unavailable'
-                }}
-              </DataRow>
-              <DataRow title="Host">
-                <i :class="sequenceMetadata.host ? 'italic' : 'not-italic'">{{
-                  sequenceMetadata.host ? sequenceMetadata.host : 'Unavailable'
-                }}</i>
-              </DataRow>
-              <DataRow title="Source" class="capitalize">
-                {{
-                  sequenceMetadata.isolationSource
-                    ? sequenceMetadata.isolationSource
-                    : 'Unavailable'
-                }}
-              </DataRow>
-              <DataRow title="Location">
-                {{
-                  sequenceMetadata.geoLocation
-                    ? sequenceMetadata.geoLocation
-                    : 'Unavailable'
-                }}
-              </DataRow>
-              <DataRow title="Collection Date">
-                {{
-                  sequenceMetadata.collectionDate
-                    ? sequenceMetadata.collectionDate
-                    : 'Unavailable'
-                }}
-              </DataRow>
+              <dl class="sm:divide-y sm:divide-gray-200">
+                <DataRow title="Submitters">
+                  {{
+                    sequenceMetadata.submitters
+                      ? sequenceMetadata.submitters
+                      : 'Unavailable'
+                  }}
+                </DataRow>
+                <DataRow title="Host">
+                  <i :class="sequenceMetadata.host ? 'italic' : 'not-italic'">{{
+                    sequenceMetadata.host ? sequenceMetadata.host : 'Unavailable'
+                  }}</i>
+                </DataRow>
+                <DataRow title="Source" class="capitalize">
+                  {{
+                    sequenceMetadata.isolationSource
+                      ? sequenceMetadata.isolationSource
+                      : 'Unavailable'
+                  }}
+                </DataRow>
+                <DataRow title="Location">
+                  {{
+                    sequenceMetadata.geoLocation
+                      ? sequenceMetadata.geoLocation
+                      : 'Unavailable'
+                  }}
+                </DataRow>
+                <DataRow title="Collection Date">
+                  {{
+                    sequenceMetadata.collectionDate
+                      ? sequenceMetadata.collectionDate
+                      : 'Unavailable'
+                  }}
+                </DataRow>
+              </dl>
             </template>
           </Card>
         </div>
         <div class="col-span-4 pad">
           <Card title="Taxonomy" subtitle="According to NCBI Taxonomy"
             ><template sm:#unpaddedBody>
-              <DataRow title="Type" class="capitalize">{{
-                sequenceMetadata.type
-              }}</DataRow>
-              <DataRow
-                v-if="sequenceMetadata.type !== 'retrozyme'"
-                title="Family"
-                ><i>{{
-                  sequenceMetadata.family
-                    ? sequenceMetadata.family
-                    : 'Incertae sedis'
-                }}</i></DataRow
-              >
-              <DataRow
-                v-if="sequenceMetadata.type !== 'retrozyme'"
-                title="Genus"
-                ><i>{{
-                  sequenceMetadata.genus
-                    ? sequenceMetadata.genus
-                    : 'Incertae sedis'
-                }}</i></DataRow
-              >
-              <DataRow
-                v-if="sequenceMetadata.type !== 'retrozyme'"
-                title="Species"
-              >
-                <i>
-                  {{
-                    sequenceMetadata.species
-                      ? sequenceMetadata.species
-                      : 'Unavailable'
-                  }}
-                </i>
-              </DataRow>
+              <dl class="sm:divide-y sm:divide-gray-200">
+                <DataRow title="Type" class="capitalize">{{
+                  sequenceMetadata.type
+                }}</DataRow>
+                <DataRow
+                  v-if="sequenceMetadata.type !== 'retrozyme'"
+                  title="Family"
+                  ><i>{{
+                    sequenceMetadata.family
+                      ? sequenceMetadata.family
+                      : 'Incertae sedis'
+                  }}</i></DataRow
+                >
+                <DataRow
+                  v-if="sequenceMetadata.type !== 'retrozyme'"
+                  title="Genus"
+                  ><i>{{
+                    sequenceMetadata.genus
+                      ? sequenceMetadata.genus
+                      : 'Incertae sedis'
+                  }}</i></DataRow
+                >
+                <DataRow
+                  v-if="sequenceMetadata.type !== 'retrozyme'"
+                  title="Species"
+                >
+                  <i>
+                    {{
+                      sequenceMetadata.species
+                        ? sequenceMetadata.species
+                        : 'Unavailable'
+                    }}
+                  </i>
+                </DataRow>
+              </dl>
             </template></Card
           >
         </div>
@@ -349,16 +353,18 @@
         <div class="col-span-6 pad">
           <Card title="Secondary structure (+)">
             <template sm:#unpaddedBody>
-              <DataRow title="MFE (25 ºC)">{{
-                sequenceMetadata.structure.plus.mfe
-              }}</DataRow>
-              <DataRow title="Bases paired"
-                >{{
-                  Number(
-                    sequenceMetadata.structure.plus.basesPaired * 100
-                  ).toFixed(1)
-                }}%</DataRow
-              >
+              <dl class="sm:divide-y sm:divide-gray-200">
+                <DataRow title="MFE (25 ºC)">{{
+                  sequenceMetadata.structure.plus.mfe
+                }}</DataRow>
+                <DataRow title="Bases paired"
+                  >{{
+                    Number(
+                      sequenceMetadata.structure.plus.basesPaired * 100
+                    ).toFixed(1)
+                  }}%</DataRow
+                >
+              </dl>
 
               <iframe
                 class="h-[1000px] w-full"
@@ -371,16 +377,18 @@
         <div class="col-span-6 pad">
           <Card title="Secondary structure (-)">
             <template sm:#unpaddedBody>
-              <DataRow title="MFE (25 ºC)">{{
-                sequenceMetadata.structure.minus.mfe
-              }}</DataRow>
-              <DataRow title="Bases paired"
-                >{{
-                  Number(
-                    sequenceMetadata.structure.minus.basesPaired * 100
-                  ).toFixed(1)
-                }}%</DataRow
-              >
+              <dl class="sm:divide-y sm:divide-gray-200">
+                <DataRow title="MFE (25 ºC)">{{
+                  sequenceMetadata.structure.minus.mfe
+                }}</DataRow>
+                <DataRow title="Bases paired"
+                  >{{
+                    Number(
+                      sequenceMetadata.structure.minus.basesPaired * 100
+                    ).toFixed(1)
+                  }}%</DataRow
+                >
+              </dl>
               <iframe
                 class="h-[1000px] w-full"
                 :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.rc.pdf#toolbar=0`"
@@ -392,36 +400,38 @@
         <div class="col-span-4 pad">
           <Card title="Legend">
             <template sm:#unpaddedBody>
-              <DataRow title="green">
-                <div class="text-green-400">
-                  Stems (canonical helices)
-                </div>
-                <!-- #90ee90 -->
-              </DataRow>
-              <DataRow title="red">
-                <div class="text-red-600">
-                  Multiloops (junctions)
-                </div>
-                <!-- #ff9896 -->
-              </DataRow>
-              <DataRow title="yellow">
-                <div class="text-yellow-200">
-                  Interior loops
-                </div>
-                <!-- #dbdb8d -->
-              </DataRow>
-              <DataRow title="blue">
-                <div class="text-blue-300">
-                  Hairpin loops
-                </div>
-                <!-- #add8e6 -->
-              </DataRow>
-              <DataRow title="green">
-                <div class="text-yellow-500">
-                  5' and 3' unpaired region
-                </div>
-                <!-- #ffa07a -->
-              </DataRow>
+              <dl class="sm:divide-y sm:divide-gray-200">
+                <DataRow title="green">
+                  <div class="text-green-400">
+                    Stems (canonical helices)
+                  </div>
+                  <!-- #90ee90 -->
+                </DataRow>
+                <DataRow title="red">
+                  <div class="text-red-600">
+                    Multiloops (junctions)
+                  </div>
+                  <!-- #ff9896 -->
+                </DataRow>
+                <DataRow title="yellow">
+                  <div class="text-yellow-200">
+                    Interior loops
+                  </div>
+                  <!-- #dbdb8d -->
+                </DataRow>
+                <DataRow title="blue">
+                  <div class="text-blue-300">
+                    Hairpin loops
+                  </div>
+                  <!-- #add8e6 -->
+                </DataRow>
+                <DataRow title="green">
+                  <div class="text-yellow-500">
+                    5' and 3' unpaired region
+                  </div>
+                  <!-- #ffa07a -->
+                </DataRow>
+              </dl>
             </template>
           </Card>
         </div>
