@@ -31,7 +31,7 @@
             :path="group.path"
             :initials="group.initials"
             :members="group.members"
-            :color="group.color"
+            color="bg-indigo-500"
           />
         </ul>
       </div>
@@ -63,7 +63,7 @@ export default Vue.extend({
           path: '/sequences/type/viroid',
           color: 'bg-red-600',
           initials: 'Vd',
-          members: 9264,
+          members: 9161,
         },
         {
           name: 'Satellite RNAs',
@@ -77,14 +77,14 @@ export default Vue.extend({
           path: '/sequences/type/virus',
           color: 'bg-green-600',
           initials: 'Rzv',
-          members: 21,
+          members: 242,
         },
         {
           name: 'Retrozymes',
           path: '/sequences/type/retrozyme',
           color: 'bg-yellow-600',
           initials: 'Rtz',
-          members: 74,
+          members: 73,
         },
       ],
       query: '',

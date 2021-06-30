@@ -76,14 +76,14 @@
       <div
         class="max-w-3xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-12 lg:gap-8"
       >
-        <main class="col-span-4">
+        <main class="col-span-4 pad">
           <!-- Your content -->
           <!-- This example requires Tailwind CSS v2.0+ -->
           <Card
             title="Sequence information"
             subtitle="Basic information about the sequence."
           >
-            <template #unpaddedBody>
+            <template sm:#unpaddedBody>
               <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
                 <dl class="sm:divide-y sm:divide-gray-200">
                   <DataRow
@@ -125,11 +125,11 @@
           </Card>
         </main>
 
-        <div class="col-span-4">
+        <div class="col-span-4 pad">
           <Card
             title="Collection information"
             subtitle="Provided by the depositors"
-            ><template #unpaddedBody>
+            ><template sm:#unpaddedBody>
               <DataRow title="Submitters">
                 {{
                   sequenceMetadata.submitters
@@ -166,9 +166,9 @@
             </template>
           </Card>
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 pad">
           <Card title="Taxonomy" subtitle="According to NCBI Taxonomy"
-            ><template #unpaddedBody>
+            ><template sm:#unpaddedBody>
               <DataRow title="Type" class="capitalize">{{
                 sequenceMetadata.type
               }}</DataRow>
@@ -208,9 +208,9 @@
         <Card
           title="Nucleotide sequence"
           subtitle="FASTA-formatted sequence data."
-          class="col-span-9"
+          class="col-span-9 pad"
         >
-          <template #unpaddedBody>
+          <template sm:#unpaddedBody>
             <div class="divide-y divide-gray-200">
               <DescriptionToggle
                 v-model="sequenceDisplayOptions.rc"
@@ -234,15 +234,80 @@
 
               <pre
                 v-if="sequence.length > 0"
-                class="text-sm overflow-x-auto px-4 py-5 sm:p-6"
-                >{{ fasta }}</pre
+                class="
+                  text-sm
+                  overflow-x-auto
+                  px-4
+                  py-5
+                  sm:p-6
+                  flex flex-row-reverse
+                  justify-between
+                "
               >
+                
+                <div class="flex flex-col justify-start">
+                  <button
+                            type="button"
+                            class="
+                              inline-flex
+                              items-center
+                              px-2
+                              py-2
+                              border border-gray-300
+                              rounded-md
+                              shadow-sm
+                              text-sm
+                              font-medium
+                              w-auto
+                              text-gray-700
+                              bg-white
+                              hover:bg-gray-50
+                              focus:outline-none
+                            "
+                            :class="{'border-indigo-600': copied, 'border-3': copied}"
+                            @click="copyFasta"
+                          >
+                            <svg v-if="!copied" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+</svg>
+<svg v-if="copied" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+</svg>
+                          </button>
+                  
+                          <button
+                            type="button"
+                            class="
+                              inline-flex
+                              items-center
+                              px-2
+                              py-2
+                              mt-2
+                              border border-gray-300
+                              rounded-md
+                              shadow-sm
+                              text-sm
+                              font-medium
+                              w-auto
+                              text-gray-700
+                              bg-white
+                              hover:bg-gray-50
+                              focus:outline-none
+                            "
+                            @click="download"
+                          >
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+</svg>
+                          </button>
+                </div>
+                <div>{{ fasta }}</div></pre>
             </div>
           </template>
         </Card>
-        <div class="col-span-3">
+        <div class="col-span-3 pad">
           <Card title="Links" subtitle="External resources for this sequence"
-            ><template #unpaddedBody>
+            ><template sm:#unpaddedBody>
               <ul class="divide-y divide-gray-200">
                 <li
                   v-for="link in links"
@@ -262,7 +327,7 @@
             </template></Card
           >
         </div>
-        <div class="col-span-12">
+        <div class="col-span-12 pad">
           <Card
             title="Ribozymes"
             subtitle="Infernal search results for known self-cleaving ribozymes"
@@ -281,9 +346,9 @@
             </p>
           </Card>
         </div>
-        <div class="col-span-6">
+        <div class="col-span-6 pad">
           <Card title="Secondary structure (+)">
-            <template #unpaddedBody>
+            <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{
                 sequenceMetadata.structure.plus.mfe
               }}</DataRow>
@@ -303,9 +368,9 @@
             </template>
           </Card>
         </div>
-        <div class="col-span-6">
+        <div class="col-span-6 pad">
           <Card title="Secondary structure (-)">
-            <template #unpaddedBody>
+            <template sm:#unpaddedBody>
               <DataRow title="MFE (25 ºC)">{{
                 sequenceMetadata.structure.minus.mfe
               }}</DataRow>
@@ -324,7 +389,43 @@
             </template>
           </Card>
         </div>
-        <aside class="col-span-4">
+        <div class="col-span-4 pad">
+          <Card title="Legend">
+            <template sm:#unpaddedBody>
+              <DataRow title="green">
+                <div class="text-green-400">
+                  Stems (canonical helices)
+                </div>
+                <!-- #90ee90 -->
+              </DataRow>
+              <DataRow title="red">
+                <div class="text-red-600">
+                  Multiloops (junctions)
+                </div>
+                <!-- #ff9896 -->
+              </DataRow>
+              <DataRow title="yellow">
+                <div class="text-yellow-200">
+                  Interior loops
+                </div>
+                <!-- #dbdb8d -->
+              </DataRow>
+              <DataRow title="blue">
+                <div class="text-blue-300">
+                  Hairpin loops
+                </div>
+                <!-- #add8e6 -->
+              </DataRow>
+              <DataRow title="green">
+                <div class="text-yellow-500">
+                  5' and 3' unpaired region
+                </div>
+                <!-- #ffa07a -->
+              </DataRow>
+            </template>
+          </Card>
+        </div>
+        <aside class="col-span-4 pad">
           <div class="sticky top-6 space-y-4">
             <!-- Your content -->
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -506,3 +607,9 @@ export default Vue.extend({
   },
 })
 </script>
+<style lang="postcss">
+.pad {
+  @apply lg:my-auto;
+  @apply my-4;
+}
+</style>

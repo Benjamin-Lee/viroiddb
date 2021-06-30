@@ -1,234 +1,307 @@
 <template>
-  <div
-    class="
-      px-4
-      py-10
-      max-w-3xl
-      mx-auto
-      sm:px-6
-      sm:py-12
-      lg:max-w-4xl
-      lg:py-16
-      lg:px-8
-      xl:max-w-6xl
-    "
-  >
-    <article>
-      <div class="prose prose-sm sm:prose lg:prose-lg mx-auto">
-        <div
-          class="bg-yellow-100 border-l-8 border-yellow-400 rounded-md mb-10"
-        >
-          <p class="p-4">
-            <b>Update 2021-05-24:</b> A bunch of new features are incoming! Stay
-            tuned for rotational pre-alignment, clustered sequences, and
-            predicted structures.
+  <div>
+    <!-- The hero section-->
+    <div class="relative bg-gray-50 overflow-hidden">
+      <div
+        class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
+        aria-hidden="true"
+      >
+        <div class="relative h-full max-w-7xl mx-auto">
+          <svg
+            class="
+              absolute
+              right-full
+              transform
+              translate-y-1/4 translate-x-1/4
+              lg:translate-x-1/2
+            "
+            width="404"
+            height="784"
+            fill="none"
+            viewBox="0 0 404 784"
+          >
+            <defs>
+              <pattern
+                id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="784"
+              fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+            />
+          </svg>
+          <svg
+            class="
+              absolute
+              left-full
+              transform
+              -translate-y-3/4 -translate-x-1/4
+              md:-translate-y-1/2
+              lg:-translate-x-1/2
+            "
+            width="404"
+            height="784"
+            fill="none"
+            viewBox="0 0 404 784"
+          >
+            <defs>
+              <pattern
+                id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="784"
+              fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="relative pb-16 sm:pb-24">
+        <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+          <div class="text-center">
+            <h1
+              class="
+                text-4xl
+                tracking-tight
+                font-extrabold
+                text-gray-900
+                sm:text-5xl
+                md:text-6xl
+              "
+            >
+              <span class="block xl:inline">The database of</span>
+              <span class="block text-indigo-600 xl:inline"
+                >viroid-like RNAs</span
+              >
+            </h1>
+            <p
+              class="
+                mt-3
+                max-w-md
+                mx-auto
+                text-base text-gray-500
+                sm:text-lg
+                md:mt-5 md:text-xl md:max-w-3xl
+              "
+            >
+              ViroidDB is the most comprehensive collection of viroid, satellite
+              RNA, retrozyme, and deltavirus genome sequences available on the
+              internet.
+            </p>
+            <div
+              class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8"
+            >
+              <div class="rounded-md shadow">
+                <NuxtLink
+                  to="/sequences"
+                  class="
+                    w-full
+                    flex
+                    items-center
+                    justify-center
+                    px-8
+                    py-3
+                    border border-transparent
+                    text-base
+                    font-medium
+                    rounded-md
+                    text-white
+                    bg-indigo-600
+                    hover:bg-indigo-700
+                    md:py-4 md:text-lg md:px-10
+                  "
+                >
+                  View Data
+                </NuxtLink>
+              </div>
+              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                <NuxtLink
+                  to="/download"
+                  class="
+                    w-full
+                    flex
+                    items-center
+                    justify-center
+                    px-8
+                    py-3
+                    border border-transparent
+                    text-base
+                    font-medium
+                    rounded-md
+                    text-indigo-600
+                    bg-white
+                    hover:bg-gray-50
+                    md:py-4 md:text-lg md:px-10
+                  "
+                >
+                  Download Data
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- The stats -->
+    <div class="bg-gray-50 pt-12 sm:pt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Go beyond the sequence
+          </h2>
+          <p class="mt-3 text-xl text-gray-500 sm:mt-4">
+            In addition assembled genomes, ViroidDB also includes downstream
+            analyses including predicted secondary structures ribozymes, and
+            clusters.
           </p>
         </div>
-        <h1>ViroidDB</h1>
-        <p>
-          Viroids and their (potential) relatives are among the most unique and
-          exciting of all biological entities. However, I couldn't find a good,
-          up-to-date database containing all of them in one place so I made my
-          own.
-        </p>
-
-        <p>
-          This database has sequences representing known viroid and viroid-like
-          RNA sequences. Each sequence is unique, though variants of the same
-          RNA species are included. Currently, sequences are
-          <i>not</i> guaranteed to be rotationally unique, meaning that
-          <code>AAAATTTT</code> is treated as distinct from
-          <code>TTAAAATT</code>.
-        </p>
-        <h2>How to get the data</h2>
-        <p>
-          You can download the most recent version of the entire database as a
-          FASTA file <a href="/db/all.fasta">here</a>.
-        </p>
-        <p>
-          Alternatively, download the database easily using your command-line
-          tool of choice:
-        </p>
-        <pre>$ curl viroids.org/db/all.fasta > viroiddb.fasta</pre>
-
-        <p>
-          If you're interested in a
-          <abbr title="noting, of course, that a set is a subset of itself">
-            subset
-          </abbr>
-          of the data, here are all of available subsets:
-        </p>
-        <table>
-          <thead>
-            <td>Subset</td>
-            <td>Download link</td>
-            <td>Sequence count</td>
-          </thead>
-          <tbody>
-            <tr>
-              <td>All</td>
-              <td>
-                <a target="_blank" href="/db/all.fasta">/db/all.fasta</a>
-              </td>
-              <td>9,891</td>
-            </tr>
-            <tr>
-              <td>Viroids</td>
-              <td>
-                <a target="_blank" href="/db/viroids.fasta">
-                  /db/viroids.fasta
-                </a>
-              </td>
-              <td>9,354</td>
-            </tr>
-            <tr>
-              <td style="text-indent: 1em"><i>Avsunviroidae</i></td>
-              <td>
-                <a target="_blank" href="/db/avsunviroidae.fasta">
-                  /db/avsunviroidae.fasta
-                </a>
-              </td>
-              <td>5,284</td>
-            </tr>
-            <tr>
-              <td style="text-indent: 1em"><i>Pospiviroidae</i></td>
-              <td>
-                <a target="_blank" href="/db/pospiviroidae.fasta">
-                  /db/pospiviroidae.fasta
-                </a>
-              </td>
-              <td>3,980</td>
-            </tr>
-            <tr>
-              <td style="text-indent: 1em">Unclassified</td>
-              <td>
-                <a target="_blank" href="/db/unclassified.fasta">
-                  /db/unclassified.fasta
-                </a>
-              </td>
-              <td>90</td>
-            </tr>
-            <tr>
-              <td><i>Deltavirus</i></td>
-              <td>
-                <a target="_blank" href="/db/deltavirus.fasta">
-                  /db/deltavirus.fasta
-                </a>
-              </td>
-              <td>453</td>
-            </tr>
-            <tr>
-              <td>Retrozymes</td>
-              <td>
-                <a target="_blank" href="/db/retrozymes.fasta"
-                  >/db/retrozymes.fasta</a
-                >
-              </td>
-              <td>74</td>
-            </tr>
-            <tr>
-              <td>Satellite RNAs</td>
-              <td>
-                <a target="_blank" href="/db/satellites.fasta"
-                  >/db/satellites.fasta</a
-                >
-              </td>
-              <td>10</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p>
-          Archived versions of data are available for each release. Releases do
-          not currently happen at a set interval due to the slow pace of viroid
-          discovery, though I do hope to change that in the future. Previous
-          releases can be accessed through URLs of the form
-          <code>https://viroids.org/db/YYYY-MM-DD/subset.fasta</code>. Available
-          releases:
-        </p>
-        <ul>
-          <li>2021-04-17</li>
-        </ul>
-
-        <h2>How I curate the database</h2>
-        <p>
-          All data is publicly available from the NCBI. I have included what I
-          believe to be a class of potentially related RNA agents that merit
-          study as a group. The key inclusion criteria are:
-        </p>
-        <ul>
-          <li>Circularity at some point in the replication cycle</li>
-          <li>Extensive RNA folding</li>
-          <li>The presence of ribozymes or a central conserved region</li>
-        </ul>
-        <p>
-          To collect the sequences for the database I followed this protocol:
-        </p>
-        <ol>
-          <li>
-            For viroids and deltaviruses, I used the NCBI Virus portal to
-            download complete sequences within the taxonomy IDs 185751, 185752,
-            265963 and 39759, for the <i>Pospiviroidae</i>,
-            <i>Avsunviroidae</i>, unclassified viroids, and
-            <i>Deltavirus</i> taxa respectively.
-          </li>
-          <li>
-            For retrozymes, which are not taxonomically classified, I downloaded
-            all sequences within the
-            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/"
-              >NCBI Nucleotide</a
-            >
-            database matching the search term "ribozyme".
-          </li>
-          <li>
-            Similarly, for satellite RNAs, I downloaded all sequences within the
-            <a href="https://www.ncbi.nlm.nih.gov/nucleotide/"
-              >NCBI Nucleotide</a
-            >
-            database matching each of the small circular satellites in
-            <a
-              href="https://www.elsevier.com/books/viroids-and-satellites/hadidi/978-0-12-801498-1"
-              ><i>Viroids and Satellites</i> (2017)</a
-            >.
-          </li>
-          <li>
-            Deduplication and formatting is performed by
-            <a href="https://bioinf.shenwei.me/seqkit/">SeqKit</a>. Comment
-            lines are standardized as <code>>accession genbank_title</code>.
-          </li>
-        </ol>
-        <p>
-          All the downloading (and website updating) is currently done manually.
-          Until
-          <a href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/"
-            >NCBI Virus</a
-          >
-          has an API, I will repeat this process occasionally and update this
-          site. Should new viroid-like RNAs classes be discovered, I will add
-          them as a new subset. If you feel an update is required, please
-          <a href="#contact">contact me</a> or perform the update yourself and
-          submit it as a
-          <a target="_blank" href="https://github.com/benjamin-lee/viroiddb">
-            pull request to the repository</a
-          >.
-        </p>
-        <h2 id="contact">How to contact me</h2>
-        <p>
-          Feel free to contact me via
-          <a href="mailto:benjamindlee@me.com?subject=ViroidDB"
-            >sending an email</a
-          >
-          or
-          <a
-            target="_blank"
-            href="https://github.com/Benjamin-Lee/viroiddb/issues/new"
-            >filing an issue</a
-          >
-          on GitHub.
-        </p>
-        <hr />
-        <p></p>
       </div>
-    </article>
+      <div class="mt-10 pb-12 bg-gray-50 sm:pb-16">
+        <div class="relative">
+          <div class="absolute inset-0 h-1/2 bg-gray-50"></div>
+          <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+              <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+                <div
+                  class="
+                    flex flex-col
+                    border-b border-gray-100
+                    p-6
+                    text-center
+                    sm:border-0 sm:border-r
+                  "
+                >
+                  <dt
+                    class="
+                      order-2
+                      mt-2
+                      text-lg
+                      leading-6
+                      font-medium
+                      text-gray-500
+                    "
+                  >
+                    Sequences
+                  </dt>
+                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">
+                    {{ Number(9486).toLocaleString() }}
+                  </dd>
+                </div>
+
+                <div
+                  class="
+                    flex flex-col
+                    border-t border-gray-100
+                    p-6
+                    text-center
+                    sm:border-0 sm:border-l
+                  "
+                >
+                  <dt
+                    class="
+                      order-2
+                      mt-2
+                      text-lg
+                      leading-6
+                      font-medium
+                      text-gray-500
+                    "
+                  >
+                    Ribozymes predicted
+                  </dt>
+                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">
+                    {{ Number(18854).toLocaleString() }}
+                  </dd>
+                </div>
+                <div
+                  class="
+                    flex flex-col
+                    border-t border-b border-gray-100
+                    p-6
+                    text-center
+                    sm:border-0 sm:border-l sm:border-r
+                  "
+                >
+                  <dt
+                    class="
+                      order-2
+                      mt-2
+                      text-lg
+                      leading-6
+                      font-medium
+                      text-gray-500
+                    "
+                  >
+                    Clusters with 90% identity
+                  </dt>
+                  <dd class="order-1 text-5xl font-extrabold text-indigo-600">
+                    {{ Number(463).toLocaleString() }}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- This logo cloud -->
+    <div class="bg-gray-50">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <p
+          class="
+            text-center text-base
+            font-semibold
+            uppercase
+            text-gray-600
+            tracking-wider
+            mb-8
+          "
+        >
+          Brought to you by
+        </p>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div class="col-span-1 flex justify-center">
+            <img class="h-12" src="/ncbi.png" alt="Tuple" />
+          </div>
+          <div class="col-span-1 flex justify-center">
+            <img class="h-12" src="/oxford4.png" alt="Mirage" />
+          </div>
+          <div class="col-span-1 flex justify-center">
+            <img class="h-12" src="/tel_aviv_logo.png" alt="StaticKit" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

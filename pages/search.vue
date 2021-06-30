@@ -189,7 +189,10 @@ export default {
 }
 .ais-SearchBox-input,
 .ais-RefinementList-checkbox {
-  @apply shadow-none rounded outline-none  hover:border-gray-400 focus:border-gray-400 border-gray-400 focus:ring-1 focus:ring-indigo-600 focus:ring-offset-2 text-gray-900 placeholder-gray-600;
+  @apply shadow-none rounded outline-none  hover:border-gray-400 focus:border-gray-400 border-gray-400 focus:ring-1 focus:ring-indigo-600 focus:ring-offset-2  placeholder-gray-600;
+}
+.ais-SearchBox-input {
+  @apply text-gray-900;
 }
 .ais-RefinementList-labelText {
   @apply pr-1;
