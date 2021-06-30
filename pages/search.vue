@@ -53,7 +53,7 @@
         >
           Type
         </p>
-        <ais-refinement-list attribute="type" />
+        <ais-refinement-list class="capitalize" attribute="type" />
       </div>
       <div class="my-4">
         <p
@@ -99,7 +99,7 @@
           Species
         </p>
         <ais-refinement-list
-          class="mt-2"
+          class="mt-2 italic"
           searchable
           searchable-placeholder="Search..."
           attribute="species"
@@ -183,9 +183,6 @@ export default {
 <style lang="postcss">
 .ais-RefinementList-count {
   @apply not-italic;
-}
-.ais-RefinementList-labelText {
-  @apply italic;
 }
 .ais-SearchBox-input,
 .ais-RefinementList-checkbox {
