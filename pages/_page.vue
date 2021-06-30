@@ -1,5 +1,5 @@
 <template>
-  <div class="prose">
+  <div class="prose max-w-[75ch]">
     <TheHeader>{{ page.title }}</TheHeader>
     <nuxt-content :document="page" />
   </div>
