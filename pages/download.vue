@@ -1,7 +1,7 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div>
-    <div class="text-3xl font-bold">{{ doc.title }}</div>
+    <div class="text-3xl font-bold mb-6">{{ doc.title }}</div>
     <nuxt-content :document="doc" class="prose"></nuxt-content>
   </div>
 </template>

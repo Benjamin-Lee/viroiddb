@@ -147,7 +147,7 @@
           </div>
         </nav>
 
-        <div class="py-10 bg-gray-50">
+        <div class="py-10 mx-2 sm:mx-auto bg-gray-50">
           <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
               <Nuxt />
