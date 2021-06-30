@@ -28,6 +28,7 @@ export default Vue.extend({
         .map((x) => ({
           ...x,
           to: '/sequences/' + x.accession,
+          length: Number(x.length).toLocaleString(),
         }))
     },
   },
