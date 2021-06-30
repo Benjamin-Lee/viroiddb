@@ -13,8 +13,11 @@
             border-b-4 border-indigo-600
             bg-gray-50
             text-3xl
+            font-medium
             pl-0
             rounded-none
+            placeholder-gray-500
+            text-gray-900
             focus:outline-none
           "
           autofocus
@@ -27,28 +30,80 @@
     </ais-search-box>
 
     <ais-stats>
-      <p slot-scope="{ nbHits, processingTimeMS }" class="text-indigo-600">
-        {{ Number(nbHits).toLocaleString() }}
-        <span class="text-gray-900">results ({{ processingTimeMS }} ms)</span>
+      <p
+        slot-scope="{ nbHits, processingTimeMS }"
+        class="text-gray-500 font-medium text-sm mt-1"
+      >
+        {{ Number(nbHits).toLocaleString() }} results ({{ processingTimeMS }}
+        ms)
       </p>
     </ais-stats>
 
     <div class="lg:flex lg:justify-between mb-4">
       <div class="my-4">
-        <p class="text-indigo-600 text-xl mb-1">Type</p>
+        <p
+          class="
+            text-gray-500
+            mb-1
+            text-sm
+            font-medium
+            uppercase
+            tracking-wider
+          "
+        >
+          Type
+        </p>
         <ais-refinement-list attribute="type" />
       </div>
       <div class="my-4">
-        <p class="text-indigo-600 text-xl mb-1">Family</p>
+        <p
+          class="
+            text-gray-500
+            mb-1
+            text-sm
+            font-medium
+            uppercase
+            tracking-wider
+          "
+        >
+          Family
+        </p>
         <ais-refinement-list attribute="family" class="italic" />
       </div>
       <div class="my-4">
-        <p class="text-indigo-600 text-xl mb-1">Genus</p>
+        <p
+          class="
+            text-gray-500
+            mb-1
+            text-sm
+            font-medium
+            uppercase
+            tracking-wider
+          "
+        >
+          Genus
+        </p>
         <ais-refinement-list attribute="genus" class="italic" />
       </div>
       <div class="my-4">
-        <p class="text-indigo-600 text-xl mb-1">Species</p>
-        <ais-refinement-list attribute="species" class="italic" />
+        <p
+          class="
+            text-gray-500
+            mb-1
+            text-sm
+            font-medium
+            uppercase
+            tracking-wider
+          "
+        >
+          Species
+        </p>
+        <ais-refinement-list
+          class="mt-2"
+          searchable
+          searchable-placeholder="Search..."
+          attribute="species"
+        />
       </div>
     </div>
     <ais-infinite-hits class="mx-1">
@@ -130,6 +185,22 @@ export default {
   @apply not-italic;
 }
 .ais-RefinementList-labelText {
+  @apply italic;
+}
+.ais-SearchBox-input,
+.ais-RefinementList-checkbox {
+  @apply shadow-none rounded outline-none  hover:border-gray-400 focus:border-gray-400 border-gray-400 focus:ring-1 focus:ring-indigo-600 focus:ring-offset-2  placeholder-gray-600;
+}
+.ais-SearchBox-input {
+  @apply text-gray-900;
+}
+.ais-RefinementList-labelText {
   @apply pr-1;
+}
+.ais-InfiniteHits-item:first-child {
+  @apply rounded-t-md !important;
+}
+.ais-InfiniteHits-item:last-child {
+  @apply rounded-b-md !important;
 }
 </style>

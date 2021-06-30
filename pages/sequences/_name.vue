@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- <script src="https://unpkg.com/fornac@1.1.8/dist/scripts/fornac.js"></script> -->
-    <!-- <TheHeader>{{ data.name }}</TheHeader> -->
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="md:flex md:items-center md:justify-between">
       <div class="flex-1 min-w-0">
         <h2
@@ -11,8 +8,7 @@
             font-bold
             leading-7
             text-gray-900
-            sm:text-3xl
-            sm:truncate
+            sm:text-3xl sm:truncate
           "
         >
           {{ sequenceMetadata.displayTitle }}
@@ -36,11 +32,16 @@
             bg-white
             hover:bg-gray-50
             focus:outline-none
+            focus:ring-2
+            focus:ring-offset-2
+            focus:ring-indigo-500
           "
-          :class="{ 'bg-green-500': copied, 'hover:bg-green-500': copied }"
+          :class="{ 'bg-green-500 hover:bg-green-500': copied }"
           @click="copyFasta"
         >
-          <div v-if="!copied">Copy FASTA</div>
+          <div v-if="!copied">
+            Copy FASTA{{ sequenceDisplayOptions.dbn ? ' with DBN' : '' }}
+          </div>
           <div v-else class="text-white">Copied!</div>
         </button>
         <button
@@ -60,7 +61,9 @@
             bg-indigo-600
             hover:bg-indigo-700
             focus:outline-none
-            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+            focus:ring-2
+            focus:ring-offset-2
+            focus:ring-indigo-500
           "
           @click="download"
         >
@@ -311,8 +314,7 @@
                   :key="link.name"
                   class="
                     py-4
-                    sm:py-5
-                    sm:px-6
+                    sm:py-5 sm:px-6
                     text-sm text-indigo-600
                     hover:underline
                   "
@@ -328,20 +330,20 @@
         <div class="col-span-12 pad">
           <Card
             title="Ribozymes"
-            subtitle="Infernal search results for known ribozymes"
+            subtitle="Infernal search results for known self-cleaving ribozymes"
           >
-            <pre class="text-sm text-gray-900 overflow-scroll h-96"
+            <pre
+              v-if="!sequenceMetadata.ribozymes.includes('No hits detected')"
+              class="text-sm text-gray-900 overflow-scroll h-96"
               >{{ sequenceMetadata.ribozymes }}
             </pre>
-            <template
-              v-if="sequenceMetadata.family === 'Pospiviroidae'"
-              #footer
-            >
-              <p class="text-sm text-gray-500">
-                Members of <i>Pospiviroidae</i> are not expected to contain
-                ribozymes.
-              </p></template
-            >
+            <p v-else class="text-sm">
+              No self-cleaving ribozymes were detected.
+              {{
+                sequenceMetadata.family === 'Pospiviroidae' &&
+                'Pospiviroids are not expected to contain such ribozymes.'
+              }}
+            </p>
           </Card>
         </div>
         <div class="col-span-6 pad">
@@ -357,13 +359,12 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div
-                id="fornac_plus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
+
+              <iframe
+                class="h-[1000px] w-full"
+                :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.pdf#toolbar=0`"
+              >
+              </iframe>
             </template>
           </Card>
         </div>
@@ -380,13 +381,11 @@
                   ).toFixed(1)
                 }}%</DataRow
               >
-              <div
-                id="fornac_minus"
-                class="h-96"
-                :class="{
-                  'bg-gray-200 animate animate-pulse': $fetchState.pending,
-                }"
-              ></div>
+              <iframe
+                class="h-[1000px] w-full"
+                :src="`https://www.tau.ac.il/~urineri/vdb/frna/${sequenceMetadata.accession}.rc.pdf#toolbar=0`"
+              >
+              </iframe>
             </template>
           </Card>
         </div>
@@ -499,7 +498,6 @@ export default Vue.extend({
       .doc(this.$route.params.name)
       .get()
     this.sequenceMetadata = snapshot.data() as sequenceMetadata
-    // this.showforna()
     this.uid = await fetch(
       `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=${this.$route.params.name}`
     )
@@ -601,36 +599,10 @@ export default Vue.extend({
       )
     },
     async copyFasta() {
-      navigator.clipboard.writeText(this.fasta)
+      await navigator.clipboard.writeText(this.fasta)
       this.copied = true
-      setTimeout(() => {
-        this.copied = false
-      }, 1000)
-    },
-    showforna() {
-      for (const [seq, pol, el] of [
-        [
-          this.sequence,
-          this.sequenceMetadata.structure.plus.dbn,
-          '#fornac_plus',
-        ],
-        [
-          this.revCompSequence,
-          this.sequenceMetadata.structure.minus.dbn,
-          '#fornac_minus',
-        ],
-      ]) {
-        // @ts-ignore
-        const container = new fornac.FornaContainer(el, {
-          applyForce: false,
-        })
-        const options = {
-          structure: pol,
-          sequence: seq,
-        }
-        container.addRNA(options.structure, options)
-        container.setSize()
-      }
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+      this.copied = false
     },
   },
 })
