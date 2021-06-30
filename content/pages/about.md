@@ -45,7 +45,7 @@ If that doesn't convince you, let us ask **you** a question: Do you like long, c
   <summary>How do we curate the database?</summary>
   
 
-To collect the sequences for the database we followed this protocol:
+We collected the sequences for the database using the following protocol:
 
 For viroids and deltaviruses, we used the NCBI Virus portal to download complete sequences within the taxonomy IDs:  
 | Subset         | #Sequences | NCBI TaxID                                                                   |
@@ -60,7 +60,7 @@ For viroids and deltaviruses, we used the NCBI Virus portal to download complete
 
 
 For retrozymes, which are currently not taxonomically classified as monophyletic group, we downloaded all sequences within the NCBI Nucleotide database matching the search term ["retrozymes"](https://www.ncbi.nlm.nih.gov/nuccore/?term=retrozymes).    
-Please note that due to the procedural de-duplication steps we perform, exact replications (identical strings) are masked from most down stream analyses (such as secondary structure prediction and ribozyme search), to avoid unnecessary use of computation resources and eventual storage space.  
+We note that due to the de-duplication steps we perform, exact replications (identical strings) are deliberately masked from most downstream analyses (such as secondary structure prediction and ribozyme search), to avoid the use of unnecessary computational resources and storage space.  
 
 
 </details>  
