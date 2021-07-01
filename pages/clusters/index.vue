@@ -43,8 +43,11 @@
           rounded-md
         "
       >
+        <option value="95">95%</option>
         <option value="90">90%</option>
         <option value="85">85%</option>
+        <option value="80">80%</option>
+        <option value="75">75%</option>
         <option value="70">70%</option>
       </select>
       <p class="text-sm text-gray-500">
@@ -84,7 +87,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      clusters: { 70: [], 85: [], 90: [] },
+      clusters: { 70: [], 75: [], 80: [], 85: [], 90: [], 95: [] },
       identity: 90,
       maxDisplay: 50,
     }
