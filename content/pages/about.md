@@ -69,28 +69,19 @@ Should new viroid-like RNAs classes be discovered, we hope to add them automatic
 ### How do you generate the clusters and their information?
 
 We care about reproducibilty just as much as we care about future proofing ViroidDB. In order to insure that as new and exciting circRNAs are discovered, they would be consistently incorporated into new realases, we wrote a custom, standalone pipeline to process all the sequences gathered from the refrence databases. Below is a consice overview of the general workflow, for a detailed description please refer to the ViroidDB manuscript, or visit the ViroidDB GitHub repo to see GPL3/MIT (open source) code.
-Briefly,  
+Briefly, after the sequences are fetched from their original refrence database, such as NCBI's [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) or [GenBank](https://www.ncbi.nlm.nih.gov/genbank/), and verified to meet our curation standards (see above), they are subjected to:  
 
-
-
-```mermaid
-graph LR
-A[INSDC DBs] -- entrez / NCBI-Virus portal --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-
-```
-
-
-
-create mmseqs easy-linclust. All clusters (including "degenerate" clusters (singletons, comprised of a single sequence),  are processed  
-mmseqs easy-linclust "$input_fasta" "$ini_name".clu tmp --min-seq-id "$min_prec_id"  -c "$min_prec_cov" --seq-id-mode 1 --cov-mode 0 --kmer-per-seq-scale 0.3  --threads "$THREADS"   --split-memory-limit "$Memory"M 
-
- ever, such anaylses Performing clustering on circular RNAs can be challenging if the sequences are not rotated consistently. To make these analyses easier, we have performed circular rotation and clustering at various levels of identity.
-
-Many downstream analyses rely on multiple sequence alignments (MSA). Circular entities present a challenge as every rotation of the sequences must be considered because variation in sequencing and assembly may result in nearly identical sequences failing to align due to having different origins. For this reason, we performed _k_-mer profile-based clustering followed by rotational alignment for each cluster.
-
+1.  The nucleic sequences and acoompanying metadata are catogrized, formated and converted to JSON format.
+2.  Using ([RNAFold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)), the secondary structure for is predicted for every sequence, producing the dot bracket notation data (DBN).
+3.  The DBN information is used to generate SVG and PDFs visualizations (using [forna](http://rna.tbi.univie.ac.at/forna/)).  
+4.  All sequences are scanned for catalytic potential of via [infernal](http://eddylab.org/infernal/) based searches using the [Rfam](https://rfam.org/) database.
+5.  All sequences are clustered (using [mmseqs](https://github.com/soedinglab/mmseqs2)), at multiple identity thresholds (see [clusters](./clusters)).
+6.  Cyclic/rotational alignment is attempt for evey cluster (using [CSA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-230)). 
+7.  If CSA failed to produce an output (see below for reasons why), cyclic comparison is attempted using [cyclope](http://www.bioinf.uni-leipzig.de/Software/cyclope/index.html). 
+8.  If cyclope fails to produce an output, cicular comparision is attempted using [MARs](https://github.com/lorrainea/MARS).
+9.  All clusters are are then re-aligned using [MAFFT v7.475 (2020/Nov/23) ](https://mafft.cbrc.jp/alignment/software/). For the minority of the clusteres that no cyclic comparison software successfully produce meaningful output, the cluster's sequences are forwaded 'as is' to MAFFT.
+10.  For every resulting MSA (_one for every cluster_) a consenus sequence is generated (using [Seals-2](https://github.com/YuriWolf-ncbi/seals-2)). The consenus sequence is then inserted into the alignmnet as the first seqeunce is the MultiFasta file (to act as a "master sequence").
+11.  The output of 10. is used to construct nhmm profiles (using [(HMMER 3.3.2 (Nov 2020)](http://hmmer.org/))
 
 ### Why do you rotate clusters?
 
