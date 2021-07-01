@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Card title="MSA" class="sm:p-6"><pre class="overflow-scroll  h-96">{{ msa }}</pre></Card>
+    <Card title="MSA">
+      <pre class="overflow-scroll max-h-96">{{ msa }}</pre>
+    </Card>
   </div>
 </template>
 <script lang="ts">
