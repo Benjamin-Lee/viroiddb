@@ -2,6 +2,9 @@
   <ClientOnly>
     <div>
       <TheHeader>{{ clusterId }}</TheHeader>
+      <div class="prose max-w-[72ch] mt-5">
+        <NuxtContent :document="page"> </NuxtContent>
+      </div>
       <div class="mt-5">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
           <MsaView
@@ -45,6 +48,12 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
+  async asyncData({ $content }) {
+    const page = await $content('pages/cluster').fetch()
+    return {
+      page,
+    }
+  },
   // middleware({ route, redirect }) {
   //   // If the user is not authenticated
   //   if (route.params.id.toUpperCase() !== route.params.id) {
