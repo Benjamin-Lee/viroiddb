@@ -392,33 +392,33 @@
         <div class="col-span-4 pad">
           <Card title="Legend">
             <template sm:#unpaddedBody>
-              <DataRow title="green">
+              <DataRow title="Green">
                 <div class="text-green-400">
-                  Stems (canonical helices)
+                  <strong>Stems (Canonical Helices)</strong>
                 </div>
                 <!-- #90ee90 -->
               </DataRow>
-              <DataRow title="red">
+              <DataRow title="Red">
                 <div class="text-red-600">
-                  Multiloops (junctions)
+                  <strong>Multiloops (Junctions)</strong>
                 </div>
                 <!-- #ff9896 -->
               </DataRow>
-              <DataRow title="yellow">
+              <DataRow title="Yellow">
                 <div class="text-yellow-200">
-                  Interior loops
+                  <strong>Interior Loops</strong>
                 </div>
                 <!-- #dbdb8d -->
               </DataRow>
-              <DataRow title="blue">
+              <DataRow title="Blue">
                 <div class="text-blue-300">
-                  Hairpin loops
+                  <strong>Hairpin Loops</strong>
                 </div>
                 <!-- #add8e6 -->
               </DataRow>
-              <DataRow title="green">
+              <DataRow title="Orange">
                 <div class="text-yellow-500">
-                  5' and 3' unpaired region
+                  <strong>5' and 3' Unpaired Region</strong>
                 </div>
                 <!-- #ffa07a -->
               </DataRow>
