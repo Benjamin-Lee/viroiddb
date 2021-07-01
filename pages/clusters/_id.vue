@@ -26,6 +26,9 @@
               />
             </ClientOnly>
           </Card>
+          <ClientOnly>
+            <MsaView :clusterId="$route.params.id"></MsaView>
+          </ClientOnly>
         </div>
       </div>
     </div>
