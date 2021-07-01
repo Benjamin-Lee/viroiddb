@@ -183,62 +183,64 @@ const clusters = {}
 
 // set up the metadata for the clusters and rotation but note that it doesn't have the actual sequence data yet
 await Promise.all(
-  ['Cls.ID0.70', 'Cls.ID0.85', 'Cls.ID0.90'].map((clustering) => {
-    return csv({ delimiter: '\t' })
-      .fromFile(clustering + '/Cluster_membership' + '.tsv')
-      .then((jsonobj) =>
-        jsonobj.forEach((x) => {
-          const identity = Number(clustering.split('.').slice(-1))
-          const clusterId =
-            releaseVersion +
-            '.ID' +
-            identity +
-            '.' +
-            x.Cls_ID.split('.').slice(-1)
-          // assign the cluster IDs as properties to the metadata for fast queries
-          x.Mems.split(', ').forEach(
-            (member) =>
-              (metadata[member] = {
-                ...metadata[member],
-                [clustering]: clusterId,
-              })
-          )
-          // populate clusters object that we'll use to create the clusters collection
-          clusters[clusterId] = {
-            count: x.Mems.split(', ').length,
-            representative: x.rep,
-            representativeDisplayTitle: metadata[x.rep].displayTitle,
-            members: x.Mems,
-            identity,
-            id: clusterId,
-          }
-        })
-      )
-  })
+  ['Cls_ID70', 'Cls_ID75', 'Cls_ID80', 'Cls_ID85', 'Cls_ID90', 'Cls_ID95'].map(
+    (clustering) => {
+      return csv({ delimiter: '\t' })
+        .fromFile(clustering + '/Cluster_membership' + '.tsv')
+        .then((jsonobj) =>
+          jsonobj.forEach((x) => {
+            const identity = Number(clustering.slice(-2))
+            const clusterId =
+              releaseVersion +
+              '-ID' +
+              identity +
+              '-' +
+              x.Cls_ID.split('_').slice(-1)
+            // assign the cluster IDs as properties to the metadata for fast queries
+            x.Mems.split(', ').forEach(
+              (member) =>
+                (metadata[member] = {
+                  ...metadata[member],
+                  [clustering]: clusterId,
+                })
+            )
+            // populate clusters object that we'll use to create the clusters collection
+            clusters[clusterId] = {
+              count: x.Mems.split(', ').length,
+              representative: x.rep,
+              representativeDisplayTitle: metadata[x.rep].displayTitle,
+              members: x.Mems,
+              identity,
+              id: clusterId,
+            }
+          })
+        )
+    }
+  )
 )
 
 // add in the MSA, if available
-Object.keys(clusters).forEach((cluster) => {
-  try {
-    const identity = cluster.split('.')[1].slice(2)
-    clusters[cluster].msa = fs.readFileSync(
-      path.join(
-        'Cls.ID0.' + identity,
-        'Rotated',
-        'CSA_Aligned',
-        'Cls.' + String(cluster.split('.').pop()) + '-Aligned.fasta'
-      ),
-      'utf8'
-    )
-  } catch (error) {
-    // if the file doesn't exist cause there is no MSA
-    if (error.code === 'ENOENT') {
-      console.log('Unable to find', error.path)
-      return
-    }
-    throw error
-  }
-})
+// Object.keys(clusters).forEach((cluster) => {
+//   // try {
+//   const identity = cluster.split('-')[3].slice(2)
+//   clusters[cluster].msa = fs.readFileSync(
+//     path.join(
+//       'Cls_ID' + identity,
+//       'FinalCluster_MSAs',
+//       `Cls_ID${identity}_${String(
+//         cluster.split('-').pop()
+//       )}_conp_mafft_msa.fasta`
+//     ),
+//     'utf8'
+//   )
+//   // } catch (error) {
+//   //   // if the file doesn't exist cause there is no MSA
+//   //   if (error.code === 'ENOENT') {
+//   //     console.log('Unable to find', error.path)
+//   //   }
+//   //   throw error
+//   // }
+// })
 
 // console.log(metadata)
 fs.writeFileSync('static/clusters.tmp.json', JSON.stringify(clusters, null, 2))
