@@ -208,6 +208,7 @@ export default Vue.extend({
         { name: 'Search', to: '/search' },
         { name: 'Download', to: '/download' },
         { name: 'Submit', to: '/submit' },
+        { name: 'Community', to: '/community' },
       ],
       showMenu: false,
     }
