@@ -25,8 +25,7 @@
       <!-- We use less vertical padding on card footers at all sizes than on headers or body sections -->
       <slot name="footer"></slot>
     </div>
-    <slot v-if="title == 'Secondary structure (-)'" name="unpaddedFooter">
-    </slot> 
+    <slot name="unpaddedFooter"></slot> 
   </div>
 </template>
 <script lang="ts">
