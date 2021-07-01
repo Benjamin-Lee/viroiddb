@@ -126,15 +126,16 @@ export default Vue.extend({
   },
   computed: {
     path(): string {
-      const temp = `Cls_${this.clusterId
-        .slice(11)
-        .toUpperCase()}_conp_mafft_msa.fasta`.replace('-', '_')
+      const temp = `Cls_${this.clusterId.slice(
+        11
+      )}_conp_mafft_msa.fasta`.replace('-', '_')
       return `msa/${this.clusterId.slice(0, 10)}/ID${this.clusterId.slice(
         13,
         15
       )}/${temp}`
     },
   },
+  // fetchDelay: 500,
   methods: {
     async copyMSA() {
       await navigator.clipboard.writeText(this.msa)
