@@ -181,8 +181,8 @@
             Go beyond the sequence
           </h2>
           <p class="mt-3 text-xl text-gray-500 sm:mt-4">
-            In addition assembled genomes, ViroidDB also includes downstream
-            analyses including predicted secondary structures ribozymes, and
+            In addition to assembled genomes, ViroidDB includes downstream
+            analyses such a predicted secondary structures ribozymes and
             clusters.
           </p>
         </div>
