@@ -1,8 +1,6 @@
 <template>
   <div>
-    Cls_ID70_161_conp_mafft_msa.fasta
-    <pre>{{ url }}</pre>
-    <pre>{{ msa }}</pre>
+    <Card title="MSA" class="sm:p-6 overflow-scroll h-96"><pre class="overflow-x-auto overflow-y-auto">{{ msa }}</pre></Card>
   </div>
 </template>
 <script lang="ts">
