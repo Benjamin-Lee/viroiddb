@@ -238,7 +238,6 @@
                 v-if="sequence.length > 0"
                 class="
                   text-sm
-                  overflow-x-auto
                   py-5
                   sm:p-6
                   flex flex-row-reverse
@@ -246,7 +245,7 @@
                 "
               >
                 
-                <div class="flex flex-col justify-start">
+                <div class="flex flex-col justify-start ml-4">
                   <button
                             type="button"
                             class="
@@ -302,7 +301,7 @@
 </svg>
                           </button>
                 </div>
-                <div>{{ fasta }}</div></pre>
+                <div class="overflow-x-auto">{{ fasta }}</div></pre>
             </div>
           </template>
         </Card>
