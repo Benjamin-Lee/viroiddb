@@ -171,7 +171,25 @@ if [ -f "$FILE" ]; then
     cp $FILE "$output_dir"/msaFiles/"$file_name"_msa.fasta
 else 
     echo "CSA Rotated output NOT found  - $FILE"
-    timeout 11 cyclope -C -a -v -o -s -O "$output_dir"/msaFiles/"$file_name"_msa.fasta $i 
+    timeout 11 cyclope -C -a -v -s -O "$output_dir"/msaFiles/"$file_name"_msa.fasta $i 
+fi
+done 
+find "$output_dir"/msaFiles/ -size  0 -print -delete
+cd "$output_dir"
+
+### Rotate attempt 3# - using MARS for clusters CSA couldn't ###
+for i in "$output_dir"/cluster_membership/*.fasta
+do
+file_with_suffix=$(basename "$i") 
+file_name=$(basename "$file_with_suffix" ".fasta")
+FILE="$output_dir"/msaFiles/"$file_name"_msa.fasta
+
+if [ -f "$FILE" ]; then
+    echo "CSA/cyclope Rotated output found  - $FILE"
+    # cp $FILE "$output_dir"/msaFiles/"$file_name"_msa.fasta
+else 
+    echo "CSA/cyclope Rotated output NOT found  - $FILE"
+    timeout 11 mars -a DNA   -i $i   --output-file "$output_dir"/msaFiles/"$file_name"_msa.fasta  -T $THREADS
 fi
 done 
 find "$output_dir"/msaFiles/ -size  0 -print -delete
@@ -187,10 +205,10 @@ file_name=$(basename "$file_with_suffix" ".fasta")
 
 FILE="$output_dir"/msaFiles/"$file_name"_msa.fasta
 if [ -f "$FILE" ]; then
-    echo "CSA/cyclope Rotated output found"
+    echo "CSA/cyclope/mars Rotated output found"
     mafft --thread "$THREADS" --auto "$FILE"   >  "$output_dir"/msaFiles/"$file_name"_mafft_msa.fasta
 else
-    echo "CSA/cyclope Rotated output NOT found"
+    echo "CSA/cyclope/mars Rotated output NOT found"
     mafft --thread "$THREADS" --auto $i   > "$output_dir"/msaFiles/"$file_name"_mafft_msa.fasta
 fi
 done 
