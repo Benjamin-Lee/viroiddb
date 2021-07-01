@@ -1,27 +1,30 @@
 ---
 title: About ViroidDB
-description: About us, about Viroids, and some in between.
+description: About us, about viroids, and some in between.
 ---
 
 ## Frequently Asked Questions
 
+### What are viroids?
+
+Viroids are a unique group of semi-mobile genetic agents, characterized by small genome sizes (less than 2000 nt), highly structured circular genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism.
+
 ### What are viroid-like RNA agents?
 
-First off, for clarity, we  use the term “viroid-like RNA agent” to refer to the broad class of bona fide viroids, viroid-like RNAs with unconfirmed independent replication, deltaviruses, and viroid-like satRNAs. These agents share the defining features of highly structured, single-stranded circular RNA genomes and replication by means of the rolling circle mechanism, often with the presence of ribozymes for self-cleavage.  Viroids are a unique group of semi mobile genetic agents, characterized by small genome sizes (less than 2000 nt), highly structured, circular genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism.
-This database is curated to cover the entirety of viroid-like RNA agents: Viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (_i.e._, hepatitis delta virus and its relatives), and retrozymes.
+We use the term “viroid-like RNA agent” to refer to the broad class of bona fide viroids, viroid-like RNAs with unconfirmed independent replication, deltaviruses, and viroid-like satRNAs. These agents have highly structured, single-stranded circular RNA genomes and replicate through the rolling circle mechanism, often with the presence of ribozymes for self-cleavage. This comprehensive database contains the entirety of viroid-like RNA agents: viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (_i.e._, hepatitis delta virus and its relatives), and retrozymes.
 
-### Why do Viroids need their own Database?
+### Why do viroids need their own database?
 
-Despite the ever-increasing diversity and host range of these agents, no database currently exists. The most recent such database, [the subviral RNA database](doi.org/10.1186/1471-2180-6-24), was published 15 years ago and is no longer accessible.  
-To better support computational and experimental research on these agents, we have semi-automatically compiled a database of nearly ten thousand viroid-like RNA sequences from the NCBI's nucleotide database and made them available for download at viroids.org. In addition to curating the respective INSDC accessions and sequences, we have performed considerable post-processing so that ViroidDB entries are consistently formatted, enabling their direct use in common downstream analyses (e.g. circular sequences are consistently rotated and all sequence sets are deduplicated and estimated to represent complete genomes). For use cases where the complete range of variation is undesirable, we have performed clustering to identify a representative sequence for each cluster when no reference sequence is available. The database is version controlled and accessible by web via a simple graphical user interface or by command-line interface for programmatic data retrieval. Furthermore, the database is permanently archived in the Zenodo repository, ensuring future accessibility.
+Despite their ever-increasing diversity and host range, a database for these agents currently does not exist. The most recent database, [the subviral RNA database](doi.org/10.1186/1471-2180-6-24), was published 15 years ago and is no longer accessible.  
+To better support computational and experimental research on these agents, we have semi-automatically compiled a database of nearly ten thousand viroid-like RNA sequences from the NCBI's nucleotide database and made them available for download at viroids.org. In addition to curating the respective INSDC accessions and sequences, we have performed considerable post-processing so that ViroidDB entries are consistently formatted, enabling their direct use in common downstream analyses (e.g. circular sequences are consistently rotated and all sequence sets are deduplicated and estimated to represent complete genomes). For use cases where the complete range of variation is undesirable, we have performed clustering to identify a representative sequence for each cluster when no reference sequence is available. The database is version controlled and accessible by web via graphical user interface or command-line interface for programmatic data retrieval. Furthermore, the database is permanently archived in the Zenodo repository, ensuring future accessibility.
 
 ### Why are Viroids important?
 
 Pathogenic members infect both plants and animals, and reports of resulting diseases have been documented since the 1930s. Presently, the only effective means of disease control is the prevention of spread, and crop infection may cause up to a 40% reduction of yield.  
-If that doesn't convince you, let us ask **you** a question: Do you like long, curly french fries in MacDonalds?
+If that doesn't convince you, let us ask **you** a question: Do you like McDonalds' french fries?
 
 ![image](https://user-images.githubusercontent.com/41674327/123809317-2ccd2e80-d8fa-11eb-9ae4-47765b1bef29.png)  
- Well, even if adible, one of the earliest known viroids can shatter the american dream of a nice, salty, deep fried french fry:  
+ Well, even if adible, one of the earliest known viroids can shatter the American dream of a nice, salty, deep fried french fry:  
  ![image](https://www.daera-ni.gov.uk/sites/default/files/styles/inline-expandable/public/images/daera/PSTVd%20photo.1.jpg?itok=dmmWZovB)  
  Healthy potato tuber (left), and spindle shaped tubers (right) that have been affected by PSTVd. © Dr. J. W. Roenhorst NPPO-NL
 
@@ -56,8 +59,8 @@ Please contact us with additional information via the form in the [submit](./sub
 
 ### How can I contact you?
 
-Feel free to contact us via sending an [email](email:help@Viroids.org) or filing an issue on GitHub.
+Feel free to [email](email:help@Viroids.org) us or file an issue on GitHub.
 
 ### How often will ViroidDB be updated?
 
-Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you feel an update is required, please contact us or perform the update yourself by submitting it as a pull request in the GitHub repository.
+Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you believe an update is warranted, please contact us or perform the update yourself by submitting it as a pull request in the GitHub repository.
