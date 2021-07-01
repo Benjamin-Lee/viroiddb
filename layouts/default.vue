@@ -30,12 +30,12 @@
                   <NuxtLink to="/" class="logo">
                     <img
                       class="block lg:hidden h-8 w-auto"
-                      src="/viroiddb.png"
+                      src="/viroiddb2.png"
                       alt="ViroidDB"
                     />
                     <img
                       class="hidden lg:block h-8 w-auto"
-                      src="/viroiddb.png"
+                      src="/viroiddb2.png"
                       alt="ViroidDB"
                     />
                   </NuxtLink>
