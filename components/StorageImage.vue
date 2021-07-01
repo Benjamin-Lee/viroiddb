@@ -24,6 +24,11 @@
             <h3 class="text-sm text-gray-800">
               Due an error, we were unable to generate a visualization of the
               cluster.
+              <NuxtLink
+                to="/about/#why-do-some-clusters-lack-a-circular-alignmentblock-chain-plots"
+                class="underline font-medium"
+                >Find out why &rarr;</NuxtLink
+              >
             </h3>
           </div>
         </div>
