@@ -37,6 +37,7 @@
           <svg
             v-if="!copied"
             xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -51,6 +52,7 @@
           <svg
             v-if="copied"
             xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -88,6 +90,7 @@
           @click="download"
         >
           <svg
+            class="h-8 w-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
