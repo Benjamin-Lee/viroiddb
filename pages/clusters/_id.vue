@@ -9,7 +9,7 @@
             <ClientOnly>
               <StorageImage
                 class="w-full"
-                :src="`cluster-csa/${identity}/Cls.${clusterNumber}-CircularAlignment.bmp`"
+                :src="`/bmp/${releaseDate}/ID${identity}/Cls_ID${identity}_${clusterNumber}-CircularAlignment.bmp`"
               />
             </ClientOnly>
           </Card>
@@ -22,15 +22,17 @@
             <ClientOnly>
               <StorageImage
                 class="w-full"
-                :src="`cluster-csa/${identity}/Cls.${clusterNumber}-Blocks.bmp`"
+                :src="`/bmp/${releaseDate}/ID${identity}/Cls_ID${identity}_${clusterNumber}-Blocks.bmp`"
               />
             </ClientOnly>
           </Card>
-         
         </div>
-         <ClientOnly>
-            <MsaView :clusterId="$route.params.id" class="col-span-1 lg:col-span-2"></MsaView>
-          </ClientOnly>
+        <ClientOnly>
+          <MsaView
+            :cluster-id="$route.params.id"
+            class="col-span-1 lg:col-span-2"
+          ></MsaView>
+        </ClientOnly>
       </div>
     </div>
   </div>
@@ -45,12 +47,14 @@ export default Vue.extend({
     this.metadata = (
       await this.$fire.firestore
         .collection('sequences')
-        .where('Cls.ID0.' + this.identity, '==', this.$route.params.id)
-
+        .where('Cls_ID' + this.identity, '==', this.$route.params.id)
         .get()
     ).docs.map((doc) => doc.data())
   },
   computed: {
+    releaseDate(): string {
+      return this.$route.params.id.slice(0, 10)
+    },
     clusterNumber(): string {
       return this.$route.params.id.split('-').pop() ?? ''
     },
