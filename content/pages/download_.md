@@ -3,15 +3,15 @@ title: 'Download'
 description: Data availability and access.
 ---
 
-All the data displayed on this site is attainable both via the individual sequence pages, and through simple `curl` commands.
-This includes:
+All the data displayed on this site copied or downloaded on individual sequence pages, through simple `curl` commands, or by link.
+The data includes:
 
-1.  The raw nucleic sequences, along with their related metadata, 'as is', without any modification to their original counterparts of the different public databases such as NCBI's [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) or [GenBank](https://www.ncbi.nlm.nih.gov/genbank/).
-2.  The derived information, including the analyses, outputs, visualizations, etc, which we performed after initial sourcing the entries detailed in 1. This include, among else, sequence clustering ([mmseqs](https://github.com/soedinglab/mmseqs2)), secondary structure prediction ([RNAFold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)), rotational alignments ([CSA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-230)), and catalytic potential of sub sequences via [infernal](http://eddylab.org/infernal/) based searches using the [Rfam](https://rfam.org/) database.
+1.  The raw nucleic sequences, along with their related metadata, 'as is', without any modification to their counterparts in public databases such as NCBI's [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) or [GenBank](https://www.ncbi.nlm.nih.gov/genbank/).
+2.  The derived information, including analyses, outputs, visualizations, etc, which we performed after initial sourcing the entries detailed in 1. This include, among else, sequence clustering ([mmseqs](https://github.com/soedinglab/mmseqs2)), secondary structure prediction ([RNAFold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)), rotational alignments ([CSA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-230)), and catalytic potential of sub sequences via [infernal](http://eddylab.org/infernal/) based searches using the [Rfam](https://rfam.org/) database.
 
 ## How to get the data
 
-For ease of use, we provide These data are used in this site is available for download in several forms.
+For ease of use, we provide several methods to download data
 
 ### Command Line
 

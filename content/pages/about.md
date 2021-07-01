@@ -7,13 +7,8 @@ description: About us, about Viroids, and some in between.
 
 ### What are viroid-like RNA agents?
 
-<<<<<<< HEAD
-Viroids are a unique group of semi mobile genetic agents, characterized by small genome sizes (less than 2000 nt), highly-structured circular genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism.
-This comprehensive database covers the entirety of known viroid-like RNA agents: Viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (_i.e._, hepatitis delta virus and its relatives), and retrozymes.
-=======
-First off, for clarity, we  use the term “viroid-like RNA agent” to refer to the broad class of bona fide viroids, viroid-like RNAs with unconfirmed independent replication, deltaviruses, and viroid-like satRNAs. These agents share the defining features of highly structured, single-stranded circular RNA genomes and replication by means of the rolling circle mechanism, often with the presence of ribozymes for self-cleavage.  Viroids are a unique group of semi mobile genetic agents, characterized by small genome sizes (less than 2000 nt), highly structured, circular genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism.
-This database is curated to cover the entirety of viroid-like RNA agents: Viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (_i.e._, hepatitis delta virus and its relatives), and retrozymes.
->>>>>>> cf0238d832a59d86b0150926dbb16cd446d56ce7
+For clarity, we  use the term “viroid-like RNA agent” to refer to the broad class of bona fide viroids, viroid-like RNAs with unconfirmed independent replication, deltaviruses, and viroid-like satRNAs. These agents share the defining features of highly structured, single-stranded circular RNA genomes and replication by means of the rolling circle mechanism, often with the presence of ribozymes for self-cleavage.  Viroids are a unique group of semi mobile genetic agents, characterized by small genome sizes (less than 2000 nt), highly structured, circular genomes, use of self-cleaving ribozymes or co-opted host enzymes, and replication via the rolling circle mechanism.
+This comprehensive database contains the entirety of viroid-like RNA agents: Viroids, small circular satellite RNAs, the recently described realm of ribozyviruses (_i.e._, hepatitis delta virus and its relatives), and retrozymes.
 
 ### Why do Viroids need their own Database?
 
@@ -65,4 +60,4 @@ Feel free to [email](email:help@Viroids.org) us or file an issue on GitHub.
 
 ### How often will ViroidDB be updated?
 
-Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you feel an update is required, please contact us or perform the update yourself by submitting it as a pull request in the GitHub repository.
+Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis. If you believe an update is warranted, please contact us or perform the update yourself by submitting it as a pull request in the GitHub repository.
