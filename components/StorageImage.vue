@@ -2,12 +2,12 @@
   <div>
     <img v-if="!$fetchState.error" :src="url" alt="" class="rounded-md" />
     <div v-else>
-      <div class="rounded-md bg-red-50 p-4">
+      <div class="rounded-md bg-gray-50 p-4">
         <div class="flex">
           <div class="flex-shrink-0">
             <!-- Heroicon name: solid/x-circle -->
             <svg
-              class="h-5 w-5 text-red-400"
+              class="h-5 w-5 text-gray-400"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -21,9 +21,9 @@
             </svg>
           </div>
           <div class="ml-3">
-            <h3 class="text-sm font- text-red-800">
-              Due an error caused by CSA, we were unable to generate a
-              visualization.
+            <h3 class="text-sm text-gray-800">
+              Due an error, we were unable to generate a visualization of the
+              cluster.
             </h3>
           </div>
         </div>
