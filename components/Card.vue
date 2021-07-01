@@ -26,46 +26,6 @@
       <slot name="footer"></slot>
     </div>
     <slot v-if="title == 'Secondary structure (-)'" name="unpaddedFooter">
-      <!-- <DataRow title="green">
-                <div class="text-green-400">
-                  Stems (canonical helices)
-                </div>
-                
-              </DataRow> -->
-      <!--Card title="Legend">
-            <template sm:#unpaddedBody>
-              <DataRow title="green">
-                <div class="text-green-400">
-                  Stems (canonical helices)
-                </div>
-                
-              </DataRow>
-              <DataRow title="red">
-                <div class="text-red-600">
-                  Multiloops (junctions)
-                </div>
-                
-              </DataRow>
-              <DataRow title="yellow">
-                <div class="text-yellow-200">
-                  Interior loops
-                </div>
-                
-              </DataRow>
-              <DataRow title="blue">
-                <div class="text-blue-300">
-                  Hairpin loops
-                </div>
-                
-              </DataRow>
-              <DataRow title="green">
-                <div class="text-yellow-500">
-                  5' and 3' unpaired region
-                </div>
-                
-              </DataRow>
-            </template>
-          </Card-->
     </slot> 
   </div>
 </template>
