@@ -36,7 +36,9 @@
           py-2
           text-base
           border-gray-300
-          focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+          focus:outline-none
+          focus:ring-indigo-500
+          focus:border-indigo-500
           sm:text-sm
           rounded-md
         "
@@ -59,6 +61,15 @@
       ]"
       :metadata="clusters[identity]"
     ></LinkTable>
+    <div v-if="!$fetchState.pending" class="flex justify-center mt-6">
+      <LoadMore
+        @click="
+          maxDisplay += 50
+          $fetch()
+        "
+      >
+      </LoadMore>
+    </div>
   </div>
 </template>
 
@@ -72,7 +83,11 @@ export default Vue.extend({
     }
   },
   data() {
-    return { clusters: { 70: [], 85: [], 90: [] }, identity: 90 }
+    return {
+      clusters: { 70: [], 85: [], 90: [] },
+      identity: 90,
+      maxDisplay: 50,
+    }
   },
   async fetch() {
     // @ts-ignore
@@ -80,6 +95,7 @@ export default Vue.extend({
       await this.$fire.firestore
         .collection('clusters')
         .where('identity', '==', this.identity)
+        .limit(this.maxDisplay)
         .get()
     ).docs
       .map((x) => x.data())
