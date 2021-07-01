@@ -36,9 +36,7 @@
           py-2
           text-base
           border-gray-300
-          focus:outline-none
-          focus:ring-indigo-500
-          focus:border-indigo-500
+          focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
           sm:text-sm
           rounded-md
         "
@@ -103,7 +101,11 @@ export default Vue.extend({
     ).docs
       .map((x) => x.data())
       .map(
-        (x) => ({ ...x, to: '/clusters/' + x.id } as { to: string; id: string })
+        (x) =>
+          ({ ...x, to: '/clusters/' + x.id.toUpperCase() } as {
+            to: string
+            id: string
+          })
       )
       .sort((a, b) =>
         Number(a.id.split('.').pop()) < Number(b.id.split('.').pop()) ? -1 : 1

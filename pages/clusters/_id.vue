@@ -1,11 +1,11 @@
 <template>
   <div>
-    <TheHeader>{{ $route.params.id }}</TheHeader>
+    <TheHeader>{{ clusterID }}</TheHeader>
     <div class="mt-5">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
         <ClientOnly>
           <MsaView
-            :cluster-id="$route.params.id"
+            :cluster-id="clusterID"
             class="col-span-1 lg:col-span-2"
           ></MsaView>
         </ClientOnly>
@@ -62,6 +62,9 @@ export default Vue.extend({
     ).docs.map((doc) => doc.data())
   },
   computed: {
+    clusterID(): string {
+      return this.$route.params.id.toUpperCase()
+    },
     releaseDate(): string {
       return this.$route.params.id.slice(0, 10)
     },
