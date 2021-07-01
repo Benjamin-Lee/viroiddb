@@ -1,6 +1,6 @@
 <template>
   <div class="prose max-w-[72ch]">
-    <TheHeader>{{ page.title }}</TheHeader>
+    <TheHeader v-if="page.title">{{ page.title }}</TheHeader>
     <nuxt-content :document="page" />
   </div>
 </template>
