@@ -84,41 +84,39 @@
             subtitle="Basic information about the sequence."
           >
             <template sm:#unpaddedBody>
-                <dl class="sm:divide-y sm:divide-gray-200">
-                  <DataRow
-                    v-for="field in sequenceInfoFields"
-                    :key="field.name"
-                    :title="field.name"
+              <dl class="sm:divide-y sm:divide-gray-200">
+                <DataRow
+                  v-for="field in sequenceInfoFields"
+                  :key="field.name"
+                  :title="field.name"
+                >
+                  <div v-if="field.key === 'gc'">
+                    {{ Number(sequenceMetadata[field.key] * 100).toFixed(1) }}%
+                  </div>
+                  <div v-else-if="field.key === 'length'">
+                    {{ sequenceMetadata[field.key] }} bp
+                  </div>
+                  <div
+                    v-else-if="['complete', 'ambiguous'].includes(field.key)"
                   >
-                    <div v-if="field.key === 'gc'">
-                      {{
-                        Number(sequenceMetadata[field.key] * 100).toFixed(1)
-                      }}%
-                    </div>
-                    <div v-else-if="field.key === 'length'">
-                      {{ sequenceMetadata[field.key] }} bp
-                    </div>
-                    <div
-                      v-else-if="['complete', 'ambiguous'].includes(field.key)"
-                    >
-                      {{ sequenceMetadata[field.key] ? 'Yes' : 'No' }}
-                    </div>
-                    <div v-else-if="field.key === 'identicalSeqs'">
-                      {{
-                        sequenceMetadata.identicalSeqs === []
-                          ? sequenceMetadata[field.key].join(', ')
-                          : 'None found'
-                      }}
-                    </div>
-                    <div v-else>
-                      {{
-                        sequenceMetadata[field.key]
-                          ? sequenceMetadata[field.key]
-                          : 'Unavailable'
-                      }}
-                    </div>
-                  </DataRow>
-                </dl>
+                    {{ sequenceMetadata[field.key] ? 'Yes' : 'No' }}
+                  </div>
+                  <div v-else-if="field.key === 'identicalSeqs'">
+                    {{
+                      sequenceMetadata.identicalSeqs === []
+                        ? sequenceMetadata[field.key].join(', ')
+                        : 'None found'
+                    }}
+                  </div>
+                  <div v-else>
+                    {{
+                      sequenceMetadata[field.key]
+                        ? sequenceMetadata[field.key]
+                        : 'Unavailable'
+                    }}
+                  </div>
+                </DataRow>
+              </dl>
             </template>
           </Card>
         </main>
@@ -138,7 +136,9 @@
                 </DataRow>
                 <DataRow title="Host">
                   <i :class="sequenceMetadata.host ? 'italic' : 'not-italic'">{{
-                    sequenceMetadata.host ? sequenceMetadata.host : 'Unavailable'
+                    sequenceMetadata.host
+                      ? sequenceMetadata.host
+                      : 'Unavailable'
                   }}</i>
                 </DataRow>
                 <DataRow title="Source" class="capitalize">
@@ -238,7 +238,6 @@
                 v-if="sequence.length > 0"
                 class="
                   text-sm
-                  overflow-x-auto
                   py-5
                   sm:p-6
                   flex flex-row-reverse
@@ -246,7 +245,7 @@
                 "
               >
                 
-                <div class="flex flex-col justify-start">
+                <div class="flex flex-col justify-start ml-4">
                   <button
                             type="button"
                             class="
@@ -302,7 +301,7 @@
 </svg>
                           </button>
                 </div>
-                <div>{{ fasta }}</div></pre>
+                <div class="overflow-x-auto">{{ fasta }}</div></pre>
             </div>
           </template>
         </Card>
@@ -399,33 +398,23 @@
             <template sm:#unpaddedBody>
               <dl class="sm:divide-y sm:divide-gray-200">
                 <DataRow title="green">
-                  <div class="text-green-400">
-                    Stems (canonical helices)
-                  </div>
+                  <div class="text-green-400">Stems (canonical helices)</div>
                   <!-- #90ee90 -->
                 </DataRow>
                 <DataRow title="red">
-                  <div class="text-red-600">
-                    Multiloops (junctions)
-                  </div>
+                  <div class="text-red-600">Multiloops (junctions)</div>
                   <!-- #ff9896 -->
                 </DataRow>
                 <DataRow title="yellow">
-                  <div class="text-yellow-200">
-                    Interior loops
-                  </div>
+                  <div class="text-yellow-200">Interior loops</div>
                   <!-- #dbdb8d -->
                 </DataRow>
                 <DataRow title="blue">
-                  <div class="text-blue-300">
-                    Hairpin loops
-                  </div>
+                  <div class="text-blue-300">Hairpin loops</div>
                   <!-- #add8e6 -->
                 </DataRow>
                 <DataRow title="green">
-                  <div class="text-yellow-500">
-                    5' and 3' unpaired region
-                  </div>
+                  <div class="text-yellow-500">5' and 3' unpaired region</div>
                   <!-- #ffa07a -->
                 </DataRow>
               </dl>

@@ -36,13 +36,18 @@
           py-2
           text-base
           border-gray-300
-          focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+          focus:outline-none
+          focus:ring-indigo-500
+          focus:border-indigo-500
           sm:text-sm
           rounded-md
         "
       >
+        <option value="95">95%</option>
         <option value="90">90%</option>
         <option value="85">85%</option>
+        <option value="80">80%</option>
+        <option value="75">75%</option>
         <option value="70">70%</option>
       </select>
       <p class="text-sm text-gray-500">
@@ -59,6 +64,15 @@
       ]"
       :metadata="clusters[identity]"
     ></LinkTable>
+    <div v-if="!$fetchState.pending" class="flex justify-center mt-6">
+      <LoadMore
+        @click="
+          maxDisplay += 50
+          $fetch()
+        "
+      >
+      </LoadMore>
+    </div>
   </div>
 </template>
 
@@ -72,7 +86,11 @@ export default Vue.extend({
     }
   },
   data() {
-    return { clusters: { 70: [], 85: [], 90: [] }, identity: 90 }
+    return {
+      clusters: { 70: [], 75: [], 80: [], 85: [], 90: [], 95: [] },
+      identity: 90,
+      maxDisplay: 50,
+    }
   },
   async fetch() {
     // @ts-ignore
@@ -80,6 +98,7 @@ export default Vue.extend({
       await this.$fire.firestore
         .collection('clusters')
         .where('identity', '==', this.identity)
+        .limit(this.maxDisplay)
         .get()
     ).docs
       .map((x) => x.data())

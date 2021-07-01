@@ -1,5 +1,4 @@
 const { program } = require('commander')
-const sleep = require('sleep')
 const path = require('path')
 const admin = require('firebase-admin')
 const serviceAccount = require('../service_key.json')

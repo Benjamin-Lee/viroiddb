@@ -16,6 +16,7 @@
     "@tailwindcss/forms": "^0.3.3",
     "@types/xml2js": "^0.4.8",
     "algoliasearch": "^4.10.2",
+    "axios": "^0.21.1",
     "core-js": "^3.9.1",
     "file-saver": "^2.0.5",
     "firebase": "^8.6.8",
