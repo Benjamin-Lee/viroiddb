@@ -1,13 +1,11 @@
 <template>
-  <MsaView :clusterId="$route.params.id"></MsaView> 
+  <client-only>
+    <MsaView :clusterId="$route.params.id"></MsaView>
+  </client-only>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style>
-
-</style>
+<style></style>
