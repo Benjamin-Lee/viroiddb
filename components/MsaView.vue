@@ -1,5 +1,5 @@
 <template>
-  <Card title="MSA">
+  <Card title="Alignment" subtitle="Built with MAFFT, Cyclope, and CSA">
     <div class="flex">
       <pre v-if="!$fetchState.pending" class="max-h-96 overflow-auto text-sm"
         >{{ msa }}
