@@ -56,7 +56,7 @@ export default Vue.extend({
     this.metadata = (
       await this.$fire.firestore
         .collection('sequences')
-        .where('Cls_ID' + this.identity, '==', this.$route.params.id)
+        .where('Cls_ID' + this.identity, '==', this.clusterID)
         .limit(this.maxDisplay)
         .get()
     ).docs.map((doc) => doc.data())
@@ -66,13 +66,13 @@ export default Vue.extend({
       return this.$route.params.id.toUpperCase()
     },
     releaseDate(): string {
-      return this.$route.params.id.slice(0, 10)
+      return this.clusterID.slice(0, 10)
     },
     clusterNumber(): string {
-      return this.$route.params.id.split('-').pop() ?? ''
+      return this.clusterID.split('-').pop() ?? ''
     },
     identity(): string {
-      return this.$route.params.id.split('-').slice(-2, -1)[0].slice(2)
+      return this.clusterID.split('-').slice(-2, -1)[0].slice(2)
     },
   },
 })
