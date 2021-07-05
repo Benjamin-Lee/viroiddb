@@ -8,7 +8,8 @@
             font-bold
             leading-7
             text-gray-900
-            sm:text-3xl sm:truncate
+            sm:text-3xl
+            sm:truncate
           "
         >
           {{ sequenceMetadata.displayTitle }}
@@ -32,9 +33,7 @@
             bg-white
             hover:bg-gray-50
             focus:outline-none
-            focus:ring-2
-            focus:ring-offset-2
-            focus:ring-indigo-500
+            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
           "
           :class="{ 'bg-green-500 hover:bg-green-500': copied }"
           @click="copyFasta"
@@ -61,9 +60,7 @@
             bg-indigo-600
             hover:bg-indigo-700
             focus:outline-none
-            focus:ring-2
-            focus:ring-offset-2
-            focus:ring-indigo-500
+            focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
           "
           @click="download"
         >
@@ -81,7 +78,7 @@
           <!-- This example requires Tailwind CSS v2.0+ -->
           <Card
             title="Sequence information"
-            subtitle="Basic information about the sequence."
+            subtitle="Basic information about the sequence"
           >
             <template sm:#unpaddedBody>
               <dl class="sm:divide-y sm:divide-gray-200">
@@ -209,7 +206,7 @@
         </div>
         <Card
           title="Nucleotide sequence"
-          subtitle="FASTA-formatted sequence data."
+          subtitle="FASTA-formatted sequence data"
           class="col-span-9 pad"
         >
           <template sm:#unpaddedBody>
@@ -314,7 +311,8 @@
                   :key="link.name"
                   class="
                     py-4
-                    sm:py-5 sm:px-6
+                    sm:py-5
+                    sm:px-6
                     text-sm text-indigo-600
                     hover:underline
                   "
