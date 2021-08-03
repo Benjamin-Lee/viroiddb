@@ -35,8 +35,9 @@
         <div v-if="!$fetchState.pending" class="flex justify-center mt-6">
           <LoadMore
             @click="
-            maxDisplay += 50
-            $fetch()"
+              maxDisplay += 50
+              $fetch()
+            "
             v-if="count - maxDisplay > 0"
           >
           </LoadMore>
@@ -73,7 +74,7 @@ export default Vue.extend({
       .collection('clusters')
       .doc(this.$route.params.id)
     const doc = await ref.get()
-    this.count = doc.data().count
+    this.count = doc.data()?.count
     console.log(this.count)
 
     this.metadata = (
