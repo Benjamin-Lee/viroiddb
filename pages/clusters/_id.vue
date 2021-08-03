@@ -34,11 +34,11 @@
         <SeqTable :metadata="metadata" class="mt-8"></SeqTable>
         <div v-if="!$fetchState.pending" class="flex justify-center mt-6">
           <LoadMore
+            v-if="count - maxDisplay > 0"
             @click="
               maxDisplay += 50
               $fetch()
             "
-            v-if="count - maxDisplay > 0"
           >
           </LoadMore>
         </div>
@@ -75,7 +75,6 @@ export default Vue.extend({
       .doc(this.$route.params.id)
     const doc = await ref.get()
     this.count = doc.data()?.count
-    console.log(this.count)
 
     this.metadata = (
       await this.$fire.firestore
