@@ -34,6 +34,7 @@
         <SeqTable :metadata="metadata" class="mt-8"></SeqTable>
         <div v-if="!$fetchState.pending" class="flex justify-center mt-6">
           <LoadMore
+            v-if="count - maxDisplay > 0"
             @click="
               maxDisplay += 50
               $fetch()
@@ -61,14 +62,20 @@ export default Vue.extend({
   //   }
   // },
   data() {
-    return { metadata: [{}], maxDisplay: 50 }
+    return { metadata: [{}], maxDisplay: 50, count: 0 }
   },
   async fetch() {
     // if (this.$route.params.id.toUpperCase() !== this.$route.params.id) {
     //   await this.$router.replace(
     //     '/clusters/' + this.$route.params.id.toUpperCase()
     //   )
-    // }
+    // // }
+    const ref = this.$fire.firestore
+      .collection('clusters')
+      .doc(this.$route.params.id)
+    const doc = await ref.get()
+    this.count = doc.data()?.count
+
     this.metadata = (
       await this.$fire.firestore
         .collection('sequences')
