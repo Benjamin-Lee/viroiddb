@@ -1,25 +1,6 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div class="bg-gray-50">
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="relative bg-indigo-600">
-      <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div class="pr-16 sm:text-center sm:px-16">
-          <p class="font-medium text-white">
-            ViroidDB is currently in open beta.
-            <span class="block sm:ml-2 sm:inline-block">
-              <a
-                href="mailto:benjamin.lee@chch.ox.ac.uk?subject=ViroidDB%20Bugs"
-                class="text-white font-bold underline"
-              >
-                Report bugs <span aria-hidden="true">&rarr;</span></a
-              >
-            </span>
-          </p>
-        </div>
-      </div>
-    </div>
-
     <div class="flex flex-col h-screen justify-between">
       <div>
         <nav class="bg-white border-b border-gray-200">
