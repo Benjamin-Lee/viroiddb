@@ -266,7 +266,7 @@
                     Clusters with 90% identity
                   </dt>
                   <dd class="order-1 text-5xl font-extrabold text-indigo-600">
-                    {{ Number(463).toLocaleString() }}
+                    {{ Number(414).toLocaleString() }}
                   </dd>
                 </div>
               </dl>
@@ -292,10 +292,19 @@
         </p>
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="col-span-1 flex justify-center">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/"><img class="h-16 sm:h-20" src="/ncbi3-small.png" alt="NCBI" /></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.ncbi.nlm.nih.gov/"
+              ><img class="h-16 sm:h-20" src="/ncbi3-small.png" alt="NCBI"
+            /></a>
           </div>
           <div class="col-span-1 flex justify-center">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.ox.ac.uk/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.ox.ac.uk/"
+            >
               <img
                 class="h-16 sm:h-20"
                 src="/oxford5.png"
@@ -304,7 +313,11 @@
             </a>
           </div>
           <div class="col-span-1 flex justify-center">
-            <a target="_blank" rel="noopener noreferrer" href="https://en-lifesci.tau.ac.il/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://en-lifesci.tau.ac.il/"
+            >
               <img
                 class="h-16 sm:h-20"
                 src="/TAU2.png"
