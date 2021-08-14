@@ -64,7 +64,7 @@ We're always happy to look at more circRNAs!
 
 ### How can I contact you?
 
-Feel free to [email](mailto:help@Viroids.org) us or file an issue on GitHub.
+Feel free to [email](mailto:help@Viroids.org) us or file an issue on [GitHub](https://github.com/Benjamin-Lee/viroiddb/).
 
 ### How often will ViroidDB be updated?
 
@@ -76,7 +76,7 @@ If you believe an update is warranted, please [contact us](mailto:help@Viroids.o
 We care about reproducibility just as much as we care about future proofing ViroidDB.
 In order to ensure that, as new and exciting circRNAs are discovered, they would be consistently incorporated into new releases, we wrote a custom, standalone pipeline to process all the sequences gathered from the reference databases.
 Below is a concise overview of the general workflow.
-For a detailed description please refer to the ViroidDB manuscript or visit the ViroidDB GitHub repo to see GPL3/MIT (open source) code.
+For a detailed description please refer to the ViroidDB manuscript or visit the ViroidDB [GitHub repository](https://github.com/Benjamin-Lee/viroiddb/) (MIT licence).
 Briefly, after the sequences are fetched from their original reference database, such as NCBI's [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) or [GenBank](https://www.ncbi.nlm.nih.gov/genbank/), and verified to meet our curation standards (see above), they are subjected to:
 
 1. The nucleic acid sequences and accompanying metadata are categorized, formatted and converted to JSON format.
