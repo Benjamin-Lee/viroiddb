@@ -18,7 +18,7 @@ This comprehensive database contains the entirety of viroid-like RNA agents: vir
 ### Why do viroids need their own database?
 
 Despite their ever-increasing known diversity and host range, a updated database for these agents currently does not exist.
-The most recent database, [the subviral RNA database](doi.org/10.1186/1471-2180-6-24), was published 15 years ago and is no longer accessible.  
+The most recent database, [the subviral RNA database](doi.org/10.1186/1471-2180-6-24), was published 15 years ago and is no longer accessible.
 To better support computational and experimental research on these agents, we have semi-automatically compiled a database of nearly ten thousand viroid-like RNA sequences from the NCBI's nucleotide database and made them available for download at viroids.org.
 In addition to curating the respective INSDC accessions and sequences, we have performed considerable post-processing so that ViroidDB entries are consistently formatted, enabling their direct use in common downstream analyses (_i.e._ circular sequences are consistently rotated and all sequence sets are deduplicated and estimated to represent complete genomes).
 For use cases where the complete range of variation is undesirable, we have performed clustering to identify a representative sequence for each cluster when no reference sequence is available.
@@ -52,7 +52,7 @@ Please note that due to the procedural de-duplication steps we perform, exact re
 
 ### Do you modify the original INSDC indexed sequences?
 
-Short answer: no. Long answer: Sort of, but when we do, we clearly note it. For example, rotated sequences, reverse complement, and RNA ( T --> U) versions of reference sequences are suffixed (in the fasta header) by the addition of `[ViroidDB]` at the end of the definition line.  
+Short answer: no. Long answer: Sort of, but when we do, we clearly note it. For example, rotated sequences, reverse complement, and RNA ( T --> U) versions of reference sequences are suffixed (in the fasta header) by the addition of `[ViroidDB]` at the end of the definition line.
 Please see [the download page](./Download) for more information about how to fetch and acquire any of the data from ViroidDB.
 
 **Note:** The **majority** of the information in the database is derived from subsequent analyses we performed using the original sequences.
@@ -64,12 +64,12 @@ We're always happy to look at more circRNAs!
 
 ### How can I contact you?
 
-Feel free to [email](mailto:help@Viroids.org) us or file an issue on [GitHub](https://github.com/Benjamin-Lee/viroiddb/).
+Feel free to [email](mailto:help@viroids.org) us or file an issue on [GitHub](https://github.com/Benjamin-Lee/viroiddb/).
 
 ### How often will ViroidDB be updated?
 
 Should new viroid-like RNAs classes be discovered, we hope to add them automatically on (at least) a yearly basis.
-If you believe an update is warranted, please [contact us](mailto:help@Viroids.org).
+If you believe an update is warranted, please [contact us](mailto:help@viroids.org).
 
 ### How do you generate the clusters and their information?
 
