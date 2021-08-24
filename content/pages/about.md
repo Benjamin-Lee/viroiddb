@@ -48,12 +48,12 @@ For viroids and deltaviruses, we used the NCBI Virus portal to download complete
 | Satellite RNAs  | 35    | [141863](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=141863) |
 
 For retrozymes, which are currently not taxonomically classified as monophyletic group, we downloaded all sequences within the NCBI Nucleotide database matching the search term ["retrozymes"](https://www.ncbi.nlm.nih.gov/nuccore/?term=retrozymes).
-Please note that due to the procedural de-duplication steps we perform, exact replications (identical strings) are masked from most down stream analyses (such as secondary structure prediction and ribozyme search) to avoid unnecessary use of computation resources and eventual storage space.
+Please note that due to the procedural de-duplication steps we perform, exact replications (identical strings) and rotationally identical sequences are masked from most down stream analyses (such as secondary structure prediction and ribozyme search) to avoid unnecessary use of computation resources and eventual storage space.
 
 ### Do you modify the original INSDC indexed sequences?
 
 Short answer: no. Long answer: Sort of, but when we do, we clearly note it. For example, rotated sequences, reverse complement, and RNA ( T --> U) versions of reference sequences are suffixed (in the fasta header) by the addition of `[ViroidDB]` at the end of the definition line.  
-Please see [Download](./Download) for more information about how to fetch and acquire any of the data from ViroidDB.
+Please see [the download page](./Download) for more information about how to fetch and acquire any of the data from ViroidDB.
 
 **Note:** The **majority** of the information in the database is derived from subsequent analyses we performed using the original sequences.
 
@@ -81,9 +81,9 @@ Briefly, after the sequences are fetched from their original reference database,
 
 1. The nucleic acid sequences and accompanying metadata are categorized, formatted and converted to JSON format.
    Additional metadata, such as GC content, is also derived from the sequence.
-2. The secondary structure is predicted for every sequence ssing [RNAFold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi), producing the dot bracket notation (DBN) representation of the structure.
+2. The secondary structure is predicted for every sequence using [RNAFold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi), producing the dot bracket notation (DBN) representation of the structure.
 3. The DBN information is used to generate SVG and PDF visualizations (using [forna](http://rna.tbi.univie.ac.at/forna/)).
-4. All sequences are scanned for autocatalytic potential of via [infernal](http://eddylab.org/infernal/)-based searches against selected families the [Rfam](https://rfam.org/) database.
+4. All sequences are scanned for autocatalytic potential via [infernal](http://eddylab.org/infernal/)-based searches against selected families the [Rfam](https://rfam.org/) database.
 5. All sequences are clustered using [mmseqs](https://github.com/soedinglab/mmseqs2) at multiple identity thresholds (see [clusters](/clusters)).
 6. Cyclic/rotational alignment is attempt for every cluster using [CSA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-230).
 7. If CSA failed to produce an output (see below for reasons why), cyclic comparison is attempted using [cyclope](http://www.bioinf.uni-leipzig.de/Software/cyclope/index.html).
@@ -98,7 +98,8 @@ Briefly, after the sequences are fetched from their original reference database,
 
 **Note:** For brevity, we use the term "rotation" to describe [circular string permutations](https://en.wikipedia.org/wiki/Cyclic_permutation).
 
-Many downstream analyses rely on multiple sequence alignments (MSA). Circular entities present a vey unique and very often overlooked challenge, as every rotation of the sequences should and must be considered, because variations in sequencing and assembly may result in nearly identical sequences failing to align due to having different origins.
+Many downstream analyses rely on multiple sequence alignments (MSA).
+Circular entities present a vey unique and very often overlooked challenge, as every rotation of the sequences should and must be considered because variations in sequencing and assembly may result in nearly identical sequences failing to align due to having different origins.
 
 For example, consider the following:
 
@@ -118,7 +119,7 @@ A rudimentary, 'as is' alignment would produce a poor result, often with many lo
 >MN885660.1	------------------------GTGGGTCACCCCGCCC-CACGGGA--AATAAAAGCAGAGGAGTAGAGAGTACTCACCTGTCGTCG-TCGACGAAGGCCGGTGAGCAGTAAGCCGGACGG-TCCCCTCGCGGCCGATCCTCTGGAGCTCTGCTCTACGATCTTCGCTGCTGAGGCCCGCGCCGCCGCTCTTCCGCGCTGCTAGTCGAGCGGACGTTGGTGGTCTCCCTCTCCCTGTGCAATAAAATCCAGGTGGCGAGTGGTGTCCCCAGGGTAAAACACGATTGGTGTTCTCCCTGGGTG------
 ```
 
-However, by merely rotating the sequences, prior to alignment, we may arrive at a considerably more reasonable output:
+However, by merely rotating the sequences prior to alignment, we may arrive at a considerably more reasonable output:
 
 ```
 >MT883227.1 @ 202 TCGAGCGGAGGCCGGTGGTC-TCCCTCTCCCTGTGCAATAAAA-TCC-AGGTGGCGAATGGTGTCCCCAGGGTAAAACACGATTGGTGTTCTCCCTGGGTGAACAACCTTGTGGTTCCTGTGGGTCACCCCGCCC-CAC-GGA-ATTAATAAAAGCAGAGGAGTAGAGAGTACTCACCTGTCGTCGCTCGACGAAGGCCGGTGAGCAGAAGGCTTAGCGGATCCCCTTGCGGCAAGACGCCCGGA---A-----C---C-G-CGA-----T--A-----------AAGAAC-TCG-CCGCCGA-GCCCGCGCCGCAGCTCCACCGCGCTGCTAG
@@ -130,11 +131,11 @@ However, by merely rotating the sequences, prior to alignment, we may arrive at 
 ### Why do some clusters lack a circular-alignment/block-chain plots?
 
 These plots are produced by our go-to cyclic alignment tool: CSA.
-While we found it gives the most useful output, but it is a relatively old software whose original source code only handles clusters with several dozen members.
+While we found it gives the most useful output, it is relatively old software whose original source code only handles clusters with several dozen members.
 Therefore, large clusters may be limited to the other cyclic comparison tools we used if CSA failed.
-Very briefly, these tools do not go so far as to produce an alignment, rather they attempt to identify the optimal rotation of every sequence in a given multi-FASTA file, so that the distances between subsequent alignments would minimized.  
+These tools do not go so far as to produce an alignment but rather attempt to identify the optimal rotation of every sequence in a given multi-FASTA file so that the distances between subsequent alignments would minimized.
 There are several other possible reasons why a rotated cluster may lack the circular/block visitation.
-These range from technical to more matter-of-factly:
+Examples include:
 
 - The cluster has too few members.
   Singletons (_clusters compromised of a single sequence_) obviously have no rotational information.

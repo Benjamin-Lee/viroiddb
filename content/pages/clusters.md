@@ -1,1 +1,2 @@
-As with other biological entities, viroid-like RNAs form groups of related sequences, which most likely originat from a relatively recent common ancestor. The clusters below, and their derived information, are the results of a custom, automatic pipeline we wrote to consistently process all sequences. [Learn more &rarr;](/about#how-do-you-generate-the-clusters-and-their-information) 
+As with other biological entities, viroid-like RNAs form groups of related sequences, which most likely originate from a relatively recent common ancestor.
+The clusters below, and their derived information, are the results of a custom, automatic pipeline we wrote to consistently process all sequences. [Learn more &rarr;](/about#how-do-you-generate-the-clusters-and-their-information)
