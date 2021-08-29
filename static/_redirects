@@ -1,1 +1,2 @@
-https://viroids.org/db/:release/:slug  https://storage.googleapis.com/viroiddb.appspot.com/bmp/:release/ID70/:slug 200
+https://viroids.org/db/latest/:slug  https://storage.googleapis.com/viroiddb.appspot.com/2021-06-06/:slug 200
+https://viroids.org/db/:release/:slug  https://storage.googleapis.com/viroiddb.appspot.com/:release/:slug 200
