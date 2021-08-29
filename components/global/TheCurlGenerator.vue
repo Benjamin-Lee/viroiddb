@@ -6,6 +6,7 @@
         <div class="relative inline-block text-left">
           <div>
             <button
+              id="menu-button"
               type="button"
               class="
                 inline-flex
@@ -27,12 +28,17 @@
                 focus:ring-offset-gray-100
                 focus:ring-indigo-500
               "
-              id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
               @click="showSubsetMenu = !showSubsetMenu"
             >
-              {{ subset }}
+              <!-- invert the subsets object to get the display name back -->
+              {{
+                Object.assign(
+                  {},
+                  ...Object.entries(subsets).map(([a, b]) => ({ [b]: a }))
+                )[chosenSubset]
+              }}
               <!-- Heroicon name: solid/chevron-down -->
               <svg
                 class="-mr-1 ml-2 h-5 w-5"
@@ -78,103 +84,24 @@
             aria-labelledby="menu-button"
             tabindex="-1"
           >
-            <div class="py-1" role="none">
+            <div
+              v-for="(subset, name) in subsets"
+              :key="subset"
+              class="py-1 hover:bg-gray-50"
+              role="none"
+            >
               <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
               <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
                 id="menu-item-0"
-                @click="
-                  subset = 'all'
-                  showSubsetMenu = false
-                "
-              >
-                All
-              </button>
-              <button
                 class="text-gray-700 block px-4 py-2 text-sm"
                 role="menuitem"
                 tabindex="-1"
-                id="menu-item-1"
                 @click="
-                  subset = 'viroids'
+                  chosenSubset = subset
                   showSubsetMenu = false
                 "
               >
-                Viroids
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  subset = 'satellites'
-                  showSubsetMenu = false
-                "
-              >
-                Satellite RNAs
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  subset = 'avsunviroidae'
-                  showSubsetMenu = false
-                "
-              >
-                <span class="italic">Avsunviroidae</span>
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  subset = 'pospiviroidae'
-                  showSubsetMenu = false
-                "
-              >
-                <span class="italic">Pospiviroidae</span>
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  subset = 'deltavirus'
-                  showSubsetMenu = false
-                "
-              >
-                <span class="italic">Deltavirus</span>
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  subset = 'retrozymes'
-                  showSubsetMenu = false
-                "
-              >
-                <span class="italic">Retrozymes</span>
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  subset = 'unclassified'
-                  showSubsetMenu = false
-                "
-              >
-                Unclassified
+                {{ name }}
               </button>
             </div>
           </div>
@@ -185,6 +112,7 @@
         <div class="relative inline-block text-left">
           <div>
             <button
+              id="menu-button"
               type="button"
               class="
                 inline-flex
@@ -206,12 +134,16 @@
                 focus:ring-offset-gray-100
                 focus:ring-indigo-500
               "
-              id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
               @click="showFormatMenu = !showFormatMenu"
             >
-              {{ type.toUpperCase() }}
+              {{
+                Object.assign(
+                  {},
+                  ...Object.entries(types).map(([a, b]) => ({ [b]: a }))
+                )[chosenType]
+              }}
               <!-- Heroicon name: solid/chevron-down -->
               <svg
                 class="-mr-1 ml-2 h-5 w-5"
@@ -257,79 +189,24 @@
             aria-labelledby="menu-button"
             tabindex="-1"
           >
-            <div class="py-1" role="none">
+            <div
+              v-for="(extension, name) in types"
+              :key="name"
+              class="py-1 hover:bg-gray-50"
+              role="none"
+            >
               <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
               <button
+                id="menu-item-2"
                 class="text-gray-700 block px-4 py-2 text-sm"
                 role="menuitem"
                 tabindex="-1"
-                id="menu-item-2"
                 @click="
-                  type = 'fasta'
+                  chosenType = extension
                   showFormatMenu = false
                 "
               >
-                FASTA
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  type = 'json'
-                  showFormatMenu = false
-                "
-              >
-                JSON
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  type = 'dbn'
-                  showFormatMenu = false
-                "
-              >
-                DBN
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  type = 'sql'
-                  showFormatMenu = false
-                "
-              >
-                SQL
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  type = 'rds'
-                  showFormatMenu = false
-                "
-              >
-                RDS
-              </button>
-              <button
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                @click="
-                  type = 'pickle'
-                  showFormatMenu = false
-                "
-              >
-                PICKLE
+                {{ name }}
               </button>
             </div>
           </div>
@@ -383,21 +260,35 @@ export default {
       showFormatMenu: false,
       showSubsetMenu: false,
       copied: false,
-      subset: 'all',
-      type: 'fasta',
+      chosenSubset: 'all',
+      subsets: {
+        All: 'all',
+        Viroids: 'viroids',
+        Avsunviroids: 'avsunviroidae',
+        Pospiviroids: 'pospiviroidae',
+        'Unclassified viroids': 'unclassified',
+        Deltaviruses: 'deltavirus',
+        Retrozymes: 'retrozymes',
+      },
+      types: {
+        FASTA: '.fasta',
+        DBN: '.dbn',
+        'DBN (reverse complement)': '.rc.dbn',
+        'Infernal cmscan': '.cmscan',
+      },
+      chosenType: '.fasta',
     }
   },
   computed: {
     url() {
-      let url = `curl viroids.org/db/${this.subset}.${this.type} > ${this.subset}.${this.type}`
-      return url
+      return `curl https://viroids.org/db/latest/${this.chosenSubset}${this.chosenType} > ${this.chosenSubset}${this.chosenType}`
     },
   },
-  mounted () {
+  mounted() {
     document.addEventListener('click', this.close)
   },
-  beforeDestroy () {
-    document.removeEventListener('click',this.close)
+  beforeDestroy() {
+    document.removeEventListener('click', this.close)
   },
   methods: {
     copyCurl() {
@@ -407,13 +298,13 @@ export default {
         this.copied = false
       }, 1000)
     },
-    
-      close (e) {
+
+    close(e) {
       if (!this.$el.contains(e.target)) {
         this.showFormatMenu = false
-      this.showSubsetMenu = false
+        this.showSubsetMenu = false
       }
-    }
+    },
   },
 }
 </script>
