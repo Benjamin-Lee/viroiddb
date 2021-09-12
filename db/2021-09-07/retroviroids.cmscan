@@ -1,0 +1,814 @@
+# cmscan :: search sequence(s) against a CM database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:                   ../db/2021-09-07/retroviroids.fasta
+# target CM database:                    ../db/raw/ribozymes.cm
+# tabular output of hits:                ../db/2021-09-07/retroviroids.infernal.tsv
+# sequence reporting threshold:          E-value <= 0.1
+# number of worker threads:              4 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AJ295013.1  [L=275]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar Praline
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295013.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295013.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295013.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              21  (0.1891); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              11  (0.1044); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              11  (0.1044); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               7  (0.05508); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.05508); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.0196); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.04
+//
+Query:       AJ295019.1  [L=275]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar 1285 hybrid
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295019.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295019.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295019.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              25  (0.2166); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              11  (0.1045); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              11  (0.1045); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               7  (0.05518); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.05518); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.01934); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+//
+Query:       AJ295018.1  [L=275]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar Domingo, isolate N
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295018.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295018.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295018.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              20  (0.1804); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              10  (0.09994); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              10  (0.09994); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               6  (0.05062); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               6  (0.05062); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               6  (0.01525); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.03
+//
+Query:       AJ295017.1  [L=275]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar Domingo, isolate M
+Hit scores:
+ rank     E-value  score  bias  modelname       start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3      234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9    247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295017.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295017.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              24  (0.2051); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              11  (0.1045); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              11  (0.1045); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               7  (0.05518); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.05518); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.01997); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               4  (0.009906); expected (0.0001)
+Total CM hits reported:                                          2  (0.003682); includes 0 truncated hit(s)
+
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
+//
+Query:       AJ295016.1  [L=275]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar White Castellaro, isolate L
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295016.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295016.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295016.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              24  (0.2082); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              11  (0.1044); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              11  (0.1044); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               7  (0.05513); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.05513); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.01903); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+//
+Query:       AJ295015.1  [L=275]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar White Castellaro, isolate K
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295015.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295015.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295015.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              22  (0.1931); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              10  (0.09994); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              10  (0.09994); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               6  (0.05062); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               6  (0.05062); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               6  (0.01525); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+//
+Query:       AJ295014.1  [L=196]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar Praline deleted
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   1.9e-05   23.7   0.0  Hammerhead_3       155    196 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !   0.00081   15.6   0.0  Hammerhead_HH9     168    196 +  cm    no 0.62  Hammerhead ribozyme HH9
+  (3) !    0.0037   14.7   0.0  Hammerhead_1       162    196 +  cm    3' 0.60  Hammerhead ribozyme (type I)
+ ------ inclusion threshold ------
+  (4) ?      0.04   11.5   0.0  Hammerhead_HH10    136    196 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.9e-05   23.7   0.0  cm        1       58 []         155         196 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295014.1 155 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 196
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   0.00081   15.6   0.0  cm       19       54 ..         168         196 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295014.1 168 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 196
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_1  Hammerhead ribozyme (type I)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !    0.0037   14.7   0.0  cm        1       40 [~         162         196 + .~ 0.88    3' 0.60
+
+                   ??????                                       NC
+                   ((((((,,,,,,,<<<<~~~~~>>>>,,,<<~~~~~>>,~~~~~ CS
+  Hammerhead_1   1 cUuuccCUGAaGAGuCc*[7]*gGaCGAAAC*[4]*GUC*[6]> 46 
+                   CUUU CCUGA GAG CC     GG CGAAAC     GUC     
+    AJ295014.1 162 CUUUGCCUGAUGAGCCC*[4]*GGGCGAAAC*[2]*GUC*[0]> 196
+                   ******8888888***9..9..9***88888..4..888..... PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?      0.04   11.5   0.0  cm        1       62 [~         136         196 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295014.1 136 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 196
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (392 residues searched)
+Query sequences re-searched for truncated hits:                  1  (778.6 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              22  (0.2067); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              15  (0.1494); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              15  (0.1494); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               9  (0.08116); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               9  (0.08116); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               9  (0.02868); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               6  (0.01751); expected (0.0001)
+Total CM hits reported:                                          4  (0.01605); includes 2 truncated hit(s)
+
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
+//
+Query:       AJ295012.1  [L=275]
+Description: Dianthus caryophyllus viroidlike DNA, cultivar Tanga
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295012.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295012.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295012.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              23  (0.2001); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              10  (0.09994); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              10  (0.09994); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               6  (0.05062); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               6  (0.05062); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               6  (0.01525); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
+//
+Query:       AJ295011.1  [L=275]
+Description: Dianthus caryophyllus viroidlike RNA, cultivar Tanga
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295011.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295011.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295011.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              21  (0.1888); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              10  (0.09994); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              10  (0.09994); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               6  (0.05062); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               6  (0.05062); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               6  (0.01525); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+//
+Query:       AJ295010.1  [L=275]
+Description: Dianthus caryophyllus viroidlike RNA, cultivar Newton
+Hit scores:
+ rank     E-value  score  bias  modelname       start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3      234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9    247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295010.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295010.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              26  (0.2123); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              12  (0.1108); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              11  (0.1045); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               7  (0.05518); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.05518); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.01893); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               4  (0.008817); expected (0.0001)
+Total CM hits reported:                                          2  (0.003682); includes 0 truncated hit(s)
+
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+//
+Query:       AJ295009.1  [L=275]
+Description: Dianthus caryophyllus viroidlike RNA, cultivar Praline, C2 isolate
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.027   12.7   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.52  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295009.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295009.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.027   12.7   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.52
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      +AA  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295009.1 215 AAAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              21  (0.1817); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              10  (0.09994); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              10  (0.09994); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               7  (0.05777); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.05777); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.01826); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+//
+Query:       AJ295008.1  [L=275]
+Description: Dianthus caryophyllus viroidlike RNA, cultivar Praline, isolate C1
+Hit scores:
+ rank     E-value  score  bias  modelname        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------- ------ ------   --- ----- ----  -----------
+  (1) !   2.7e-05   23.7   0.0  Hammerhead_3       234    275 +  cm    no 0.55  Hammerhead ribozyme (type III)
+  (2) !    0.0011   15.6   0.0  Hammerhead_HH9     247    275 +  cm    no 0.62  Hammerhead ribozyme HH9
+ ------ inclusion threshold ------
+  (3) ?     0.056   11.5   0.0  Hammerhead_HH10    215    275 +  cm    3' 0.54  Hammerhead ribozyme HH10
+
+
+Hit alignments:
+>> Hammerhead_3  Hammerhead ribozyme (type III)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.7e-05   23.7   0.0  cm        1       58 []         234         275 + .] 0.84    no 0.55
+
+                    vvvv   vvvv       vvvv                            vvvv  NC
+                   :((((((,<<<<<~~~~~>>>>>,,,,,,,<<<<________>>>>,,,)))))): CS
+  Hammerhead_3   1 caccAGUCgGggC*[7]*GccCcCUGAUGAGuCugUGAaAuAaGaCGAAACUggug 58 
+                        GUC    :     :++ CCUGAUGAG:C:GU    +A:G:CGAAAC GGU 
+    AJ295008.1 234 A----GUC----A*[3]*UUUGCCUGAUGAGCCCGU----AAGGGCGAAACCGGUC 275
+                   *....888....2..3..33347*************....**************** PP
+
+>> Hammerhead_HH9  Hammerhead ribozyme HH9
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0011   15.6   0.0  cm       19       54 ..         247         275 + .] 0.95    no 0.62
+
+                                                          NC
+                     ,,,,,,,<<<<______>>>>,,,<<<_____>>>, CS
+  Hammerhead_HH9  19 CUGAUGAGCUCCAAaAAGAGCGAAACCuauuAGGUC 54 
+                     CUGAUGAGC:C    AAG:GCGAAACC     GGUC
+      AJ295008.1 247 CUGAUGAGCCCG--UAAGGGCGAAACC-----GGUC 275
+                     ***********4..678**********.....**** PP
+
+>> Hammerhead_HH10  Hammerhead ribozyme HH10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?     0.056   11.5   0.0  cm        1       62 [~         215         275 + .~ 0.94    3' 0.54
+
+                             ??????? ???v  v         v  v        ?????   ???  ???? ??       NC
+                      :::::::(((((((-(((<<<<<<.____>>>>>>,,,,,,,,<<<<<---<<<--<<<<-<<~~~~~~ CS
+  Hammerhead_HH10   1 uaaaAAauGuuuCuuGaCCaGuuG.CCUACagCuGAUGAGCUCCaGuaAGAgCgAAaCCaguu*[63]> 125
+                      + A  A+ G  UCU G   AG ::  CU :: CU AUGAGC  C GUAAG GCGAAACC GU       
+       AJ295008.1 215 AGAUUAUGGCAUCUCGGGGAGUCAaUCUUUGCCUGAUGAGC--CCGUAAGGGCGAAACCGGUC*[ 0]> 275
+                      **********************9856888999*******97..78***************999...... PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (550 residues searched)
+Query sequences re-searched for truncated hits:                  1  (827.3 residues re-searched, avg per model)
+Target model(s):                                                14  (1095 consensus positions)
+Windows   passing  local HMM SSV           filter:              26  (0.2242); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              11  (0.1045); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              10  (0.09994); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               6  (0.05062); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               6  (0.05062); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               6  (0.01525); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
+Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
+
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
+//
+[ok]

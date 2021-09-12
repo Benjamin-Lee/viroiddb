@@ -38,14 +38,14 @@ To collect the sequences for the database we followed this protocol:
 For viroids and deltaviruses, we used the NCBI Virus portal to download complete sequences within the taxonomy IDs:
 
 | Subset          | Count | NCBI Taxonomy ID                                                             |
-| --------------- | ----- | ---------------------------------------------------------------------------- |
-| All             | 9891  |                                                                              |
-| Viroids         | 9354  |                                                                              |
-| _Avsunviroidae_ | 5284  | [185752](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185752) |
-| _Pospiviroidae_ | 3980  | [185751](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185751) |
-| Unclassified    | 90    | [265963](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=265963) |
-| _Deltavirus_    | 453   | [39759](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=39759)   |
-| Satellite RNAs  | 35    | [141863](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=141863) |
+| --------------- | ----- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| All             | 9891  |                                                                              |                                                                                                                                                                                                 |
+| Viroids         | 9354  |                                                                              |                                                                                                                                                                                                 |
+| _Avsunviroidae_ | 5284  | [185752](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185752) | [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&Completeness_s=complete&VirusLineage_ss=Avsunviroidae,%20taxid:185752)                                   |
+| _Pospiviroidae_ | 3980  | [185751](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=185751) | [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&Completeness_s=complete&VirusLineage_ss=Pospiviroidae,%20taxid:185751)                                   |
+| Unclassified    | 90    | [265963](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=265963) | [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&Completeness_s=complete&VirusLineage_ss=unclassified%20viroids,%20taxid:265963)                          |
+| _Ribozyviria_   | 453   | [39759](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=39759)   | [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&Completeness_s=complete&VirusLineage_ss=Ribozyviria,%20taxid:2842242)                                    |
+| Satellite RNAs  | 35    | [141863](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=141863) | [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&Completeness_s=complete&VirusLineage_ss=Circular%20single%20stranded%20RNA%20satellites,%20taxid:141863) |
 
 For retrozymes, which are currently not taxonomically classified as monophyletic group, we downloaded all sequences within the NCBI Nucleotide database matching the search term ["retrozymes"](https://www.ncbi.nlm.nih.gov/nuccore/?term=retrozymes).
 Please note that due to the procedural de-duplication steps we perform, exact replications (identical strings) and rotationally identical sequences are masked from most down stream analyses (such as secondary structure prediction and ribozyme search) to avoid unnecessary use of computation resources and eventual storage space.

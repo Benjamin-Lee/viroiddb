@@ -1,0 +1,773 @@
+#target name         accession query name           accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#------------------- --------- -------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
+HDV_ribozyme         RF00094   NC_040729.1          -          cm        1       91      685      777      +    no    1 0.68   0.0   49.7   1.5e-07 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   NC_040729.1          -          cm        1       91      920      832      -    no    1 0.62   0.0   44.5   1.3e-06 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   NC_040729.1          -          cm        1       74      687      773      +    no    1 0.68   0.0   27.4   4.8e-05 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   NC_040845.1          -          cm        1       74      659      751      +    no    1 0.61   0.0   40.7   4.2e-08 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   NC_040845.1          -          cm        1       91      891      793      -    no    1 0.60   0.0   46.3     6e-07 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   NC_040845.1          -          cm        1       91      657      752      +    no    1 0.59   0.0   37.8     2e-05 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   NC_001653.2          -          cm        1       91      904      812      -    no    1 0.66   0.0   92.8   3.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   NC_001653.2          -          cm        1       91      686      774      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   NC_001653.2          -          cm        1       74      902      817      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MT050453.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MT050453.1           -          cm        1       91      689      776      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MT050453.1           -          cm        1       74      691      774      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MT050453.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   LC575944.1           -          cm        1       91      924      832      -    no    1 0.58   0.0   51.2   8.2e-08 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   LC575944.1           -          cm        1       91      689      778      +    no    1 0.56   0.0   45.5   8.5e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   LC575944.1           -          cm        1       74      691      774      +    no    1 0.58   0.0   23.5   0.00038 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984407.1           -          cm        1       91      899      808      -    no    1 0.64   0.0   89.1   1.4e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984407.1           -          cm        1       91      682      770      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984407.1           -          cm        1       74      897      813      -    no    1 0.65   0.0   15.7     0.024 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984408.1           -          cm        1       91      904      810      -    no    1 0.64   0.0   89.7   1.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984408.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984408.1           -          cm        1       74      902      815      -    no    1 0.65   0.0   14.9     0.037 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984409.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   91.2   6.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984409.1           -          cm        1       91      684      772      +    no    1 0.70   0.0   76.0   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984409.1           -          cm        1       74      900      814      -    no    1 0.67   0.0   14.3     0.051 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984410.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984410.1           -          cm        1       91      684      772      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984410.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984411.1           -          cm        1       91      904      810      -    no    1 0.64   0.0   89.7   1.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984411.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984411.1           -          cm        1       74      902      815      -    no    1 0.65   0.0   14.9     0.037 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984412.1           -          cm        1       91      902      810      -    no    1 0.67   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984412.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984412.1           -          cm        1       74      900      815      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984413.1           -          cm        1       91      902      809      -    no    1 0.65   0.0   90.9   7.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984413.1           -          cm        1       91      683      771      +    no    1 0.67   0.0   72.2   1.5e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984413.1           -          cm        1       74      685      769      +    no    1 0.69   0.0   21.4    0.0012 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MN984413.1           -          cm        1       74      900      814      -    no    1 0.66   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984414.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984414.1           -          cm        1       91      684      772      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984414.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984415.1           -          cm        1       91      904      812      -    no    1 0.67   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984415.1           -          cm        1       91      686      774      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984415.1           -          cm        1       74      902      817      -    no    1 0.66   0.0   13.4     0.081 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984416.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984416.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984416.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984417.1           -          cm        1       91      903      811      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984417.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984417.1           -          cm        1       74      901      816      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984418.1           -          cm        1       91      903      811      -    no    1 0.67   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984418.1           -          cm        1       91      685      773      +    no    1 0.70   0.0   75.7   3.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984418.1           -          cm        1       74      901      816      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984419.1           -          cm        1       91      906      814      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984419.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984419.1           -          cm        1       74      904      819      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984420.1           -          cm        1       91      896      804      -    no    1 0.67   0.0   91.5   5.4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984420.1           -          cm        1       91      679      766      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984420.1           -          cm        1       74      894      809      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984421.1           -          cm        1       91      906      814      -    no    1 0.65   0.0   91.9   4.8e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984421.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984421.1           -          cm        1       74      904      819      -    no    1 0.65   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984422.1           -          cm        1       91      907      814      -    no    1 0.64   0.0   88.7   1.7e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984422.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984422.1           -          cm        1       74      905      818      -    no    1 0.65   0.0   15.5     0.027 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984423.1           -          cm        1       91      898      805      -    no    1 0.64   0.0   90.8   7.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984423.1           -          cm        1       91      679      767      +    no    1 0.69   0.0   73.5   8.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984423.1           -          cm        1       74      896      810      -    no    1 0.64   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984424.1           -          cm        1       91      899      807      -    no    1 0.65   0.0   92.6   3.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984424.1           -          cm        1       91      682      769      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984424.1           -          cm        1       74      897      812      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984425.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   90.9     7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984425.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   73.5   8.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984425.1           -          cm        1       74      900      815      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984426.1           -          cm        1       91      894      802      -    no    1 0.65   0.0   85.2   7.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984426.1           -          cm        1       91      677      764      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984426.1           -          cm        1       74      892      807      -    no    1 0.65   0.0   14.9     0.036 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984427.1           -          cm        1       91      904      812      -    no    1 0.67   0.0   91.2   6.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984427.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984427.1           -          cm        1       74      902      817      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984428.1           -          cm        1       91      899      807      -    no    1 0.65   0.0   92.6   3.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984428.1           -          cm        1       91      682      769      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984428.1           -          cm        1       74      897      812      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984429.1           -          cm        1       91      898      806      -    no    1 0.66   0.0   92.2   4.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984429.1           -          cm        1       91      680      768      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984429.1           -          cm        1       74      896      811      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984430.1           -          cm        1       91      903      811      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984430.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984430.1           -          cm        1       74      901      816      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984431.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   90.8   7.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984431.1           -          cm        1       91      683      770      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984431.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984432.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984432.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   68.1     8e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984432.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984433.1           -          cm        1       91      896      804      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984433.1           -          cm        1       91      679      766      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984433.1           -          cm        1       74      894      809      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984434.1           -          cm        1       91      898      806      -    no    1 0.66   0.0   92.2   4.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984434.1           -          cm        1       91      680      768      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984434.1           -          cm        1       74      896      811      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984435.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984435.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984435.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984436.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   91.2   6.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984436.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984436.1           -          cm        1       74      900      814      -    no    1 0.67   0.0   14.3     0.051 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984437.1           -          cm        1       91      899      807      -    no    1 0.65   0.0   92.6   3.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984437.1           -          cm        1       91      682      769      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984437.1           -          cm        1       74      897      812      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984438.1           -          cm        1       91      898      806      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984438.1           -          cm        1       91      680      768      +    no    1 0.69   0.0   73.5   8.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984438.1           -          cm        1       74      896      811      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984439.1           -          cm        1       91      896      804      -    no    1 0.67   0.0   91.5   5.4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984439.1           -          cm        1       91      679      766      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984439.1           -          cm        1       74      894      809      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984440.1           -          cm        1       91      892      801      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984440.1           -          cm        1       91      676      763      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984440.1           -          cm        1       74      890      806      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984441.1           -          cm        1       91      901      809      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984441.1           -          cm        1       91      683      771      +    no    1 0.69   0.0   73.5   8.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984441.1           -          cm        1       74      899      814      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984442.1           -          cm        1       91      906      814      -    no    1 0.67   0.0   92.9   3.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984442.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984442.1           -          cm        1       74      904      819      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984443.1           -          cm        1       91      902      811      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984443.1           -          cm        1       91      685      773      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984443.1           -          cm        1       74      900      816      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984444.1           -          cm        1       91      897      805      -    no    1 0.66   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984444.1           -          cm        1       91      679      767      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984444.1           -          cm        1       74      895      810      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984445.1           -          cm        1       91      906      812      -    no    1 0.65   0.0   89.8   1.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984445.1           -          cm        1       91      686      774      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984445.1           -          cm        1       74      904      817      -    no    1 0.66   0.0   14.9     0.037 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984446.1           -          cm        1       91      897      804      -    no    1 0.65   0.0   90.1   9.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984446.1           -          cm        1       91      679      766      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984446.1           -          cm        1       74      895      809      -    no    1 0.64   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984447.1           -          cm        1       91      902      810      -    no    1 0.67   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984447.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984447.1           -          cm        1       74      900      815      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984448.1           -          cm        1       91      905      813      -    no    1 0.62   0.0   88.9   1.6e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984448.1           -          cm        1       91      687      775      +    no    1 0.69   0.0   72.3   1.4e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984449.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984449.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984449.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984450.1           -          cm        1       91      902      810      -    no    1 0.63   0.0   91.5   5.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984450.1           -          cm        1       91      684      772      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984450.1           -          cm        1       74      900      815      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984451.1           -          cm        1       91      896      804      -    no    1 0.67   0.0   91.5   5.4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984451.1           -          cm        1       91      679      766      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984451.1           -          cm        1       74      894      809      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984452.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984452.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984452.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984453.1           -          cm        1       91      900      808      -    no    1 0.67   0.0   89.9   1.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984453.1           -          cm        1       91      682      770      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984453.1           -          cm        1       74      898      813      -    no    1 0.67   0.0   13.6     0.073 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984454.1           -          cm        1       91      901      809      -    no    1 0.66   0.0   90.5   8.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984454.1           -          cm        1       91      681      769      +    no    1 0.69   0.0   70.0   3.6e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984454.1           -          cm        1       74      899      814      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984455.1           -          cm        1       91      903      811      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984455.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984455.1           -          cm        1       74      901      816      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984456.1           -          cm        1       91      907      815      -    no    1 0.63   0.0   91.8   4.8e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984456.1           -          cm        1       91      689      777      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984456.1           -          cm        1       74      905      820      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984457.1           -          cm        1       91      905      813      -    no    1 0.62   0.0   88.9   1.6e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984457.1           -          cm        1       91      687      775      +    no    1 0.69   0.0   72.3   1.4e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984458.1           -          cm        1       91      896      804      -    no    1 0.65   0.0   89.2   1.4e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984458.1           -          cm        1       91      679      766      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984458.1           -          cm        1       74      681      764      +    no    1 0.70   0.0   20.9    0.0015 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MN984458.1           -          cm        1       74      894      809      -    no    1 0.65   0.0   17.2     0.011 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984459.1           -          cm        1       91      902      810      -    no    1 0.67   0.0   89.3   1.3e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984459.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984459.1           -          cm        1       74      900      814      -    no    1 0.68   0.0   13.8     0.066 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984460.1           -          cm        1       91      900      807      -    no    1 0.63   0.0   88.0   2.3e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984460.1           -          cm        1       91      682      769      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984460.1           -          cm        1       74      898      812      -    no    1 0.63   0.0   15.1     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MN984460.1           -          cm        1       65      684      760      +    no    1 0.70   0.0   14.8     0.039 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984461.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984461.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   65.6   2.2e-10 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984461.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984462.1           -          cm        1       91      910      816      -    no    1 0.64   0.0   79.4   7.8e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984462.1           -          cm        1       91      690      778      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984462.1           -          cm        1       74      908      821      -    no    1 0.65   0.0   16.0     0.021 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984463.1           -          cm        1       91      909      815      -    no    1 0.65   0.0   82.3   2.4e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984463.1           -          cm        1       91      689      777      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984463.1           -          cm        1       74      907      820      -    no    1 0.66   0.0   15.7     0.025 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984464.1           -          cm        1       91      905      813      -    no    1 0.65   0.0   92.6   3.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984464.1           -          cm        1       91      687      775      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984464.1           -          cm        1       74      903      818      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984465.1           -          cm        1       91      905      813      -    no    1 0.63   0.0   91.3   5.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984465.1           -          cm        1       91      687      775      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984465.1           -          cm        1       74      903      818      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984466.1           -          cm        1       91      901      809      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984466.1           -          cm        1       91      680      767      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984466.1           -          cm        1       74      899      814      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984467.1           -          cm        1       91      897      805      -    no    1 0.66   0.0   91.3     6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984467.1           -          cm        1       91      684      771      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984467.1           -          cm        1       74      895      810      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984468.1           -          cm        1       91      911      818      -    no    1 0.64   0.0   88.6   1.8e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984468.1           -          cm        1       91      692      780      +    no    1 0.70   0.0   66.4   1.6e-10 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984468.1           -          cm        1       74      909      823      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984469.1           -          cm        1       91      896      805      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984469.1           -          cm        1       91      680      767      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984469.1           -          cm        1       74      894      810      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN984470.1           -          cm        1       91      910      817      -    no    1 0.65   0.0   89.6   1.2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN984470.1           -          cm        1       91      693      779      +    no    1 0.69   0.0   65.7   2.1e-10 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN984470.1           -          cm        1       74      908      822      -    no    1 0.66   0.0   14.4     0.047 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MT649206.1           -          cm        1       91      910      822      -    no    1 0.64   0.0   58.3   4.4e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MT649206.1           -          cm        1       91      695      786      +    no    1 0.68   0.0   48.6   2.3e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MT649206.1           -          cm        1       74      697      784      +    no    1 0.70   0.1   21.7     0.001 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MT583796.1           -          cm        1       91      865      773      -    no    1 0.66   0.0   90.8   7.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MT583796.1           -          cm        1       91      645      733      +    no    1 0.67   0.0   75.6   3.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MT583796.1           -          cm        1       74      863      778      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MT583804.1           -          cm        1       91      895      803      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MT583804.1           -          cm        1       91      678      765      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MT583804.1           -          cm        1       74      893      808      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MT583805.1           -          cm        1       91      899      806      -    no    1 0.64   0.0   90.8   7.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MT583805.1           -          cm        1       91      681      768      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MT583805.1           -          cm        1       74      897      811      -    no    1 0.64   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MT583812.1           -          cm        1       91      905      813      -    no    1 0.63   0.0   91.8   4.8e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MT583812.1           -          cm        1       91      686      774      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MT583812.1           -          cm        1       74      903      818      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK598003.2           -          cm        1       91      693      782      +    no    1 0.54   0.0   59.0   3.3e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK598003.2           -          cm        1       91      901      811      -    no    1 0.60   0.0   49.7   1.5e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK598003.2           -          cm        1       74      899      813      -    no    1 0.62   0.0   28.8   2.2e-05 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK598003.2           -          cm        1       74      695      752      +    no    1 0.57   0.0   18.4    0.0057 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK598004.2           -          cm        1       91      693      782      +    no    1 0.54   0.0   59.0   3.3e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK598004.2           -          cm        1       91      900      810      -    no    1 0.59   0.0   50.8   9.3e-08 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK598004.2           -          cm        1       74      898      812      -    no    1 0.61   0.0   27.9   3.6e-05 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK598004.2           -          cm        1       74      695      752      +    no    1 0.57   0.0   18.4    0.0057 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK598005.2           -          cm        1       91      693      782      +    no    1 0.53   0.0   59.1   3.1e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK598005.2           -          cm        1       91      900      810      -    no    1 0.60   0.0   49.9   1.3e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK598005.2           -          cm        1       74      898      812      -    no    1 0.62   0.0   30.6   8.7e-06 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK598005.2           -          cm        1       74      695      752      +    no    1 0.57   0.0   18.4    0.0057 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK598006.2           -          cm        1       91      693      782      +    no    1 0.53   0.0   59.1   3.1e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK598006.2           -          cm        1       91      900      810      -    no    1 0.60   0.0   49.9   1.3e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK598006.2           -          cm        1       74      898      812      -    no    1 0.62   0.0   30.6   8.7e-06 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK598006.2           -          cm        1       74      695      752      +    no    1 0.57   0.0   18.4    0.0057 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK598007.2           -          cm        1       91      693      782      +    no    1 0.53   0.0   59.1   3.1e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK598007.2           -          cm        1       91      900      810      -    no    1 0.60   0.0   49.9   1.3e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK598007.2           -          cm        1       74      898      812      -    no    1 0.62   0.0   30.6   8.7e-06 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK598007.2           -          cm        1       74      695      752      +    no    1 0.57   0.0   18.4    0.0057 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK598008.2           -          cm        1       91      693      782      +    no    1 0.53   0.0   59.1   3.1e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK598008.2           -          cm        1       91      900      810      -    no    1 0.60   0.0   49.9   1.3e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK598008.2           -          cm        1       74      898      812      -    no    1 0.62   0.0   30.6   8.7e-06 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK598008.2           -          cm        1       74      695      752      +    no    1 0.57   0.0   18.4    0.0057 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK598009.2           -          cm        1       91      693      782      +    no    1 0.53   0.0   59.1   3.1e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK598009.2           -          cm        1       91      900      810      -    no    1 0.60   0.0   49.9   1.3e-07 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK598009.2           -          cm        1       74      898      812      -    no    1 0.62   0.0   30.6   8.7e-06 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK598009.2           -          cm        1       74      695      752      +    no    1 0.57   0.0   18.4    0.0057 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN401236.1           -          cm        1       91      905      813      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN401236.1           -          cm        1       91      688      775      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN401236.1           -          cm        1       74      690      773      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MN401236.1           -          cm        1       74      903      818      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890224.1           -          cm        1       91      909      817      -    no    1 0.66   0.0   92.2   4.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890224.1           -          cm        1       91      691      779      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890224.1           -          cm        1       74      907      822      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890225.1           -          cm        1       91      906      814      -    no    1 0.65   0.0   91.9   4.8e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890225.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890225.1           -          cm        1       74      904      819      -    no    1 0.65   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890226.1           -          cm        1       91      906      814      -    no    1 0.65   0.0   91.9   4.8e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890226.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890226.1           -          cm        1       74      904      819      -    no    1 0.65   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890227.1           -          cm        1       91      902      811      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890227.1           -          cm        1       91      685      773      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890227.1           -          cm        1       74      900      816      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890228.1           -          cm        1       91      904      812      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890228.1           -          cm        1       91      687      774      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890228.1           -          cm        1       74      902      817      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890229.1           -          cm        1       91      904      810      -    no    1 0.63   0.0   86.9   3.6e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890229.1           -          cm        1       91      685      773      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890229.1           -          cm        1       74      902      815      -    no    1 0.64   0.0   14.9     0.036 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890230.1           -          cm        1       91      900      808      -    no    1 0.68   0.0   87.6   2.8e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890230.1           -          cm        1       91      682      770      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890230.1           -          cm        1       74      898      813      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890231.1           -          cm        1       91      902      810      -    no    1 0.67   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890231.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890231.1           -          cm        1       74      900      815      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890232.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890232.1           -          cm        1       91      685      772      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890232.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890233.1           -          cm        1       91      903      810      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890233.1           -          cm        1       91      684      772      +    no    1 0.70   0.0   75.7   3.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890233.1           -          cm        1       74      686      770      +    no    1 0.71   0.0   20.7    0.0016 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MK890233.1           -          cm        1       74      901      815      -    no    1 0.67   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890234.1           -          cm        1       91      901      809      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890234.1           -          cm        1       91      684      771      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890234.1           -          cm        1       74      899      814      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK890235.1           -          cm        1       91      906      812      -    no    1 0.65   0.0   89.8   1.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK890235.1           -          cm        1       91      686      774      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK890235.1           -          cm        1       74      904      817      -    no    1 0.66   0.0   14.9     0.037 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN031239.1           -          cm        1       91      793      882      +    no    1 0.59   0.0   56.4   9.8e-09 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN031239.1           -          cm        1       74      795      878      +    no    1 0.60   0.0   23.9   0.00032 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN031239.1           -          cm        1       91     1030      941      -    no    1 0.59   0.0   27.0    0.0016 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MN031239.1           -          cm        1       74     1028      943      -    no    1 0.60   0.0   18.3    0.0064 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MN031240.1           -          cm        1       74      574      490      -    no    1 0.52   0.0   23.5   0.00037 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MN031240.1           -          cm        1       91      576      492      -    no    1 0.52   0.0   26.5    0.0019 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MN031240.1           -          cm        1       91      343      430      +    no    1 0.52   0.0   22.7    0.0089 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK234591.1           -          cm        1       91      904      812      -    no    1 0.67   0.0   88.2   2.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK234591.1           -          cm        1       91      687      774      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK234591.1           -          cm        1       74      902      817      -    no    1 0.67   0.0   14.8      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK234592.1           -          cm        1       91      904      812      -    no    1 0.67   0.0   88.2   2.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK234592.1           -          cm        1       91      687      774      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK234592.1           -          cm        1       74      902      817      -    no    1 0.67   0.0   14.8      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK234593.1           -          cm        1       91      904      812      -    no    1 0.67   0.0   88.2   2.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK234593.1           -          cm        1       91      687      774      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK234593.1           -          cm        1       74      902      817      -    no    1 0.67   0.0   14.8      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK234594.1           -          cm        1       91      908      815      -    no    1 0.64   0.0   88.2   2.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK234594.1           -          cm        1       91      690      777      +    no    1 0.70   0.0   71.7   1.9e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK234594.1           -          cm        1       74      906      820      -    no    1 0.64   0.0   13.5     0.079 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MH791027.1           -          cm        1       91      902      810      -    no    1 0.63   0.0   91.5   5.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MH791027.1           -          cm        1       91      684      772      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MH791027.1           -          cm        1       74      900      815      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MH791028.1           -          cm        1       91      902      810      -    no    1 0.63   0.0   91.5   5.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MH791028.1           -          cm        1       91      684      772      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MH791028.1           -          cm        1       74      900      815      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MH791029.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   90.9     7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MH791029.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   73.5   8.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MH791029.1           -          cm        1       74      900      815      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MH791030.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MH791030.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   65.6   2.2e-10 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MH791030.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MH457143.1           -          cm        1       91      901      809      -    no    1 0.65   0.0   92.6   3.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MH457143.1           -          cm        1       91      683      771      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MH457143.1           -          cm        1       74      899      814      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MH457145.1           -          cm        1       91      897      805      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MH457145.1           -          cm        1       91      680      767      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MH457145.1           -          cm        1       74      895      810      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   MH457145.1           -          cm        1       65      682      758      +    no    1 0.70   0.0   14.8     0.039 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MK124579.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MK124579.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MK124579.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MG557658.1           -          cm        1       91      903      811      -    no    1 0.67   0.0   88.4   1.9e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MG557658.1           -          cm        1       91      686      773      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MG557658.1           -          cm        1       74      901      816      -    no    1 0.67   0.0   14.8      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MG557659.1           -          cm        1       91      904      812      -    no    1 0.67   0.0   88.4   1.9e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MG557659.1           -          cm        1       91      687      774      +    no    1 0.68   0.0   72.9   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MG557659.1           -          cm        1       74      902      817      -    no    1 0.67   0.0   14.8     0.039 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MG711717.1           -          cm        1       91      906      814      -    no    1 0.65   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MG711717.1           -          cm        1       91      689      777      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MG711717.1           -          cm        1       74      904      819      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MG711777.1           -          cm        1       91     1309     1217      -    no    1 0.66   0.0   88.5   1.9e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MG711777.1           -          cm        1       91     1085     1172      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MG711777.1           -          cm        1       74     1307     1222      -    no    1 0.66   0.0   14.8      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MG711778.1           -          cm        1       91     1254     1163      -    no    1 0.64   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MG711778.1           -          cm        1       91     1038     1126      +    no    1 0.67   0.0   73.6   8.3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MG711778.1           -          cm        1       74     1252     1168      -    no    1 0.65   0.0   15.3     0.028 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MG926380.1           -          cm        1       91      899      807      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MG926380.1           -          cm        1       91      682      769      +    no    1 0.69   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MG926380.1           -          cm        1       74      897      812      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   MG926381.1           -          cm        1       91      901      809      -    no    1 0.65   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   MG926381.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   MG926381.1           -          cm        1       74      899      814      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KY463681.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KY463681.1           -          cm        1       91      683      772      +    no    1 0.69   0.0   70.3   3.3e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KY463681.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110790.1           -          cm        1       91      905      813      -    no    1 0.65   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110790.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110790.1           -          cm        1       74      903      818      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110791.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   89.6   1.2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110791.1           -          cm        1       91      685      773      +    no    1 0.69   0.0   75.2   4.4e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110791.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110792.1           -          cm        1       91      902      811      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110792.1           -          cm        1       91      685      773      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110792.1           -          cm        1       74      900      816      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110794.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110794.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110794.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110795.1           -          cm        1       91      906      814      -    no    1 0.65   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110795.1           -          cm        1       91      689      777      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110795.1           -          cm        1       74      904      819      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110797.1           -          cm        1       91      904      813      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110797.1           -          cm        1       91      687      775      +    no    1 0.69   0.0   75.1   4.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110797.1           -          cm        1       74      902      818      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110798.1           -          cm        1       91      901      809      -    no    1 0.65   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110798.1           -          cm        1       91      684      772      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110798.1           -          cm        1       74      899      814      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110799.1           -          cm        1       91      904      813      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110799.1           -          cm        1       91      687      775      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110799.1           -          cm        1       74      902      818      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KM110805.1           -          cm        1       91      898      806      -    no    1 0.65   0.0   86.6     4e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KM110805.1           -          cm        1       91      682      769      +    no    1 0.69   0.0   72.6   1.3e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KM110805.1           -          cm        1       74      684      767      +    no    1 0.71   0.1   20.3    0.0021 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   KM110805.1           -          cm        1       74      896      811      -    no    1 0.64   0.0   13.5     0.076 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KT722840.1           -          cm        1       91      903      811      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KT722840.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KT722840.1           -          cm        1       74      901      816      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744214.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   91.2   6.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744214.1           -          cm        1       91      684      772      +    no    1 0.70   0.0   76.0   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744214.1           -          cm        1       74      900      814      -    no    1 0.67   0.0   14.3     0.051 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744215.1           -          cm        1       91      900      809      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744215.1           -          cm        1       91      683      771      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744215.1           -          cm        1       74      898      814      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744216.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744216.1           -          cm        1       91      684      772      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744216.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744217.1           -          cm        1       91      899      808      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744217.1           -          cm        1       91      682      770      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744217.1           -          cm        1       74      897      813      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744218.1           -          cm        1       91      897      806      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744218.1           -          cm        1       91      681      768      +    no    1 0.69   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744218.1           -          cm        1       74      895      811      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744220.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   92.8   3.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744220.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   68.1     8e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744220.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744221.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744221.1           -          cm        1       91      684      772      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744221.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744222.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744222.1           -          cm        1       91      684      772      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744222.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744223.1           -          cm        1       91      901      810      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744223.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   74.6   5.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744223.1           -          cm        1       74      899      815      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744224.1           -          cm        1       91      899      808      -    no    1 0.64   0.0   89.1   1.4e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744224.1           -          cm        1       91      682      770      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744224.1           -          cm        1       74      897      813      -    no    1 0.65   0.0   15.7     0.024 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744225.1           -          cm        1       91      899      806      -    no    1 0.63   0.0   88.8   1.6e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744225.1           -          cm        1       91      680      768      +    no    1 0.70   0.0   75.7   3.5e-12 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744226.1           -          cm        1       91      897      804      -    no    1 0.65   0.0   90.1   9.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744226.1           -          cm        1       91      679      766      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744226.1           -          cm        1       74      895      809      -    no    1 0.64   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744227.1           -          cm        1       91      898      806      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744227.1           -          cm        1       91      680      768      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744227.1           -          cm        1       74      896      811      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744228.1           -          cm        1       91      899      807      -    no    1 0.66   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744228.1           -          cm        1       91      681      769      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744228.1           -          cm        1       74      897      812      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744229.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   92.7   3.4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744229.1           -          cm        1       91      685      772      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744229.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744230.1           -          cm        1       91      904      812      -    no    1 0.66   0.0   92.8   3.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744230.1           -          cm        1       91      686      774      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744230.1           -          cm        1       74      902      817      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744231.1           -          cm        1       91      901      809      -    no    1 0.66   0.0   92.2   4.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744231.1           -          cm        1       91      683      771      +    no    1 0.70   0.0   75.7   3.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744231.1           -          cm        1       74      899      814      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744232.1           -          cm        1       91      899      807      -    no    1 0.62   0.0   71.3   2.1e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744232.1           -          cm        1       91      682      769      +    no    1 0.68   0.0   61.0   1.4e-09 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744232.1           -          cm        1       74      684      768      +    no    1 0.71   0.1   18.6    0.0051 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744233.1           -          cm        1       91      903      811      -    no    1 0.63   0.0   83.9   1.2e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744233.1           -          cm        1       91      685      773      +    no    1 0.67   0.0   76.2   2.8e-12 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744234.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744234.1           -          cm        1       91      685      772      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744234.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744235.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   91.2   6.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744235.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744235.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744237.1           -          cm        1       91      899      807      -    no    1 0.66   0.0   90.5   8.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744237.1           -          cm        1       91      681      769      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744237.1           -          cm        1       74      897      812      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744238.1           -          cm        1       91      900      808      -    no    1 0.65   0.0   92.4   3.8e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744238.1           -          cm        1       91      682      770      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744238.1           -          cm        1       74      898      813      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744240.1           -          cm        1       91      899      806      -    no    1 0.64   0.0   88.1   2.2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744240.1           -          cm        1       91      680      768      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744240.1           -          cm        1       74      897      811      -    no    1 0.64   0.0   15.1     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744241.1           -          cm        1       91      905      813      -    no    1 0.65   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744241.1           -          cm        1       91      687      775      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744241.1           -          cm        1       74      903      818      -    no    1 0.65   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744242.1           -          cm        1       91      894      802      -    no    1 0.65   0.0   92.4   3.8e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744242.1           -          cm        1       91      676      764      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744242.1           -          cm        1       74      892      807      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744243.1           -          cm        1       91      896      804      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744243.1           -          cm        1       91      679      766      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744243.1           -          cm        1       74      894      809      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744244.1           -          cm        1       91      899      807      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744244.1           -          cm        1       91      682      769      +    no    1 0.68   0.0   73.0   1.1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744244.1           -          cm        1       74      897      812      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744245.1           -          cm        1       91      905      813      -    no    1 0.63   0.0   91.3   5.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744245.1           -          cm        1       91      687      775      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744245.1           -          cm        1       74      903      818      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744247.1           -          cm        1       91      898      806      -    no    1 0.66   0.0   92.2   4.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744247.1           -          cm        1       91      680      768      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744247.1           -          cm        1       74      896      811      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744248.1           -          cm        1       91      900      809      -    no    1 0.63   0.0   91.7   5.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744248.1           -          cm        1       91      683      771      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744248.1           -          cm        1       74      898      814      -    no    1 0.64   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744249.1           -          cm        1       91      902      811      -    no    1 0.64   0.0   92.3     4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744249.1           -          cm        1       91      685      773      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744249.1           -          cm        1       74      900      816      -    no    1 0.65   0.0   15.3     0.029 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744250.1           -          cm        1       91      900      808      -    no    1 0.67   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744250.1           -          cm        1       91      682      770      +    no    1 0.70   0.0   76.0   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744250.1           -          cm        1       74      898      813      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744253.1           -          cm        1       91      905      813      -    no    1 0.65   0.0   90.5   8.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744253.1           -          cm        1       91      687      775      +    no    1 0.70   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744253.1           -          cm        1       74      903      817      -    no    1 0.66   0.0   14.3     0.051 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744254.1           -          cm        1       91      902      810      -    no    1 0.66   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744254.1           -          cm        1       91      684      772      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744254.1           -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744255.1           -          cm        1       91      903      811      -    no    1 0.67   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744255.1           -          cm        1       91      685      773      +    no    1 0.70   0.0   75.7   3.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744255.1           -          cm        1       74      901      816      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744256.1           -          cm        1       91      901      809      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744256.1           -          cm        1       91      683      771      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744256.1           -          cm        1       74      899      814      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KJ744257.1           -          cm        1       91      902      810      -    no    1 0.67   0.0   89.9   1.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KJ744257.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KJ744257.1           -          cm        1       74      900      815      -    no    1 0.67   0.0   13.6     0.073 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KF660598.1           -          cm        1       91      895      803      -    no    1 0.66   0.0   90.9   7.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KF660598.1           -          cm        1       91      677      765      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KF660598.1           -          cm        1       74      893      808      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KF660599.1           -          cm        1       91      903      811      -    no    1 0.66   0.0   90.9   7.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KF660599.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   70.3   3.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KF660599.1           -          cm        1       74      901      816      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KF660600.1           -          cm        1       91      896      804      -    no    1 0.65   0.0   90.4   8.4e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KF660600.1           -          cm        1       91      678      766      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KF660600.1           -          cm        1       74      894      809      -    no    1 0.65   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KF660602.1           -          cm        1       91      894      802      -    no    1 0.65   0.0   85.2   7.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KF660602.1           -          cm        1       91      677      764      +    no    1 0.68   0.0   73.0     1e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KF660602.1           -          cm        1       74      892      807      -    no    1 0.65   0.0   14.9     0.036 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   KC590319.1           -          cm        1       91      902      811      -    no    1 0.62   0.0   86.6   4.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   KC590319.1           -          cm        1       91      688      778      +    no    1 0.68   0.0   54.7   1.9e-08 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   KC590319.1           -          cm        1       74      690      776      +    no    1 0.68   0.0   20.7    0.0017 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   KC590319.1           -          cm        1       74      900      816      -    no    1 0.61   0.0   13.5     0.077 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HF679404.1           -          cm        1       91      905      813      -    no    1 0.63   0.0   80.9   4.1e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HF679404.1           -          cm        1       91      690      780      +    no    1 0.69   0.0   53.8   2.7e-08 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HF679404.1           -          cm        1       74      692      778      +    no    1 0.69   0.0   23.3   0.00041 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HF679405.1           -          cm        1       91      904      812      -    no    1 0.63   0.0   80.9   4.1e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HF679405.1           -          cm        1       91      689      779      +    no    1 0.69   0.0   53.8   2.7e-08 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HF679405.1           -          cm        1       74      691      777      +    no    1 0.69   0.0   23.3   0.00041 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HF679406.1           -          cm        1       91      903      811      -    no    1 0.61   0.0   83.0   1.8e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HF679406.1           -          cm        1       91      688      778      +    no    1 0.68   0.0   54.7   1.9e-08 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HF679406.1           -          cm        1       74      690      776      +    no    1 0.68   0.0   20.7    0.0017 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   HF679406.1           -          cm        1       74      901      816      -    no    1 0.60   0.0   13.7     0.069 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   GU177114.1           -          cm        1       91      684      770      +    no    1 0.70   0.0   71.0   2.4e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   GU177114.1           -          cm        1       91      902      810      -    no    1 0.62   0.0   70.9   2.6e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   GU177114.1           -          cm        1       74      686      768      +    no    1 0.72   0.1   26.1   9.4e-05 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005364.1           -          cm        1       91      678      585      -    no    1 0.65   0.0   90.7   7.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005364.1           -          cm        1       91      459      547      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005364.1           -          cm        1       74      676      590      -    no    1 0.66   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005365.1           -          cm        1       91      677      585      -    no    1 0.66   0.0   92.2   4.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005365.1           -          cm        1       91      459      547      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005365.1           -          cm        1       74      675      590      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005366.1           -          cm        1       91      677      585      -    no    1 0.62   0.0   88.9   1.6e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005366.1           -          cm        1       91      459      547      +    no    1 0.69   0.0   72.3   1.4e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005367.1           -          cm        1       91      678      585      -    no    1 0.64   0.0   88.7   1.7e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005367.1           -          cm        1       91      459      547      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005367.1           -          cm        1       74      676      589      -    no    1 0.65   0.0   15.5     0.027 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005368.1           -          cm        1       91      677      585      -    no    1 0.67   0.0   92.3   3.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005368.1           -          cm        1       91      459      547      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005368.1           -          cm        1       74      675      590      -    no    1 0.67   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005369.1           -          cm        1       91      677      585      -    no    1 0.63   0.0   91.3     6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005369.1           -          cm        1       91      459      547      +    no    1 0.69   0.0   76.1   3.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005369.1           -          cm        1       74      675      590      -    no    1 0.64   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   HQ005369.1           -          cm        1       65      461      538      +    no    1 0.71   0.0   14.6     0.042 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005370.1           -          cm        1       91      677      584      -    no    1 0.65   0.0   90.9   6.9e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005370.1           -          cm        1       91      458      546      +    no    1 0.67   0.0   71.0   2.5e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005370.1           -          cm        1       74      460      544      +    no    1 0.69   0.0   15.9     0.022 ?   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   HQ005370.1           -          cm        1       74      675      589      -    no    1 0.66   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005371.1           -          cm        1       91      676      583      -    no    1 0.65   0.0   90.9   7.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005371.1           -          cm        1       91      457      545      +    no    1 0.67   0.0   72.2   1.5e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005371.1           -          cm        1       74      459      543      +    no    1 0.69   0.0   21.4    0.0012 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   HQ005371.1           -          cm        1       74      674      588      -    no    1 0.66   0.0   15.0     0.034 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HQ005372.1           -          cm        1       91      665      573      -    no    1 0.66   0.0   91.2   6.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HQ005372.1           -          cm        1       91      456      544      +    no    1 0.70   0.0   75.5   3.8e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HQ005372.1           -          cm        1       74      663      577      -    no    1 0.67   0.0   14.3     0.051 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   HM046802.1           -          cm        1       91      900      808      -    no    1 0.67   0.0   89.9   1.1e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   HM046802.1           -          cm        1       91      682      770      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   HM046802.1           -          cm        1       74      898      813      -    no    1 0.67   0.0   13.6     0.073 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648952.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648952.1           -          cm        1       91      689      776      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648952.1           -          cm        1       74      691      774      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AY648952.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648953.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648953.1           -          cm        1       91      689      776      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648953.1           -          cm        1       74      691      774      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AY648953.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648954.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648954.1           -          cm        1       91      689      776      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648954.1           -          cm        1       74      691      774      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AY648954.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648955.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648955.1           -          cm        1       91      689      776      +    no    1 0.68   0.0   65.6   2.2e-10 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648955.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648956.1           -          cm        1       91      898      806      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648956.1           -          cm        1       91      680      768      +    no    1 0.69   0.0   73.5   8.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648956.1           -          cm        1       74      896      811      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648957.1           -          cm        1       91      898      806      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648957.1           -          cm        1       91      680      768      +    no    1 0.70   0.0   72.0   1.6e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648957.1           -          cm        1       74      896      811      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648958.1           -          cm        1       91      897      805      -    no    1 0.66   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648958.1           -          cm        1       91      679      767      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648958.1           -          cm        1       74      895      810      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY648959.1           -          cm        1       91      897      805      -    no    1 0.66   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY648959.1           -          cm        1       91      679      767      +    no    1 0.69   0.0   74.6   5.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY648959.1           -          cm        1       74      895      810      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   EF514903.1           -          cm        1       91      897      798      -    no    1 0.67   0.0   78.5   1.1e-12 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514903.1           -          cm        1       91      675      762      +    no    1 0.69   0.0   68.2   7.6e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514904.1           -          cm        1       91      897      798      -    no    1 0.67   0.0   78.5   1.1e-12 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514904.1           -          cm        1       91      675      762      +    no    1 0.69   0.0   68.2   7.6e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514905.2           -          cm        1       91      897      798      -    no    1 0.68   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514905.2           -          cm        1       91      675      762      +    no    1 0.68   0.0   61.3   1.3e-09 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514906.1           -          cm        1       91      897      798      -    no    1 0.68   0.0   75.3   4.1e-12 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514906.1           -          cm        1       91      675      762      +    no    1 0.69   0.0   68.2   7.6e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514907.1           -          cm        1       91      897      798      -    no    1 0.67   0.0   78.5   1.1e-12 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   EF514907.1           -          cm        1       91      675      762      +    no    1 0.69   0.0   68.2   7.6e-11 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY261458.1           -          cm        1       91      903      811      -    no    1 0.66   0.0   88.4   1.9e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY261458.1           -          cm        1       91      686      773      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY261458.1           -          cm        1       74      901      816      -    no    1 0.66   0.0   14.8     0.038 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY261459.1           -          cm        1       91      903      811      -    no    1 0.66   0.0   88.4     2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY261459.1           -          cm        1       91      686      773      +    no    1 0.69   0.0   63.3   5.6e-10 !   Hepatitis delta virus ribozyme
+Hammerhead_1         RF00163   AY261459.1           -          cm        1       46     1393     1344      -    no    1 0.66   0.0   16.1     0.012 ?   Hammerhead ribozyme (type I)
+HDV-F-prausnitzii    RF02682   AY261459.1           -          cm        1       74      901      816      -    no    1 0.66   0.0   14.8      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY261460.1           -          cm        1       91      903      811      -    no    1 0.66   0.0   88.4     2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY261460.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   66.2   1.8e-10 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY261460.1           -          cm        1       74      901      816      -    no    1 0.66   0.0   14.8     0.039 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY633627.1           -          cm        1       91      897      805      -    no    1 0.66   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY633627.1           -          cm        1       91      679      767      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY633627.1           -          cm        1       74      895      810      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AY261457.1           -          cm        1       91      903      811      -    no    1 0.66   0.0   88.4     2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AY261457.1           -          cm        1       91      686      773      +    no    1 0.68   0.0   66.2   1.8e-10 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AY261457.1           -          cm        1       74      901      816      -    no    1 0.66   0.0   14.8     0.039 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118818.1           -          cm        1       91      904      812      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118818.1           -          cm        1       91      686      774      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118818.1           -          cm        1       74      902      817      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118819.1           -          cm        1       91      909      817      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118819.1           -          cm        1       91      691      779      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118819.1           -          cm        1       74      907      822      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118820.1           -          cm        1       91      906      814      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118820.1           -          cm        1       91      688      776      +    no    1 0.67   0.0   74.3   6.2e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118820.1           -          cm        1       74      690      774      +    no    1 0.69   0.0   20.9    0.0015 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118820.1           -          cm        1       74      904      819      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118821.1           -          cm        1       91      909      817      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118821.1           -          cm        1       91      691      779      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118821.1           -          cm        1       74      907      822      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118822.1           -          cm        1       91      907      815      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118822.1           -          cm        1       91      689      777      +    no    1 0.66   0.0   75.3   4.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118822.1           -          cm        1       74      691      775      +    no    1 0.68   0.0   21.6    0.0011 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118822.1           -          cm        1       74      905      820      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118823.1           -          cm        1       91      906      814      -    no    1 0.67   0.0   91.1   6.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118823.1           -          cm        1       91      688      776      +    no    1 0.66   0.0   73.3   9.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118823.1           -          cm        1       74      904      819      -    no    1 0.67   0.0   14.6     0.044 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118824.1           -          cm        1       91      908      816      -    no    1 0.66   0.0   90.3   9.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118824.1           -          cm        1       91      690      778      +    no    1 0.69   0.0   74.5   5.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118824.1           -          cm        1       74      692      776      +    no    1 0.71   0.0   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118824.1           -          cm        1       74      906      821      -    no    1 0.66   0.0   16.3     0.017 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118825.1           -          cm        1       91      910      818      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118825.1           -          cm        1       91      692      780      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118825.1           -          cm        1       74      908      823      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118826.1           -          cm        1       91      905      813      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118826.1           -          cm        1       91      687      775      +    no    1 0.66   0.0   75.3   4.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118826.1           -          cm        1       74      689      773      +    no    1 0.68   0.0   21.6    0.0011 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118826.1           -          cm        1       74      903      818      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118826.1           -          cm        1       91      560      487      -    no    1 0.70   0.0   17.2     0.089 ?   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118827.1           -          cm        1       91      904      812      -    no    1 0.63   0.0   89.6   1.2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118827.1           -          cm        1       91      686      774      +    no    1 0.66   0.0   75.3   4.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118827.1           -          cm        1       74      688      772      +    no    1 0.68   0.0   21.6    0.0011 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118827.1           -          cm        1       74      902      817      -    no    1 0.64   0.0   16.3     0.017 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118827.1           -          cm        1       91      558      487      -    no    1 0.71   0.0   19.2     0.039 ?   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118828.1           -          cm        1       91      904      812      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118828.1           -          cm        1       91      686      774      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118828.1           -          cm        1       74      902      817      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118830.1           -          cm        1       91      907      815      -    no    1 0.66   0.0   90.3   9.1e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118830.1           -          cm        1       91      689      777      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118830.1           -          cm        1       74      905      820      -    no    1 0.66   0.0   16.3     0.017 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118831.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118831.1           -          cm        1       91      688      776      +    no    1 0.67   0.0   74.6   5.5e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118831.1           -          cm        1       74      690      774      +    no    1 0.69   0.0   23.7   0.00034 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118831.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118832.1           -          cm        1       91      907      815      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118832.1           -          cm        1       91      689      777      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118832.1           -          cm        1       74      905      820      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118833.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118833.1           -          cm        1       91      688      776      +    no    1 0.67   0.0   75.3   4.1e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118833.1           -          cm        1       74      690      774      +    no    1 0.69   0.0   21.2    0.0013 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118833.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118834.1           -          cm        1       91      911      819      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118834.1           -          cm        1       91      693      781      +    no    1 0.67   0.0   76.2   2.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118834.1           -          cm        1       74      909      824      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118836.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   87.8   2.5e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118836.1           -          cm        1       91      688      776      +    no    1 0.69   0.0   74.5   5.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118836.1           -          cm        1       74      690      774      +    no    1 0.71   0.0   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118836.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   14.2     0.054 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118837.1           -          cm        1       91      905      813      -    no    1 0.66   0.0   88.9   1.6e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118837.1           -          cm        1       91      687      775      +    no    1 0.69   0.0   73.5   8.9e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118837.1           -          cm        1       74      689      773      +    no    1 0.71   0.0   23.6   0.00036 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118837.1           -          cm        1       74      903      818      -    no    1 0.66   0.0   14.8     0.039 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118838.1           -          cm        1       91      908      816      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118838.1           -          cm        1       91      690      778      +    no    1 0.69   0.0   75.2   4.4e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118838.1           -          cm        1       74      906      821      -    no    1 0.65   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118839.1           -          cm        1       91      908      816      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118839.1           -          cm        1       91      690      778      +    no    1 0.69   0.0   75.2   4.4e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118839.1           -          cm        1       74      906      821      -    no    1 0.65   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118840.1           -          cm        1       91      902      810      -    no    1 0.65   0.0   91.9   4.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118840.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   75.2   4.4e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118840.1           -          cm        1       74      900      815      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118841.1           -          cm        1       91      905      813      -    no    1 0.67   0.0   91.1   6.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118841.1           -          cm        1       91      688      775      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118841.1           -          cm        1       74      690      773      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118841.1           -          cm        1       74      903      818      -    no    1 0.67   0.0   14.6     0.044 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118842.1           -          cm        1       91      907      815      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118842.1           -          cm        1       91      690      777      +    no    1 0.70   0.0   70.8   2.6e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118842.1           -          cm        1       74      692      775      +    no    1 0.73   0.2   23.1   0.00048 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118842.1           -          cm        1       74      905      820      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118843.1           -          cm        1       91      905      814      -    no    1 0.65   0.0   91.3     6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118843.1           -          cm        1       91      689      776      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118843.1           -          cm        1       74      691      774      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118843.1           -          cm        1       74      903      819      -    no    1 0.66   0.0   14.7      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118844.1           -          cm        1       91      905      813      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118844.1           -          cm        1       91      688      775      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118844.1           -          cm        1       74      690      773      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118844.1           -          cm        1       74      903      818      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118845.1           -          cm        1       91      904      813      -    no    1 0.66   0.0   91.7     5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118845.1           -          cm        1       91      688      775      +    no    1 0.70   0.0   71.8   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118845.1           -          cm        1       74      690      773      +    no    1 0.73   0.2   23.4    0.0004 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118845.1           -          cm        1       74      902      818      -    no    1 0.67   0.0   14.7      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118846.1           -          cm        1       91      904      812      -    no    1 0.66   0.0   88.4     2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118846.1           -          cm        1       91      687      774      +    no    1 0.69   0.0   72.7   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118846.1           -          cm        1       74      902      817      -    no    1 0.66   0.0   14.8     0.039 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118847.1           -          cm        1       91      906      814      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118847.1           -          cm        1       91      689      776      +    no    1 0.69   0.0   71.9   1.7e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118847.1           -          cm        1       74      691      774      +    no    1 0.71   0.1   23.8   0.00033 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AB118847.1           -          cm        1       74      904      819      -    no    1 0.66   0.0   14.6     0.043 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118848.1           -          cm        1       91      901      809      -    no    1 0.66   0.0   92.1   4.3e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118848.1           -          cm        1       91      683      771      +    no    1 0.69   0.0   73.5   8.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118848.1           -          cm        1       74      899      814      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB118849.1           -          cm        1       91      898      806      -    no    1 0.65   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB118849.1           -          cm        1       91      680      768      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB118849.1           -          cm        1       74      896      811      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AF425644.1           -          cm        1       91      897      805      -    no    1 0.66   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AF425644.1           -          cm        1       91      679      767      +    no    1 0.67   0.0   75.6   3.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AF425644.1           -          cm        1       74      895      810      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AF425645.1           -          cm        1       91      904      812      -    no    1 0.66   0.0   88.4     2e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AF425645.1           -          cm        1       91      687      774      +    no    1 0.70   0.0   71.7   1.9e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AF425645.1           -          cm        1       74      902      817      -    no    1 0.66   0.0   14.8      0.04 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AB037947.1           -          cm        1       91      900      808      -    no    1 0.65   0.0   82.9   1.9e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AB037947.1           -          cm        1       91      685      775      +    no    1 0.71   0.1   57.4   6.5e-09 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AB037947.1           -          cm        1       74      687      773      +    no    1 0.71   0.1   20.6    0.0018 !   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AJ307077.1           -          cm        1       91      902      810      -    no    1 0.67   0.0   89.3   1.3e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AJ307077.1           -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AJ307077.1           -          cm        1       74      900      814      -    no    1 0.68   0.0   13.8     0.066 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AF104263.1           -          cm        1       91      899      807      -    no    1 0.66   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AF104263.1           -          cm        1       91      681      769      +    no    1 0.69   0.0   72.8   1.2e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AF104263.1           -          cm        1       74      683      767      +    no    1 0.71   0.0   21.0    0.0014 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AF104263.1           -          cm        1       74      897      812      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AF104264.1           -          cm        1       91      907      816      -    no    1 0.65   0.0   84.4     1e-13 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AF104264.1           -          cm        1       91      691      778      +    no    1 0.70   0.0   67.9   8.5e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AF104264.1           -          cm        1       74      693      776      +    no    1 0.71   0.1   24.3   0.00025 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   AF104264.1           -          cm        1       74      905      821      -    no    1 0.66   0.0   14.9     0.036 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AF098261.1           -          cm        1       91      897      805      -    no    1 0.65   0.0   87.6   2.7e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AF098261.1           -          cm        1       91      679      767      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AF098261.1           -          cm        1       74      895      810      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   AJ000558.1           -          cm        1       91      901      809      -    no    1 0.66   0.0   92.8   3.2e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   AJ000558.1           -          cm        1       91      683      771      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   AJ000558.1           -          cm        1       74      899      814      -    no    1 0.66   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   U81988.1             -          cm        1       91      899      807      -    no    1 0.66   0.0   86.6     4e-14 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   U81988.1             -          cm        1       91      679      767      +    no    1 0.70   0.0   72.4   1.3e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   U81988.1             -          cm        1       74      897      811      -    no    1 0.66   0.0   15.9     0.021 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   U81989.1             -          cm        1       91      901      809      -    no    1 0.66   0.0   91.9   4.6e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   U81989.1             -          cm        1       91      684      772      +    no    1 0.70   0.0   75.0   4.6e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   U81989.1             -          cm        1       74      899      814      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   X85253.1             -          cm        1       91      899      807      -    no    1 0.66   0.0   92.0   4.5e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   X85253.1             -          cm        1       91      682      769      +    no    1 0.67   0.0   67.8   8.9e-11 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   X85253.1             -          cm        1       74      684      767      +    no    1 0.69   0.0   25.0   0.00017 !   HDV ribozyme from F. prausnitzii
+HDV-F-prausnitzii    RF02682   X85253.1             -          cm        1       74      897      812      -    no    1 0.65   0.0   15.2     0.031 ?   HDV ribozyme from F. prausnitzii
+HDV_ribozyme         RF00094   M21012.1             -          cm        1       91      902      810      -    no    1 0.66   0.0   91.0   6.7e-15 !   Hepatitis delta virus ribozyme
+HDV_ribozyme         RF00094   M21012.1             -          cm        1       91      684      772      +    no    1 0.69   0.0   76.1     3e-12 !   Hepatitis delta virus ribozyme
+HDV-F-prausnitzii    RF02682   M21012.1             -          cm        1       74      900      815      -    no    1 0.66   0.0   15.2     0.032 ?   HDV ribozyme from F. prausnitzii
+#
+# Program:         cmscan
+# Version:         1.1.4 (Dec 2020)
+# Pipeline mode:   SCAN
+# Query file:      ../db/2021-09-07/ribozyviria.fasta
+# Target file:     ../db/raw/ribozymes.cm
+# Option settings: cmscan --tblout ../db/2021-09-07/ribozyviria.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/ribozyviria.fasta 
+# Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
+# Date:            Wed Sep  8 05:20:51 2021
+# [ok]

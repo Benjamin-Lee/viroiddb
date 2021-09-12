@@ -5,6 +5,7 @@ import csv from 'csvtojson'
 import camelCase from 'camelcase'
 import bioparsers from 'bio-parsers'
 
+// the god object that we will export
 let metadata = {}
 
 const dirName =
@@ -14,12 +15,13 @@ const dirName =
 
 const releaseVersion = dirName.match(/\d\d\d\d-\d\d-\d\d/)[0]
 
+// read in the CSV metadata file and convert to JSON with camelCase keys
+// note that this file does not exist for retrozymes and retroviroids
 await Promise.all(
   [
     'avsunviroidae',
-    'deltavirus',
+    'ribozyviria',
     'pospiviroidae',
-    // 'retrozymes',
     'satellites',
     'unclassified',
   ].map((element) => {
@@ -43,8 +45,9 @@ await Promise.all(
 
 for (const group of [
   'avsunviroidae',
-  'deltavirus',
+  'ribozyviria',
   'pospiviroidae',
+  'retroviroids',
   'retrozymes',
   'satellites',
   'unclassified',
@@ -148,13 +151,15 @@ Object.entries(metadata).forEach(([k, v]) => {
     ? 'virus'
     : v?.species?.toLowerCase().includes('satellite')
     ? 'satellite RNA'
+    : v?.displayTitle.toLowerCase().includes('viroidlike dna')
+    ? 'retroviroid'
     : 'retrozyme'
   metadata[k].releaseDate = v.releaseDate?.slice(0, 10)
 })
 
 // write the Infernal output into the metadata
 const infernalOut = fs
-  .readFileSync(path.join(dirName, 'ribozymes.txt'))
+  .readFileSync(path.join(dirName, 'all.cmscan'))
   .toString()
   .split('\n')
 const ribozymes = {}
@@ -182,42 +187,42 @@ Object.entries(ribozymes).forEach(([k, v]) => {
 const clusters = {}
 
 // set up the metadata for the clusters and rotation but note that it doesn't have the actual sequence data yet
-await Promise.all(
-  ['Cls_ID70', 'Cls_ID75', 'Cls_ID80', 'Cls_ID85', 'Cls_ID90', 'Cls_ID95'].map(
-    (clustering) => {
-      return csv({ delimiter: '\t' })
-        .fromFile(clustering + '/Cluster_membership' + '.tsv')
-        .then((jsonobj) =>
-          jsonobj.forEach((x) => {
-            const identity = Number(clustering.slice(-2))
-            const clusterId =
-              releaseVersion +
-              '-ID' +
-              identity +
-              '-' +
-              x.Cls_ID.split('_').slice(-1)
-            // assign the cluster IDs as properties to the metadata for fast queries
-            x.Mems.split(', ').forEach(
-              (member) =>
-                (metadata[member] = {
-                  ...metadata[member],
-                  [clustering]: clusterId,
-                })
-            )
-            // populate clusters object that we'll use to create the clusters collection
-            clusters[clusterId] = {
-              count: x.Mems.split(', ').length,
-              representative: x.rep,
-              representativeDisplayTitle: metadata[x.rep].displayTitle,
-              members: x.Mems,
-              identity,
-              id: clusterId,
-            }
-          })
-        )
-    }
-  )
-)
+// await Promise.all(
+//   ['Cls_ID70', 'Cls_ID75', 'Cls_ID80', 'Cls_ID85', 'Cls_ID90', 'Cls_ID95'].map(
+//     (clustering) => {
+//       return csv({ delimiter: '\t' })
+//         .fromFile(clustering + '/Cluster_membership' + '.tsv')
+//         .then((jsonobj) =>
+//           jsonobj.forEach((x) => {
+//             const identity = Number(clustering.slice(-2))
+//             const clusterId =
+//               releaseVersion +
+//               '-ID' +
+//               identity +
+//               '-' +
+//               x.Cls_ID.split('_').slice(-1)
+//             // assign the cluster IDs as properties to the metadata for fast queries
+//             x.Mems.split(', ').forEach(
+//               (member) =>
+//                 (metadata[member] = {
+//                   ...metadata[member],
+//                   [clustering]: clusterId,
+//                 })
+//             )
+//             // populate clusters object that we'll use to create the clusters collection
+//             clusters[clusterId] = {
+//               count: x.Mems.split(', ').length,
+//               representative: x.rep,
+//               representativeDisplayTitle: metadata[x.rep].displayTitle,
+//               members: x.Mems,
+//               identity,
+//               id: clusterId,
+//             }
+//           })
+//         )
+//     }
+//   )
+// )
 
 // add in the MSA, if available
 // Object.keys(clusters).forEach((cluster) => {
@@ -243,7 +248,7 @@ await Promise.all(
 // })
 
 // console.log(metadata)
-fs.writeFileSync('static/clusters.tmp.json', JSON.stringify(clusters, null, 2))
+// fs.writeFileSync('static/clusters.tmp.json', JSON.stringify(clusters, null, 2))
 fs.writeFileSync('static/meta.tmp.json', JSON.stringify(metadata, null, 2))
 fs.writeFileSync(
   'static/meta.algolia.json',

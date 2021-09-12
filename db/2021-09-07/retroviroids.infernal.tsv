@@ -1,0 +1,47 @@
+#target name         accession query name           accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#------------------- --------- -------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
+Hammerhead_3         RF00008   AJ295013.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295013.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295013.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295019.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295019.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295019.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295018.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295018.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295018.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295017.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295017.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   AJ295016.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295016.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295016.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295015.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295015.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295015.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295014.1           -          cm        1       58      155      196      +    no    1 0.55   0.0   23.7   1.9e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295014.1           -          cm       19       54      168      196      +    no    1 0.62   0.0   15.6   0.00081 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   AJ295014.1           -          cm        1       40      162      196      +    3'    3 0.60   0.0   14.7    0.0037 !   Hammerhead ribozyme (type I)
+Hammerhead_HH10      RF02277   AJ295014.1           -          cm        1       62      136      196      +    3'    3 0.54   0.0   11.5      0.04 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295012.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295012.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295012.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295011.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295011.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295011.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295010.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295010.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   AJ295009.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295009.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295009.1           -          cm        1       62      215      275      +    3'    3 0.52   0.0   12.7     0.027 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   AJ295008.1           -          cm        1       58      234      275      +    no    1 0.55   0.0   23.7   2.7e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   AJ295008.1           -          cm       19       54      247      275      +    no    1 0.62   0.0   15.6    0.0011 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   AJ295008.1           -          cm        1       62      215      275      +    3'    3 0.54   0.0   11.5     0.056 ?   Hammerhead ribozyme HH10
+#
+# Program:         cmscan
+# Version:         1.1.4 (Dec 2020)
+# Pipeline mode:   SCAN
+# Query file:      ../db/2021-09-07/retroviroids.fasta
+# Target file:     ../db/raw/ribozymes.cm
+# Option settings: cmscan --tblout ../db/2021-09-07/retroviroids.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/retroviroids.fasta 
+# Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
+# Date:            Wed Sep  8 05:20:12 2021
+# [ok]

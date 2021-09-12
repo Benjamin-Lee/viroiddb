@@ -1,0 +1,224 @@
+#target name         accession query name           accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#------------------- --------- -------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
+Hammerhead_3         RF00008   MN642576.1           -          cm        1       58      260      298      +    no    1 0.54   0.0   26.5   4.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642576.1           -          cm        7       40      269      300      +    no    1 0.50   0.0   21.7   3.5e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642575.1           -          cm        1       58      330      368      +    no    1 0.54   0.0   26.5   6.1e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642575.1           -          cm        7       40      339      370      +    no    1 0.50   0.0   21.7   4.3e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642574.1           -          cm        1       58      323      361      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642574.1           -          cm        7       40      332      363      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642573.1           -          cm        1       58      330      368      +    no    1 0.54   0.0   26.5   6.1e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642573.1           -          cm        7       40      339      370      +    no    1 0.50   0.0   21.7   4.3e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642572.1           -          cm        1       58      325      363      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642572.1           -          cm        7       40      334      365      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642569.1           -          cm        1       58      324      362      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642569.1           -          cm        7       40      333      364      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642567.1           -          cm        1       58      322      360      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642567.1           -          cm        7       40      331      362      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642566.1           -          cm        1       58      350      388      +    no    1 0.54   0.0   26.5   6.4e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642566.1           -          cm        7       40      359      390      +    no    1 0.50   0.0   21.7   4.5e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642565.1           -          cm        1       58      326      364      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642565.1           -          cm        7       40      335      366      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642564.1           -          cm        1       58      322      360      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642564.1           -          cm        7       40      331      362      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642563.1           -          cm        1       58      320      358      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642563.1           -          cm        7       40      329      360      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642562.1           -          cm        1       58      327      365      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642562.1           -          cm        7       40      336      367      +    no    1 0.50   0.0   21.7   4.3e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642561.1           -          cm        1       58      327      365      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642561.1           -          cm        7       40      336      367      +    no    1 0.50   0.0   21.7   4.3e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642560.1           -          cm        1       58      323      361      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642560.1           -          cm        7       40      332      363      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642559.1           -          cm        1       58      322      360      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642559.1           -          cm        7       40      331      362      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642558.1           -          cm        1       58      323      361      +    no    1 0.54   0.0   26.5   5.9e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642558.1           -          cm        7       40      332      363      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642557.1           -          cm        1       58      325      363      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642557.1           -          cm        7       40      334      365      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642556.1           -          cm        1       58      350      388      +    no    1 0.54   0.0   26.5   6.4e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642556.1           -          cm        7       40      359      390      +    no    1 0.50   0.0   21.7   4.5e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642554.1           -          cm        1       58      327      365      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642554.1           -          cm        7       40      336      367      +    no    1 0.50   0.0   21.7   4.3e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642553.1           -          cm        1       58      325      363      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642553.1           -          cm        7       40      334      365      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642552.1           -          cm        1       58      326      364      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   MN642552.1           -          cm        7       40      335      366      +    no    1 0.50   0.0   21.7   4.2e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   MN642551.1           -          cm        1       58      325      363      +    no    1 0.54   0.0   26.5     6e-06 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009951.1           -          cm        1       58       95       38      -    no    1 0.62   0.0   47.2   2.4e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009951.1           -          cm        1       77       81       17      -    no    1 0.58   0.0   19.3   0.00018 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009951.1           -          cm        1       46       73       23      -    no    1 0.59   0.0   19.3   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009950.1           -          cm        1       58      144       87      -    no    1 0.66   0.0   50.4   4.5e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009950.1           -          cm        1       58      822      765      -    no    1 0.66   0.0   50.4   4.5e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009950.1           -          cm        1       77      808      747      -    no    1 0.61   0.0   23.7   1.1e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009950.1           -          cm        1       77      130       66      -    no    1 0.62   0.0   23.4   1.4e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009950.1           -          cm        1       46      800      753      -    no    1 0.62   0.0   24.5   1.6e-05 !   Hammerhead ribozyme (type I)
+Hammerhead_1         RF00163   BK009950.1           -          cm        1       46      122       72      -    no    1 0.61   0.0   19.4   0.00068 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009949.1           -          cm        1       58      826      769      -    no    1 0.64   0.0   50.5   4.6e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009949.1           -          cm        1       58      147       90      -    no    1 0.64   0.0   45.4   1.1e-10 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009949.1           -          cm        1       77      133       69      -    no    1 0.62   0.0   23.4   1.4e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009949.1           -          cm        1       46      125       75      -    no    1 0.61   0.0   19.4   0.00068 !   Hammerhead ribozyme (type I)
+Hammerhead_1         RF00163   BK009949.1           -          cm        1       46      804      754      -    no    1 0.61   0.0   19.4   0.00068 !   Hammerhead ribozyme (type I)
+Hammerhead_HH9       RF02275   BK009949.1           -          cm        1       77      812      748      -    no    1 0.60   0.0   17.7   0.00092 !   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   BK009949.1           -          cm        1      125      150        1      -    no    1 0.61   0.0   15.2     0.023 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   BK009948.1           -          cm        1       58      735      678      -    no    1 0.64   0.0   45.4     1e-10 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009948.1           -          cm        1       77      721      657      -    no    1 0.58   0.0   20.9   7.8e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009948.1           -          cm        1       32       34        1      -    3'    3 0.65   0.0   18.7    0.0022 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   BK009948.1           -          cm        1       46      714      638      -    no    1 0.61   0.0   13.5     0.044 ?   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009947.1           -          cm        1       58      707      650      -    no    1 0.64   0.0   51.8   1.7e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009947.1           -          cm        1       77      693      616      -    no    1 0.62   0.0   24.0   7.9e-06 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009947.1           -          cm        1       32       34        1      -    3'    3 0.65   0.0   18.7    0.0021 !   Hammerhead ribozyme (type III)
+Hammerhead_1         RF00163   BK009947.1           -          cm        1       46      685      635      -    no    1 0.59   0.0   17.2    0.0028 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009946.1           -          cm        1       58      696      639      -    no    1 0.66   0.0   50.4     4e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009946.1           -          cm        1       77      682      605      -    no    1 0.63   0.0   21.2   6.2e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009946.1           -          cm        1       46      674      624      -    no    1 0.61   0.0   19.2   0.00066 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009945.1           -          cm        1       58      581      524      -    no    1 0.60   0.0   48.2   1.4e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009945.1           -          cm        1       77      567      490      -    no    1 0.59   0.0   20.3    0.0001 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009945.1           -          cm        1       46      559      509      -    no    1 0.59   0.0   17.2    0.0024 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009944.1           -          cm        1       58      651      594      -    no    1 0.66   0.0   50.4   3.8e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009944.1           -          cm        1       77      637      560      -    no    1 0.63   0.0   20.7   8.1e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009944.1           -          cm        1       46      629      579      -    no    1 0.61   0.0   19.2   0.00063 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009943.1           -          cm        1       58      911      967      +    no    1 0.61   0.0   54.5   3.5e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009943.1           -          cm        1       58      171      227      +    no    1 0.58   0.0   50.1   5.7e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009943.1           -          cm        1       77      924      991      +    no    1 0.63   0.0   24.5   6.3e-06 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009943.1           -          cm        1       77      184      251      +    no    1 0.60   0.0   22.4   2.8e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009942.1           -          cm        1       58      171      227      +    no    1 0.60   0.0   49.8   7.5e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009942.1           -          cm        1       58      947     1003      +    no    1 0.53   0.0   35.1     8e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009942.1           -          cm        1       77      184      251      +    no    1 0.63   0.0   18.6    0.0005 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009942.1           -          cm        1       77      960     1022      +    no    1 0.62   0.0   18.4   0.00057 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009940.1           -          cm        1       58      908      964      +    no    1 0.61   0.0   47.9   2.3e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009940.1           -          cm        1       58      172      228      +    no    1 0.53   0.0   35.1   7.8e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009940.1           -          cm        1       77      921      983      +    no    1 0.68   0.0   22.4   2.8e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009940.1           -          cm        1       77      185      247      +    no    1 0.62   0.0   18.4   0.00055 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009940.1           -          cm       14       39      814      789      -    no    1 0.46   0.0   14.2      0.03 ?   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009939.1           -          cm        1       58      153      209      +    no    1 0.60   0.0   50.8   3.7e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009939.1           -          cm        1       58      903      959      +    no    1 0.60   0.0   50.8   3.7e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009939.1           -          cm        1       77      166      233      +    no    1 0.65   0.0   24.0     9e-06 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009939.1           -          cm        1       77      916      983      +    no    1 0.65   0.0   24.0     9e-06 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   BK009939.1           -          cm       14       39       59       34      -    no    1 0.50   0.0   16.0    0.0082 !   Hammerhead ribozyme (type I)
+Hammerhead_1         RF00163   BK009939.1           -          cm       14       39      809      784      -    no    1 0.50   0.0   16.0    0.0082 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   BK009938.1           -          cm        1       58      173      229      +    no    1 0.63   0.0   55.5   1.9e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009938.1           -          cm        1       58      916      972      +    no    1 0.63   0.0   55.5   1.9e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009938.1           -          cm        1       77      186      253      +    no    1 0.65   0.0   22.5   2.7e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009938.1           -          cm        1       77      929      996      +    no    1 0.65   0.0   22.5   2.7e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009937.1           -          cm        1       58      173      229      +    no    1 0.63   0.0   55.5   1.8e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009937.1           -          cm        1       58      881      937      +    no    1 0.63   0.0   55.5   1.8e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009937.1           -          cm        1       77      186      253      +    no    1 0.65   0.0   22.5   2.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009937.1           -          cm        1       77      894      961      +    no    1 0.65   0.0   22.5   2.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009936.1           -          cm        1       58      940      996      +    no    1 0.60   0.0   52.5   1.3e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009936.1           -          cm        1       58      170      226      +    no    1 0.56   0.0   36.3   3.6e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009936.1           -          cm        1       77      953     1020      +    no    1 0.62   0.0   24.0   9.2e-06 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009936.1           -          cm        1       77      183      245      +    no    1 0.62   0.0   16.8    0.0019 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009935.1           -          cm        1       58      955     1011      +    no    1 0.58   0.0   42.0     1e-09 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009935.1           -          cm        1       58      173      229      +    no    1 0.56   0.0   36.8   2.7e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009935.1           -          cm       19       54      981     1016      +    no    1 0.58   0.0   12.0     0.065 ?   Hammerhead ribozyme HH9
+Hammerhead_HH10      RF02277   BK009935.1           -          cm        1      125      158      260      +    no    1 0.59   0.0   13.1     0.084 ?   Hammerhead ribozyme HH10
+Hammerhead_3         RF00008   BK009934.1           -          cm        1       58      965     1021      +    no    1 0.58   0.0   48.7   1.5e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009934.1           -          cm        1       58      173      229      +    no    1 0.54   0.0   31.4   8.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009934.1           -          cm       19       54      991     1026      +    no    1 0.58   0.0   19.0   0.00038 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009933.1           -          cm        1       58      899      955      +    no    1 0.65   0.0   55.7   1.7e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009933.1           -          cm        1       58      172      228      +    no    1 0.65   0.0   45.1   1.4e-10 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009933.1           -          cm        1       77      185      257      +    no    1 0.62   0.0   21.8   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009933.1           -          cm        1       77      912      979      +    no    1 0.59   0.0   20.1   0.00016 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009932.1           -          cm        1       58      888      944      +    no    1 0.63   0.0   51.6   2.2e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009932.1           -          cm        1       58      171      227      +    no    1 0.63   0.0   45.5   1.1e-10 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009932.1           -          cm        1       77      901      968      +    no    1 0.62   0.0   18.9   0.00036 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009932.1           -          cm        1       77      184      251      +    no    1 0.62   0.0   14.5    0.0095 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009931.1           -          cm        1       58      886      942      +    no    1 0.65   0.0   52.1   1.6e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009931.1           -          cm        1       58      170      226      +    no    1 0.63   0.0   49.2     1e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009931.1           -          cm        1       77      899      966      +    no    1 0.63   0.0   25.8   2.3e-06 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009931.1           -          cm        1       77      183      250      +    no    1 0.62   0.0   22.4   2.8e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009930.1           -          cm        1       58      172      228      +    no    1 0.61   0.0   49.9   6.3e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009930.1           -          cm        1       58      889      945      +    no    1 0.65   0.0   49.2   9.8e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009930.1           -          cm        1       77      185      252      +    no    1 0.62   0.0   21.8   4.4e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009930.1           -          cm        1       77      902      969      +    no    1 0.62   0.0   21.6   5.3e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009929.1           -          cm        1       58      171      227      +    no    1 0.65   0.0   58.2   3.5e-14 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009929.1           -          cm        1       58      889      945      +    no    1 0.61   0.0   49.9   6.3e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009929.1           -          cm        1       77      902      969      +    no    1 0.62   0.0   21.8   4.4e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009929.1           -          cm        1       77      184      251      +    no    1 0.63   0.0   21.2   6.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009928.1           -          cm        1       58      171      227      +    no    1 0.65   0.0   58.2   3.5e-14 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009928.1           -          cm        1       58      889      945      +    no    1 0.61   0.0   49.9   6.3e-12 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009928.1           -          cm        1       77      902      969      +    no    1 0.62   0.0   21.8   4.4e-05 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009928.1           -          cm        1       77      184      251      +    no    1 0.63   0.0   21.2   6.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009927.1           -          cm        1       58      876      932      +    no    1 0.61   0.0   57.0     7e-14 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009927.1           -          cm        1       58      173      229      +    no    1 0.60   0.0   46.4   5.9e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009927.1           -          cm        1       77      186      253      +    no    1 0.63   0.0   25.8   2.3e-06 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009927.1           -          cm       19       54      902      937      +    no    1 0.58   0.0   19.0   0.00035 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009926.1           -          cm        1       58      870      926      +    no    1 0.63   0.0   55.5   1.8e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009926.1           -          cm        1       58      173      229      +    no    1 0.60   0.0   46.4   5.8e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009926.1           -          cm        1       77      186      253      +    no    1 0.63   0.0   25.8   2.3e-06 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009926.1           -          cm        1       77      883      950      +    no    1 0.65   0.0   22.5   2.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009925.1           -          cm        1       58      172      228      +    no    1 0.61   0.0   56.0   1.4e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009925.1           -          cm        1       58      891      947      +    no    1 0.56   0.0   47.2   3.6e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009925.1           -          cm        1       77      904      971      +    no    1 0.59   0.0   20.7    0.0001 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009925.1           -          cm       19       54      198      233      +    no    1 0.58   0.0   19.0   0.00036 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009924.1           -          cm        1       58      172      228      +    no    1 0.61   0.0   56.0   1.4e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009924.1           -          cm        1       58      891      947      +    no    1 0.56   0.0   47.2   3.6e-11 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009924.1           -          cm        1       77      904      971      +    no    1 0.59   0.0   20.7    0.0001 !   Hammerhead ribozyme HH9
+Hammerhead_HH9       RF02275   BK009924.1           -          cm       19       54      198      233      +    no    1 0.58   0.0   19.0   0.00036 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009923.1           -          cm        1       58      172      228      +    no    1 0.60   0.0   53.8   5.7e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009923.1           -          cm        1       58      935      991      +    no    1 0.58   0.0   37.3   1.9e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009923.1           -          cm       19       54      198      233      +    no    1 0.56   0.0   19.7   0.00021 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   BK009922.1           -          cm        1       58      171      227      +    no    1 0.60   0.0   53.8   5.7e-13 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   BK009922.1           -          cm        1       58      934      990      +    no    1 0.58   0.0   37.3   1.9e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   BK009922.1           -          cm       19       54      197      232      +    no    1 0.56   0.0   19.7   0.00021 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX281163.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281163.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281163.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2    0.0005 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281162.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281162.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281162.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281161.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281161.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281161.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281160.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281160.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281160.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2    0.0005 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281159.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281159.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281159.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281158.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281158.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281158.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281157.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281157.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281157.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281156.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281156.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281156.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX281155.1           -          cm        9       58        1       50      +    5'    2 0.68   0.0   32.2   3.1e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX281155.1           -          cm        1       77        7       84      +    no    1 0.63   0.0   21.2   4.6e-05 !   Hammerhead ribozyme HH9
+Hammerhead_1         RF00163   KX281155.1           -          cm        1       46       15       65      +    no    1 0.61   0.0   19.2   0.00049 !   Hammerhead ribozyme (type I)
+Hammerhead_3         RF00008   KX273079.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.4e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273079.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273078.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.4e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273078.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273077.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.4e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273077.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273076.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.4e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273076.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273075.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.4e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273075.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273074.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.3e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273074.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.8e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273073.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.3e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273073.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.8e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273071.1           -          cm        9       58        1       49      +    5'    2 0.63   0.0   30.7   8.3e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273071.1           -          cm        1       77        6       73      +    no    1 0.63   0.0   16.0    0.0022 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273070.1           -          cm        9       58        1       49      +    5'    2 0.61   0.0   24.8   3.1e-05 !   Hammerhead ribozyme (type III)
+Hammerhead_3         RF00008   KX273069.1           -          cm        9       58        1       49      +    5'    2 0.65   0.0   37.3   1.4e-08 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273069.1           -          cm        1       77        6       73      +    no    1 0.65   0.0   22.5   1.9e-05 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273068.1           -          cm        9       58        1       49      +    5'    2 0.63   0.0   30.7   8.3e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273068.1           -          cm        1       77        6       73      +    no    1 0.63   0.0   16.0    0.0022 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273067.1           -          cm        9       58        1       49      +    5'    2 0.63   0.0   30.7   7.8e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273067.1           -          cm        1       77        6       73      +    no    1 0.63   0.0   16.0    0.0021 !   Hammerhead ribozyme HH9
+Hammerhead_3         RF00008   KX273065.1           -          cm        9       58        1       49      +    5'    2 0.63   0.0   30.7   7.8e-07 !   Hammerhead ribozyme (type III)
+Hammerhead_HH9       RF02275   KX273065.1           -          cm        1       77        6       73      +    no    1 0.63   0.0   16.0    0.0021 !   Hammerhead ribozyme HH9
+#
+# Program:         cmscan
+# Version:         1.1.4 (Dec 2020)
+# Pipeline mode:   SCAN
+# Query file:      ../db/2021-09-07/retrozymes.fasta
+# Target file:     ../db/raw/ribozymes.cm
+# Option settings: cmscan --tblout ../db/2021-09-07/retrozymes.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/retrozymes.fasta 
+# Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
+# Date:            Wed Sep  8 05:20:22 2021
+# [ok]
