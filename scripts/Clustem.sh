@@ -58,7 +58,7 @@ Cls_Prefix=Cls.ID"$min_prec_id".Cov"$min_prec_cov". #P
 AddCons=True #a
 rm_tmp="False" #r
 AddSs=True #H
-
+AddHMMs=True # TBD
 ##### Parse args: #####
 while getopts t:o:s:i:M:d:c:P:m:a:r:S:H:v:R: flag
 do
@@ -115,6 +115,9 @@ done
 
 ##### Main #####
 ##### Create output/work dirs and make a copy of the input #####
+ulimit -Sv $((Memory * 1000)) # Mb to Kb
+ulimit -Sm $((Memory * 1000)) # Mb to Kb
+
 input_fasta=$(echo $(readlink -f $input_fasta)  ) # Get abs path.
 mkdir "$output_dir"
 cd "$output_dir"
@@ -131,7 +134,7 @@ mmseqs easy-linclust "$input_fasta" "$ini_name".clu tmp --min-seq-id "$min_prec_
 # alias Rsplt='Rscript /media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/Clustem_rsp.r' # PATH !!!!
 
 cd "$output_dir"
-Rscript /media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri/Clustem_rsp.r $input_fasta "$output_dir"/Clusteringfiles/"$ini_name".clu_cluster.tsv $Cls_Prefix
+Rscript /media/HDD1/uri/RNA_Vir_MTs/viroiddb/viroiddb/Neri_misc/Clustem_rsp.r $input_fasta "$output_dir"/Clusteringfiles/"$ini_name".clu_cluster.tsv $Cls_Prefix
 mv "$output_dir"/Clusteringfiles/cluster_membership/ "$output_dir"/cluster_membership/
 mv "$output_dir"/cluster_membership/Cluster_membership.tsv "$output_dir"/Cluster_membership.tsv
 cd "$output_dir"
@@ -145,7 +148,7 @@ for i in "$output_dir"/cluster_membership/*.fasta
 do
 file_with_suffix=$(basename "$i") 
 file_name=$(basename "$file_with_suffix" ".fasta")
-CSA  $i
+timeout 13 CSA  $i
 done 
 mv "$output_dir"/cluster_membership/*.csv Rotated/CSA_csv/
 mv "$output_dir"/cluster_membership/*.txt Rotated/CSA_Misc/
@@ -156,43 +159,104 @@ fi
 cd "$output_dir"
 
 
-### re-Align each cluster using MUSCLE ###
+### Rotate attempt 2# - using cyclope for clusters CSA couldn't ###
+for i in "$output_dir"/cluster_membership/*.fasta
+do
+file_with_suffix=$(basename "$i") 
+file_name=$(basename "$file_with_suffix" ".fasta")
+FILE="$output_dir"/Rotated/CSA_aligned/"$file_name"-Aligned.fasta
+
+if [ -f "$FILE" ]; then
+    echo "CSA Rotated output found  - $FILE"
+    cp $FILE "$output_dir"/msaFiles/"$file_name"_msa.fasta
+else 
+    echo "CSA Rotated output NOT found  - $FILE"
+    timeout 11 cyclope -C -a -v -s -O "$output_dir"/msaFiles/"$file_name"_msa.fasta $i 
+fi
+done 
+find "$output_dir"/msaFiles/ -size  0 -print -delete
+cd "$output_dir"
+
+### Rotate attempt 3# - using MARS for clusters CSA couldn't ###
+for i in "$output_dir"/cluster_membership/*.fasta
+do
+file_with_suffix=$(basename "$i") 
+file_name=$(basename "$file_with_suffix" ".fasta")
+FILE="$output_dir"/msaFiles/"$file_name"_msa.fasta
+
+if [ -f "$FILE" ]; then
+    echo "CSA/cyclope Rotated output found  - $FILE"
+    # cp $FILE "$output_dir"/msaFiles/"$file_name"_msa.fasta
+else 
+    echo "CSA/cyclope Rotated output NOT found  - $FILE"
+    timeout 11 mars -a DNA   -i $i   --output-file "$output_dir"/msaFiles/"$file_name"_msa.fasta  -T $THREADS
+fi
+done 
+find "$output_dir"/msaFiles/ -size  0 -print -delete
+cd "$output_dir"
+
+
+
+### re-Align each cluster using mafft ###
 for i in "$output_dir"/cluster_membership/*.fasta
 do
 file_with_suffix=$(basename "$i") 
 file_name=$(basename "$file_with_suffix" ".fasta")
 
-FILE="$output_dir"/Rotated/CSA_rotated/"$file_name"-Rotated.fasta
-if test -f "$FILE"; then
-    mafft --thread "$THREADS" --auto "$FILE"   >  "$output_dir"/msaFiles/"$file_name".msa.fasta 
+FILE="$output_dir"/msaFiles/"$file_name"_msa.fasta
+if [ -f "$FILE" ]; then
+    echo "CSA/cyclope/mars Rotated output found"
+    mafft --thread "$THREADS" --auto "$FILE"   >  "$output_dir"/msaFiles/"$file_name"_mafft_msa.fasta
 else
-    mafft --thread "$THREADS" --auto $i   >  "$output_dir"/msaFiles/"$file_name".msa.fasta 
+    echo "CSA/cyclope/mars Rotated output NOT found"
+    mafft --thread "$THREADS" --auto $i   > "$output_dir"/msaFiles/"$file_name"_mafft_msa.fasta
 fi
 done 
+find "$output_dir"/msaFiles/*_mafft_msa.fasta -size  0 -print -delete
 cd "$output_dir"
 
 ##### Add consenus and secondary structure #####
 if [ "$AddCons" == "True" ]; 
 then
-for i in "$output_dir"/msaFiles/*.msa.fasta
+for i in "$output_dir"/msaFiles/*_mafft_msa.fasta
 do
 file_with_suffix=$(basename "$i") 
-file_name=$(basename "$file_with_suffix" ".msa.fasta")
+file_name=$(basename "$file_with_suffix" "_mafft_msa.fasta")
 cat $i | fa2sr -w=0 |sr_filter -conplus -hcon=0 -ncon="$file_name"_con | sr2fa >  "$output_dir"/msaFiles/tmp
-mv "$output_dir"/msaFiles/tmp "$output_dir"/msaFiles/"$file_name".msa.fasta
+mv "$output_dir"/msaFiles/tmp "$output_dir"/msaFiles/"$file_name"_conp_mafft_msa.fasta
 done 
+mkdir "$output_dir"/FinalCluster_MSAs
+mv "$output_dir"/msaFiles/*_conp_mafft_msa.fasta "$output_dir"/FinalCluster_MSAs/
 fi
 
 
-if [ "$AddSs" == "True" ]; 
-then
-for i in "$output_dir"/msaFiles/*.msa.fasta
+##### Build nhmm profeils (HMMER v3.3) #####
+# if [ "$AddHMMs" == "True" ];
+# then
+mkdir "$output_dir"/HMMfiles
+for i in "$output_dir"/FinalCluster_MSAs/*.fasta
 do
 file_with_suffix=$(basename "$i") 
-file_name=$(basename "$file_with_suffix" ".msa.fasta")
-# cat $i | fa2sr -w=0 |sr_filter -conplus -hcon=0 -ncon="$file_name"_con | sr2fa > ./msaFiles/"$file_name".Cons.msa.fasta
+file_name=$(basename "$file_with_suffix" "_conp_mafft_msa.fasta")
+hmmbuild -n $file_name ./HMMfiles/"$file_name".nhmmer $i
 done 
-fi
+cd "$output_dir"/HMMfiles
+cat ./*.nhmmer > ../AllHMMs.hmm
+cd "$output_dir"
+hmmstat ./AllHMMs.hmm > "$Cls_Prefix"HMMstat.tsv
+# fi
+
+
+#TBD!
+# if [ "$AddSs" == "True" ]; 
+# then
+# for i in "$output_dir"/msaFiles/*.msa.fasta
+# do
+# file_with_suffix=$(basename "$i") 
+# file_name=$(basename "$file_with_suffix" ".msa.fasta")
+# # cat $i | fa2sr -w=0 |sr_filter -conplus -hcon=0 -ncon="$file_name"_con | sr2fa > ./msaFiles/"$file_name".Cons.msa.fasta
+# done 
+# fi
 
 # ##### Lineraize the MSAs as per our conventions. #####
 # cd msaFiles
@@ -212,8 +276,8 @@ fi
 
 ##### Create a summary file for the script call. #####
 echo "Printing Water_Mark to $(pwd)/Water_Mark.txt"
-echo "Profiler_motifs.sh called on $(date) by: " >  "$Cls_Prefix"_profiler.env
-echo "$@" >> "$Cls_Prefix"_profiler.env
+echo "Clustem.sh called on $(date) by: " >  "$Cls_Prefix"Clustem.env
+echo "$@" >> "$Cls_Prefix"Clustem.env
 
 echo "Enviroment/Flags called:
 THREADS = $THREADS
@@ -226,7 +290,7 @@ Clustering ID >= $min_prec_id
 Clustering coverage >= $min_prec_cov 
 Output_clusters_prefix = $Cls_Prefix
 Add consenus = $AddCons 
-" >> "$Cls_Prefix"_profiler.env
+" >> "$Cls_Prefix"Clustem.env
 
 echo "Done: $Cls_Prefix"
 echo "Note! the resulting profiles may not be ideal for all use cases."
