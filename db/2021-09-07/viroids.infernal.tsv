@@ -16239,6 +16239,18 @@ Hammerhead_3         RF00008   AF170522.1           -          cm        1      
 Hammerhead_3         RF00008   AF170522.1           -          cm        1       58       55        3      -    no    1 0.49   0.0   60.8   2.1e-15 !   Hammerhead ribozyme (type III)
 Hammerhead_3         RF00008   AF170523.1           -          cm        1       58      282      335      +    no    1 0.41   0.0   69.3   9.9e-18 !   Hammerhead ribozyme (type III)
 Hammerhead_3         RF00008   AF170523.1           -          cm        1       58       55        3      -    no    1 0.49   0.0   60.8   2.1e-15 !   Hammerhead ribozyme (type III)
+#
+# Program:         cmscan
+# Version:         1.1.4 (Dec 2020)
+# Pipeline mode:   SCAN
+# Query file:      ../db/2021-09-07/avsunviroidae.fasta
+# Target file:     ../db/raw/ribozymes.cm
+# Option settings: cmscan --tblout ../db/2021-09-07/avsunviroidae.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/avsunviroidae.fasta 
+# Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
+# Date:            Mon Sep 13 16:53:58 2021
+# [ok]
+#target name         accession query name           accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#------------------- --------- -------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
 Pistol               RF02679   NC_003264.1          -          cm        1       70      247      170      -    no    1 0.53   0.0   10.7     0.048 ?   Pistol ribozyme
 Pistol               RF02679   MF421248.1           -          cm        1       70      249      169      -    no    1 0.51   0.0   10.4     0.056 ?   Pistol ribozyme
 Pistol               RF02679   MF421249.1           -          cm        1       70      243      166      -    no    1 0.53   0.0   10.7     0.047 ?   Pistol ribozyme
@@ -16254,6 +16266,18 @@ Hairpin              RF00173   AF540967.1           -          cm        1      
 Hairpin              RF00173   AF447779.1           -          cm        1       52       50       84      +    no    1 0.46   0.0   11.3     0.047 ?   Hairpin ribozyme
 Hairpin              RF00173   AF447784.1           -          cm        1       52       49       83      +    no    1 0.46   0.0   10.4     0.078 ?   Hairpin ribozyme
 Pistol               RF02679   AF123871.1           -          cm        1       70      248      198      -    no    1 0.49   0.0   11.7     0.028 ?   Pistol ribozyme
+#
+# Program:         cmscan
+# Version:         1.1.4 (Dec 2020)
+# Pipeline mode:   SCAN
+# Query file:      ../db/2021-09-07/pospiviroidae.fasta
+# Target file:     ../db/raw/ribozymes.cm
+# Option settings: cmscan --tblout ../db/2021-09-07/pospiviroidae.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/pospiviroidae.fasta 
+# Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
+# Date:            Mon Sep 13 16:54:33 2021
+# [ok]
+#target name         accession query name           accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#------------------- --------- -------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
 Hammerhead_3         RF00008   NC_028271.1          -          cm        1       58      303      249      -    no    1 0.45   0.0   40.0   1.3e-09 !   Hammerhead ribozyme (type III)
 Hammerhead_3         RF00008   NC_028271.1          -          cm        9       58        1       47      +    5'    2 0.49   0.0   23.6   4.2e-05 !   Hammerhead ribozyme (type III)
 Hammerhead_HH9       RF02275   NC_028271.1          -          cm       19       54      277      244      -    no    1 0.35   0.0   11.6     0.033 ?   Hammerhead ribozyme HH9
@@ -16435,9 +16459,9 @@ Hammerhead_HH9       RF02275   DQ357628.1           -          cm       19      
 # Program:         cmscan
 # Version:         1.1.4 (Dec 2020)
 # Pipeline mode:   SCAN
-# Query file:      ../db/2021-09-07/viroids.fasta
+# Query file:      ../db/2021-09-07/unclassified.fasta
 # Target file:     ../db/raw/ribozymes.cm
-# Option settings: cmscan --tblout ../db/2021-09-07/viroids.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/viroids.fasta 
+# Option settings: cmscan --tblout ../db/2021-09-07/unclassified.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/unclassified.fasta 
 # Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
-# Date:            Wed Sep  8 05:27:15 2021
+# Date:            Mon Sep 13 16:55:21 2021
 # [ok]

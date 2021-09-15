@@ -62,7 +62,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.04438); e
 Envelopes passing  local CM  CYK           filter:               4  (0.01081); expected (0.0001)
 Total CM hits reported:                                          2  (0.003585); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.17
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.16
 //
 Query:       MN642575.1  [L=370]
 Description: Mytilus galloprovincialis clone Rtz_Mg_33 SINE retrozyme, complete sequence
@@ -116,7 +116,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01978); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007432); expected (0.0001)
 Total CM hits reported:                                          2  (0.003141); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.11
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.10
 //
 Query:       MN642574.1  [L=363]
 Description: Mytilus galloprovincialis clone Rtz_Mg_28 SINE retrozyme, complete sequence
@@ -170,7 +170,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.02146); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009228); expected (0.0001)
 Total CM hits reported:                                          2  (0.00318); includes 0 truncated hit(s)
 
-# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.09
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.09
 //
 Query:       MN642573.1  [L=370]
 Description: Mytilus galloprovincialis clone Rtz_Mg_27 SINE retrozyme, complete sequence
@@ -224,7 +224,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01978); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007432); expected (0.0001)
 Total CM hits reported:                                          2  (0.003141); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.10
 //
 Query:       MN642572.1  [L=365]
 Description: Mytilus galloprovincialis clone Rtz_Mg_18 SINE retrozyme, complete sequence
@@ -278,7 +278,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03156); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007275); expected (0.0001)
 Total CM hits reported:                                          2  (0.003169); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.02s 00:00:00.27 Elapsed: 00:00:00.22
+# CPU time: 0.23u 0.02s 00:00:00.25 Elapsed: 00:00:00.21
 //
 Query:       MN642569.1  [L=364]
 Description: Mytilus galloprovincialis clone Rtz_Mg_10 SINE retrozyme, complete sequence
@@ -386,7 +386,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02939); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007315); expected (0.0001)
 Total CM hits reported:                                          2  (0.003186); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.02s 00:00:00.22 Elapsed: 00:00:00.17
+# CPU time: 0.19u 0.02s 00:00:00.21 Elapsed: 00:00:00.16
 //
 Query:       MN642566.1  [L=390]
 Description: Mytilus galloprovincialis clone Rtz_Mg_03 SINE retrozyme, complete sequence
@@ -440,7 +440,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03303); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007007); expected (0.0001)
 Total CM hits reported:                                          2  (0.003034); includes 0 truncated hit(s)
 
-# CPU time: 0.39u 0.04s 00:00:00.43 Elapsed: 00:00:00.37
+# CPU time: 0.38u 0.04s 00:00:00.42 Elapsed: 00:00:00.36
 //
 Query:       MN642565.1  [L=366]
 Description: Mytilus galloprovincialis clone Rtz_Mg_24 SINE retrozyme, complete sequence
@@ -494,7 +494,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02852); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007263); expected (0.0001)
 Total CM hits reported:                                          2  (0.003163); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.02s 00:00:00.19 Elapsed: 00:00:00.14
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.13
 //
 Query:       MN642564.1  [L=362]
 Description: Mytilus galloprovincialis clone Rtz_Mg_23 SINE retrozyme, complete sequence
@@ -548,7 +548,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01454); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005385); expected (0.0001)
 Total CM hits reported:                                          2  (0.003186); includes 0 truncated hit(s)
 
-# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.08
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.08
 //
 Query:       MN642563.1  [L=360]
 Description: Mytilus galloprovincialis clone Rtz_Mg_21 SINE retrozyme, complete sequence
@@ -602,7 +602,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.02067); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005404); expected (0.0001)
 Total CM hits reported:                                          2  (0.003198); includes 0 truncated hit(s)
 
-# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.09
 //
 Query:       MN642562.1  [L=367]
 Description: Mytilus galloprovincialis clone Rtz_Mg_19 SINE retrozyme, complete sequence
@@ -656,7 +656,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.02455); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00725); expected (0.0001)
 Total CM hits reported:                                          2  (0.003158); includes 0 truncated hit(s)
 
-# CPU time: 0.26u 0.03s 00:00:00.29 Elapsed: 00:00:00.23
+# CPU time: 0.25u 0.02s 00:00:00.27 Elapsed: 00:00:00.23
 //
 Query:       MN642561.1  [L=367]
 Description: Mytilus galloprovincialis clone Rtz_Mg_20 SINE retrozyme, complete sequence
@@ -710,7 +710,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.029); exp
 Envelopes passing  local CM  CYK           filter:               4  (0.007294); expected (0.0001)
 Total CM hits reported:                                          2  (0.003158); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.14
+# CPU time: 0.17u 0.02s 00:00:00.19 Elapsed: 00:00:00.14
 //
 Query:       MN642560.1  [L=363]
 Description: Mytilus galloprovincialis clone Rtz_Mg_16 SINE retrozyme, complete sequence
@@ -764,7 +764,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01465); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005375); expected (0.0001)
 Total CM hits reported:                                          2  (0.00318); includes 0 truncated hit(s)
 
-# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.08
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.08
 //
 Query:       MN642559.1  [L=362]
 Description: Mytilus galloprovincialis clone Rtz_Mg_15 SINE retrozyme, complete sequence
@@ -818,7 +818,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.03321); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007315); expected (0.0001)
 Total CM hits reported:                                          2  (0.003186); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.02s 00:00:00.26 Elapsed: 00:00:00.20
+# CPU time: 0.23u 0.02s 00:00:00.25 Elapsed: 00:00:00.20
 //
 Query:       MN642558.1  [L=363]
 Description: Mytilus galloprovincialis clone Rtz_Mg_07 SINE retrozyme, complete sequence
@@ -872,7 +872,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01433); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005375); expected (0.0001)
 Total CM hits reported:                                          2  (0.00318); includes 0 truncated hit(s)
 
-# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.07
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.07
 //
 Query:       MN642557.1  [L=365]
 Description: Mytilus galloprovincialis clone Rtz_Mg_06 SINE retrozyme, complete sequence
@@ -926,7 +926,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.0245); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.007275); expected (0.0001)
 Total CM hits reported:                                          2  (0.003169); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.02s 00:00:00.27 Elapsed: 00:00:00.22
+# CPU time: 0.24u 0.03s 00:00:00.27 Elapsed: 00:00:00.21
 //
 Query:       MN642556.1  [L=390]
 Description: Mytilus galloprovincialis clone Rtz_Mg_17 SINE retrozyme, complete sequence
@@ -980,7 +980,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03328); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007007); expected (0.0001)
 Total CM hits reported:                                          2  (0.003034); includes 0 truncated hit(s)
 
-# CPU time: 0.39u 0.04s 00:00:00.43 Elapsed: 00:00:00.37
+# CPU time: 0.38u 0.03s 00:00:00.41 Elapsed: 00:00:00.37
 //
 Query:       MN642554.1  [L=367]
 Description: Mytilus galloprovincialis clone Rtz_Mg_02 SINE retrozyme, complete sequence
@@ -1034,7 +1034,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02909); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00725); expected (0.0001)
 Total CM hits reported:                                          2  (0.003158); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.14
+# CPU time: 0.18u 0.02s 00:00:00.20 Elapsed: 00:00:00.14
 //
 Query:       MN642553.1  [L=365]
 Description: Mytilus galloprovincialis clone Rtz_Mg_01 SINE retrozyme, complete sequence
@@ -1088,7 +1088,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.02084); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00732); expected (0.0001)
 Total CM hits reported:                                          2  (0.003169); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MN642552.1  [L=366]
 Description: Mytilus galloprovincialis clone Rtz_Mg_04 SINE retrozyme, complete sequence
@@ -1183,7 +1183,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.02607); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005401); expected (0.0001)
 Total CM hits reported:                                          1  (0.001741); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.02s 00:00:00.21 Elapsed: 00:00:00.14
+# CPU time: 0.19u 0.02s 00:00:00.21 Elapsed: 00:00:00.15
 //
 Query:       BK009951.1  [L=696]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa8, complete sequence
@@ -1250,7 +1250,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02447); e
 Envelopes passing  local CM  CYK           filter:               7  (0.01618); expected (0.0001)
 Total CM hits reported:                                          3  (0.005186); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.00s 00:00:00.27 Elapsed: 00:00:00.13
+# CPU time: 0.26u 0.00s 00:00:00.26 Elapsed: 00:00:00.13
 //
 Query:       BK009950.1  [L=1030]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa7, complete sequence
@@ -1356,7 +1356,7 @@ Envelopes passing glocal HMM envelope defn filter:              17  (0.03855); e
 Envelopes passing  local CM  CYK           filter:               8  (0.01561); expected (0.0001)
 Total CM hits reported:                                          6  (0.008039); includes 0 truncated hit(s)
 
-# CPU time: 0.32u 0.01s 00:00:00.33 Elapsed: 00:00:00.12
+# CPU time: 0.31u 0.01s 00:00:00.32 Elapsed: 00:00:00.11
 //
 Query:       BK009949.1  [L=1038]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa6, complete sequence
@@ -1483,7 +1483,7 @@ Envelopes passing glocal HMM envelope defn filter:              16  (0.03856); e
 Envelopes passing  local CM  CYK           filter:               9  (0.01925); expected (0.0001)
 Total CM hits reported:                                          7  (0.01165); includes 0 truncated hit(s)
 
-# CPU time: 0.38u 0.02s 00:00:00.40 Elapsed: 00:00:00.13
+# CPU time: 0.37u 0.02s 00:00:00.39 Elapsed: 00:00:00.13
 //
 Query:       BK009948.1  [L=943]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa5, complete sequence
@@ -1564,7 +1564,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.021); exp
 Envelopes passing  local CM  CYK           filter:               4  (0.006174); expected (0.0001)
 Total CM hits reported:                                          4  (0.006389); includes 1 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.04
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.04
 //
 Query:       BK009947.1  [L=918]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa4, complete sequence
@@ -1644,7 +1644,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01496); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009538); expected (0.0001)
 Total CM hits reported:                                          4  (0.006204); includes 1 truncated hit(s)
 
-# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.04
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.04
 //
 Query:       BK009946.1  [L=910]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa3, complete sequence
@@ -1711,7 +1711,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01626); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005046); expected (0.0001)
 Total CM hits reported:                                          3  (0.00458); includes 0 truncated hit(s)
 
-# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.06
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.06
 //
 Query:       BK009945.1  [L=789]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa2, complete sequence
@@ -1778,7 +1778,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01544); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005584); expected (0.0001)
 Total CM hits reported:                                          3  (0.005093); includes 0 truncated hit(s)
 
-# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.05
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.05
 //
 Query:       BK009944.1  [L=863]
 Description: TPA_inf: Fragaria x ananassa retrotransposon retrozyme Rtz_Fa1, complete sequence
@@ -1845,7 +1845,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01458); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005124); expected (0.0001)
 Total CM hits reported:                                          3  (0.004767); includes 0 truncated hit(s)
 
-# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.05
+# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.05
 //
 Query:       BK009943.1  [L=1062]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc22, complete sequence
@@ -1925,7 +1925,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.03039); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009946); expected (0.0001)
 Total CM hits reported:                                          4  (0.005756); includes 0 truncated hit(s)
 
-# CPU time: 0.30u 0.02s 00:00:00.32 Elapsed: 00:00:00.13
+# CPU time: 0.28u 0.02s 00:00:00.30 Elapsed: 00:00:00.13
 //
 Query:       BK009942.1  [L=1098]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc21, complete sequence
@@ -2005,7 +2005,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.02579); e
 Envelopes passing  local CM  CYK           filter:               5  (0.007673); expected (0.0001)
 Total CM hits reported:                                          4  (0.005513); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.07
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.06
 //
 Query:       BK009940.1  [L=1059]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc19, complete sequence
@@ -2099,7 +2099,7 @@ Envelopes passing glocal HMM envelope defn filter:              14  (0.03534); e
 Envelopes passing  local CM  CYK           filter:               7  (0.01206); expected (0.0001)
 Total CM hits reported:                                          5  (0.006136); includes 0 truncated hit(s)
 
-# CPU time: 0.52u 0.02s 00:00:00.54 Elapsed: 00:00:00.35
+# CPU time: 0.49u 0.03s 00:00:00.52 Elapsed: 00:00:00.34
 //
 Query:       BK009939.1  [L=1054]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc18, complete sequence
@@ -2285,7 +2285,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.0285); ex
 Envelopes passing  local CM  CYK           filter:               5  (0.009891); expected (0.0001)
 Total CM hits reported:                                          4  (0.005737); includes 0 truncated hit(s)
 
-# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.15
+# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.14
 //
 Query:       BK009937.1  [L=1032]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc16, complete sequence
@@ -2365,7 +2365,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.02521); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01012); expected (0.0001)
 Total CM hits reported:                                          4  (0.005869); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.20
+# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.19
 //
 Query:       BK009936.1  [L=1091]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc15, complete sequence
@@ -2445,7 +2445,7 @@ Envelopes passing glocal HMM envelope defn filter:              15  (0.03322); e
 Envelopes passing  local CM  CYK           filter:               6  (0.01177); expected (0.0001)
 Total CM hits reported:                                          4  (0.005537); includes 0 truncated hit(s)
 
-# CPU time: 0.32u 0.01s 00:00:00.33 Elapsed: 00:00:00.21
+# CPU time: 0.31u 0.02s 00:00:00.33 Elapsed: 00:00:00.21
 //
 Query:       BK009935.1  [L=1106]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc14, complete sequence
@@ -2526,7 +2526,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02129); e
 Envelopes passing  local CM  CYK           filter:               5  (0.00994); expected (0.0001)
 Total CM hits reported:                                          4  (0.005664); includes 0 truncated hit(s)
 
-# CPU time: 0.45u 0.01s 00:00:00.46 Elapsed: 00:00:00.34
+# CPU time: 0.44u 0.01s 00:00:00.45 Elapsed: 00:00:00.33
 //
 Query:       BK009934.1  [L=1116]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc13, complete sequence
@@ -2593,7 +2593,7 @@ Envelopes passing glocal HMM envelope defn filter:              13  (0.03442); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007854); expected (0.0001)
 Total CM hits reported:                                          3  (0.003337); includes 0 truncated hit(s)
 
-# CPU time: 0.46u 0.02s 00:00:00.48 Elapsed: 00:00:00.34
+# CPU time: 0.45u 0.03s 00:00:00.48 Elapsed: 00:00:00.33
 //
 Query:       BK009933.1  [L=1061]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc12, complete sequence
@@ -2673,7 +2673,7 @@ Envelopes passing glocal HMM envelope defn filter:              14  (0.03244); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01032); expected (0.0001)
 Total CM hits reported:                                          4  (0.005874); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.14
+# CPU time: 0.23u 0.00s 00:00:00.23 Elapsed: 00:00:00.13
 //
 Query:       BK009932.1  [L=1039]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc12, complete sequence
@@ -2753,7 +2753,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02187); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01005); expected (0.0001)
 Total CM hits reported:                                          4  (0.005842); includes 0 truncated hit(s)
 
-# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.18
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.17
 //
 Query:       BK009931.1  [L=1037]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc10, complete sequence
@@ -2913,7 +2913,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.02482); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01011); expected (0.0001)
 Total CM hits reported:                                          4  (0.005838); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.10
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.10
 //
 Query:       BK009929.1  [L=1040]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc8, complete sequence
@@ -2993,7 +2993,7 @@ Envelopes passing glocal HMM envelope defn filter:              14  (0.03052); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01007); expected (0.0001)
 Total CM hits reported:                                          4  (0.005838); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.15
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.14
 //
 Query:       BK009928.1  [L=1040]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc7, complete sequence
@@ -3073,7 +3073,7 @@ Envelopes passing glocal HMM envelope defn filter:              16  (0.0348); ex
 Envelopes passing  local CM  CYK           filter:               5  (0.01007); expected (0.0001)
 Total CM hits reported:                                          4  (0.005838); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.15
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.15
 //
 Query:       BK009927.1  [L=1026]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc7, complete sequence
@@ -3153,7 +3153,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.02465); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01009); expected (0.0001)
 Total CM hits reported:                                          4  (0.005138); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.12
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.12
 //
 Query:       BK009926.1  [L=1021]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc5, complete sequence
@@ -3233,7 +3233,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.02738); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01024); expected (0.0001)
 Total CM hits reported:                                          4  (0.005912); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.14
+# CPU time: 0.21u 0.00s 00:00:00.21 Elapsed: 00:00:00.14
 //
 Query:       BK009925.1  [L=1042]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc4, complete sequence
@@ -3313,7 +3313,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01521); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009026); expected (0.0001)
 Total CM hits reported:                                          4  (0.005084); includes 0 truncated hit(s)
 
-# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.04
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.04
 //
 Query:       BK009924.1  [L=1042]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc3, complete sequence
@@ -3393,7 +3393,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01745); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009026); expected (0.0001)
 Total CM hits reported:                                          4  (0.005084); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.06
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.06
 //
 Query:       BK009923.1  [L=1086]
 Description: TPA_inf: Jatropha curcas retrotransposon retrozyme Rtz_Jc2, complete sequence
@@ -3460,7 +3460,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.02734); e
 Envelopes passing  local CM  CYK           filter:               4  (0.01007); expected (0.0001)
 Total CM hits reported:                                          3  (0.003401); includes 0 truncated hit(s)
 
-# CPU time: 0.51u 0.01s 00:00:00.52 Elapsed: 00:00:00.46
+# CPU time: 0.50u 0.01s 00:00:00.51 Elapsed: 00:00:00.45
 //
 Query:       BK009922.1  [L=1085]
 Description: TPA_inf: Jatropha curcas strain Palawan retrotransposon retrozyme Rtz_Jc1, complete sequence
@@ -3527,7 +3527,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.02752); e
 Envelopes passing  local CM  CYK           filter:               4  (0.01007); expected (0.0001)
 Total CM hits reported:                                          3  (0.003403); includes 0 truncated hit(s)
 
-# CPU time: 0.51u 0.01s 00:00:00.52 Elapsed: 00:00:00.46
+# CPU time: 0.50u 0.01s 00:00:00.51 Elapsed: 00:00:00.45
 //
 Query:       KX281163.1  [L=680]
 Description: Fragaria x ananassa clone Rtz_Fa_50 retrotransposon retrozyme, complete sequence
@@ -3594,7 +3594,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02745); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009846); expected (0.0001)
 Total CM hits reported:                                          3  (0.006938); includes 1 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.13
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.12
 //
 Query:       KX281162.1  [L=674]
 Description: Fragaria x ananassa clone Rtz_Fa_49c retrotransposon retrozyme, complete sequence
@@ -3661,7 +3661,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02814); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009907); expected (0.0001)
 Total CM hits reported:                                          3  (0.006981); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.12
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       KX281161.1  [L=677]
 Description: Fragaria x ananassa clone Rtz_Fa_48c retrotransposon retrozyme, complete sequence
@@ -3795,7 +3795,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02745); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009856); expected (0.0001)
 Total CM hits reported:                                          3  (0.006945); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.13
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       KX281159.1  [L=674]
 Description: Fragaria x ananassa clone Rtz_Fa_45c retrotransposon retrozyme, complete sequence
@@ -3862,7 +3862,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02817); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009907); expected (0.0001)
 Total CM hits reported:                                          3  (0.006981); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.13
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       KX281158.1  [L=674]
 Description: Fragaria x ananassa clone Rtz_Fa_44c retrotransposon retrozyme, complete sequence
@@ -3929,7 +3929,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02817); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009907); expected (0.0001)
 Total CM hits reported:                                          3  (0.006981); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.00s 00:00:00.21 Elapsed: 00:00:00.12
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       KX281157.1  [L=674]
 Description: Fragaria x ananassa clone Rtz_Fa_43 retrotransposon retrozyme, complete sequence
@@ -4063,7 +4063,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02887); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009918); expected (0.0001)
 Total CM hits reported:                                          3  (0.006988); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.12
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.11
 //
 Query:       KX281155.1  [L=674]
 Description: Fragaria x ananassa clone Rtz_Fa_41 retrotransposon retrozyme, complete sequence
@@ -4130,7 +4130,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02817); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009907); expected (0.0001)
 Total CM hits reported:                                          3  (0.006981); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.12
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       KX273079.1  [L=753]
 Description: Jatropha curcas clone Rtz_Jc_202 retrotransposon retrozyme, complete sequence
@@ -4184,7 +4184,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02192); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00727); expected (0.0001)
 Total CM hits reported:                                          2  (0.004677); includes 1 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.06
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.06
 //
 Query:       KX273078.1  [L=751]
 Description: Jatropha curcas clone Rtz_Jc_201 retrotransposon retrozyme, complete sequence
@@ -4238,7 +4238,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02067); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007284); expected (0.0001)
 Total CM hits reported:                                          2  (0.004686); includes 1 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.05
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.04
 //
 Query:       KX273077.1  [L=752]
 Description: Jatropha curcas clone Rtz_Jc_200 retrotransposon retrozyme, complete sequence
@@ -4292,7 +4292,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02194); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007277); expected (0.0001)
 Total CM hits reported:                                          2  (0.004682); includes 1 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.06
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.06
 //
 Query:       KX273076.1  [L=754]
 Description: Jatropha curcas clone Rtz_Jc_069 retrotransposon retrozyme, complete sequence
@@ -4346,7 +4346,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.0219); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.007263); expected (0.0001)
 Total CM hits reported:                                          2  (0.004673); includes 1 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.06
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.06
 //
 Query:       KX273075.1  [L=753]
 Description: Jatropha curcas clone Rtz_Jc_067 retrotransposon retrozyme, complete sequence
@@ -4400,7 +4400,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02192); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00727); expected (0.0001)
 Total CM hits reported:                                          2  (0.004677); includes 1 truncated hit(s)
 
-# CPU time: 0.17u 0.02s 00:00:00.19 Elapsed: 00:00:00.07
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.06
 //
 Query:       KX273074.1  [L=709]
 Description: Jatropha curcas clone Rtz_Jc_065 retrotransposon retrozyme, complete sequence
@@ -4454,7 +4454,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.0185); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.00759); expected (0.0001)
 Total CM hits reported:                                          2  (0.004883); includes 1 truncated hit(s)
 
-# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.04
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.04
 //
 Query:       KX273073.1  [L=709]
 Description: Jatropha curcas clone Rtz_Jc_064 retrotransposon retrozyme, complete sequence
@@ -4508,7 +4508,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01847); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00759); expected (0.0001)
 Total CM hits reported:                                          2  (0.004883); includes 1 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.05
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.04
 //
 Query:       KX273071.1  [L=708]
 Description: Jatropha curcas clone Rtz_Jc_062 retrotransposon retrozyme, complete sequence
@@ -4657,7 +4657,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.0188); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.007263); expected (0.0001)
 Total CM hits reported:                                          2  (0.004673); includes 1 truncated hit(s)
 
-# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.05
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.04
 //
 Query:       KX273068.1  [L=708]
 Description: Jatropha curcas clone Rtz_Jc_056 retrotransposon retrozyme, complete sequence
@@ -4711,7 +4711,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01452); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005212); expected (0.0001)
 Total CM hits reported:                                          2  (0.004888); includes 1 truncated hit(s)
 
-# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.04
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.04
 //
 Query:       KX273067.1  [L=664]
 Description: Jatropha curcas clone Rtz_Jc_055 retrotransposon retrozyme, complete sequence
@@ -4765,7 +4765,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.01149); e
 Envelopes passing  local CM  CYK           filter:               3  (0.005452); expected (0.0001)
 Total CM hits reported:                                          2  (0.005113); includes 1 truncated hit(s)
 
-# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.02
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.02
 //
 Query:       KX273065.1  [L=664]
 Description: Jatropha curcas clone Rtz_Jc_053 retrotransposon retrozyme, complete sequence

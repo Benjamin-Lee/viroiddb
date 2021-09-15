@@ -769,5 +769,5 @@ HDV-F-prausnitzii    RF02682   M21012.1             -          cm        1      
 # Target file:     ../db/raw/ribozymes.cm
 # Option settings: cmscan --tblout ../db/2021-09-07/ribozyviria.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/ribozyviria.fasta 
 # Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
-# Date:            Wed Sep  8 05:20:51 2021
+# Date:            Mon Sep 13 16:55:11 2021
 # [ok]

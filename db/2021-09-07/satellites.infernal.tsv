@@ -29,5 +29,5 @@ Hammerhead_1         RF00163   HQ680397.1           -          cm        7      
 # Target file:     ../db/raw/ribozymes.cm
 # Option settings: cmscan --tblout ../db/2021-09-07/satellites.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/satellites.fasta 
 # Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
-# Date:            Wed Sep  8 05:20:52 2021
+# Date:            Mon Sep 13 16:55:11 2021
 # [ok]

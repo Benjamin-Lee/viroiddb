@@ -220,5 +220,5 @@ Hammerhead_HH9       RF02275   KX273065.1           -          cm        1      
 # Target file:     ../db/raw/ribozymes.cm
 # Option settings: cmscan --tblout ../db/2021-09-07/retrozymes.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/retrozymes.fasta 
 # Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
-# Date:            Wed Sep  8 05:20:22 2021
+# Date:            Mon Sep 13 16:54:43 2021
 # [ok]

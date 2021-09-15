@@ -76,7 +76,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.015); exp
 Envelopes passing  local CM  CYK           filter:               4  (0.008892); expected (0.0001)
 Total CM hits reported:                                          3  (0.007499); includes 1 truncated hit(s)
 
-# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.07
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.06
 //
 Query:       NC_028131.1  [L=328]
 Description: Grapevine latent viroid, complete genome
@@ -189,7 +189,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.02647); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01001); expected (0.0001)
 Total CM hits reported:                                          4  (0.008782); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.02s 00:00:00.23 Elapsed: 00:00:00.13
+# CPU time: 0.20u 0.02s 00:00:00.22 Elapsed: 00:00:00.13
 //
 Query:       NC_022893.1  [L=412]
 Description: Cherry leaf scorch small circular viroid-like RNA 1 isolate es.10, complete sequence
@@ -275,7 +275,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
 //
 Query:       NC_011362.1  [L=356]
 Description: Mulberry small circular viroid-like RNA 1, complete genome
@@ -329,7 +329,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.01874); e
 Envelopes passing  local CM  CYK           filter:               2  (0.005489); expected (0.0001)
 Total CM hits reported:                                          2  (0.004899); includes 0 truncated hit(s)
 
-# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.02
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.02
 //
 Query:       NC_010308.1  [L=396]
 Description: Persimmon viroid, complete genome
@@ -361,7 +361,7 @@ Envelopes passing glocal HMM envelope defn filter:               3  (0.01159); e
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
 //
 Query:       MT577534.1  [L=358]
 Description: Fig hammerhead viroid-like RNA clone A1, complete sequence
@@ -441,7 +441,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02848); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01794); expected (0.0001)
 Total CM hits reported:                                          4  (0.01663); includes 1 truncated hit(s)
 
-# CPU time: 0.52u 0.01s 00:00:00.53 Elapsed: 00:00:00.48
+# CPU time: 0.49u 0.01s 00:00:00.50 Elapsed: 00:00:00.45
 //
 Query:       MT577535.1  [L=358]
 Description: Fig hammerhead viroid-like RNA clone A2, complete sequence
@@ -508,7 +508,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.0226); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.01573); expected (0.0001)
 Total CM hits reported:                                          3  (0.01483); includes 1 truncated hit(s)
 
-# CPU time: 0.49u 0.01s 00:00:00.50 Elapsed: 00:00:00.46
+# CPU time: 0.46u 0.01s 00:00:00.47 Elapsed: 00:00:00.43
 //
 Query:       MT577536.1  [L=360]
 Description: Fig hammerhead viroid-like RNA clone A3, complete sequence
@@ -588,7 +588,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02842); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01792); expected (0.0001)
 Total CM hits reported:                                          4  (0.01666); includes 1 truncated hit(s)
 
-# CPU time: 0.53u 0.01s 00:00:00.54 Elapsed: 00:00:00.48
+# CPU time: 0.50u 0.01s 00:00:00.51 Elapsed: 00:00:00.46
 //
 Query:       MT577537.1  [L=356]
 Description: Fig hammerhead viroid-like RNA clone A4, complete sequence
@@ -668,7 +668,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02858); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01801); expected (0.0001)
 Total CM hits reported:                                          4  (0.01669); includes 1 truncated hit(s)
 
-# CPU time: 0.52u 0.01s 00:00:00.53 Elapsed: 00:00:00.48
+# CPU time: 0.50u 0.02s 00:00:00.52 Elapsed: 00:00:00.45
 //
 Query:       MT577538.1  [L=357]
 Description: Fig hammerhead viroid-like RNA clone A5, complete sequence
@@ -748,7 +748,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02853); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01798); expected (0.0001)
 Total CM hits reported:                                          4  (0.01666); includes 1 truncated hit(s)
 
-# CPU time: 0.53u 0.01s 00:00:00.54 Elapsed: 00:00:00.48
+# CPU time: 0.49u 0.01s 00:00:00.50 Elapsed: 00:00:00.45
 //
 Query:       MT577539.1  [L=358]
 Description: Fig hammerhead viroid-like RNA clone B7, complete sequence
@@ -828,7 +828,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02848); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01813); expected (0.0001)
 Total CM hits reported:                                          4  (0.01663); includes 1 truncated hit(s)
 
-# CPU time: 0.52u 0.01s 00:00:00.53 Elapsed: 00:00:00.48
+# CPU time: 0.49u 0.01s 00:00:00.50 Elapsed: 00:00:00.45
 //
 Query:       MT577540.1  [L=357]
 Description: Fig hammerhead viroid-like RNA clone C8, complete sequence
@@ -908,7 +908,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02853); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01798); expected (0.0001)
 Total CM hits reported:                                          4  (0.01666); includes 1 truncated hit(s)
 
-# CPU time: 0.53u 0.01s 00:00:00.54 Elapsed: 00:00:00.48
+# CPU time: 0.49u 0.01s 00:00:00.50 Elapsed: 00:00:00.45
 //
 Query:       MT577541.1  [L=358]
 Description: Fig hammerhead viroid-like RNA clone C9, complete sequence
@@ -988,7 +988,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02848); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01794); expected (0.0001)
 Total CM hits reported:                                          4  (0.007684); includes 0 truncated hit(s)
 
-# CPU time: 0.43u 0.01s 00:00:00.44 Elapsed: 00:00:00.39
+# CPU time: 0.40u 0.01s 00:00:00.41 Elapsed: 00:00:00.36
 //
 Query:       MT577542.1  [L=359]
 Description: Fig hammerhead viroid-like RNA clone C10, complete sequence
@@ -1068,7 +1068,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02842); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01791); expected (0.0001)
 Total CM hits reported:                                          4  (0.0166); includes 1 truncated hit(s)
 
-# CPU time: 0.53u 0.01s 00:00:00.54 Elapsed: 00:00:00.48
+# CPU time: 0.49u 0.01s 00:00:00.50 Elapsed: 00:00:00.45
 //
 Query:       MK791515.1  [L=375]
 Description: Grapevine hammerhead viroid-like RNA isolate GHVd-Greece-I, complete sequence
@@ -1122,7 +1122,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03122); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01504); expected (0.0001)
 Total CM hits reported:                                          2  (0.005745); includes 1 truncated hit(s)
 
-# CPU time: 0.56u 0.02s 00:00:00.58 Elapsed: 00:00:00.55
+# CPU time: 0.53u 0.02s 00:00:00.55 Elapsed: 00:00:00.51
 //
 Query:       MK791516.1  [L=375]
 Description: Grapevine hammerhead viroid-like RNA isolate GHVd-Greece-II, complete sequence
@@ -1176,7 +1176,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03113); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01504); expected (0.0001)
 Total CM hits reported:                                          2  (0.005745); includes 1 truncated hit(s)
 
-# CPU time: 0.56u 0.02s 00:00:00.58 Elapsed: 00:00:00.55
+# CPU time: 0.53u 0.02s 00:00:00.55 Elapsed: 00:00:00.52
 //
 Query:       LC199970.1  [L=370]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, clone: AK6-2-T
@@ -1208,7 +1208,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
 //
 Query:       LC199971.1  [L=370]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, clone: AK6-T2-T
@@ -1240,7 +1240,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
 //
 Query:       LC199972.1  [L=373]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, clone: HS1-T
@@ -1372,7 +1372,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.03526); e
 Envelopes passing  local CM  CYK           filter:               6  (0.01943); expected (0.0001)
 Total CM hits reported:                                          3  (0.007236); includes 1 truncated hit(s)
 
-# CPU time: 0.63u 0.02s 00:00:00.65 Elapsed: 00:00:00.55
+# CPU time: 0.59u 0.02s 00:00:00.61 Elapsed: 00:00:00.52
 //
 Query:       MF093720.1  [L=375]
 Description: Grapevine hammerhead viroid-like RNA isolate PV28-Fr, complete sequence
@@ -1426,7 +1426,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03109); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01504); expected (0.0001)
 Total CM hits reported:                                          2  (0.005745); includes 1 truncated hit(s)
 
-# CPU time: 0.57u 0.02s 00:00:00.59 Elapsed: 00:00:00.55
+# CPU time: 0.53u 0.02s 00:00:00.55 Elapsed: 00:00:00.51
 //
 Query:       MG662372.1  [L=433]
 Description: Apple hammerhead viroid-like RNA isolate AHVd-17-WA1, complete sequence
@@ -1507,7 +1507,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.03582); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01509); expected (0.0001)
 Total CM hits reported:                                          4  (0.009871); includes 1 truncated hit(s)
 
-# CPU time: 0.27u 0.02s 00:00:00.29 Elapsed: 00:00:00.13
+# CPU time: 0.25u 0.02s 00:00:00.27 Elapsed: 00:00:00.12
 //
 Query:       MG662373.1  [L=433]
 Description: Apple hammerhead viroid-like RNA isolate AHVd-17-WA2, complete sequence
@@ -1588,7 +1588,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.03586); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01509); expected (0.0001)
 Total CM hits reported:                                          4  (0.009871); includes 1 truncated hit(s)
 
-# CPU time: 0.28u 0.01s 00:00:00.29 Elapsed: 00:00:00.14
+# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.13
 //
 Query:       MG662374.1  [L=434]
 Description: Apple hammerhead viroid-like RNA isolate AHVd-17-OH, complete sequence
@@ -1669,7 +1669,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02098); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009935); expected (0.0001)
 Total CM hits reported:                                          4  (0.009259); includes 1 truncated hit(s)
 
-# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.04
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.04
 //
 Query:       MG662375.1  [L=419]
 Description: Apple hammerhead viroid-like RNA isolate AHVd-17-Italy, complete sequence
@@ -1736,7 +1736,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.02968); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01107); expected (0.0001)
 Total CM hits reported:                                          3  (0.007613); includes 1 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.13
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.12
 //
 Query:       MG662376.1  [L=423]
 Description: Apple hammerhead viroid-like RNA isolate AHVd-17-Japan, complete sequence
@@ -1803,7 +1803,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.02888); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01052); expected (0.0001)
 Total CM hits reported:                                          3  (0.007038); includes 1 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.12
 //
 Query:       MF804513.1  [L=373]
 Description: Apple fruit crinkle viroid clone Fuyu49, complete genome
@@ -2062,7 +2062,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02396); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007961); expected (0.0001)
 Total CM hits reported:                                          3  (0.007443); includes 1 truncated hit(s)
 
-# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.05
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.05
 //
 Query:       MF402930.1  [L=433]
 Description: Apple hammerhead viroid-like circular RNA isolate PG_NS15_03, complete genome
@@ -2143,7 +2143,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02074); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009791); expected (0.0001)
 Total CM hits reported:                                          4  (0.009274); includes 1 truncated hit(s)
 
-# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.05
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.04
 //
 Query:       MF402931.1  [L=433]
 Description: Apple hammerhead viroid-like circular RNA isolate PG_NS15_04, complete genome
@@ -2291,7 +2291,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02074); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009791); expected (0.0001)
 Total CM hits reported:                                          4  (0.009194); includes 1 truncated hit(s)
 
-# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.05
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.04
 //
 Query:       MF402933.1  [L=433]
 Description: Apple hammerhead viroid-like circular RNA isolate PG_OK15_02, complete genome
@@ -2453,7 +2453,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01692); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009951); expected (0.0001)
 Total CM hits reported:                                          4  (0.009155); includes 1 truncated hit(s)
 
-# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.04
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.04
 //
 Query:       MF402935.1  [L=433]
 Description: Apple hammerhead viroid-like circular RNA isolate PG_OK15_05, complete genome
@@ -2520,7 +2520,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.03117); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007961); expected (0.0001)
 Total CM hits reported:                                          3  (0.007443); includes 1 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.13
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.12
 //
 Query:       MF402936.1  [L=433]
 Description: Apple hammerhead viroid-like circular RNA isolate PG_OK15_06, complete genome
@@ -2682,7 +2682,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.0166); ex
 Envelopes passing  local CM  CYK           filter:               5  (0.009712); expected (0.0001)
 Total CM hits reported:                                          4  (0.009274); includes 1 truncated hit(s)
 
-# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.04
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.04
 //
 Query:       MF402938.1  [L=433]
 Description: Apple hammerhead viroid-like circular RNA isolate PG_OK15_10, complete genome
@@ -2763,7 +2763,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.02074); e
 Envelopes passing  local CM  CYK           filter:               5  (0.009791); expected (0.0001)
 Total CM hits reported:                                          4  (0.009194); includes 1 truncated hit(s)
 
-# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.05
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.04
 //
 Query:       LC169594.1  [L=373]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, isolate: perHS1
@@ -2859,7 +2859,7 @@ Envelopes passing glocal HMM envelope defn filter:               2  (0.004142); 
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.00
 //
 Query:       KR736334.1  [L=375]
 Description: Grapevine hammerhead viroid-like RNA isolate GHVd-Italy-I, complete sequence
@@ -2913,7 +2913,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03122); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01504); expected (0.0001)
 Total CM hits reported:                                          2  (0.005745); includes 1 truncated hit(s)
 
-# CPU time: 0.56u 0.02s 00:00:00.58 Elapsed: 00:00:00.55
+# CPU time: 0.53u 0.02s 00:00:00.55 Elapsed: 00:00:00.51
 //
 Query:       LC006862.1  [L=402]
 Description: Persimmon viroid genomic RNA, complete genome
@@ -2945,7 +2945,7 @@ Envelopes passing glocal HMM envelope defn filter:               3  (0.0113); ex
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
 //
 Query:       KJ532931.1  [L=357]
 Description: Mulberry small circular viroid-like RNA 1, complete sequence
@@ -2999,7 +2999,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.03111); e
 Envelopes passing  local CM  CYK           filter:               3  (0.008015); expected (0.0001)
 Total CM hits reported:                                          2  (0.007381); includes 1 truncated hit(s)
 
-# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.05
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.05
 //
 Query:       KJ532932.1  [L=357]
 Description: Mulberry small circular viroid-like RNA 2, complete sequence
@@ -3053,7 +3053,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.03143); e
 Envelopes passing  local CM  CYK           filter:               3  (0.008015); expected (0.0001)
 Total CM hits reported:                                          2  (0.007381); includes 1 truncated hit(s)
 
-# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.05
+# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.04
 //
 Query:       KJ532933.1  [L=356]
 Description: Mulberry small circular viroid-like RNA 3, complete sequence
@@ -3107,7 +3107,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.03157); e
 Envelopes passing  local CM  CYK           filter:               3  (0.008029); expected (0.0001)
 Total CM hits reported:                                          2  (0.007394); includes 1 truncated hit(s)
 
-# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.05
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.04
 //
 Query:       KC993891.1  [L=412]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1-es.1 hammerhead ribozyme genes, complete sequence
@@ -3161,7 +3161,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.01067); e
 Envelopes passing  local CM  CYK           filter:               3  (0.006095); expected (0.0001)
 Total CM hits reported:                                          2  (0.006095); includes 1 truncated hit(s)
 
-# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
 //
 Query:       KC993892.1  [L=413]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1-es.2 hammerhead ribozyme genes, complete sequence
@@ -3215,7 +3215,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01451); e
 Envelopes passing  local CM  CYK           filter:               3  (0.006126); expected (0.0001)
 Total CM hits reported:                                          2  (0.006126); includes 1 truncated hit(s)
 
-# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
 //
 Query:       KC993893.1  [L=412]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1-es.3 hammerhead ribozyme genes, complete sequence
@@ -3269,7 +3269,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.0145); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.006136); expected (0.0001)
 Total CM hits reported:                                          2  (0.006136); includes 1 truncated hit(s)
 
-# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.05
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.05
 //
 Query:       KC993894.1  [L=411]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1-es.4 hammerhead ribozyme genes, complete sequence
@@ -3377,7 +3377,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02174); e
 Envelopes passing  local CM  CYK           filter:               3  (0.006146); expected (0.0001)
 Total CM hits reported:                                          2  (0.006146); includes 1 truncated hit(s)
 
-# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.08
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.08
 //
 Query:       KC993896.1  [L=414]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1-es.7 hammerhead ribozyme genes, complete sequence
@@ -3431,7 +3431,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01441); e
 Envelopes passing  local CM  CYK           filter:               3  (0.006116); expected (0.0001)
 Total CM hits reported:                                          2  (0.006116); includes 1 truncated hit(s)
 
-# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
 //
 Query:       KC993897.1  [L=413]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1-es.8 hammerhead ribozyme genes, complete sequence
@@ -3606,7 +3606,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01384); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007948); expected (0.0001)
 Total CM hits reported:                                          3  (0.007783); includes 1 truncated hit(s)
 
-# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
 //
 Query:       KF516925.1  [L=412]
 Description: Cherry leaf scorch small circular viroid-like RNA 1 isolate es.12, complete sequence
@@ -3660,7 +3660,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.0145); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.006136); expected (0.0001)
 Total CM hits reported:                                          2  (0.006136); includes 1 truncated hit(s)
 
-# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
 //
 Query:       KF516926.1  [L=412]
 Description: Cherry leaf scorch small circular viroid-like RNA 1 isolate es.14, complete sequence
@@ -3714,7 +3714,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01445); e
 Envelopes passing  local CM  CYK           filter:               3  (0.006136); expected (0.0001)
 Total CM hits reported:                                          2  (0.006136); includes 1 truncated hit(s)
 
-# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
 //
 Query:       AB795264.1  [L=372]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, isolate: vir1
@@ -3746,7 +3746,7 @@ Envelopes passing glocal HMM envelope defn filter:               1  (0.003394); 
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
 //
 Query:       AB795265.1  [L=371]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, isolate: vir2
@@ -3778,7 +3778,7 @@ Envelopes passing glocal HMM envelope defn filter:               1  (0.0034); ex
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.00
 //
 Query:       AB795266.1  [L=371]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, isolate: vir3
@@ -3906,7 +3906,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
 //
 Query:       AB795270.1  [L=371]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, isolate: vir7
@@ -4024,7 +4024,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.00
 //
 Query:       HM107845.1  [L=361]
 Description: Rubber viroid India/2009 isolate KER3, complete genome
@@ -4056,7 +4056,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
 //
 Query:       HM107846.1  [L=361]
 Description: Rubber viroid India/2009 isolate KER4, complete genome
@@ -4152,7 +4152,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
 //
 Query:       AB366020.1  [L=370]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, clone: Kaki13-5
@@ -4184,7 +4184,7 @@ Envelopes passing glocal HMM envelope defn filter:               0  (0); expecte
 Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
 //
 Query:       AB366021.1  [L=373]
 Description: Apple fruit crinkle viroid genomic RNA, complete genome, clone: Kaki13-8
@@ -4284,7 +4284,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01565); e
 Envelopes passing  local CM  CYK           filter:               4  (0.009059); expected (0.0001)
 Total CM hits reported:                                          3  (0.007536); includes 1 truncated hit(s)
 
-# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.07
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.06
 //
 Query:       DQ357617.1  [L=402]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.71, complete genome
@@ -4339,7 +4339,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.03919); e
 Envelopes passing  local CM  CYK           filter:               2  (0.004145); expected (0.0001)
 Total CM hits reported:                                          2  (0.003978); includes 0 truncated hit(s)
 
-# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.08
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.07
 //
 Query:       DQ357618.1  [L=404]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.78, complete genome
@@ -4394,7 +4394,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.02233); e
 Envelopes passing  local CM  CYK           filter:               2  (0.004131); expected (0.0001)
 Total CM hits reported:                                          2  (0.003964); includes 0 truncated hit(s)
 
-# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
 //
 Query:       DQ357619.1  [L=402]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.72, complete genome
@@ -4462,7 +4462,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01809); e
 Envelopes passing  local CM  CYK           filter:               4  (0.009169); expected (0.0001)
 Total CM hits reported:                                          3  (0.009169); includes 1 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.12
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.11
 //
 Query:       DQ357620.1  [L=402]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.7O, complete genome
@@ -4517,7 +4517,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.03479); e
 Envelopes passing  local CM  CYK           filter:               2  (0.006155); expected (0.0001)
 Total CM hits reported:                                          2  (0.003852); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.17
+# CPU time: 0.20u 0.02s 00:00:00.22 Elapsed: 00:00:00.16
 //
 Query:       DQ357621.1  [L=377]
 Description: Cherry small circular viroid-like RNA 2 isolate cscRNA2.81, complete genome
@@ -4572,7 +4572,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01215); e
 Envelopes passing  local CM  CYK           filter:               2  (0.005419); expected (0.0001)
 Total CM hits reported:                                          2  (0.003889); includes 0 truncated hit(s)
 
-# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
 //
 Query:       DQ357622.1  [L=376]
 Description: Cherry small circular viroid-like RNA 2 isolate cscRNA2.82, complete genome
@@ -4627,7 +4627,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.01576); e
 Envelopes passing  local CM  CYK           filter:               2  (0.004027); expected (0.0001)
 Total CM hits reported:                                          2  (0.003896); includes 0 truncated hit(s)
 
-# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
 //
 Query:       DQ357623.1  [L=372]
 Description: Cherry small circular viroid-like RNA 2 isolate cscRNA2.139, complete genome
@@ -4682,7 +4682,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01248); e
 Envelopes passing  local CM  CYK           filter:               2  (0.005466); expected (0.0001)
 Total CM hits reported:                                          2  (0.003923); includes 0 truncated hit(s)
 
-# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
 //
 Query:       DQ357624.1  [L=394]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.103, complete genome
@@ -4750,7 +4750,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.03009); e
 Envelopes passing  local CM  CYK           filter:               4  (0.008106); expected (0.0001)
 Total CM hits reported:                                          3  (0.007766); includes 1 truncated hit(s)
 
-# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.06
+# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.05
 //
 Query:       DQ357625.1  [L=396]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.114, complete genome
@@ -4817,7 +4817,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.0129); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.009389); expected (0.0001)
 Total CM hits reported:                                          3  (0.009178); includes 1 truncated hit(s)
 
-# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.09
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.08
 //
 Query:       DQ357626.1  [L=397]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.113, complete genome
@@ -4898,7 +4898,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.0293); ex
 Envelopes passing  local CM  CYK           filter:               5  (0.01136); expected (0.0001)
 Total CM hits reported:                                          4  (0.009162); includes 1 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.09
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
 //
 Query:       DQ357627.1  [L=402]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.100, complete genome
@@ -4965,7 +4965,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.03056); e
 Envelopes passing  local CM  CYK           filter:               4  (0.009504); expected (0.0001)
 Total CM hits reported:                                          3  (0.007662); includes 1 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.11
+# CPU time: 0.17u 0.00s 00:00:00.17 Elapsed: 00:00:00.10
 //
 Query:       DQ357628.1  [L=403]
 Description: Cherry small circular viroid-like RNA 1 isolate cscRNA1.150, complete genome
@@ -5033,6 +5033,6 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.02709); e
 Envelopes passing  local CM  CYK           filter:               4  (0.009697); expected (0.0001)
 Total CM hits reported:                                          3  (0.007691); includes 1 truncated hit(s)
 
-# CPU time: 0.17u 0.00s 00:00:00.17 Elapsed: 00:00:00.11
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.10
 //
 [ok]

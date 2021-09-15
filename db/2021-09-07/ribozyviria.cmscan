@@ -75,7 +75,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01016); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006054); expected (0.0001)
 Total CM hits reported:                                          3  (0.004366); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.07
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.06
 //
 Query:       NC_040845.1  [L=1706]
 Description: Avian HDV-like agent, complete genome
@@ -142,7 +142,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01352); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006296); expected (0.0001)
 Total CM hits reported:                                          3  (0.004685); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.02s 00:00:00.23 Elapsed: 00:00:00.15
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.13
 //
 Query:       NC_001653.2  [L=1682]
 Description: Hepatitis delta virus, complete genome
@@ -210,7 +210,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.0103); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.00551); expected (0.0001)
 Total CM hits reported:                                          3  (0.004408); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.09
 //
 Query:       MT050453.1  [L=1679]
 Description: Hepatitis delta virus isolate TN10, complete genome
@@ -291,7 +291,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01662); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005979); expected (0.0001)
 Total CM hits reported:                                          4  (0.005781); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.14
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.13
 //
 Query:       LC575944.1  [L=1708]
 Description: Lonchura striata deltavirus L.striata/Japan/SWH1/2020 RNA, complete genome
@@ -358,7 +358,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01546); e
 Envelopes passing  local CM  CYK           filter:               6  (0.008078); expected (0.0001)
 Total CM hits reported:                                          3  (0.00434); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.16
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.15
 //
 Query:       MN984407.1  [L=1676]
 Description: Hepatitis delta virus isolate HDV_Kyr1376, complete genome
@@ -426,7 +426,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01224); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007356); expected (0.0001)
 Total CM hits reported:                                          3  (0.004387); includes 0 truncated hit(s)
 
-# CPU time: 0.30u 0.01s 00:00:00.31 Elapsed: 00:00:00.21
+# CPU time: 0.29u 0.01s 00:00:00.30 Elapsed: 00:00:00.20
 //
 Query:       MN984408.1  [L=1682]
 Description: Hepatitis delta virus isolate HDV_Kyr1564, complete genome
@@ -494,7 +494,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01109); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004556); expected (0.0001)
 Total CM hits reported:                                          3  (0.004474); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MN984409.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr660, complete genome
@@ -562,7 +562,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01456); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00453); expected (0.0001)
 Total CM hits reported:                                          3  (0.004431); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.13
+# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.12
 //
 Query:       MN984410.1  [L=1678]
 Description: Hepatitis delta virus isolate HDV_Kyr436, complete genome
@@ -630,7 +630,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01013); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004466); expected (0.0001)
 Total CM hits reported:                                          3  (0.004383); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.12
+# CPU time: 0.17u 0.00s 00:00:00.17 Elapsed: 00:00:00.12
 //
 Query:       MN984411.1  [L=1682]
 Description: Hepatitis delta virus isolate HDV_Kyr445, complete genome
@@ -698,7 +698,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01109); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004556); expected (0.0001)
 Total CM hits reported:                                          3  (0.004474); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       MN984412.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr599, complete genome
@@ -766,7 +766,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01914); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.02s 00:00:00.25 Elapsed: 00:00:00.10
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.10
 //
 Query:       MN984413.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr914, complete genome
@@ -847,7 +847,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01244); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006061); expected (0.0001)
 Total CM hits reported:                                          4  (0.005847); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.14
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.14
 //
 Query:       MN984414.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr127, complete genome
@@ -915,7 +915,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009899); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004381); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.09
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.08
 //
 Query:       MN984415.1  [L=1682]
 Description: Hepatitis delta virus isolate HDV_Kyr675, complete genome
@@ -983,7 +983,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01155); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005477); expected (0.0001)
 Total CM hits reported:                                          3  (0.004408); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.10
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.10
 //
 Query:       MN984416.1  [L=1680]
 Description: Hepatitis delta virus isolate HDV_Kyr393, complete genome
@@ -1051,7 +1051,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.0125); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.004495); expected (0.0001)
 Total CM hits reported:                                          3  (0.004412); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MN984417.1  [L=1680]
 Description: Hepatitis delta virus isolate HDV_Kyr1009, complete genome
@@ -1119,7 +1119,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01017); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.08
 //
 Query:       MN984418.1  [L=1681]
 Description: Hepatitis delta virus isolate HDV_Kyr476, complete genome
@@ -1187,7 +1187,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01017); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004492); expected (0.0001)
 Total CM hits reported:                                          3  (0.00441); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MN984419.1  [L=1683]
 Description: Hepatitis delta virus isolate HDV_Kyr850, complete genome
@@ -1255,7 +1255,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01192); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MN984420.1  [L=1673]
 Description: Hepatitis delta virus isolate HDV_Kyr731, complete genome
@@ -1323,7 +1323,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01726); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006409); expected (0.0001)
 Total CM hits reported:                                          3  (0.00441); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.02s 00:00:00.26 Elapsed: 00:00:00.14
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.13
 //
 Query:       MN984421.1  [L=1684]
 Description: Hepatitis delta virus isolate HDV_Kyr734, complete genome
@@ -1391,7 +1391,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01193); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004486); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MN984422.1  [L=1685]
 Description: Hepatitis delta virus isolate HDV_Kyr683, complete genome
@@ -1527,7 +1527,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.009171); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004536); expected (0.0001)
 Total CM hits reported:                                          3  (0.004453); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MN984424.1  [L=1677]
 Description: Hepatitis delta virus isolate HDV_Kyr1279, complete genome
@@ -1595,7 +1595,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009282); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004451); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MN984425.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr467, complete genome
@@ -1663,7 +1663,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01094); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MN984426.1  [L=1671]
 Description: Hepatitis delta virus isolate HDV_Kyr493, complete genome
@@ -1731,7 +1731,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01283); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.08
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.07
 //
 Query:       MN984427.1  [L=1681]
 Description: Hepatitis delta virus isolate HDV_Kyr893, complete genome
@@ -1799,7 +1799,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01672); e
 Envelopes passing  local CM  CYK           filter:               4  (0.004887); expected (0.0001)
 Total CM hits reported:                                          3  (0.00441); includes 0 truncated hit(s)
 
-# CPU time: 0.29u 0.02s 00:00:00.31 Elapsed: 00:00:00.16
+# CPU time: 0.27u 0.02s 00:00:00.29 Elapsed: 00:00:00.15
 //
 Query:       MN984428.1  [L=1677]
 Description: Hepatitis delta virus isolate HDV_Kyr1290, complete genome
@@ -1867,7 +1867,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009232); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004451); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MN984429.1  [L=1676]
 Description: Hepatitis delta virus isolate HDV_Kyr1296, complete genome
@@ -1935,7 +1935,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.009204); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004503); expected (0.0001)
 Total CM hits reported:                                          3  (0.00442); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MN984430.1  [L=1680]
 Description: Hepatitis delta virus isolate HDV_Kyr656, complete genome
@@ -2003,7 +2003,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01017); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.08
 //
 Query:       MN984431.1  [L=1678]
 Description: Hepatitis delta virus isolate HDV_Kyr669, complete genome
@@ -2071,7 +2071,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01226); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004482); expected (0.0001)
 Total CM hits reported:                                          3  (0.0044); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.08
 //
 Query:       MN984432.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr857, complete genome
@@ -2139,7 +2139,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01323); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.14
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.13
 //
 Query:       MN984433.1  [L=1675]
 Description: Hepatitis delta virus isolate HDV_Kyr1014, complete genome
@@ -2207,7 +2207,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01035); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.12
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.12
 //
 Query:       MN984434.1  [L=1675]
 Description: Hepatitis delta virus isolate HDV_Kyr1026, complete genome
@@ -2275,7 +2275,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01347); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004505); expected (0.0001)
 Total CM hits reported:                                          3  (0.004422); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.13
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.12
 //
 Query:       MN984435.1  [L=1678]
 Description: Hepatitis delta virus isolate HDV_Kyr1528, complete genome
@@ -2343,7 +2343,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01302); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MN984436.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr1281, complete genome
@@ -2411,7 +2411,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01321); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006259); expected (0.0001)
 Total CM hits reported:                                          3  (0.004431); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.14
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.13
 //
 Query:       MN984437.1  [L=1677]
 Description: Hepatitis delta virus isolate HDV_Kyr1, complete genome
@@ -2479,7 +2479,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009232); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004451); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MN984438.1  [L=1675]
 Description: Hepatitis delta virus isolate HDV_Kyr2, complete genome
@@ -2547,7 +2547,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01211); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004505); expected (0.0001)
 Total CM hits reported:                                          3  (0.004422); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MN984439.1  [L=1673]
 Description: Hepatitis delta virus isolate HDV_Kyr3, complete genome
@@ -2615,7 +2615,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01561); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006409); expected (0.0001)
 Total CM hits reported:                                          3  (0.00441); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.10
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.09
 //
 Query:       MN984440.1  [L=1670]
 Description: Hepatitis delta virus isolate HDV_Kyr4, complete genome
@@ -2683,7 +2683,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01422); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004466); expected (0.0001)
 Total CM hits reported:                                          3  (0.004383); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.09
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.09
 //
 Query:       MN984441.1  [L=1678]
 Description: Hepatitis delta virus isolate HDV_Kyr5, complete genome
@@ -2751,7 +2751,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01317); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.00s 00:00:00.17 Elapsed: 00:00:00.09
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.08
 //
 Query:       MN984442.1  [L=1685]
 Description: Hepatitis delta virus isolate HDV_Kyr6, complete genome
@@ -2819,7 +2819,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.0102); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.004451); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.11
 //
 Query:       MN984443.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr7, complete genome
@@ -2887,7 +2887,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01018); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004381); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.08
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.08
 //
 Query:       MN984444.1  [L=1674]
 Description: Hepatitis delta virus isolate HDV_Kyr8, complete genome
@@ -2955,7 +2955,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01182); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004507); expected (0.0001)
 Total CM hits reported:                                          3  (0.004424); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       MN984445.1  [L=1684]
 Description: Hepatitis delta virus isolate HDV_Kyr9, complete genome
@@ -3023,7 +3023,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01372); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004552); expected (0.0001)
 Total CM hits reported:                                          3  (0.00447); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MN984446.1  [L=1674]
 Description: Hepatitis delta virus isolate HDV_Kyr10, complete genome
@@ -3091,7 +3091,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.00941); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004491); expected (0.0001)
 Total CM hits reported:                                          3  (0.004441); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MN984447.1  [L=1680]
 Description: Hepatitis delta virus isolate HDV_Kyr11, complete genome
@@ -3159,7 +3159,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008232); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004495); expected (0.0001)
 Total CM hits reported:                                          3  (0.004412); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MN984448.1  [L=1683]
 Description: Hepatitis delta virus isolate HDV_Kyr12, complete genome
@@ -3213,7 +3213,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009569); 
 Envelopes passing  local CM  CYK           filter:               4  (0.00485); expected (0.0001)
 Total CM hits reported:                                          2  (0.002992); includes 0 truncated hit(s)
 
-# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.04
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
 //
 Query:       MN984449.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr13, complete genome
@@ -3281,7 +3281,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.0115); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.006193); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.10
+# CPU time: 0.18u 0.00s 00:00:00.18 Elapsed: 00:00:00.09
 //
 Query:       MN984450.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr14, complete genome
@@ -3349,7 +3349,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008614); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MN984451.1  [L=1673]
 Description: Hepatitis delta virus isolate HDV_Kyr15, complete genome
@@ -3417,7 +3417,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01564); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006409); expected (0.0001)
 Total CM hits reported:                                          3  (0.00441); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.10
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.09
 //
 Query:       MN984452.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr16, complete genome
@@ -3485,7 +3485,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01589); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006193); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.12
+# CPU time: 0.21u 0.00s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       MN984453.1  [L=1677]
 Description: Hepatitis delta virus isolate HDV_Kyr17, complete genome
@@ -3553,7 +3553,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01283); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006199); expected (0.0001)
 Total CM hits reported:                                          3  (0.004418); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.11
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.10
 //
 Query:       MN984454.1  [L=1678]
 Description: Hepatitis delta virus isolate HDV_Kyr18, complete genome
@@ -3621,7 +3621,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01303); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004532); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.11
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
 //
 Query:       MN984455.1  [L=1680]
 Description: Hepatitis delta virus isolate HDV_Kyr19, complete genome
@@ -3689,7 +3689,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01022); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.08
 //
 Query:       MN984456.1  [L=1685]
 Description: Hepatitis delta virus isolate HDV_Kyr24, complete genome
@@ -3757,7 +3757,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009363); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004451); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MN984457.1  [L=1683]
 Description: Hepatitis delta virus isolate HDV_Kyr28, complete genome
@@ -3811,7 +3811,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009569); 
 Envelopes passing  local CM  CYK           filter:               4  (0.00485); expected (0.0001)
 Total CM hits reported:                                          2  (0.002992); includes 0 truncated hit(s)
 
-# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.04
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.04
 //
 Query:       MN984458.1  [L=1673]
 Description: Hepatitis delta virus isolate HDV_Kyr30, complete genome
@@ -3892,7 +3892,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01407); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006012); expected (0.0001)
 Total CM hits reported:                                          4  (0.005797); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.13
+# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.13
 //
 Query:       MN984459.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV_Kyr31, complete genome
@@ -3960,7 +3960,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01337); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006226); expected (0.0001)
 Total CM hits reported:                                          3  (0.004431); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.12
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.11
 //
 Query:       MN984460.1  [L=1677]
 Description: Hepatitis delta virus isolate HDV_Kyr33, complete genome
@@ -4041,7 +4041,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01416); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005803); expected (0.0001)
 Total CM hits reported:                                          4  (0.005704); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.13
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.12
 //
 Query:       MN984461.1  [L=1680]
 Description: Hepatitis delta virus isolate HDV_Kyr34, complete genome
@@ -4109,7 +4109,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01296); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004511); expected (0.0001)
 Total CM hits reported:                                          3  (0.004412); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.10
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
 //
 Query:       MN984462.1  [L=1688]
 Description: Hepatitis delta virus isolate HDV_Kyr35, complete genome
@@ -4184,7 +4184,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.006086); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004511); expected (0.0001)
 Total CM hits reported:                                          3  (0.004462); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.10
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.10
 //
 Query:       MN984463.1  [L=1687]
 Description: Hepatitis delta virus isolate HDV_Kyr36, complete genome
@@ -4259,7 +4259,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01214); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004513); expected (0.0001)
 Total CM hits reported:                                          3  (0.004464); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.13
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.13
 //
 Query:       MN984464.1  [L=1682]
 Description: Hepatitis delta virus isolate HDV_Kyr37, complete genome
@@ -4327,7 +4327,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01059); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004458); expected (0.0001)
 Total CM hits reported:                                          3  (0.004408); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MN984465.1  [L=1684]
 Description: Hepatitis delta virus isolate HDV_Kyr38, complete genome
@@ -4395,7 +4395,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01336); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004486); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.08
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.08
 //
 Query:       MN984466.1  [L=1678]
 Description: Hepatitis delta virus isolate HDV_Kyr39, complete genome
@@ -4463,7 +4463,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01674); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004482); expected (0.0001)
 Total CM hits reported:                                          3  (0.0044); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.13
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.13
 //
 Query:       MN984467.1  [L=1673]
 Description: Hepatitis delta virus isolate HDV_Kyr40, complete genome
@@ -4531,7 +4531,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01123); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00446); expected (0.0001)
 Total CM hits reported:                                          3  (0.00441); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       MN984468.1  [L=1688]
 Description: Hepatitis delta virus isolate HDV_Kyr41, complete genome
@@ -4599,7 +4599,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.009727); 
 Envelopes passing  local CM  CYK           filter:               4  (0.006463); expected (0.0001)
 Total CM hits reported:                                          3  (0.004429); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.09
 //
 Query:       MN984469.1  [L=1673]
 Description: Hepatitis delta virus isolate HDV_Kyr42, complete genome
@@ -4667,7 +4667,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01226); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00446); expected (0.0001)
 Total CM hits reported:                                          3  (0.004377); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.08
 //
 Query:       MN984470.1  [L=1688]
 Description: Hepatitis delta virus isolate HDV_Kyr43, complete genome
@@ -4735,7 +4735,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009776); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MT649206.1  [L=1692]
 Description: Bat deltavirus isolate DesRot/Peru/AYA11_DrDV-B, complete genome
@@ -4802,7 +4802,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008137); 
 Envelopes passing  local CM  CYK           filter:               4  (0.005911); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.07
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.07
 //
 Query:       MT583796.1  [L=1642]
 Description: Hepatitis delta virus isolate HD1-2000372-pg, complete genome
@@ -4870,7 +4870,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01247); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004575); expected (0.0001)
 Total CM hits reported:                                          3  (0.004491); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       MT583804.1  [L=1675]
 Description: Hepatitis delta virus isolate HD1-2001073-cg, complete genome
@@ -4938,7 +4938,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.007822); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.10
 //
 Query:       MT583805.1  [L=1677]
 Description: Hepatitis delta virus isolate HD1-2001149-cg, complete genome
@@ -5006,7 +5006,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01253); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004517); expected (0.0001)
 Total CM hits reported:                                          3  (0.004435); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MT583812.1  [L=1683]
 Description: Hepatitis delta virus isolate HD1-2001228-cg, complete genome
@@ -5074,7 +5074,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.007102); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004455); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.10
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       MK598003.2  [L=1671]
 Description: Rodent deltavirus isolate 1481, complete genome
@@ -5154,7 +5154,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01273); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006051); expected (0.0001)
 Total CM hits reported:                                          4  (0.005389); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.09
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.08
 //
 Query:       MK598004.2  [L=1669]
 Description: Rodent deltavirus isolate 0183, complete genome
@@ -5234,7 +5234,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01728); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006056); expected (0.0001)
 Total CM hits reported:                                          4  (0.005394); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.02s 00:00:00.23 Elapsed: 00:00:00.09
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.09
 //
 Query:       MK598005.2  [L=1669]
 Description: Rodent deltavirus isolate 0180, complete genome
@@ -5314,7 +5314,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01729); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006056); expected (0.0001)
 Total CM hits reported:                                          4  (0.005394); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.09
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.09
 //
 Query:       MK598006.2  [L=1669]
 Description: Rodent deltavirus isolate 0377, complete genome
@@ -5394,7 +5394,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01737); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006056); expected (0.0001)
 Total CM hits reported:                                          4  (0.005394); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.02s 00:00:00.22 Elapsed: 00:00:00.09
+# CPU time: 0.19u 0.02s 00:00:00.21 Elapsed: 00:00:00.09
 //
 Query:       MK598007.2  [L=1669]
 Description: Rodent deltavirus isolate 0037, complete genome
@@ -5474,7 +5474,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01294); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006056); expected (0.0001)
 Total CM hits reported:                                          4  (0.005394); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.09
+# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MK598008.2  [L=1669]
 Description: Rodent deltavirus isolate 0034, complete genome
@@ -5554,7 +5554,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01294); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006056); expected (0.0001)
 Total CM hits reported:                                          4  (0.005394); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.09
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
 //
 Query:       MK598009.2  [L=1669]
 Description: Rodent deltavirus isolate 0976, complete genome
@@ -5634,7 +5634,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01645); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006056); expected (0.0001)
 Total CM hits reported:                                          4  (0.005394); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.11
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
 //
 Query:       MN401236.1  [L=1678]
 Description: Hepatitis delta virus strain HDV4, complete genome
@@ -5715,7 +5715,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01523); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005982); expected (0.0001)
 Total CM hits reported:                                          4  (0.005784); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.14
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.13
 //
 Query:       MK890224.1  [L=1688]
 Description: Hepatitis delta virus isolate P-04, complete genome
@@ -5783,7 +5783,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.0143); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.11
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
 //
 Query:       MK890225.1  [L=1684]
 Description: Hepatitis delta virus isolate QD-01, complete genome
@@ -5851,7 +5851,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01778); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004486); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.09
 //
 Query:       MK890226.1  [L=1684]
 Description: Hepatitis delta virus isolate QD-02, complete genome
@@ -5919,7 +5919,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.0178); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.004486); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.00s 00:00:00.18 Elapsed: 00:00:00.09
+# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.09
 //
 Query:       MK890227.1  [L=1679]
 Description: Hepatitis delta virus isolate QD-07, complete genome
@@ -5987,7 +5987,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01634); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004381); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.14
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.13
 //
 Query:       MK890228.1  [L=1680]
 Description: Hepatitis delta virus isolate QD-11, complete genome
@@ -6055,7 +6055,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01418); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.13
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.12
 //
 Query:       MK890229.1  [L=1681]
 Description: Hepatitis delta virus isolate QD-15, complete genome
@@ -6123,7 +6123,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01326); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004558); expected (0.0001)
 Total CM hits reported:                                          3  (0.004476); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       MK890230.1  [L=1676]
 Description: Hepatitis delta virus isolate QD-16, complete genome
@@ -6191,7 +6191,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.007241); 
 Envelopes passing  local CM  CYK           filter:               3  (0.00447); expected (0.0001)
 Total CM hits reported:                                          3  (0.00442); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.10
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.09
 //
 Query:       MK890231.1  [L=1680]
 Description: Hepatitis delta virus isolate QD-18, complete genome
@@ -6327,7 +6327,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.0102); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.00448); expected (0.0001)
 Total CM hits reported:                                          3  (0.004398); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.13
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.12
 //
 Query:       MK890233.1  [L=1682]
 Description: Hepatitis delta virus isolate QD-34, complete genome
@@ -6408,7 +6408,7 @@ Envelopes passing glocal HMM envelope defn filter:              14  (0.02336); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006053); expected (0.0001)
 Total CM hits reported:                                          4  (0.005839); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.15
+# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.14
 //
 Query:       MK890234.1  [L=1678]
 Description: Hepatitis delta virus isolate QD-39, complete genome
@@ -6476,7 +6476,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01012); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004482); expected (0.0001)
 Total CM hits reported:                                          3  (0.0044); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       MK890235.1  [L=1684]
 Description: Hepatitis delta virus isolate QD-52, complete genome
@@ -6544,7 +6544,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01374); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004552); expected (0.0001)
 Total CM hits reported:                                          3  (0.00447); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       MK962760.1  [L=1547]
 Description: Toad HDV-like virus, complete genome
@@ -6656,7 +6656,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01132); e
 Envelopes passing  local CM  CYK           filter:               5  (0.007338); expected (0.0001)
 Total CM hits reported:                                          4  (0.00562); includes 0 truncated hit(s)
 
-# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.12
+# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.12
 //
 Query:       MN031240.1  [L=1606]
 Description: Fish HDV-like virus, complete genome
@@ -6723,7 +6723,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009716); 
 Envelopes passing  local CM  CYK           filter:               4  (0.005693); expected (0.0001)
 Total CM hits reported:                                          3  (0.004398); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.15
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.14
 //
 Query:       MK234591.1  [L=1680]
 Description: Hepatitis delta virus isolate TN14-5, complete genome
@@ -6791,7 +6791,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01581); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.12
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.11
 //
 Query:       MK234592.1  [L=1680]
 Description: Hepatitis delta virus isolate TN14-10, complete genome
@@ -6859,7 +6859,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01429); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.00s 00:00:00.17 Elapsed: 00:00:00.12
+# CPU time: 0.17u 0.00s 00:00:00.17 Elapsed: 00:00:00.11
 //
 Query:       MK234593.1  [L=1680]
 Description: Hepatitis delta virus isolate TN14-11, complete genome
@@ -6927,7 +6927,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01301); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.12
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.11
 //
 Query:       MK234594.1  [L=1685]
 Description: Hepatitis delta virus isolate TN15, complete genome
@@ -6995,7 +6995,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.0138); ex
 Envelopes passing  local CM  CYK           filter:               5  (0.007999); expected (0.0001)
 Total CM hits reported:                                          3  (0.004419); includes 0 truncated hit(s)
 
-# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.16
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.15
 //
 Query:       MH791027.1  [L=1679]
 Description: Hepatitis delta virus isolate 52, complete genome
@@ -7131,7 +7131,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01486); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.09
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.09
 //
 Query:       MH791029.1  [L=1679]
 Description: Hepatitis delta virus isolate 56, complete genome
@@ -7199,7 +7199,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01239); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       MH791030.1  [L=1679]
 Description: Hepatitis delta virus isolate 63, complete genome
@@ -7267,7 +7267,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01435); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004513); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.10
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.10
 //
 Query:       MH457143.1  [L=1679]
 Description: Hepatitis delta virus isolate B04, complete genome
@@ -7335,7 +7335,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01125); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       MH457145.1  [L=1677]
 Description: Hepatitis delta virus isolate E23-34770, complete genome
@@ -7416,7 +7416,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01297); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00577); expected (0.0001)
 Total CM hits reported:                                          4  (0.005671); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.15
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.15
 //
 Query:       MK124579.1  [L=1679]
 Description: Hepatitis delta virus clone DC-1, complete genome
@@ -7484,7 +7484,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01581); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006193); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.00s 00:00:00.23 Elapsed: 00:00:00.12
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.12
 //
 Query:       MG557658.1  [L=1680]
 Description: Hepatitis delta virus isolate TN1, complete genome
@@ -7552,7 +7552,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.01908); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006734); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.17
+# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.16
 //
 Query:       MG557659.1  [L=1677]
 Description: Hepatitis delta virus isolate TN2, complete genome
@@ -7620,7 +7620,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01512); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004484); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.02s 00:00:00.26 Elapsed: 00:00:00.14
+# CPU time: 0.22u 0.02s 00:00:00.24 Elapsed: 00:00:00.13
 //
 Query:       MG711717.1  [L=1683]
 Description: Hepatitis delta virus isolate K2885, complete genome
@@ -7688,7 +7688,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01067); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005606); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.11
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.11
 //
 Query:       MG711777.1  [L=1687]
 Description: Hepatitis delta virus isolate SUE1032A, complete genome
@@ -7763,7 +7763,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01321); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004382); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.10
+# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       MG711778.1  [L=1653]
 Description: Hepatitis delta virus isolate SUE1048A2, complete genome
@@ -7838,7 +7838,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008536); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004518); expected (0.0001)
 Total CM hits reported:                                          3  (0.004435); includes 0 truncated hit(s)
 
-# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.09
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.08
 //
 Query:       MG926380.1  [L=1676]
 Description: Hepatitis delta virus isolate 2000138_243520, complete genome
@@ -7906,7 +7906,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01011); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004486); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       MG926381.1  [L=1677]
 Description: Hepatitis delta virus isolate 2000320_243567, complete genome
@@ -7974,7 +7974,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.011); exp
 Envelopes passing  local CM  CYK           filter:               3  (0.004484); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.11
 //
 Query:       KY463681.1  [L=1678]
 Description: Hepatitis delta virus isolate ETH2056-1, complete genome
@@ -8042,7 +8042,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01536); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004482); expected (0.0001)
 Total CM hits reported:                                          3  (0.0044); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.08
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.08
 //
 Query:       KM110790.1  [L=1682]
 Description: Hepatitis delta virus isolate ASS, complete genome
@@ -8110,7 +8110,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01031); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00449); expected (0.0001)
 Total CM hits reported:                                          3  (0.004408); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.11
 //
 Query:       KM110791.1  [L=1679]
 Description: Hepatitis delta virus isolate BAL, complete genome
@@ -8178,7 +8178,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01319); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.14
+# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.13
 //
 Query:       KM110792.1  [L=1679]
 Description: Hepatitis delta virus isolate Bobak66, complete genome
@@ -8246,7 +8246,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01092); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004381); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       KM110794.1  [L=1678]
 Description: Hepatitis delta virus isolate Bobak118, complete genome
@@ -8314,7 +8314,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.00875); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004466); expected (0.0001)
 Total CM hits reported:                                          3  (0.004383); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       KM110795.1  [L=1683]
 Description: Hepatitis delta virus isolate MBA, complete genome
@@ -8382,7 +8382,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01568); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005606); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.12
+# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.12
 //
 Query:       KM110797.1  [L=1681]
 Description: Hepatitis delta virus isolate Mebak61, complete genome
@@ -8518,7 +8518,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01292); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.12
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.12
 //
 Query:       KM110799.1  [L=1681]
 Description: Hepatitis delta virus isolate NAD, complete genome
@@ -8586,7 +8586,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01241); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00446); expected (0.0001)
 Total CM hits reported:                                          3  (0.004377); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       KM110805.1  [L=1669]
 Description: Hepatitis delta virus isolate PYG65, complete genome
@@ -8667,7 +8667,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01501); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006056); expected (0.0001)
 Total CM hits reported:                                          4  (0.005808); includes 0 truncated hit(s)
 
-# CPU time: 0.28u 0.01s 00:00:00.29 Elapsed: 00:00:00.17
+# CPU time: 0.27u 0.02s 00:00:00.29 Elapsed: 00:00:00.16
 //
 Query:       KT722840.1  [L=1680]
 Description: Hepatitis delta virus isolate GZ37, complete genome
@@ -8735,7 +8735,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01227); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       KJ744214.1  [L=1679]
 Description: Hepatitis delta virus isolate D1, complete genome
@@ -8803,7 +8803,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01504); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00453); expected (0.0001)
 Total CM hits reported:                                          3  (0.004431); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.13
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       KJ744215.1  [L=1678]
 Description: Hepatitis delta virus isolate D2-A, complete genome
@@ -8871,7 +8871,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.009442); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004466); expected (0.0001)
 Total CM hits reported:                                          3  (0.004383); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.08
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.08
 //
 Query:       KJ744216.1  [L=1680]
 Description: Hepatitis delta virus isolate D2-B, complete genome
@@ -8939,7 +8939,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01131); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004462); expected (0.0001)
 Total CM hits reported:                                          3  (0.004379); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.10
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.09
 //
 Query:       KJ744217.1  [L=1677]
 Description: Hepatitis delta virus isolate D2-C, complete genome
@@ -9075,7 +9075,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01092); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004455); expected (0.0001)
 Total CM hits reported:                                          3  (0.004373); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.08
 //
 Query:       KJ744220.1  [L=1680]
 Description: Hepatitis delta virus isolate D7-A, complete genome
@@ -9143,7 +9143,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01315); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004495); expected (0.0001)
 Total CM hits reported:                                          3  (0.004412); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.14
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.13
 //
 Query:       KJ744221.1  [L=1679]
 Description: Hepatitis delta virus isolate D7-B, complete genome
@@ -9279,7 +9279,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01203); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004466); expected (0.0001)
 Total CM hits reported:                                          3  (0.004383); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.13
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.13
 //
 Query:       KJ744223.1  [L=1678]
 Description: Hepatitis delta virus isolate D7-D, complete genome
@@ -9347,7 +9347,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01313); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004466); expected (0.0001)
 Total CM hits reported:                                          3  (0.004383); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.12
+# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.11
 //
 Query:       KJ744224.1  [L=1676]
 Description: Hepatitis delta virus isolate D8, complete genome
@@ -9415,7 +9415,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01636); e
 Envelopes passing  local CM  CYK           filter:               4  (0.007356); expected (0.0001)
 Total CM hits reported:                                          3  (0.004387); includes 0 truncated hit(s)
 
-# CPU time: 0.35u 0.01s 00:00:00.36 Elapsed: 00:00:00.22
+# CPU time: 0.33u 0.02s 00:00:00.35 Elapsed: 00:00:00.21
 //
 Query:       KJ744225.1  [L=1677]
 Description: Hepatitis delta virus isolate D9-A, complete genome
@@ -9537,7 +9537,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01035); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004439); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       KJ744227.1  [L=1676]
 Description: Hepatitis delta virus isolate D10-A, complete genome
@@ -9673,7 +9673,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01461); e
 Envelopes passing  local CM  CYK           filter:               4  (0.004863); expected (0.0001)
 Total CM hits reported:                                          3  (0.004418); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.14
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.14
 //
 Query:       KJ744229.1  [L=1680]
 Description: Hepatitis delta virus isolate D13, complete genome
@@ -9741,7 +9741,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01495); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004445); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.00s 00:00:00.17 Elapsed: 00:00:00.10
+# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.10
 //
 Query:       KJ744230.1  [L=1682]
 Description: Hepatitis delta virus isolate D15, complete genome
@@ -9809,7 +9809,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01168); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004458); expected (0.0001)
 Total CM hits reported:                                          3  (0.004408); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       KJ744231.1  [L=1678]
 Description: Hepatitis delta virus isolate D17, complete genome
@@ -9877,7 +9877,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01307); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.14
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.13
 //
 Query:       KJ744232.1  [L=1677]
 Description: Hepatitis delta virus isolate D18, complete genome
@@ -9944,7 +9944,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.02222); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005935); expected (0.0001)
 Total CM hits reported:                                          3  (0.004385); includes 0 truncated hit(s)
 
-# CPU time: 0.35u 0.02s 00:00:00.37 Elapsed: 00:00:00.25
+# CPU time: 0.34u 0.03s 00:00:00.37 Elapsed: 00:00:00.24
 //
 Query:       KJ744233.1  [L=1680]
 Description: Hepatitis delta virus isolate D21, complete genome
@@ -9998,7 +9998,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.00996); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004429); expected (0.0001)
 Total CM hits reported:                                          2  (0.002996); includes 0 truncated hit(s)
 
-# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.04
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.04
 //
 Query:       KJ744234.1  [L=1679]
 Description: Hepatitis delta virus isolate D23, complete genome
@@ -10066,7 +10066,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.007906); 
 Envelopes passing  local CM  CYK           filter:               3  (0.00448); expected (0.0001)
 Total CM hits reported:                                          3  (0.004398); includes 0 truncated hit(s)
 
-# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.09
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.09
 //
 Query:       KJ744235.1  [L=1679]
 Description: Hepatitis delta virus isolate D24, complete genome
@@ -10134,7 +10134,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.00924); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005353); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.08
 //
 Query:       KJ744237.1  [L=1677]
 Description: Hepatitis delta virus isolate D27, complete genome
@@ -10202,7 +10202,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01635); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004501); expected (0.0001)
 Total CM hits reported:                                          3  (0.004418); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.15
+# CPU time: 0.21u 0.02s 00:00:00.23 Elapsed: 00:00:00.14
 //
 Query:       KJ744238.1  [L=1677]
 Description: Hepatitis delta virus isolate D28, complete genome
@@ -10270,7 +10270,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01382); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005737); expected (0.0001)
 Total CM hits reported:                                          3  (0.004418); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.15
+# CPU time: 0.18u 0.00s 00:00:00.18 Elapsed: 00:00:00.14
 //
 Query:       KJ744240.1  [L=1677]
 Description: Hepatitis delta virus isolate D32, complete genome
@@ -10338,7 +10338,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01408); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004534); expected (0.0001)
 Total CM hits reported:                                          3  (0.004451); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.02s 00:00:00.27 Elapsed: 00:00:00.15
+# CPU time: 0.23u 0.02s 00:00:00.25 Elapsed: 00:00:00.14
 //
 Query:       KJ744241.1  [L=1684]
 Description: Hepatitis delta virus isolate D33, complete genome
@@ -10406,7 +10406,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01091); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005374); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       KJ744242.1  [L=1672]
 Description: Hepatitis delta virus isolate D34, complete genome
@@ -10474,7 +10474,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01238); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005751); expected (0.0001)
 Total CM hits reported:                                          3  (0.004429); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       KJ744243.1  [L=1675]
 Description: Hepatitis delta virus isolate D37-A, complete genome
@@ -10542,7 +10542,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01129); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.13
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.12
 //
 Query:       KJ744244.1  [L=1677]
 Description: Hepatitis delta virus isolate D37-B, complete genome
@@ -10610,7 +10610,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01136); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004484); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       KJ744245.1  [L=1683]
 Description: Hepatitis delta virus isolate D39-A, complete genome
@@ -10678,7 +10678,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01307); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.08
 //
 Query:       KJ744247.1  [L=1677]
 Description: Hepatitis delta virus isolate D43, complete genome
@@ -10746,7 +10746,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01014); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004501); expected (0.0001)
 Total CM hits reported:                                          3  (0.004418); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       KJ744248.1  [L=1679]
 Description: Hepatitis delta virus isolate D49, complete genome
@@ -10814,7 +10814,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01117); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004381); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.08
 //
 Query:       KJ744249.1  [L=1680]
 Description: Hepatitis delta virus isolate D51, complete genome
@@ -10882,7 +10882,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.0111); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.004462); expected (0.0001)
 Total CM hits reported:                                          3  (0.004379); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.08
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.08
 //
 Query:       KJ744250.1  [L=1678]
 Description: Hepatitis delta virus isolate D52, complete genome
@@ -10950,7 +10950,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008124); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.10
 //
 Query:       KJ744253.1  [L=1683]
 Description: Hepatitis delta virus isolate D60, complete genome
@@ -11018,7 +11018,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01812); e
 Envelopes passing  local CM  CYK           filter:               4  (0.004916); expected (0.0001)
 Total CM hits reported:                                          3  (0.004423); includes 0 truncated hit(s)
 
-# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.16
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.15
 //
 Query:       KJ744254.1  [L=1680]
 Description: Hepatitis delta virus isolate D64, complete genome
@@ -11086,7 +11086,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01493); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004495); expected (0.0001)
 Total CM hits reported:                                          3  (0.004412); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.14
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.13
 //
 Query:       KJ744255.1  [L=1682]
 Description: Hepatitis delta virus isolate D66, complete genome
@@ -11154,7 +11154,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.0111); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.00449); expected (0.0001)
 Total CM hits reported:                                          3  (0.004408); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       KJ744256.1  [L=1679]
 Description: Hepatitis delta virus isolate D69, complete genome
@@ -11222,7 +11222,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01553); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.10
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
 //
 Query:       KJ744257.1  [L=1681]
 Description: Hepatitis delta virus isolate D70, complete genome
@@ -11290,7 +11290,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.009693); 
 Envelopes passing  local CM  CYK           filter:               4  (0.006187); expected (0.0001)
 Total CM hits reported:                                          3  (0.00441); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.11
+# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.11
 //
 Query:       KF660598.1  [L=1675]
 Description: Hepatitis delta virus isolate C03, complete genome
@@ -11358,7 +11358,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01299); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006766); expected (0.0001)
 Total CM hits reported:                                          3  (0.004422); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.13
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.12
 //
 Query:       KF660599.1  [L=1680]
 Description: Hepatitis delta virus isolate C06, complete genome
@@ -11426,7 +11426,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01401); e
 Envelopes passing  local CM  CYK           filter:               5  (0.006865); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.12
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.11
 //
 Query:       KF660600.1  [L=1673]
 Description: Hepatitis delta virus isolate C15, complete genome
@@ -11494,7 +11494,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01318); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004509); expected (0.0001)
 Total CM hits reported:                                          3  (0.004427); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.12
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.11
 //
 Query:       KF660602.1  [L=1671]
 Description: Hepatitis delta virus isolate U18, complete genome
@@ -11562,7 +11562,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01291); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004464); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.08
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.07
 //
 Query:       KC590319.1  [L=1673]
 Description: Hepatitis delta virus isolate Brazil-1, complete genome
@@ -11650,7 +11650,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.0203); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.006029); expected (0.0001)
 Total CM hits reported:                                          4  (0.005864); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.14
+# CPU time: 0.23u 0.02s 00:00:00.25 Elapsed: 00:00:00.13
 //
 Query:       HF679404.1  [L=1676]
 Description: Hepatitis D Virus genotype 3, clone 010-OBCCl2, complete genome
@@ -11724,7 +11724,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01305); e
 Envelopes passing  local CM  CYK           filter:               4  (0.00602); expected (0.0001)
 Total CM hits reported:                                          3  (0.00447); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.07
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.07
 //
 Query:       HF679405.1  [L=1675]
 Description: Hepatitis D Virus genotype 3, clone 010-OBC Cl11, complete genome
@@ -11798,7 +11798,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01139); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006023); expected (0.0001)
 Total CM hits reported:                                          3  (0.004472); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.07
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.07
 //
 Query:       HF679406.1  [L=1673]
 Description: Hepatitis D Virus genotype 3, clone BR2-ENB, complete genome
@@ -11886,7 +11886,7 @@ Envelopes passing glocal HMM envelope defn filter:              14  (0.02281); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006062); expected (0.0001)
 Total CM hits reported:                                          4  (0.005897); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.15
+# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.15
 //
 Query:       GU177114.1  [L=1679]
 Description: Hepatitis delta virus isolate HDV-DN79, complete genome
@@ -11953,7 +11953,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01509); e
 Envelopes passing  local CM  CYK           filter:               5  (0.007429); expected (0.0001)
 Total CM hits reported:                                          3  (0.004332); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.02s 00:00:00.20 Elapsed: 00:00:00.09
+# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.09
 //
 Query:       HQ005364.1  [L=1681]
 Description: Hepatitis delta virus isolate 5, complete genome
@@ -12021,7 +12021,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01241); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004525); expected (0.0001)
 Total CM hits reported:                                          3  (0.004443); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       HQ005365.1  [L=1682]
 Description: Hepatitis delta virus isolate 7, complete genome
@@ -12089,7 +12089,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01219); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00449); expected (0.0001)
 Total CM hits reported:                                          3  (0.004408); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.11
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
 //
 Query:       HQ005366.1  [L=1683]
 Description: Hepatitis delta virus isolate 6, complete genome
@@ -12211,7 +12211,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01188); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004484); expected (0.0001)
 Total CM hits reported:                                          3  (0.004451); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.09
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       HQ005368.1  [L=1681]
 Description: Hepatitis delta virus isolate 9, complete genome
@@ -12360,7 +12360,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01421); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005768); expected (0.0001)
 Total CM hits reported:                                          4  (0.005686); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.16
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.15
 //
 Query:       HQ005370.1  [L=1679]
 Description: Hepatitis delta virus isolate 1, complete genome
@@ -12441,7 +12441,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.02008); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006012); expected (0.0001)
 Total CM hits reported:                                          4  (0.005847); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.02s 00:00:00.29 Elapsed: 00:00:00.16
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.15
 //
 Query:       HQ005371.1  [L=1679]
 Description: Hepatitis delta virus isolate 2, complete genome
@@ -12522,7 +12522,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01291); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006061); expected (0.0001)
 Total CM hits reported:                                          4  (0.005847); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.00s 00:00:00.21 Elapsed: 00:00:00.15
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.14
 //
 Query:       HQ005372.1  [L=1673]
 Description: Hepatitis delta virus isolate 3, complete genome
@@ -12590,7 +12590,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01244); e
 Envelopes passing  local CM  CYK           filter:               4  (0.004939); expected (0.0001)
 Total CM hits reported:                                          3  (0.004443); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.12
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.11
 //
 Query:       HM046802.1  [L=1677]
 Description: Hepatitis delta virus isolate JN, complete genome
@@ -12658,7 +12658,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01319); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006199); expected (0.0001)
 Total CM hits reported:                                          3  (0.004418); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.11
+# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.11
 //
 Query:       AY648952.1  [L=1678]
 Description: Hepatitis delta virus isolate TWD62#16, complete genome
@@ -12739,7 +12739,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01692); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005982); expected (0.0001)
 Total CM hits reported:                                          4  (0.005784); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.14
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.13
 //
 Query:       AY648953.1  [L=1678]
 Description: Hepatitis delta virus isolate 2621#56, complete genome
@@ -12820,7 +12820,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.01804); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005982); expected (0.0001)
 Total CM hits reported:                                          4  (0.005784); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.14
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.13
 //
 Query:       AY648954.1  [L=1678]
 Description: Hepatitis delta virus isolate TW1025#14, complete genome
@@ -12901,7 +12901,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01697); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005982); expected (0.0001)
 Total CM hits reported:                                          4  (0.005784); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.14
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.13
 //
 Query:       AY648955.1  [L=1678]
 Description: Hepatitis delta virus isolate TW3038#25, complete genome
@@ -12969,7 +12969,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.01776); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004482); expected (0.0001)
 Total CM hits reported:                                          3  (0.0044); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.15
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.15
 //
 Query:       AY648956.1  [L=1675]
 Description: Hepatitis delta virus isolate TW1435#47, complete genome
@@ -13037,7 +13037,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01777); e
 Envelopes passing  local CM  CYK           filter:               4  (0.01035); expected (0.0001)
 Total CM hits reported:                                          3  (0.004422); includes 0 truncated hit(s)
 
-# CPU time: 0.66u 0.02s 00:00:00.68 Elapsed: 00:00:00.54
+# CPU time: 0.62u 0.03s 00:00:00.65 Elapsed: 00:00:00.52
 //
 Query:       AY648957.1  [L=1675]
 Description: Hepatitis delta virus isolate TW5132#24, complete genome
@@ -13105,7 +13105,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008581); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004505); expected (0.0001)
 Total CM hits reported:                                          3  (0.004422); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       AY648958.1  [L=1674]
 Description: Hepatitis delta virus isolate TW1573#4, complete genome
@@ -13173,7 +13173,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01166); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004507); expected (0.0001)
 Total CM hits reported:                                          3  (0.004424); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.11
 //
 Query:       AY648959.1  [L=1674]
 Description: Hepatitis delta virus isolate TW3678#25, complete genome
@@ -13241,7 +13241,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01205); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004507); expected (0.0001)
 Total CM hits reported:                                          3  (0.004424); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       EF514903.1  [L=1676]
 Description: Hepatitis delta virus isolate CB, complete genome
@@ -13302,7 +13302,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01298); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004717); expected (0.0001)
 Total CM hits reported:                                          2  (0.003101); includes 0 truncated hit(s)
 
-# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.06
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.06
 //
 Query:       EF514904.1  [L=1676]
 Description: Hepatitis delta virus isolate NK, complete genome
@@ -13363,7 +13363,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008346); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004717); expected (0.0001)
 Total CM hits reported:                                          2  (0.003101); includes 0 truncated hit(s)
 
-# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.04
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
 //
 Query:       EF514905.2  [L=1676]
 Description: Hepatitis delta virus isolate OA, complete genome
@@ -13424,7 +13424,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01188); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00475); expected (0.0001)
 Total CM hits reported:                                          2  (0.003101); includes 0 truncated hit(s)
 
-# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.05
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.05
 //
 Query:       EF514906.1  [L=1676]
 Description: Hepatitis delta virus isolate SO, complete genome
@@ -13546,7 +13546,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01084); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004717); expected (0.0001)
 Total CM hits reported:                                          2  (0.003101); includes 0 truncated hit(s)
 
-# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.05
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.05
 //
 Query:       AY261458.1  [L=1614]
 Description: Hepatitis D virus isolate TW2479-53, complete genome
@@ -13695,7 +13695,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01128); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005412); expected (0.0001)
 Total CM hits reported:                                          4  (0.005214); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.11
+# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.10
 //
 Query:       AY261460.1  [L=1680]
 Description: Hepatitis D virus isolate TW2479-18, complete genome
@@ -13763,7 +13763,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01299); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004495); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       AY633627.1  [L=1676]
 Description: Hepatitis delta virus isolate IR-1, complete genome
@@ -13899,7 +13899,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01299); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004495); expected (0.0001)
 Total CM hits reported:                                          3  (0.004396); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       AB118818.1  [L=1677]
 Description: Hepatitis delta virus genomic RNA, complete genome, strain:Miyako(JA-M2)
@@ -13967,7 +13967,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01766); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004501); expected (0.0001)
 Total CM hits reported:                                          3  (0.004418); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.13
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.12
 //
 Query:       AB118819.1  [L=1683]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M3)
@@ -14035,7 +14035,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01564); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.13
+# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.12
 //
 Query:       AB118820.1  [L=1679]
 Description: Hepatitis D virus DNA, complete genome, strain:Miyako(JA-M4)
@@ -14116,7 +14116,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01426); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005996); expected (0.0001)
 Total CM hits reported:                                          4  (0.005814); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.15
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.14
 //
 Query:       AB118821.1  [L=1684]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M5)
@@ -14184,7 +14184,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01472); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004486); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.11
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.10
 //
 Query:       AB118822.1  [L=1680]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M6)
@@ -14265,7 +14265,7 @@ Envelopes passing glocal HMM envelope defn filter:              13  (0.02181); e
 Envelopes passing  local CM  CYK           filter:               6  (0.008775); expected (0.0001)
 Total CM hits reported:                                          4  (0.005812); includes 0 truncated hit(s)
 
-# CPU time: 0.34u 0.02s 00:00:00.36 Elapsed: 00:00:00.18
+# CPU time: 0.31u 0.01s 00:00:00.32 Elapsed: 00:00:00.17
 //
 Query:       AB118823.1  [L=1679]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M7)
@@ -14333,7 +14333,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01021); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.11
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
 //
 Query:       AB118824.1  [L=1681]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M8)
@@ -14414,7 +14414,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01331); e
 Envelopes passing  local CM  CYK           filter:               5  (0.007553); expected (0.0001)
 Total CM hits reported:                                          4  (0.005809); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.13
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.12
 //
 Query:       AB118825.1  [L=1684]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M10)
@@ -14482,7 +14482,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01101); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006442); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.11
+# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.10
 //
 Query:       AB118826.1  [L=1678]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M11)
@@ -14576,7 +14576,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01717); e
 Envelopes passing  local CM  CYK           filter:               5  (0.008009); expected (0.0001)
 Total CM hits reported:                                          5  (0.007036); includes 0 truncated hit(s)
 
-# CPU time: 0.39u 0.02s 00:00:00.41 Elapsed: 00:00:00.26
+# CPU time: 0.35u 0.02s 00:00:00.37 Elapsed: 00:00:00.24
 //
 Query:       AB118827.1  [L=1677]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M12)
@@ -14670,7 +14670,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.01921); e
 Envelopes passing  local CM  CYK           filter:               5  (0.007913); expected (0.0001)
 Total CM hits reported:                                          5  (0.007007); includes 0 truncated hit(s)
 
-# CPU time: 0.37u 0.01s 00:00:00.38 Elapsed: 00:00:00.23
+# CPU time: 0.34u 0.01s 00:00:00.35 Elapsed: 00:00:00.22
 //
 Query:       AB118828.1  [L=1678]
 Description: Hepatitis D virus DNA, complete genome, strain:Miyako(JA-M13)
@@ -14738,7 +14738,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01608); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005784); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.13
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.12
 //
 Query:       AB118830.1  [L=1683]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M15)
@@ -14806,7 +14806,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01299); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.09
 //
 Query:       AB118831.1  [L=1679]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M16)
@@ -14887,7 +14887,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.0182); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.006012); expected (0.0001)
 Total CM hits reported:                                          4  (0.005814); includes 0 truncated hit(s)
 
-# CPU time: 0.28u 0.01s 00:00:00.29 Elapsed: 00:00:00.15
+# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.13
 //
 Query:       AB118832.1  [L=1679]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M17)
@@ -14955,7 +14955,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01341); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.12
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.10
 //
 Query:       AB118833.1  [L=1679]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M18)
@@ -15036,7 +15036,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01324); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006012); expected (0.0001)
 Total CM hits reported:                                          4  (0.005814); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.15
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.14
 //
 Query:       AB118834.1  [L=1685]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M19)
@@ -15104,7 +15104,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01639); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005207); expected (0.0001)
 Total CM hits reported:                                          3  (0.004402); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.14
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.13
 //
 Query:       AB118836.1  [L=1678]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M44)
@@ -15185,7 +15185,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.0186); ex
 Envelopes passing  local CM  CYK           filter:               5  (0.006905); expected (0.0001)
 Total CM hits reported:                                          4  (0.005817); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.14
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.13
 //
 Query:       AB118837.1  [L=1678]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M23)
@@ -15266,7 +15266,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.0172); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.005998); expected (0.0001)
 Total CM hits reported:                                          4  (0.005817); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.14
+# CPU time: 0.23u 0.00s 00:00:00.23 Elapsed: 00:00:00.12
 //
 Query:       AB118838.1  [L=1684]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M24)
@@ -15334,7 +15334,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.0119); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.004486); expected (0.0001)
 Total CM hits reported:                                          3  (0.004404); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.13
+# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.12
 //
 Query:       AB118839.1  [L=1683]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M27)
@@ -15402,7 +15402,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01116); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004488); expected (0.0001)
 Total CM hits reported:                                          3  (0.004406); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.12
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.11
 //
 Query:       AB118840.1  [L=1675]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M29)
@@ -15470,7 +15470,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01741); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004505); expected (0.0001)
 Total CM hits reported:                                          3  (0.004422); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.15
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.13
 //
 Query:       AB118841.1  [L=1677]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M31)
@@ -15551,7 +15551,7 @@ Envelopes passing glocal HMM envelope defn filter:              12  (0.01655); e
 Envelopes passing  local CM  CYK           filter:               5  (0.006974); expected (0.0001)
 Total CM hits reported:                                          4  (0.005787); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.15
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.14
 //
 Query:       AB118842.1  [L=1679]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M32)
@@ -15632,7 +15632,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01273); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005979); expected (0.0001)
 Total CM hits reported:                                          4  (0.005781); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.00s 00:00:00.22 Elapsed: 00:00:00.15
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.14
 //
 Query:       AB118843.1  [L=1677]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M33)
@@ -15713,7 +15713,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01434); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005952); expected (0.0001)
 Total CM hits reported:                                          4  (0.005754); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.13
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.12
 //
 Query:       AB118844.1  [L=1677]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M34)
@@ -15794,7 +15794,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01278); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005985); expected (0.0001)
 Total CM hits reported:                                          4  (0.005787); includes 0 truncated hit(s)
 
-# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.15
+# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.13
 //
 Query:       AB118845.1  [L=1677]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M36)
@@ -15875,7 +15875,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.015); exp
 Envelopes passing  local CM  CYK           filter:               4  (0.005952); expected (0.0001)
 Total CM hits reported:                                          4  (0.005754); includes 0 truncated hit(s)
 
-# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.14
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.13
 //
 Query:       AB118846.1  [L=1678]
 Description: Hepatitis delta virus DNA, complete genome, strain:Miyako(JA-M37)
@@ -15943,7 +15943,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01743); e
 Envelopes passing  local CM  CYK           filter:               5  (0.007448); expected (0.0001)
 Total CM hits reported:                                          3  (0.0044); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.16
+# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.15
 //
 Query:       AB118847.1  [L=1678]
 Description: Hepatitis delta virus DNA, complete genome, strain:Tokyo(JA-T)
@@ -16024,7 +16024,7 @@ Envelopes passing glocal HMM envelope defn filter:              11  (0.01748); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005982); expected (0.0001)
 Total CM hits reported:                                          4  (0.005784); includes 0 truncated hit(s)
 
-# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.15
+# CPU time: 0.24u 0.02s 00:00:00.26 Elapsed: 00:00:00.13
 //
 Query:       AB118848.1  [L=1678]
 Description: Hepatitis delta virus DNA, complete genome, strain:Nagasaki(JA-N1)
@@ -16092,7 +16092,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.0131); ex
 Envelopes passing  local CM  CYK           filter:               3  (0.004499); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
+# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.09
 //
 Query:       AB118849.1  [L=1675]
 Description: Hepatitis delta virus DNA, complete genome, strain:Nagasaki(JA-N2)
@@ -16160,7 +16160,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008168); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004505); expected (0.0001)
 Total CM hits reported:                                          3  (0.004422); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.10
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.09
 //
 Query:       AF425644.1  [L=1674]
 Description: Hepatitis D virus isolate TWD2577-66 genotype I, complete genome
@@ -16228,7 +16228,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01162); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004507); expected (0.0001)
 Total CM hits reported:                                          3  (0.004424); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.12
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.11
 //
 Query:       AF425645.1  [L=1682]
 Description: Hepatitis D virus isolate TWD2476-38 genotype IIa, complete genome
@@ -16296,7 +16296,7 @@ Envelopes passing glocal HMM envelope defn filter:              10  (0.01627); e
 Envelopes passing  local CM  CYK           filter:               5  (0.006991); expected (0.0001)
 Total CM hits reported:                                          3  (0.004392); includes 0 truncated hit(s)
 
-# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.14
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.13
 //
 Query:       AB037947.1  [L=1672]
 Description: Hepatitis D virus genomic RNA, complete genome, isolate:VnzD8375
@@ -16370,7 +16370,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01367); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006031); expected (0.0001)
 Total CM hits reported:                                          3  (0.004478); includes 0 truncated hit(s)
 
-# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.09
+# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.08
 //
 Query:       AJ307077.1  [L=1679]
 Description: Hepatitis delta virus complete genome, isolate W5
@@ -16438,7 +16438,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01413); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006226); expected (0.0001)
 Total CM hits reported:                                          3  (0.004431); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.12
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.12
 //
 Query:       AF104263.1  [L=1676]
 Description: Hepatitis D virus strain TW2667, complete genome
@@ -16519,7 +16519,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.0132); ex
 Envelopes passing  local CM  CYK           filter:               4  (0.006053); expected (0.0001)
 Total CM hits reported:                                          4  (0.005822); includes 0 truncated hit(s)
 
-# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.15
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.14
 //
 Query:       AF104264.1  [L=1684]
 Description: Hepatitis D virus strain TW2476, complete genome
@@ -16600,7 +16600,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01144); e
 Envelopes passing  local CM  CYK           filter:               5  (0.00654); expected (0.0001)
 Total CM hits reported:                                          4  (0.005735); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.00s 00:00:00.18 Elapsed: 00:00:00.13
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.12
 //
 Query:       AF098261.1  [L=1672]
 Description: Hepatitis D virus from Canada, complete genome
@@ -16668,7 +16668,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008196); 
 Envelopes passing  local CM  CYK           filter:               3  (0.004478); expected (0.0001)
 Total CM hits reported:                                          3  (0.004429); includes 0 truncated hit(s)
 
-# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.11
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.10
 //
 Query:       AJ000558.1  [L=1678]
 Description: Hepatitis D Virus complete genome
@@ -16736,7 +16736,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.01412); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006196); expected (0.0001)
 Total CM hits reported:                                          3  (0.004416); includes 0 truncated hit(s)
 
-# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.13
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.12
 //
 Query:       U81988.1  [L=1674]
 Description: Hepatitis delta virus from Somalia genotype IC, complete genome
@@ -16804,7 +16804,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.008139); 
 Envelopes passing  local CM  CYK           filter:               4  (0.0052); expected (0.0001)
 Total CM hits reported:                                          3  (0.004441); includes 0 truncated hit(s)
 
-# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.10
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       U81989.1  [L=1679]
 Description: Hepatitis delta virus from Ethiopia genotype IC, complete genome
@@ -16872,7 +16872,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01339); e
 Envelopes passing  local CM  CYK           filter:               3  (0.004497); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.18u 0.01s 00:00:00.19 Elapsed: 00:00:00.10
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.09
 //
 Query:       X85253.1  [L=1676]
 Description: Hepatitis D virus complete genome containing delta antigen ORF
@@ -16953,7 +16953,7 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01285); e
 Envelopes passing  local CM  CYK           filter:               4  (0.005987); expected (0.0001)
 Total CM hits reported:                                          4  (0.005789); includes 0 truncated hit(s)
 
-# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.12
+# CPU time: 0.18u 0.00s 00:00:00.18 Elapsed: 00:00:00.12
 //
 Query:       M21012.1  [L=1679]
 Description: Hepatitis delta virus RNA, complete genome
@@ -17021,6 +17021,6 @@ Envelopes passing glocal HMM envelope defn filter:               8  (0.01191); e
 Envelopes passing  local CM  CYK           filter:               4  (0.006193); expected (0.0001)
 Total CM hits reported:                                          3  (0.004414); includes 0 truncated hit(s)
 
-# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.10
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.09
 //
 [ok]

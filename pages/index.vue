@@ -215,7 +215,7 @@
                     Sequences
                   </dt>
                   <dd class="order-1 text-5xl font-extrabold text-indigo-600">
-                    {{ Number(9486).toLocaleString() }}
+                    {{ Number(9691).toLocaleString() }}
                   </dd>
                 </div>
 
@@ -241,7 +241,7 @@
                     Ribozymes predicted
                   </dt>
                   <dd class="order-1 text-5xl font-extrabold text-indigo-600">
-                    {{ Number(18854).toLocaleString() }}
+                    {{ Number(11713).toLocaleString() }}
                   </dd>
                 </div>
                 <div
@@ -266,7 +266,7 @@
                     Clusters with 90% identity
                   </dt>
                   <dd class="order-1 text-5xl font-extrabold text-indigo-600">
-                    {{ Number(414).toLocaleString() }}
+                    {{ Number(458).toLocaleString() }}
                   </dd>
                 </div>
               </dl>

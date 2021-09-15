@@ -151,7 +151,7 @@ Object.entries(metadata).forEach(([k, v]) => {
     ? 'virus'
     : v?.species?.toLowerCase().includes('satellite')
     ? 'satellite RNA'
-    : v?.displayTitle.toLowerCase().includes('viroidlike dna')
+    : v?.displayTitle.toLowerCase().includes('dianthus caryophyllus ')
     ? 'retroviroid'
     : 'retrozyme'
   metadata[k].releaseDate = v.releaseDate?.slice(0, 10)
@@ -187,42 +187,53 @@ Object.entries(ribozymes).forEach(([k, v]) => {
 const clusters = {}
 
 // set up the metadata for the clusters and rotation but note that it doesn't have the actual sequence data yet
-// await Promise.all(
-//   ['Cls_ID70', 'Cls_ID75', 'Cls_ID80', 'Cls_ID85', 'Cls_ID90', 'Cls_ID95'].map(
-//     (clustering) => {
-//       return csv({ delimiter: '\t' })
-//         .fromFile(clustering + '/Cluster_membership' + '.tsv')
-//         .then((jsonobj) =>
-//           jsonobj.forEach((x) => {
-//             const identity = Number(clustering.slice(-2))
-//             const clusterId =
-//               releaseVersion +
-//               '-ID' +
-//               identity +
-//               '-' +
-//               x.Cls_ID.split('_').slice(-1)
-//             // assign the cluster IDs as properties to the metadata for fast queries
-//             x.Mems.split(', ').forEach(
-//               (member) =>
-//                 (metadata[member] = {
-//                   ...metadata[member],
-//                   [clustering]: clusterId,
-//                 })
-//             )
-//             // populate clusters object that we'll use to create the clusters collection
-//             clusters[clusterId] = {
-//               count: x.Mems.split(', ').length,
-//               representative: x.rep,
-//               representativeDisplayTitle: metadata[x.rep].displayTitle,
-//               members: x.Mems,
-//               identity,
-//               id: clusterId,
-//             }
-//           })
-//         )
-//     }
-//   )
-// )
+let clusterDate = ''
+await Promise.all(
+  [
+    // 'Cls_ID50',
+    // 'Cls_ID55',
+    // 'Cls_ID60',
+    // 'Cls_ID65',
+    'Cls_ID70',
+    'Cls_ID75',
+    'Cls_ID80',
+    'Cls_ID85',
+    'Cls_ID90',
+    'Cls_ID95',
+  ].map((clustering) => {
+    return csv({ delimiter: '\t' })
+      .fromFile(path.join(dirName, clustering, 'Cluster_membership.tsv'))
+      .then((jsonobj) =>
+        jsonobj.forEach((x) => {
+          clusterDate = x.Cls_ID.slice(0, 10)
+          const identity = Number(clustering.slice(-2))
+          const clusterId =
+            releaseVersion +
+            '-ID' +
+            identity +
+            '-' +
+            x.Cls_ID.split('_').slice(-1)
+          // assign the cluster IDs as properties to the metadata for fast queries
+          x.Mems.split(', ').forEach(
+            (member) =>
+              (metadata[member] = {
+                ...metadata[member],
+                [clustering]: clusterId,
+              })
+          )
+          // populate clusters object that we'll use to create the clusters collection
+          clusters[clusterId] = {
+            count: x.Mems.split(', ').length,
+            representative: x.rep,
+            representativeDisplayTitle: metadata[x.rep].displayTitle,
+            // members: x.Mems,
+            identity,
+            id: clusterId,
+          }
+        })
+      )
+  })
+)
 
 // add in the MSA, if available
 // Object.keys(clusters).forEach((cluster) => {
@@ -230,9 +241,10 @@ const clusters = {}
 //   const identity = cluster.split('-')[3].slice(2)
 //   clusters[cluster].msa = fs.readFileSync(
 //     path.join(
+//       dirName,
 //       'Cls_ID' + identity,
 //       'FinalCluster_MSAs',
-//       `Cls_ID${identity}_${String(
+//       `${clusterDate}_Cls_ID${identity}_${String(
 //         cluster.split('-').pop()
 //       )}_conp_mafft_msa.fasta`
 //     ),
@@ -247,38 +259,46 @@ const clusters = {}
 //   // }
 // })
 
-// console.log(metadata)
-// fs.writeFileSync('static/clusters.tmp.json', JSON.stringify(clusters, null, 2))
-fs.writeFileSync('static/meta.tmp.json', JSON.stringify(metadata, null, 2))
+metadata = Object.fromEntries(
+  Object.entries(metadata).filter(
+    (v) => typeof v[1].displayTitle !== 'undefined'
+  )
+)
 fs.writeFileSync(
-  'static/meta.algolia.json',
+  path.join(dirName, 'clusters.json'),
+  JSON.stringify(clusters, null, 2)
+)
+fs.writeFileSync(
+  path.join(dirName, 'all.json'),
+  JSON.stringify(metadata, null, 2)
+)
+fs.writeFileSync(
+  path.join(dirName, 'algolia.json'),
   JSON.stringify(
-    Object.values(metadata)
-      .map(
-        ({
-          accession,
-          displayTitle,
-          isolationSource,
-          geoLocation,
-          host,
-          species,
-          genus,
-          family,
-          type,
-          submitters,
-        }) => ({
-          accession,
-          displayTitle,
-          isolationSource,
-          geoLocation,
-          host,
-          species,
-          genus,
-          family,
-          type,
-          submitters,
-        })
-      )
-      .filter((x) => typeof x.displayTitle !== 'undefined')
+    Object.values(metadata).map(
+      ({
+        accession,
+        displayTitle,
+        isolationSource,
+        geoLocation,
+        host,
+        species,
+        genus,
+        family,
+        type,
+        submitters,
+      }) => ({
+        accession,
+        displayTitle,
+        isolationSource,
+        geoLocation,
+        host,
+        species,
+        genus,
+        family,
+        type,
+        submitters,
+      })
+    )
   )
 )

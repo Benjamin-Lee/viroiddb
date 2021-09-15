@@ -62,7 +62,7 @@ Envelopes passing glocal HMM envelope defn filter:               5  (0.02061); e
 Envelopes passing  local CM  CYK           filter:               3  (0.00766); expected (0.0001)
 Total CM hits reported:                                          2  (0.00766); includes 1 truncated hit(s)
 
-# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
 //
 Query:       NC_003380.1  [L=220]
 Description: Rice yellow mottle virus satellite, complete genome
@@ -162,7 +162,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.02954); e
 Envelopes passing  local CM  CYK           filter:               4  (0.01091); expected (0.0001)
 Total CM hits reported:                                          3  (0.01404); includes 2 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.08
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.08
 //
 Query:       NC_003851.1  [L=388]
 Description: Subterranean clover mottle virus satellite RNA, complete genome
@@ -270,7 +270,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01705); e
 Envelopes passing  local CM  CYK           filter:               4  (0.008843); expected (0.0001)
 Total CM hits reported:                                          3  (0.008527); includes 1 truncated hit(s)
 
-# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.02
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
 //
 Query:       NC_003533.1  [L=322]
 Description: Cereal yellow dwarf virus-RPV satellite RNA, complete genome
@@ -337,7 +337,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01808); e
 Envelopes passing  local CM  CYK           filter:               3  (0.008751); expected (0.0001)
 Total CM hits reported:                                          3  (0.008171); includes 0 truncated hit(s)
 
-# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.05
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.04
 //
 Query:       NC_003850.1  [L=377]
 Description: Solanum nodiflorum mottle virus satellite RNA, complete genome
@@ -405,7 +405,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01372); e
 Envelopes passing  local CM  CYK           filter:               4  (0.01119); expected (0.0001)
 Total CM hits reported:                                          3  (0.005593); includes 0 truncated hit(s)
 
-# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.04
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.03
 //
 Query:       NC_003906.1  [L=366]
 Description: Velvet tobacco mottle virus Satellite RNA, complete genome
@@ -514,7 +514,7 @@ Envelopes passing glocal HMM envelope defn filter:               4  (0.01363); e
 Envelopes passing  local CM  CYK           filter:               2  (0.005972); expected (0.0001)
 Total CM hits reported:                                          2  (0.005924); includes 0 truncated hit(s)
 
-# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
 //
 Query:       HQ680397.1  [L=366]
 Description: Velvet tobacco mottle virus Satellite RNA isolate K1v, complete sequence

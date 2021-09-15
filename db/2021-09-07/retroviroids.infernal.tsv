@@ -43,5 +43,5 @@ Hammerhead_HH10      RF02277   AJ295008.1           -          cm        1      
 # Target file:     ../db/raw/ribozymes.cm
 # Option settings: cmscan --tblout ../db/2021-09-07/retroviroids.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/retroviroids.fasta 
 # Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
-# Date:            Wed Sep  8 05:20:12 2021
+# Date:            Mon Sep 13 16:54:33 2021
 # [ok]

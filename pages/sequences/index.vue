@@ -21,7 +21,7 @@
             grid grid-cols-1
             gap-5
             sm:gap-6 sm:grid-cols-2
-            lg:grid-cols-4
+            lg:grid-cols-5
           "
         >
           <CategoryCard
@@ -63,7 +63,7 @@ export default Vue.extend({
           path: '/sequences/type/viroid',
           color: 'bg-red-600',
           initials: 'Vd',
-          members: 9161,
+          members: 9353,
         },
         {
           name: 'Satellite RNAs',
@@ -76,8 +76,8 @@ export default Vue.extend({
           name: 'Viruses',
           path: '/sequences/type/virus',
           color: 'bg-green-600',
-          initials: 'Rzv',
-          members: 242,
+          initials: 'RzV',
+          members: 243,
         },
         {
           name: 'Retrozymes',
@@ -85,6 +85,13 @@ export default Vue.extend({
           color: 'bg-yellow-600',
           initials: 'Rtz',
           members: 73,
+        },
+        {
+          name: 'Retroviroids',
+          path: '/sequences/type/retroviroid',
+          color: 'bg-orange-600',
+          initials: 'RtVd',
+          members: 12,
         },
       ],
       query: '',

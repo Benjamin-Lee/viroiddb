@@ -185,5 +185,5 @@ Hammerhead_HH9       RF02275   DQ357628.1           -          cm       19      
 # Target file:     ../db/raw/ribozymes.cm
 # Option settings: cmscan --tblout ../db/2021-09-07/unclassified.infernal.tsv -E 0.1 --cpu 4 ../db/raw/ribozymes.cm ../db/2021-09-07/unclassified.fasta 
 # Current dir:     /Users/BenjaminLee/research/viroiddb/scripts
-# Date:            Wed Sep  8 05:21:02 2021
+# Date:            Mon Sep 13 16:55:21 2021
 # [ok]

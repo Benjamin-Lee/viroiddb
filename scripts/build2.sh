@@ -33,5 +33,6 @@ cat $output/avsunviroidae.fasta $output/pospiviroidae.fasta  $output/unclassifie
 cat $output/avsunviroidae.dbn $output/pospiviroidae.dbn  $output/unclassified.dbn > $output/viroids.dbn
 cat $output/avsunviroidae.rc.dbn $output/pospiviroidae.rc.dbn  $output/unclassified.rc.dbn > $output/viroids.rc.dbn
 cat $output/avsunviroidae.cmscan $output/pospiviroidae.cmscan  $output/unclassified.cmscan > $output/viroids.cmscan
+cat $output/avsunviroidae.infernal.tsv $output/pospiviroidae.infernal.tsv  $output/unclassified.infernal.tsv > $output/viroids.infernal.tsv
 
 cd $INITIAL_WORKING_DIRECTORY

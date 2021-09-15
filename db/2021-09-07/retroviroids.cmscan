@@ -76,7 +76,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.0196); ex
 Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
 Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
 
-# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.04
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
 //
 Query:       AJ295019.1  [L=275]
 Description: Dianthus caryophyllus viroidlike DNA, cultivar 1285 hybrid
@@ -334,7 +334,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01903); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
 Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
 
-# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
 //
 Query:       AJ295015.1  [L=275]
 Description: Dianthus caryophyllus viroidlike DNA, cultivar White Castellaro, isolate K
@@ -402,7 +402,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01525); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
 Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
 
-# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
 //
 Query:       AJ295014.1  [L=196]
 Description: Dianthus caryophyllus viroidlike DNA, cultivar Praline deleted
@@ -483,7 +483,7 @@ Envelopes passing glocal HMM envelope defn filter:               9  (0.02868); e
 Envelopes passing  local CM  CYK           filter:               6  (0.01751); expected (0.0001)
 Total CM hits reported:                                          4  (0.01605); includes 2 truncated hit(s)
 
-# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.09
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.09
 //
 Query:       AJ295012.1  [L=275]
 Description: Dianthus caryophyllus viroidlike DNA, cultivar Tanga
@@ -619,7 +619,7 @@ Envelopes passing glocal HMM envelope defn filter:               6  (0.01525); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
 Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
 
-# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.03
 //
 Query:       AJ295010.1  [L=275]
 Description: Dianthus caryophyllus viroidlike RNA, cultivar Newton
@@ -673,7 +673,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01893); e
 Envelopes passing  local CM  CYK           filter:               4  (0.008817); expected (0.0001)
 Total CM hits reported:                                          2  (0.003682); includes 0 truncated hit(s)
 
-# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
 //
 Query:       AJ295009.1  [L=275]
 Description: Dianthus caryophyllus viroidlike RNA, cultivar Praline, C2 isolate
@@ -741,7 +741,7 @@ Envelopes passing glocal HMM envelope defn filter:               7  (0.01826); e
 Envelopes passing  local CM  CYK           filter:               5  (0.01307); expected (0.0001)
 Total CM hits reported:                                          3  (0.01001); includes 1 truncated hit(s)
 
-# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.03
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.03
 //
 Query:       AJ295008.1  [L=275]
 Description: Dianthus caryophyllus viroidlike RNA, cultivar Praline, isolate C1
