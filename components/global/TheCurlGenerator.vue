@@ -269,6 +269,7 @@ export default {
         'Unclassified viroids': 'unclassified',
         Deltaviruses: 'deltavirus',
         Retrozymes: 'retrozymes',
+        Retroviroids: 'retroviroids',
       },
       types: {
         FASTA: '.fasta',
