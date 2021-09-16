@@ -11,3 +11,4 @@
 9. Upload each file individually
 10. Delete `clusters` collection and upload
 11. Upload files to bucket with `upload-storage.sh`
+12. Update redirects
