@@ -37,7 +37,7 @@ To collect the sequences for the database we followed this protocol:
 
 For viroids and deltaviruses, we used the NCBI Virus portal to download complete sequences within the taxonomy IDs:
 
-| Subset          | Count | NCBI Taxonomy ID                                                             |
+| Subset          | Count | NCBI Taxonomy ID                                                             | Link                                                                                                                                                                                            |
 | --------------- | ----- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | All             | 9891  |                                                                              |                                                                                                                                                                                                 |
 | Viroids         | 9354  |                                                                              |                                                                                                                                                                                                 |
