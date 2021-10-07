@@ -27,7 +27,13 @@ export default {
         href: 'https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/satellite-min.css',
       },
     ],
-    script: [],
+    script: [
+      {
+        src: '//gc.zgo.at/count.js',
+        async: true,
+        'data-goatcounter': 'https://viroids.goatcounter.com/count',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
