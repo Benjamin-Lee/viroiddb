@@ -19,7 +19,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.9.1",
     "file-saver": "^2.0.5",
-    "firebase": "^8.6.8",
+    "firebase": "^9.3.0",
     "fornac": "^1.1.8",
     "fuse.js": "^6.4.6",
     "nuxt": "^2.15.3",
