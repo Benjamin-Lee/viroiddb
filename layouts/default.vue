@@ -6,8 +6,8 @@
       class="relative bg-indigo-600"
     >
       <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div class="text-center px-16">
-          <p class="font-medium text-white">
+        <div class="text-center px-10">
+          <p class="font-medium text-white hidden sm:block">
             The ViroidDB paper is out!
             <a
               href="https://doi.org/10.1093/nar/gkab974"
@@ -17,6 +17,14 @@
               Read it <span aria-hidden="true">&rarr;</span></a
             >
           </p>
+          <a
+            href="https://doi.org/10.1093/nar/gkab974"
+            target="_blank"
+            class="text-white font-medium underline sm:hidden"
+          >
+            Read the new ViroidDB paper
+            <span aria-hidden="true">&rarr;</span></a
+          >
         </div>
         <div
           class="absolute inset-y-0 right-0 pt-1 flex items-start sm:pt-1 pr-2"
