@@ -3,6 +3,22 @@ title: About ViroidDB
 description: About us, about viroids, and some in between.
 ---
 
+ViroidDB is a database of viroids and other viroid-like agents.
+In addition to containing sequence data, ViroidDB hosts metadata about the sequences, including their taxonomic lineage and secondary structure.
+We hope this database will be useful to researchers and other scientists interested in viroid-like agents.
+To cite ViroidDB, please use:
+
+---
+
+Benjamin D.
+Lee, Uri Neri, Caleb J. Oh, Peter Simmonds, Eugene V. Koonin.
+ViroidDB: a database of viroids and viroid-like circular RNAs.
+_Nucleic Acids Research_.
+[doi:10.1093/nar/gkab974](https://doi.org/10.1093/nar/gkab974).
+[[bibtex](https://api.crossref.org/works/10.1093/nar/gkab974/transform/application/x-bibtex)] [[pdf](https://benjamindlee.com/pdf/10.1093/nar/gkab974.pdf)]
+
+---
+
 ## Frequently Asked Questions
 
 ### What are viroids?
@@ -29,7 +45,7 @@ Furthermore, the database is permanently archived in the Zenodo repository, ensu
 
 Pathogenic members infect both plants and animals, and reports of resulting diseases have been documented since the 1930s.
 Presently, the only effective means of disease control is the prevention of spread, and crop infection may cause up to a 40% reduction of yield.
-In addition, deltaviruses can cause symptomatic diseases in humans and other mammals.
+In addition, deltaviruses can cause symptomatic diseases in humans and other animals.
 
 ### How do we curate the database?
 
