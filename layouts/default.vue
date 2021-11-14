@@ -1,6 +1,59 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div class="bg-gray-50">
+    <div
+      v-if="showHeader && new Date() < new Date('January 13, 2022')"
+      class="relative bg-indigo-600"
+    >
+      <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+        <div class="text-center px-16">
+          <p class="font-medium text-white">
+            The ViroidDB paper is out!
+            <a
+              href="https://doi.org/10.1093/nar/gkab974"
+              target="_blank"
+              class="text-white font-bold underline"
+            >
+              Read it <span aria-hidden="true">&rarr;</span></a
+            >
+          </p>
+        </div>
+        <div
+          class="absolute inset-y-0 right-0 pt-1 flex items-start sm:pt-1 pr-2"
+        >
+          <button
+            type="button"
+            class="
+              flex
+              p-2
+              rounded-md
+              hover:bg-indigo-500
+              focus:outline-none focus:ring-2 focus:ring-white
+            "
+            @click="showHeader = false"
+          >
+            <span class="sr-only">Dismiss</span>
+            <!-- Heroicon name: outline/x -->
+            <svg
+              class="h-6 w-6 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div class="flex flex-col h-screen justify-between">
       <div>
         <nav class="bg-white border-b border-gray-200">
@@ -193,6 +246,7 @@ export default Vue.extend({
         { name: 'Community', to: '/community' },
       ],
       showMenu: false,
+      showHeader: true,
     }
   },
   watch: {
