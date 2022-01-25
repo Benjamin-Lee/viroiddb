@@ -94,7 +94,7 @@
                     >ViroidDB</NuxtLink
                   >
                 </div>
-                <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                <div class="hidden lg:-my-px lg:ml-6 lg:flex lg:space-x-8">
                   <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
                   <NuxtLink
                     v-for="link in links"
@@ -119,7 +119,7 @@
                 </div>
               </div>
 
-              <div class="-mr-2 flex items-center sm:hidden">
+              <div class="-mr-2 flex items-center lg:hidden">
                 <!-- Mobile menu button -->
                 <button
                   type="button"
@@ -190,7 +190,7 @@
           </div>
 
           <!-- Mobile menu, show/hide based on menu state. -->
-          <div class="sm:hidden" id="mobile-menu" v-if="showMenu">
+          <div class="lg:hidden" id="mobile-menu" v-if="showMenu">
             <div class="pt-2 pb-3 space-y-1">
               <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" -->
               <NuxtLink
