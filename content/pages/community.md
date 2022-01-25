@@ -1,11 +1,12 @@
 # Community
 
 ViroidDB seeks to foster innovation and collaboration within the viroid-like circRNA community.
-Beyond providing high-quality data, we also provide  
+Beyond providing high-quality data, we also provide
 
-##  Bulletin board
+## Bulletin board
 
 - MDPI's _Cells_ journal is running a special issue dedicated to viroids to honor the memory of Ricardo Flores. The deadline for submission is 2022-03-31. [Learn more &rarr;](https://www.mdpi.com/journal/cells/special_issues/Viroids_Memory_Ricardo_Flores_Pedauye)
+- VIROID 2022 is being held in Crete, Greece from September 14-16, 2022. [Learn more &rarr;](https://viroid2021.gr)
 
 _Want to add your notice here? Send an email to notices@viroids.org and we'll get you added._
 
